@@ -18,7 +18,6 @@
 #include "eyeController.h"
 #include "FieldFieldMapping.h"	//typedef'ed as ffm?
 #include "Target.h"
-#include "VamTarget.h"
 
 typedef FieldFieldMapping ffm;
 
@@ -188,7 +187,6 @@ public:
 	void incrementSaccadeCounter(){saccadeCounter++;}
 
 	bool verge(std::string colour);
-	bool verge(VamTarget* vam);
 	bool verge(double lx, double ly, double rx, double ry);
 
 

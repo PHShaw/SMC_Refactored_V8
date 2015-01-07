@@ -1304,19 +1304,6 @@ bool eyeSaccading::verge(double lTargX, double lTargY, double rTargX, double rTa
 	return false;	//Made a movement to verge on target, but need to call again to see if it is now in focus.
 }
 
-bool eyeSaccading::verge(VamTarget* vam)
-{
-	int xl,yl,xr,yr;
-	vam->getVergence(160,120,&xl, &yl, &xr, &yr);
-	int diff = xr - xl;
-	while(diff>2)
-	{
-		verge(xl,yl,xr,yr);
-		vam->getVergence(160,120,&xl, &yl, &xr, &yr);
-		diff = xr - xl;
-	}
-	return true;
-}
 
 bool eyeSaccading::verge(string colour)
 {
