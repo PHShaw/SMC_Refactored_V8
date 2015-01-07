@@ -12,14 +12,11 @@ using namespace std;
 using namespace yarp::os;
 using namespace yarp::dev;
 
-eyeSaccading::eyeSaccading(eyeController* pEye, Target* pTarget, ffm* eye_ppm, bool pLearn, bool pNeigh, string ppath)
+eyeSaccading::eyeSaccading(eyeController* pEye, Target* pTarget, ffm* eye_ppm)
 {
 	eye = pEye;
 	target = pTarget;
 	ppm = eye_ppm;
-	learn = pLearn;
-	nearestNeighbour = pNeigh;
-	path = ppath;
 
 	openLogs();
 }
@@ -1497,17 +1494,17 @@ bool eyeSaccading::verge(string colour)
 
 void eyeSaccading::openLogs()
 {
-	string fullpath = path + "eyemotorlog.txt";
+	string fullpath = params.path + "eyemotorlog.txt";
 
 
 	motorlogfile.open(fullpath.c_str());
 	motorlogfile << "x y saccadeNo stepCount" << endl;
 
-	fullpath = path + "eyelog.txt";
+	fullpath = params.path + "eyelog.txt";
 
 	logfile.open(fullpath.c_str());
 
-	fullpath = path + "eyeLinkLog.txt";
+	fullpath = params.path + "eyeLinkLog.txt";
 	eyeLinkLog.open(fullpath.c_str());
 	eyeLinkLog << "retX retY motX motY time" << endl;
 }

@@ -118,7 +118,7 @@ struct FailureReport{
 
 class eyeSaccading{
 public:
-	eyeSaccading(eyeController* pEye, Target* pTarget, ffm* eye_ppm, bool learn, bool pNeigh, std::string path);
+	eyeSaccading(eyeController* pEye, Target* pTarget, ffm* eye_ppm);
 	~eyeSaccading();
 
 
@@ -202,9 +202,6 @@ private:
 
 	std::list<position> saccadeSteps;
 
-	bool learn;
-	bool nearestNeighbour;
-
 
 	//Stats collection
 	int saccadeCounter;
@@ -218,7 +215,6 @@ private:
 	int linksUpdated;
 	int possibleLinkstoLearn;
 
-	std::string path;
 	std::ofstream motorlogfile;
 	std::ofstream logfile;
 	std::ofstream eyeLinkLog;

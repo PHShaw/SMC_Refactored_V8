@@ -43,7 +43,6 @@ private:
 	yarp::dev::IPositionControl *pos;
 	yarp::dev::IEncoders *enc;
 
-	std::string path;
 	std::ofstream motorlogfile;
 
 

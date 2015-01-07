@@ -13,37 +13,17 @@ using namespace std;
 using namespace yarp::os;
 using namespace yarp::dev;
 
-EyeHeadSaccading::EyeHeadSaccading(string robot, GazeMap* pGM, Target* ptarget,bool pSynch, bool pNeigh, bool pLoad)
+
+
+
+EyeHeadSaccading::EyeHeadSaccading(GazeMap* pGM, Target* ptarget)
 {
 	target = ptarget;
-	synchronous = pSynch;
-	nearestNeighbour = pNeigh;
+//	synchronous = pSynch;
+//	nearestNeighbour = pNeigh;
 
-	initYarp(robot);
-	load = pLoad;
-	path = "../data/";
-	filename = "testXV10";
-	init(filename, true);
-
-
-	gm = pGM;
-
-
-
-}
-
-
-EyeHeadSaccading::EyeHeadSaccading(string robot, GazeMap* pGM, Target* ptarget, bool pSynch, bool pNeigh, bool pLoad, string ppath, string pfilename, bool pLearn)
-{
-	target = ptarget;
-	synchronous = pSynch;
-	nearestNeighbour = pNeigh;
-
-	initYarp(robot);
-	load = pLoad;
-	path = ppath;
-	filename = pfilename;
-	init(filename, pLearn);
+	initYarp();
+	init();
 
 	gm = pGM;
 
@@ -59,19 +39,18 @@ EyeHeadSaccading::~EyeHeadSaccading()
 }
 
 
-void EyeHeadSaccading::init(string filename, bool plearn)
+void EyeHeadSaccading::init()
 {
-	initMaps(filename);
+	initMaps();
 	initLogs();
-	learn = plearn;
 
 	eyeCont = new eyeController(motordriver);
-	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm, learn, nearestNeighbour, path);
+	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm, learn, nearestNeighbour, params.path);
 
 	cout << "Eye controllers initialised" << endl;
 
 	headCont = new headController(motordriver);
-	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, learn, nearestNeighbour, path);
+	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, learn, nearestNeighbour, params.path);
 
 	cout << "Head controllers initialised" << endl;
 
@@ -98,7 +77,7 @@ void EyeHeadSaccading::init(string filename, bool plearn)
 }
 
 
-bool EyeHeadSaccading::initYarp(string robot)
+bool EyeHeadSaccading::initYarp()
 {
 	yarp::os::Network yarp;
 
@@ -106,11 +85,11 @@ bool EyeHeadSaccading::initYarp(string robot)
 	Property options;
 	options.put("device", "remote_controlboard");
 	string hport = "/headmove";
-	if(robot.compare("icubSim")==0)
+	if(params.robot.compare("icubSim")==0)
 		hport += "Sim";
 	options.put("local", hport.c_str());
 	string head = "/";
-	head += robot;
+	head += params.robot;
 	head += "/head";
 	//options.put("remote", "/icub/head");
 	options.put("remote", head.c_str());
@@ -152,7 +131,7 @@ void EyeHeadSaccading::smallBabble(double maxRange)
 	headCont->smallbabble(true, maxRange);
 }
 
-bool EyeHeadSaccading::initMaps(string filename)
+bool EyeHeadSaccading::initMaps()
 {
 
 		eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, 320.f,   0.f, 240.f,
@@ -169,8 +148,8 @@ bool EyeHeadSaccading::initMaps(string filename)
 
 //	gm = new GazeMap();		// gaze map needs to be passed down from higher level as linked to reach
 
-	if(load)
-		loadFile(filename);
+	if(params.load)
+		loadFile(params.filename);
 
 	char in;
 	cout << "Should random moves be made between saccades? y/n" << endl;
@@ -208,11 +187,11 @@ bool EyeHeadSaccading::loadFile(string filename)
 
 		try{
 		delete eye_ppm;
-		eye_ppm = io.loadMappingFromXML(path + "eye_" + filename +".xml");
+		eye_ppm = io.loadMappingFromXML(params.path + "eye_" + filename +".xml");
 //		eye_ppm->printLinkedFields();
 		cout << "There are " << eye_ppm->getNumLinks() << " links in the eye map"<< endl;
 		}
-		catch(IMapException ime)
+		catch(const IMapException & ime)
 		{
 			cout << "Error trying to load eye mappings, generating blank mapping" << endl;
 				eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, 320.f,   0.f, 240.f,
@@ -222,10 +201,10 @@ bool EyeHeadSaccading::loadFile(string filename)
 
 		try{
 		delete head_ppm;
-		head_ppm = io.loadMappingFromXML(path + "head_" + filename +".xml");
+		head_ppm = io.loadMappingFromXML(params.path + "head_" + filename +".xml");
 		cout << "There are " << head_ppm->getNumLinks() << " links in the head map"<< endl;
 		}
-		catch(IMapException ime)
+		catch(const IMapException & ime)
 		{
 			cout << "Error trying to load head mappings, generating blank mapping" << endl;
 				head_ppm = new ffm(INPUT_MAP_TYPE, -310.f, 630.f, -270.f, 510.f,
@@ -271,10 +250,10 @@ bool EyeHeadSaccading::saveMaps()
 	bool success = true;
 	FFM_IO io;
 	try{
-		io.saveMappingToXML(eye_ppm,path + "eye_" + filename +".xml");
+		io.saveMappingToXML(eye_ppm,params.path + "eye_" + params.filename +".xml");
 		cout << eye_ppm->getNumLinks() << " Eye links successfully saved"<<endl;
 	}
-	catch(IMapException ime)
+	catch(const IMapException & ime)
 	{
 		cout << "An error occurred whilst attempting to save the eye links"<<endl;
 		success = false;
@@ -286,10 +265,10 @@ bool EyeHeadSaccading::saveMaps()
 
 	FFM_IO io2;
 	try{
-		io2.saveMappingToXML(head_ppm,path + "head_" + filename+".xml");
+		io2.saveMappingToXML(head_ppm,params.path + "head_" + params.filename+".xml");
 		cout << head_ppm->getNumLinks() <<  " Head links successfully saved"<<endl;
 	}
-	catch(IMapException ime)
+	catch(const IMapException & ime)
 	{
 		cout << "An error occurred whilst attempting to save the head links"<<endl;
 		success = false;
@@ -305,7 +284,7 @@ bool EyeHeadSaccading::saveMaps()
 
 void EyeHeadSaccading::initLogs()
 {
-	string fullpath = path + "eye_stats.txt";
+	string fullpath = params.path + "eye_stats.txt";
 	eyestatslog.open(fullpath.c_str());
 	eyestatslog << "saccadeCounter stepCounter successfulDirectLink successfulNeighbourLink " <<
 			"unsuccesfulDirectLinkCounter neighourCounter penultimateMoveWasLink " <<
@@ -323,7 +302,7 @@ void EyeHeadSaccading::initLogs()
 			" " << timeStamp << endl;
 
 
-	fullpath = path + "head_stats.txt";
+	fullpath = params.path + "head_stats.txt";
 	headstatslog.open(fullpath.c_str());
 	headstatslog << "saccadeCounter combieyeonly combisuccessful combiclose combifailed " <<
 			"unlearntInputFields(" << head_ppm->getNumInputFields()
@@ -337,10 +316,10 @@ void EyeHeadSaccading::initLogs()
 				<< "-" << " " << "-" << " " << timeStamp << endl;
 
 
-	fullpath = path +"eye+head.txt";
+	fullpath = params.path +"eye+head.txt";
 	eyeHeadlog.open(fullpath.c_str());
 
-	fullpath = path + "headLinkLog.txt";
+	fullpath = params.path + "headLinkLog.txt";
 	headLinkLog.open(fullpath.c_str());
 	headLinkLog << "retX retY motX motY time" << endl;
 

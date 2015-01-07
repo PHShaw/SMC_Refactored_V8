@@ -51,13 +51,12 @@ struct altHeadChainLink{
 class EyeHeadSaccading
 {
 public:
-	EyeHeadSaccading(std::string robot, GazeMap* gm, Target* target, bool pSynch, bool pNeigh, bool load);	//path="../data/" filename="testXV10"
-	EyeHeadSaccading(std::string robot, GazeMap* gm, Target* target, bool pSynch, bool pNeigh, bool load, std::string path, std::string filename, bool learn=true);
+	EyeHeadSaccading(GazeMap* gm, Target* target);
 	~EyeHeadSaccading();
 
 
-	void init(std::string filename, bool learn);
-	bool initMaps(std::string filename);
+	void init();
+	bool initMaps();
 	void initLogs();
 	bool loadFile(std::string filename);
 
@@ -145,7 +144,7 @@ public:
 	headController* getHeadController(){return headCont;}
 
 private:
-	bool initYarp(std::string robot);
+	bool initYarp();
 
 	Target* target;
 
@@ -157,9 +156,10 @@ private:
 
 	vor* v;
 
-	bool learn;
-	bool synchronous;
-	bool nearestNeighbour;
+	//Variables defined in params_config.h
+//	bool learn;
+//	bool synchronous;
+//	bool nearestNeighbour;
 	bool randomMove;
 
 	ffm* eye_ppm;

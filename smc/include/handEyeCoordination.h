@@ -19,10 +19,10 @@
 class handEyeCoordination
 {
 public:
-	handEyeCoordination(bool ploadFile, string path="../data/", string filename="testXV10");
+	handEyeCoordination();
 	virtual ~handEyeCoordination();
 
-	void init(EyeHeadSaccading* ehCont, armReaching* ar, Target* target, bool learn);
+	void init(EyeHeadSaccading* ehCont, armReaching* ar, Target* target);
 
 
 	bool findArm(ReachField* reach, bool rightArm);	//Visually guided reaching
@@ -86,10 +86,6 @@ private:
 	Target* target;
 	GazeMap* gm;
 
-	bool learn;
-
-	string path, filename;
-	bool loadFile;
 
 	ofstream handEyelog;
 };

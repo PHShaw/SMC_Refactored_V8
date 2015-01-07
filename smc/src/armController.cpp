@@ -12,11 +12,10 @@ using namespace yarp::os;
 using namespace yarp::dev;
 
 
-armController::armController(bool handOnly, string rbt)
+armController::armController(bool handOnly, bool pBoard)
 {
-	robot = rbt;
 	grippyOnly = handOnly;
-
+	board = pBoard;
 	initYarp();
 
 //	//Horizontal-ish plane
@@ -36,48 +35,6 @@ armController::armController(bool handOnly, string rbt)
 //	maxJointRanges[4]=   5;
 //	maxJointRanges[5]= -15;
 
-
-	//straight arm pointing
-	minJointRanges = new double[6];
-	minJointRanges[0]= -90;
-	minJointRanges[1]=  10;
-	minJointRanges[2]=   0;
-	minJointRanges[3]=  15;
-	minJointRanges[4]=   0;
-	minJointRanges[5]= -15;
-
-	maxJointRanges = new double[6];
-	maxJointRanges[0]= -55;
-	maxJointRanges[1]=  35;
-	maxJointRanges[2]=   0;
-	maxJointRanges[3]=  15;
-	maxJointRanges[4]=   0;
-	maxJointRanges[5]= -15;
-
-	safeMode = true;
-	board = false;
-
-	leftElbowRetracted = false;
-	rightElbowRetracted = false;
-	armMoving = false;
-	moveCalled = false;
-
-	//armsToRest();
-}
-
-armController::armController(string rbt, bool pBoard, bool safe, bool handOnly)
-{
-	robot = rbt;
-	grippyOnly = handOnly;
-	board = pBoard;
-	initYarp();
-
-	leftElbowRetracted = false;
-	rightElbowRetracted = false;
-	armMoving = false;
-	moveCalled = false;
-
-	safeMode = safe;
 
 	if(board)
 	{
@@ -117,9 +74,18 @@ armController::armController(string rbt, bool pBoard, bool safe, bool handOnly)
 		maxJointRanges[5]= -15;
 	}
 
-	if(!grippyOnly)
-		armsToRest();
+	safeMode = true;
+	board = false;
+
+	leftElbowRetracted = false;
+	rightElbowRetracted = false;
+	armMoving = false;
+	moveCalled = false;
+
+//	if(!grippyOnly)
+//		armsToRest();
 }
+
 
 
 void armController::armsToRest()
@@ -248,7 +214,7 @@ void armController::move(const double* position, bool block, bool rightArm, bool
 					cout << "Attempting to move just the upper right arm" << endl;
 					for(int i=0; i<8; i++)
 					{
-						if(robot.compare("icubSim")==0 && i==7)
+						if(params.robot.compare("icubSim")==0 && i==7)
 							break;
 						if(i!=6)
 						{
@@ -281,7 +247,7 @@ void armController::move(const double* position, bool block, bool rightArm, bool
 				{
 					for(int i=0; i<8; i++)
 					{
-						if(robot.compare("icubSim")==0 && i==7)
+						if(params.robot.compare("icubSim")==0 && i==7)
 							break;
 						if(i!=6)
 							leftArmPos->positionMove(i, HOME_POSE[i]);
@@ -406,14 +372,14 @@ bool armController::initYarp()
 	bool ok=true;
 
 	string limb = "/";
-	limb += robot;
+	limb += params.robot;
 	string fullLimb = limb + "/right_arm";
 
 	//options.put("remote", "/icub/head");
 
 	Property rightArmOptions;
 	string hport = "/smc";
-	if(robot.compare("icubSim")==0)
+	if(params.robot.compare("icubSim")==0)
 		hport += "Sim/";
 	else hport +="/";
 	string fullLocal;

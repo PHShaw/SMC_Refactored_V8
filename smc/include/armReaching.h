@@ -18,7 +18,7 @@
 class armReaching
 {
 public:
-	armReaching(std::string robot, GazeMap* pgm, bool plearn, bool safe=true);
+	armReaching(GazeMap* pgm);
 	virtual ~armReaching();
 
 	bool getReachField(double depth, double angle, ReachField** reach);
@@ -64,7 +64,6 @@ public:
 private:
 	armController* armCont;
 	GazeMap* gm;
-	bool learn;
 
 
 	std::ofstream logfile;

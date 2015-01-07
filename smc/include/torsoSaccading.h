@@ -30,8 +30,7 @@ typedef FieldFieldMapping ffm;
 class torsoSaccading
 {
 public:
-	torsoSaccading(std::string robot, EyeHeadSaccading* pEhcont, Target* pTarget, bool learn,
-			bool pNeigh, std::string path, bool load, std::string filename="testXV10");
+	torsoSaccading(EyeHeadSaccading* pEhcont, Target* pTarget);
 	virtual ~torsoSaccading();
 
 	bool loadMapping(std::string filename);
@@ -149,14 +148,10 @@ private:
 	double gazeX1, gazeY1;	//pre and post eye saccade
 	double torsoX1, torsoY1;
 
-	bool learn;
-	bool nearestNeighbour;
-
 	int saccadeCounter;
 
 	headSaccading* headSac;
 
-	std::string path, filename;
 	std::ofstream motorlogfile;
 	std::ofstream logfile;
 

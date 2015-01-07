@@ -9,12 +9,11 @@
 
 using namespace std;
 
-armReaching::armReaching(string robot, GazeMap* pgm, bool plearn, bool safe)
+armReaching::armReaching(GazeMap* pgm)
 {
 	gm = pgm;
-	learn = plearn;
 
-	armCont = new armController(robot, true, safe);
+	armCont = new armController(true);	//true = hands only, false = whole arm
 	cout << "Arm controller initialised" << endl;
 
 	openLogs();

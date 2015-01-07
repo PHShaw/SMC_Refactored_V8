@@ -1,5 +1,7 @@
 /*
- * armReachV2.h
+ * Arm controller controls the yarp interface for both left and right arms.
+ * When initialising, can specify whole arm or just the hand.  Just the hand
+ * is used when the reaching is controlled by the separate reaching software.
  *
  *  Created on: 8 Aug 2011
  *      Author: icub
@@ -43,8 +45,7 @@ class graspController;
 
 class armController{
 public:
-	armController(bool grippyOnly,std::string robot);
-	armController(std::string robot, bool board, bool safe=true, bool grippyOnly=false);
+	armController(bool grippyOnly, bool board=false);
 
 	bool armsStationary();
 	void move(const double* position, bool block=true, bool rightArm=true, bool moveHand=false);

@@ -16,14 +16,12 @@ using namespace std;
 using namespace yarp::os;
 using namespace yarp::dev;
 
-torsoSaccading::torsoSaccading(string robot, EyeHeadSaccading* pEhcont, Target* pTarget,
-		bool pLearn, bool pNeigh, string ppath, bool load, string pfilename)
+torsoSaccading::torsoSaccading(EyeHeadSaccading* pEhcont, Target* pTarget)
 {
-	torso = new torsoController(robot);
+	torso = new torsoController(params.robot);
 	cout << "Torso controller initialised" << endl;
 	ehCont = pEhcont;
 	target = pTarget;
-	nearestNeighbour = pNeigh;
 
 	tc = new torsoCompensator();
 	initCompensator();
@@ -31,16 +29,13 @@ torsoSaccading::torsoSaccading(string robot, EyeHeadSaccading* pEhcont, Target* 
 
 	headSac = ehCont->headSacker();
 
-	path = ppath;
-	filename = pfilename;
 
-	if(!load)
+	if(!params.load)
 		torso_ppm = new ffm(POLAR_MAP, -310.f, 630.f, -270.f, 510.f, POLAR_MAP,
 										-101.f, 101.f, -61.f, 61.f);
 	else
-		loadMapping(filename);
+		loadMapping(params.filename);
 
-	learn = pLearn;
 
 	openLogs();
 	srand(NULL);
@@ -58,14 +53,14 @@ bool torsoSaccading::loadMapping(string filename)
 	bool success;
 	FFM_IO io;
 	try{
-		torso_ppm = io.loadMappingFromXML(path + "torso_" + filename +".xml");
+		torso_ppm = io.loadMappingFromXML(params.path + "torso_" + filename +".xml");
 		cout << "There are " << torso_ppm->getNumLinks() << " links in the torso map"<< endl;
 		success = true;
 	}
 	catch(IMapException ime)
 	{
 		cout << "Error trying to load torso mappings from: " << endl;
-		cout << path << "torso_" << filename << ".xml" << endl;
+		cout << params.path << "torso_" << filename << ".xml" << endl;
 		cout << "Generating blank mapping" << endl;
 		torso_ppm = new ffm(POLAR_MAP, -310.f, 630.f, -270.f, 510.f, POLAR_MAP,
 										-101.f, 101.f, -61.f, 61.f);
@@ -79,7 +74,7 @@ bool torsoSaccading::saveMapping()
 	bool success;
 	FFM_IO io;
 	try{
-		io.saveMappingToXML(torso_ppm,path + "torso_" + filename +".xml");
+		io.saveMappingToXML(torso_ppm,params.path + "torso_" + filename +".xml");
 		cout << torso_ppm->getNumLinks() << " Torso links successfully saved"<<endl;
 		success=true;
 	}
@@ -877,7 +872,7 @@ void torsoSaccading::initMatlabPorts()
 	Time::delay(0.5);
 	Bottle& b1 = portOut.prepare();
 	b1.clear();
-	b1.addString(filename.c_str());
+	b1.addString(params.filename.c_str());
 	portOut.write();
 
 }
@@ -902,7 +897,7 @@ void torsoSaccading::LWPR_TorsoLearner(bool eyeAndHead)
 	string modelName = "torsoModel";
 
 
-	string fullpath = path + "torsoLWPRlog.txt";
+	string fullpath = params.path + "torsoLWPRlog.txt";
 	if(existing)
 		LWPR_Logfile.open(fullpath.c_str(), ios::out | ios::app);	//append the contents onto the end of the file
 	else
@@ -1226,8 +1221,8 @@ void torsoSaccading::LWPR_TorsoLearnerFullModel()
 	int targCount=0, numTargets=1, numSamples=10;
 
 
-	string fullpath = path + "torsoLWPRlog.txt";
-	string fullLogpath = path + "torsoFullLWPRlog.txt";
+	string fullpath = params.path + "torsoLWPRlog.txt";
+	string fullLogpath = params.path + "torsoFullLWPRlog.txt";
 	if(existing)
 	{
 		LWPR_Logfile.open(fullpath.c_str(), ios::out | ios::app);	//append the contents onto the end of the file
@@ -1613,7 +1608,7 @@ void torsoSaccading::LWPR_Tester(string colour, bool eyeAndHead)
 {
 	double targX, targY;
 
-	string fullpath = path + "torsoLWPR_testLog.txt";
+	string fullpath = params.path + "torsoLWPR_testLog.txt";
 	ofstream LWPR_TestLogfile;
 	LWPR_TestLogfile.open(fullpath.c_str(), ios::out | ios::app);
 	//"StartingPointsCompleted TestNum HS0 HS1 HS2 HS3 HS4 HS5 TS0 TS1 TS2 GazeXS GazeYS ModelVerg ModRelTorRot ModRelTorTilt HE0 HE1 HE2 HE3 HE4 HE5 TE0 TE1 TE2 DistToTargEnd"
@@ -1973,10 +1968,10 @@ void torsoSaccading::closeMatlabPorts()
 
 void torsoSaccading::openLogs()
 {
-	string fullpath = path + "torsomotorlog.txt";
+	string fullpath = params.path + "torsomotorlog.txt";
 //	motorlogfile.open(fullpath.c_str());
 
-	fullpath = path + "torsolog.txt";
+	fullpath = params.path + "torsolog.txt";
 	logfile.open(fullpath.c_str());
 
 

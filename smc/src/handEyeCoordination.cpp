@@ -9,16 +9,13 @@
 
 using namespace yarp::os;
 
-handEyeCoordination::handEyeCoordination(bool ploadFile, string ppath, string pfilename)
+handEyeCoordination::handEyeCoordination()
 {
 	gm = new GazeMap();
-	path = ppath;
-	filename = pfilename;
 	initLogs();
-	loadFile = ploadFile;
 
-	if(loadFile)
-		loadGazeReachMap(filename);
+	if(params.load)
+		loadGazeReachMap(params.filename);
 
 }
 
@@ -26,12 +23,11 @@ handEyeCoordination::~handEyeCoordination()
 {
 }
 
-void handEyeCoordination::init(EyeHeadSaccading* pehCont, armReaching* par, Target* ptarget, bool plearn)
+void handEyeCoordination::init(EyeHeadSaccading* pehCont, armReaching* par, Target* ptarget)
 {
 	ehCont = pehCont;
 	ar = par;
 	target = ptarget;
-	learn = plearn;
 
 }
 
@@ -379,7 +375,7 @@ bool handEyeCoordination::saveGazeReachMap()
 	Gaze_IO gmIO;
 	try{
 		cout << "There are " << gm->getNumGazeFields() << " gaze fields to save" << endl;
-		gmIO.saveMappingToXML(gm, path+"GM_" + filename);
+		gmIO.saveMappingToXML(gm, params.path+"GM_" + params.filename);
 		cout << "Successfully saved: ";
 		cout << gm->getNumGazeFields() << " Gaze fields, ";
 		cout << gm->getNumReachFields() << " Reach fields and ";
@@ -400,7 +396,7 @@ bool handEyeCoordination::loadGazeReachMap(string filename)
 {
 	Gaze_IO gm_io;
 	delete gm;
-	gm = gm_io.loadMappingFromXML(path + "GM_" + filename);
+	gm = gm_io.loadMappingFromXML(params.path + "GM_" + filename);
 //	cout << "There are " << gm->getNumGazeFields() << " fields in the gaze map" << endl;
 
 	string str = "There are ";
@@ -626,7 +622,7 @@ vector<GazeReachLink*> handEyeCoordination::getTableReaches()
 
 void handEyeCoordination::initLogs()
 {
-	string fullpath = path + "handEyelog.txt";
+	string fullpath = params.path + "handEyelog.txt";
 	handEyelog.open(fullpath.c_str());
 }
 void handEyeCoordination::logEntry(string message)

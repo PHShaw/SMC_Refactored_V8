@@ -109,39 +109,39 @@ int main(int argc, char* argv[])
 		options.fromCommand(argc,argv);
 
 	yarp::os::Value* val;
-	string robot;
 	if(options.check("robot",val))
 	{
-		robot = val->asString().c_str();
-		cout << "Selected robot: " << robot << endl;
+		params.robot = val->asString().c_str();
+		cout << "Selected robot: " << params.robot << endl;
 	}
 	else
 	{
 		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]" << endl;
-		robot = "icubSim";
+		params.robot = "icubSim";
 	}
 
-	target = new Target(robot);
+	target = new Target(params.robot);
 
+	params.load = false;
+//	string path, filename;
+//	bool load = false;
 
-	string path, filename;
-	bool load = false;
 
 	if(options.check("path",val))
 	{
 		path = val->asString().c_str();
-		load = true;
+		params.load = true;
 		cout << "Loading files from path: " << path << endl;
 
 		if(options.check("name",val))
 		{
-			filename = val->asString().c_str();
+			params.filename = val->asString().c_str();
 			cout << "Loading file set: " << filename << endl;
 		}
 		else
 		{
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
+			cin >> params.filename;
 		}
 	}
 	else
@@ -154,23 +154,23 @@ int main(int argc, char* argv[])
 		{
 
 			cout << "Enter the path to the directory containing the files: e.g. ../data/ " <<endl;
-			cin >> path;
+			cin >> params.path;
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
-			load = true;
+			cin >> params.filename;
+			params.load = true;
 		}
 		else
 		{
 			cout << "Enter the path to the directory to which log should be placed: e.g. ../data/ " <<endl;
-			cin >> path;
+			cin >> params.path;
 			cout << "Enter a generic name to save the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
+			cin >> params.filename;
 	//		path = "../data/";
 	//		filename = "testXV10";
 		}
 	}
 
-	target->initLog(path);
+	target->initLog(params.path);
 	cout << "Would you like to enable learning? y/n" << endl;
 	char learning;
 	cin >>learning;
@@ -181,11 +181,11 @@ int main(int argc, char* argv[])
 	}
 //	if(load)
 //	{
-		heCoor = new handEyeCoordination(load, path, filename);
+		heCoor = new handEyeCoordination();
 		GazeMap* gm = heCoor->getGazeMap();
-		ehCont = new EyeHeadSaccading(robot, gm, target, synchronous, nearestNeighbour, load, path, filename, learn);
-		tor = new torsoSaccading(robot, ehCont, target, learn, nearestNeighbour, path, load, filename);
-		armReach = new armReaching(robot, gm, learn, safeMode);
+		ehCont = new EyeHeadSaccading(gm, target);
+		tor = new torsoSaccading(ehCont, target);
+		armReach = new armReaching(gm);
 //	}
 //	else
 //	{
@@ -204,7 +204,7 @@ int main(int argc, char* argv[])
 
 
 
-	heCoor->init(ehCont, armReach, target, learn);
+	heCoor->init(ehCont, armReach, target);
 //	grippy = new graspController(robot, armReach->getArmController());
 
 
