@@ -214,7 +214,7 @@ void armController::move(const double* position, bool block, bool rightArm, bool
 					cout << "Attempting to move just the upper right arm" << endl;
 					for(int i=0; i<8; i++)
 					{
-						if(params.robot.compare("icubSim")==0 && i==7)
+						if(params.m_ROBOT.compare("icubSim")==0 && i==7)
 							break;
 						if(i!=6)
 						{
@@ -247,7 +247,7 @@ void armController::move(const double* position, bool block, bool rightArm, bool
 				{
 					for(int i=0; i<8; i++)
 					{
-						if(params.robot.compare("icubSim")==0 && i==7)
+						if(params.m_ROBOT.compare("icubSim")==0 && i==7)
 							break;
 						if(i!=6)
 							leftArmPos->positionMove(i, HOME_POSE[i]);
@@ -372,14 +372,14 @@ bool armController::initYarp()
 	bool ok=true;
 
 	string limb = "/";
-	limb += params.robot;
+	limb += params.m_ROBOT;
 	string fullLimb = limb + "/right_arm";
 
 	//options.put("remote", "/icub/head");
 
 	Property rightArmOptions;
 	string hport = "/smc";
-	if(params.robot.compare("icubSim")==0)
+	if(params.m_ROBOT.compare("icubSim")==0)
 		hport += "Sim/";
 	else hport +="/";
 	string fullLocal;

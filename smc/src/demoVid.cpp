@@ -120,8 +120,8 @@ int main(int argc, char* argv[])
 	bool learn = true;
 
 	GazeMap* gm = new GazeMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, synchronous, nearestNeighbour, load, path, filename, learn);
-	tor = new torsoSaccading(robot, ehCont, target, learn, nearestNeighbour, path, load, filename);
+	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, learn);
+	tor = new torsoSaccading(robot, ehCont, target, learn, NEAREST_NEIGHBOUR, path, load, filename);
 
 	armController* ac = new armController(true, robot);
 	grippy = new graspController(robot, ac);

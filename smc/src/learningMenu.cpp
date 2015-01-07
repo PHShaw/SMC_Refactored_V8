@@ -111,18 +111,18 @@ int main(int argc, char* argv[])
 	yarp::os::Value* val;
 	if(options.check("robot",val))
 	{
-		params.robot = val->asString().c_str();
-		cout << "Selected robot: " << params.robot << endl;
+		params.m_ROBOT = val->asString().c_str();
+		cout << "Selected robot: " << params.m_ROBOT << endl;
 	}
 	else
 	{
 		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]" << endl;
-		params.robot = "icubSim";
+		params.m_ROBOT = "icubSim";
 	}
 
-	target = new Target(params.robot);
+	target = new Target(params.m_ROBOT);
 
-	params.load = false;
+	params.m_LOAD = false;
 //	string path, filename;
 //	bool load = false;
 
@@ -130,18 +130,18 @@ int main(int argc, char* argv[])
 	if(options.check("path",val))
 	{
 		path = val->asString().c_str();
-		params.load = true;
+		params.m_LOAD = true;
 		cout << "Loading files from path: " << path << endl;
 
 		if(options.check("name",val))
 		{
-			params.filename = val->asString().c_str();
+			params.m_FILENAME = val->asString().c_str();
 			cout << "Loading file set: " << filename << endl;
 		}
 		else
 		{
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> params.filename;
+			cin >> params.m_FILENAME;
 		}
 	}
 	else
@@ -154,23 +154,23 @@ int main(int argc, char* argv[])
 		{
 
 			cout << "Enter the path to the directory containing the files: e.g. ../data/ " <<endl;
-			cin >> params.path;
+			cin >> params.m_PATH;
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> params.filename;
-			params.load = true;
+			cin >> params.m_FILENAME;
+			params.m_LOAD = true;
 		}
 		else
 		{
 			cout << "Enter the path to the directory to which log should be placed: e.g. ../data/ " <<endl;
-			cin >> params.path;
+			cin >> params.m_PATH;
 			cout << "Enter a generic name to save the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> params.filename;
+			cin >> params.m_FILENAME;
 	//		path = "../data/";
 	//		filename = "testXV10";
 		}
 	}
 
-	target->initLog(params.path);
+	target->initLog(params.m_PATH);
 	cout << "Would you like to enable learning? y/n" << endl;
 	char learning;
 	cin >>learning;
@@ -248,7 +248,7 @@ int main(int argc, char* argv[])
 //***************************************************************************************
 //	EYE ONLY LEARNING:
 //
-				if(!synchronous)
+				if(!SYNCHRONOUS)
 				{
 					int numEyeSaccades = ehCont->learnEyeSaccades();
 					cout << "Learnt eye saccades after " << numEyeSaccades << " attempts" << endl;

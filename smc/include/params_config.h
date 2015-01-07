@@ -16,17 +16,17 @@
 //std::string static robot = "icubSimF";
 
 
-bool const learn = true;
-bool const synchronous = false;
-bool const nearestNeighbour = true;
-bool const safeMode = true;
+bool const LEARN = true;
+bool const SYNCHRONOUS = false;
+bool const NEAREST_NEIGHBOUR = true;
+bool const SAFEMODE = true;
 
 
 struct var_params{
-	std::string filename = "testXV10";
-	std::string path="../../data/";
-	bool load=true;
-	std::string robot = "icubSim";
+	std::string m_FILENAME = "testXV10";
+	std::string m_PATH="../../data/";
+	bool m_LOAD=true;
+	std::string m_ROBOT = "icubSim";
 }params;
 
 

@@ -17,7 +17,7 @@ torsoController::torsoController(string robot)
 {
 	initYarp(robot);
 
-	string fullpath = params.path + "torsomotorlog.txt";
+	string fullpath = params.m_PATH + "torsomotorlog.txt";
 	motorlogfile.open(fullpath.c_str());
 	motorlogfile << "yaw pitch" << endl;
 	toRest();

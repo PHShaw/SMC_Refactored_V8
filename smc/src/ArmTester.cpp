@@ -206,9 +206,9 @@ int main(int argc, char* argv[])
 //	GazeMap* gm = new GazeMap();
 	gm = heCoor->getGazeMap();
 	loadGazeReachMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, synchronous, nearestNeighbour, load, path, filename, learn);
-	tor = new torsoSaccading(robot, ehCont, target, learn, nearestNeighbour, path, load, filename);
-	armReach = new armReaching(robot, gm, learn, safeMode);
+	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, learn);
+	tor = new torsoSaccading(robot, ehCont, target, learn, NEAREST_NEIGHBOUR, path, load, filename);
+	armReach = new armReaching(robot, gm, learn, SAFEMODE);
 	armController* ac = new armController(true, robot);
 	graspController* grippy;// = new graspController(robot, ac);
 

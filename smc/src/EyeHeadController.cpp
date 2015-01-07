@@ -45,12 +45,12 @@ void EyeHeadSaccading::init()
 	initLogs();
 
 	eyeCont = new eyeController(motordriver);
-	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm, learn, nearestNeighbour, params.path);
+	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm, LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
 
 	cout << "Eye controllers initialised" << endl;
 
 	headCont = new headController(motordriver);
-	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, learn, nearestNeighbour, params.path);
+	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
 
 	cout << "Head controllers initialised" << endl;
 
@@ -85,11 +85,11 @@ bool EyeHeadSaccading::initYarp()
 	Property options;
 	options.put("device", "remote_controlboard");
 	string hport = "/headmove";
-	if(params.robot.compare("icubSim")==0)
+	if(params.m_ROBOT.compare("icubSim")==0)
 		hport += "Sim";
 	options.put("local", hport.c_str());
 	string head = "/";
-	head += params.robot;
+	head += params.m_ROBOT;
 	head += "/head";
 	//options.put("remote", "/icub/head");
 	options.put("remote", head.c_str());
@@ -148,8 +148,8 @@ bool EyeHeadSaccading::initMaps()
 
 //	gm = new GazeMap();		// gaze map needs to be passed down from higher level as linked to reach
 
-	if(params.load)
-		loadFile(params.filename);
+	if(params.m_LOAD)
+		loadFile(params.m_FILENAME);
 
 	char in;
 	cout << "Should random moves be made between saccades? y/n" << endl;
@@ -187,7 +187,7 @@ bool EyeHeadSaccading::loadFile(string filename)
 
 		try{
 		delete eye_ppm;
-		eye_ppm = io.loadMappingFromXML(params.path + "eye_" + filename +".xml");
+		eye_ppm = io.loadMappingFromXML(params.m_PATH + "eye_" + filename +".xml");
 //		eye_ppm->printLinkedFields();
 		cout << "There are " << eye_ppm->getNumLinks() << " links in the eye map"<< endl;
 		}
@@ -201,7 +201,7 @@ bool EyeHeadSaccading::loadFile(string filename)
 
 		try{
 		delete head_ppm;
-		head_ppm = io.loadMappingFromXML(params.path + "head_" + filename +".xml");
+		head_ppm = io.loadMappingFromXML(params.m_PATH + "head_" + filename +".xml");
 		cout << "There are " << head_ppm->getNumLinks() << " links in the head map"<< endl;
 		}
 		catch(const IMapException & ime)
@@ -250,7 +250,7 @@ bool EyeHeadSaccading::saveMaps()
 	bool success = true;
 	FFM_IO io;
 	try{
-		io.saveMappingToXML(eye_ppm,params.path + "eye_" + params.filename +".xml");
+		io.saveMappingToXML(eye_ppm,params.m_PATH + "eye_" + params.m_FILENAME +".xml");
 		cout << eye_ppm->getNumLinks() << " Eye links successfully saved"<<endl;
 	}
 	catch(const IMapException & ime)
@@ -265,7 +265,7 @@ bool EyeHeadSaccading::saveMaps()
 
 	FFM_IO io2;
 	try{
-		io2.saveMappingToXML(head_ppm,params.path + "head_" + params.filename+".xml");
+		io2.saveMappingToXML(head_ppm,params.m_PATH + "head_" + params.m_FILENAME+".xml");
 		cout << head_ppm->getNumLinks() <<  " Head links successfully saved"<<endl;
 	}
 	catch(const IMapException & ime)
@@ -284,7 +284,7 @@ bool EyeHeadSaccading::saveMaps()
 
 void EyeHeadSaccading::initLogs()
 {
-	string fullpath = params.path + "eye_stats.txt";
+	string fullpath = params.m_PATH + "eye_stats.txt";
 	eyestatslog.open(fullpath.c_str());
 	eyestatslog << "saccadeCounter stepCounter successfulDirectLink successfulNeighbourLink " <<
 			"unsuccesfulDirectLinkCounter neighourCounter penultimateMoveWasLink " <<
@@ -302,7 +302,7 @@ void EyeHeadSaccading::initLogs()
 			" " << timeStamp << endl;
 
 
-	fullpath = params.path + "head_stats.txt";
+	fullpath = params.m_PATH + "head_stats.txt";
 	headstatslog.open(fullpath.c_str());
 	headstatslog << "saccadeCounter combieyeonly combisuccessful combiclose combifailed " <<
 			"unlearntInputFields(" << head_ppm->getNumInputFields()
@@ -316,10 +316,10 @@ void EyeHeadSaccading::initLogs()
 				<< "-" << " " << "-" << " " << timeStamp << endl;
 
 
-	fullpath = params.path +"eye+head.txt";
+	fullpath = params.m_PATH +"eye+head.txt";
 	eyeHeadlog.open(fullpath.c_str());
 
-	fullpath = params.path + "headLinkLog.txt";
+	fullpath = params.m_PATH + "headLinkLog.txt";
 	headLinkLog.open(fullpath.c_str());
 	headLinkLog << "retX retY motX motY time" << endl;
 
@@ -603,7 +603,7 @@ bool EyeHeadSaccading::eyeSaccade(){	//extract from main method on motorControll
 	eyeStats();
 
 
-	if(learn)
+	if(LEARN)
 	{
 		addGazeField();
 	}
@@ -646,7 +646,7 @@ int EyeHeadSaccading::learnEyeHeadSaccades(int maximum)
 //	while(timeTaken < headDuration)	//learn for 1hr
 	{
 		 //PHS ALTERNATE HEADLEARNING
-		if(!synchronous)
+		if(!SYNCHRONOUS)
 		{
 //			eyeSac->startLearning();
 			while(rollingAverage>eyeThreshold)
@@ -805,7 +805,7 @@ bool EyeHeadSaccading::eyeHeadSaccade(){		//extract of main method from motorCon
 		eyeStats();
 		headStats();
 
-		if(learn && target->targetCentred(&targX, &targY, startColour))
+		if(LEARN && target->targetCentred(&targX, &targY, startColour))
 		{
 			addGazeField();
 		}
@@ -1023,7 +1023,7 @@ bool EyeHeadSaccading::learn_iStyleHeadLinks()
 		counter ++;
 
 
-		if(learn)
+		if(LEARN)
 		{
 			addGazeField();
 		}
@@ -1502,7 +1502,7 @@ bool EyeHeadSaccading::checkCombiLinks(double targX, double targY, string colour
 				//make small eye saccade to target
 	//			bool success = eyeSac->simpleSaccade(targX, targY, colour);
 	//			bool success = eyeSac->saccade(saccadeCounter,targX,targY,colour);
-				if(learn)
+				if(LEARN)
 				{
 					FieldLink* link = eye_ppm->getLink(eyeInput, eyeOutput);
 					link->useField();
@@ -1560,7 +1560,7 @@ bool EyeHeadSaccading::checkCombiLinks(double targX, double targY, string colour
 		{
 			autoCenter(colour);
 			//Increment usage counts for all of the fields involved
-			if(learn)
+			if(LEARN)
 			{
 				PolarField* eyeInput = new PolarField();
 				PolarField* headInput = new PolarField();

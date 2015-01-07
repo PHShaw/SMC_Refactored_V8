@@ -711,8 +711,8 @@ int main(int argc, char* argv[])
 	target->initLog(path);
 	heCoor = new handEyeCoordination(load, path, filename);
 	gm = heCoor->getGazeMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, synchronous, nearestNeighbour, load, path, filename, true);
-	tor = new torsoSaccading(robot, ehCont, target, true, nearestNeighbour, path, load, filename);
+	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, true);
+	tor = new torsoSaccading(robot, ehCont, target, true, NEAREST_NEIGHBOUR, path, load, filename);
 	armReach = new armReaching(robot, gm, true, true);
 	grippy = new graspController(robot, armReach->getArmController());
 

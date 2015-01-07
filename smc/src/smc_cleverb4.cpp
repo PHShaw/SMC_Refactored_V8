@@ -96,9 +96,9 @@ bool init(int argc, char* argv[])
 
 	heCoor = new handEyeCoordination(load, path, filename);
 	GazeMap* gm = heCoor->getGazeMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, synchronous, nearestNeighbour, load, path, filename, learn);
-	armReach = new armReaching(robot, gm, learn, safe);
-	heCoor->init(ehCont, armReach, target, learn);
+	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, LEARN);
+	armReach = new armReaching(robot, gm, LEARN, safe);
+	heCoor->init(ehCont, armReach, target, LEARN);
 	stm = new ShortTermMemory(target, ehCont);
 
 	ehCont->getEyeController()->verg(5,false);

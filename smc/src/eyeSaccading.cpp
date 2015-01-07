@@ -277,7 +277,7 @@ bool eyeSaccading::simpleSaccade(double targX, double targY, string colour, bool
 		startInputField = getNearestLearntInput(targX, targY, &distf);
 		fr.nearestInput = startInputField;
 		fr.dist = distf;
-		nearestNeighbour = true;
+		NEAREST_NEIGHBOUR = true;
 	}
 	else
 		startInputField = getRetinaField(targX, targY);
@@ -499,7 +499,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 			float dist = 0;
 			nearbyInput = getNearestLearntInput(targX, targY, &dist);	//ppm->getNearestLearntInputField((float)targX, (float)targY, &dist);
 			double radius = inputField->getRadius();
-			if(dist<(radius*1.5) && dist>0 && nearbyInput->getUsage()>=0  && nearestNeighbour)
+			if(dist<(radius*1.5) && dist>0 && nearbyInput->getUsage()>=0  && NEAREST_NEIGHBOUR)
 			{
 				cout << "Usage of nearby input: " << nearbyInput->getUsage() << endl;
 				bool gotField = isLinkedOutput(nearbyInput);
@@ -527,7 +527,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 			}
 			else
 			{
-				if(!nearestNeighbour)
+				if(!NEAREST_NEIGHBOUR)
 				{
 					logEntry("not considering nearest neighbours");
 				}
@@ -597,7 +597,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				{
 					PolarField* linkedOutput = (PolarField*)ppm->getLinkedOutput(inputField);
 
-					if(learn)
+					if(LEARN)
 					{
 						linkedOutput->useField();
 						inputField->useField();
@@ -614,7 +614,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				else
 				{
 					PolarField* nearbyOutput = (PolarField*)ppm->getLinkedOutput(nearbyInput);
-					if(learn)
+					if(LEARN)
 					{
 						nearbyInput->useField();
 						nearbyInput->setCalcdLinks(1);
@@ -666,7 +666,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 
 					PolarField* output = (PolarField*)ppm->getLinkedOutput(inputField);
 					//ppm->deleteLink(inputField, output);
-					if(learn)
+					if(LEARN)
 					{
 						inputField->setCalcdLinks(0);
 						inputField->linkFailed();
@@ -726,7 +726,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 						failedNeighbourCounter++;
 					}
 					logEntry("Dis-using a failed neighbour");
-					if(learn)
+					if(LEARN)
 					{
 						FieldLink* link = ppm->getLink(nearbyInput, nearbyOutput);
 						link->linkFailed();
@@ -819,7 +819,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				if(gotfield)
 					motor = getMotorField(relX, relY);
 
-				if(learn && gotfield)
+				if(LEARN && gotfield)
 				{
 					bool ok = ppm->addLink(startInputField, motor);
 					if(ok)
@@ -836,7 +836,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 		}
 
 
-		if(learn)
+		if(LEARN)
 			linksLearnt = learnChain();
 
 
@@ -1494,17 +1494,17 @@ bool eyeSaccading::verge(string colour)
 
 void eyeSaccading::openLogs()
 {
-	string fullpath = params.path + "eyemotorlog.txt";
+	string fullpath = params.m_PATH + "eyemotorlog.txt";
 
 
 	motorlogfile.open(fullpath.c_str());
 	motorlogfile << "x y saccadeNo stepCount" << endl;
 
-	fullpath = params.path + "eyelog.txt";
+	fullpath = params.m_PATH + "eyelog.txt";
 
 	logfile.open(fullpath.c_str());
 
-	fullpath = params.path + "eyeLinkLog.txt";
+	fullpath = params.m_PATH + "eyeLinkLog.txt";
 	eyeLinkLog.open(fullpath.c_str());
 	eyeLinkLog << "retX retY motX motY time" << endl;
 }
@@ -1577,12 +1577,12 @@ void eyeSaccading::closeLogs()
 
 void eyeSaccading::stopLearning()
 {
-	learn=false;
+	LEARN=false;
 }
 
 void eyeSaccading::startLearning()
 {
-	learn=true;
+	LEARN=true;
 }
 
 /* *****************************************************************
