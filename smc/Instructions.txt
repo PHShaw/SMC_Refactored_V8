@@ -1,0 +1,56 @@
+To run the program:
+
+1. run the vision module.  This can be run from /vision/ using the yarp application manager with the xml file colourVision or simVision.
+
+A text based interface is used for this software
+2. From /smc/build run:
+	./learningMenu --robot icub --path ../../data/ --name SetName
+
+where
+--robot can have the value [icub|icubSim] // if this property is not specified, icubSim will be assumed
+--path is where the data files are to be located, typically in the data folder
+--name is a name used for a data set, allowing quick switching between different sets of learnt maps.  E.g. icubTest01 or icubSimTest02.  This name will be used within the filenames for the xml maps
+
+If these options are not specified on the command line then you will be asked to enter the details when the program runs.
+
+Finally, you will be asked if you wish to enable learning [y|n].  This option allows you to load an existing set of maps and use it without modifying the links in the maps.
+
+There is the functionality to run a small emote program along side the learning menu.  This requires the facial expressions to be active, and can then be run using ./emotionController.  In some places, this will show emotions to indicate the success or failure of actions, however it is not required for the smooth running of the program.
+
+During the initialisation phase, the iCub eyes, head and torso will be centred, and the arms will be moved into starting positions on either side of the head.
+
+
+Once loaded, the program will list a set of options.  The main options to consider are options 1 and 2.  Please note, that some of the options require matlab modules that are not provided in this zip file.
+
+Note: If you need to stop the program at any point, pressing Ctrl+c will save the maps (if learning is enabled) before quitting the program.
+
+Learn an Eye mapping
+====================
+
+To learn an eye mapping, select option 1.  This will then start learning a mapping for the eyes.  Currently, this is set to continue learning until the performance reaches a threshold based on the rolling average.  The threshold is currently set to a rolling average of 2-steps per saccade, over the last 10 saccades.  An alternative mode of operation is to continue learning for a set duration.  This requires switching the line that is commented out in the learnEyeSaccades method.  Currently the duration is set to 30 minutes.
+
+The learning operates by identifying a visual target (in the right eye), then initially making random moves until it is fixated on the target.  If it loses sight of the target for too many steps then it will try again with a different target.  As it is moving around, it is building up a chain of the movements, along with the target position at each step.  Once it has made that first fixation, it processes back through the chain, learning links for each of the steps where the target was visible.  As such, a large number of links can be learnt from the first completed saccade.  It should be noted there is no vergence at this point, and all the target processing is currently based on the images from the right camera.
+
+After the first saccade, it will make a random movement to a new starting point, select a target, then look to see if there is an existing link in the mapping for the location of the target.  If there is no link, it will make a random movement, and keep checking the mappings until the target is fixated, learning new links as above when the target is fixated.
+
+Once the threshold is reached, the eye mapping will be saved and you will return to the menu.
+
+
+Learning head mapping
+=====================
+Learning the head mapping relies on the existence of the eye mapping.  As such, if you try to learn a head mapping without sufficient performance from the eye mapping, the system will initially focus on learning the eye mapping until it is at the necessary level.  A Synchronous option is available in the code to force the system to learn both in parallel, however experiments have shown that this degrades performance.
+
+Selecting option 2 from the learning menu will start the learning for the head, and the eye if necessary.
+
+The learning here operates by initially getting the eye to fixate on a target.  The head then makes a random movement, or a series of small movements, whilst the eye attempts to maintain focus on the target.  This is performed using a VOR module (Vestibular Ocular Reflex), which makes use of the Boost thread.  If the eye maintains fixation on the target, then the system attempts to learn a link in the head mapping, through a process that inspects the links in the eye mapping.  Full details on this are given in the papers.
+
+
+Other functionality
+===================
+dtat2.h defines a set of arm joint positions.  These joint positions aim to provide a level of coverage across a table in front of the iCub.  Option 3 from the menu will cycle the specified arm through these positions and attempt to visually locate the hand at each position.  The hand is identified by the addition of a yellow marker around the figures or point of interest.  The colour preference for the hand can be changed at the bottom of Target.h.  It should be noted that in some of the positions, the eye+head system cannot see the hand, and in other positions it will struggle to locate the hand.  The motorGui can be used to assist the eye + head in the right direction for some of these positions.
+
+Separate software, not included here, gives better reach learning and control.  Available on request.
+
+A separate system in matlab provides functionality for learning torso control.  Available on request.
+
+

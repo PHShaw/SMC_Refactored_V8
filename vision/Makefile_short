@@ -1,0 +1,29 @@
+
+
+
+CC         = g++
+
+YARP_LIB = 	$YARP_DIR/lib
+
+YARP_INC = 	-I$YARP_ROOT/src/libYARP_OS/include \
+		-I$YARP_ROOT/src/libYARP_sig/include
+
+
+INCL =  $(YARP_INC)
+LIBS =  -I$(YARP_LIB)
+
+TARGETS = vision4
+
+all:	$(TARGETS)
+
+
+vision4.o:	vision4.cpp
+	$(CC) $(INCL) -g -c $<
+
+vision4:	vision4.o ./vision4.cpp
+	$(CC) -o vision4 vision4.o \
+	$(LIBS) -lYARP_sig -lYARP_OS
+	
+	 
+install: 
+	cp vision4 /home/icub/robotSoftware/iCub/build/bin/vision
