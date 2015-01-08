@@ -45,7 +45,7 @@ void EyeHeadSaccading::init()
 	initLogs();
 
 	eyeCont = new eyeController(motordriver);
-	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm, LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
+	eyeSac = new eyeSaccading(eyeCont, target, eye_ppm);
 
 	cout << "Eye controllers initialised" << endl;
 
