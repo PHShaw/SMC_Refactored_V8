@@ -20,7 +20,6 @@
 
 #include "graspController.h"
 #include "torsoSaccading.h"
-#include "VamTarget.h"
 #include "monitor.h"
 
 
@@ -39,7 +38,6 @@ EyeHeadSaccading* ehCont;
 handEyeCoordination* heCoor;
 armReaching* armReach;
 Target* target;
-VamTarget* vam;
 torsoSaccading* tor;
 GazeMap* gm;
 
@@ -124,7 +122,6 @@ void saveAndQuit(int param)
 
 	delete ehCont;
 	delete tor;
-	delete vam;
 
 	std::exit(param);
 }
@@ -141,7 +138,6 @@ void quit(int param)
 
 	delete ehCont;
 	delete tor;
-	delete vam;
 
 
 	std::exit(param);
@@ -156,71 +152,80 @@ int main(int argc, char* argv[])
 		options.fromCommand(argc,argv);
 
 	yarp::os::Value* val;
-	std::string robot;
 	if(options.check("robot",val))
 	{
-		robot = val->asString().c_str();
-		cout << "Selected robot: " << robot << endl;
+		params.m_ROBOT = val->asString().c_str();
+		cout << "Selected robot: " << params.m_ROBOT << endl;
 	}
 	else
 	{
-		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]+F" << endl;
-		robot = "icub";
+		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]" << endl;
+		params.m_ROBOT = "icubSim";
 	}
 
 	target = new Target();
-	bool load = true;
-//	string path, filename;
+	params.m_LOAD = false;
 
 	if(options.check("path",val))
 	{
 		path = val->asString().c_str();
-		load = true;
+		params.m_LOAD = true;
 		cout << "Loading files from path: " << path << endl;
 
 		if(options.check("name",val))
 		{
-			filename = val->asString().c_str();
+			params.m_FILENAME = val->asString().c_str();
 			cout << "Loading file set: " << filename << endl;
 		}
 		else
 		{
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
+			cin >> params.m_FILENAME;
 		}
 	}
 	else
 	{
+		cout << "Would you like to load an existing mapping? y/n" << endl;
+		char loading;
+		cin >> loading;
 
-		cout << "Enter the path to the directory containing the files: e.g. ../data/ " <<endl;
-		cin >> path;
-		cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-		cin >> filename;
+		if (loading == 'y')
+		{
+
+			cout << "Enter the path to the directory containing the files: e.g. ../data/ " <<endl;
+			cin >> params.m_PATH;
+			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
+			cin >> params.m_FILENAME;
+			params.m_LOAD = true;
+		}
+		else
+		{
+			cout << "Enter the path to the directory to which log should be placed: e.g. ../data/ " <<endl;
+			cin >> params.m_PATH;
+			cout << "Enter a generic name to save the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
+			cin >> params.m_FILENAME;
+	//		path = "../data/";
+	//		filename = "testXV10";
+		}
 	}
 
-	target->initLog(path);
-	vam = new VamTarget();
-	bool learn = true;
+	target->initLog(params.m_PATH);
 
-	heCoor = new handEyeCoordination(load, path, filename);
-//	GazeMap* gm = new GazeMap();
+	heCoor = new handEyeCoordination();
 	gm = heCoor->getGazeMap();
 	loadGazeReachMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, learn);
-	tor = new torsoSaccading(robot, ehCont, target, learn, NEAREST_NEIGHBOUR, path, load, filename);
-	armReach = new armReaching(robot, gm, learn, SAFEMODE);
-	armController* ac = new armController(true, robot);
-	graspController* grippy;// = new graspController(robot, ac);
+	ehCont = new EyeHeadSaccading(gm, target);
+	tor = new torsoSaccading(ehCont, target);
+	armReach = new armReaching(gm);
+	graspController* grippy;
 
-	if(learn)
+	heCoor->init(ehCont, armReach, target);
+	grippy = new graspController(armReach->getArmController());
+
+	if(LEARN)
 		signal(SIGINT, saveAndQuit);
 	else
 		signal(SIGINT, quit);
-
-
-
-	heCoor->init(ehCont, armReach, target, learn);
-//	grippy = new graspController(armReach->getArmController());
 
 
 
@@ -280,7 +285,6 @@ int main(int argc, char* argv[])
 
 		cout << "66. Train gaze map to reaches" << endl;
 		cout << "99. Torso-reach test for video" << endl;
-		cout << "77. Testing vam and fancy video bits" << endl;
 		cout << "110. Close matlab ports" << endl;
 		cout << "112. Open matlab ports" << endl;
 		cin >> choice;
@@ -965,29 +969,6 @@ int main(int argc, char* argv[])
 				break;
 			}
 
-			case 77: //Not finished yet
-			{
-				//Using Vam object and trying to make a fancy video
-				float x,y;
-				int xl,yl,xr,yr;
-				vam->getRandomObject(&x,&y);
-				ehCont->fixateEyeHead(x,y);
-				ehCont->getEyeSaccader()->verge(vam);
-
-				int id, noFeatures;
-				vam->getFixatedObject(&id,&noFeatures);
-
-				double wx,wy,wz, dist;
-				getTargetCoordinates(&wx, &wy, &wz);
-				bool success = reachToPoint(wx,wy,wz, &dist);
-				if(!success)
-				{
-//					torsoMove(wx, wy, wz);		//Tracks targetColour
-
-				}
-
-				break;
-			}
 
 			case 128: //Learn eye+head+torso control
 			{
@@ -1016,33 +997,7 @@ int main(int argc, char* argv[])
 				tor->LWPR_TorsoLearnerFullModel();
 				break;
 
-			case 55: //VAM saccading
-			{
-				float x,y;
-				ehCont->getEyeController()->verg(11,true);
-				double wx,wy,wz, dist;
-				for(int i=0; i<10; i++)
-				{
-					ehCont->getEyeController()->move(0,0,false);
-					ehCont->getHeadController()->move(0, -20, true);
-					command("home");
-					yarp::os::Time::delay(2.0);
 
-					bool success = vam->getRandomObject(&x,&y);
-					if(!success)
-						continue;
-					cout << "Received coordinates (" << x << ", " << y << ")" <<endl;
-					ehCont->fixateEyeHead(x,y);
-					getGazeCoordinates(&wx, &wy, &wz);
-					reachToPoint(wx, wy, wz, &dist);
-					int id, noFeatures;
-					vam->getFixatedObject(&id, &noFeatures);
-
-					yarp::os::Time::delay(1.0);
-				}
-
-				break;
-			}
 
 			case 44:	//hand tracker
 			{
@@ -1153,7 +1108,7 @@ int main(int argc, char* argv[])
 #endif
 
 
-	if(learn)
+	if(LEARN)
 		saveAndQuit(0);
 	else
 		quit(0);

@@ -17,27 +17,25 @@ using namespace std;
 
 Target::Target()
 {
-	ulster = false;
-	initTarget("icub");
+	initTarget(params.m_ROBOT);
 	visible = false;
-}
-Target::Target(string robot)
-{
-	ulster = false;
-	initTarget(robot);
-	visible = false;
-}
 
-Target::Target(bool uu)
-{
-	ulster = uu;
-	initTarget("icub");
-	if(uu){
-		requestROI =true;
-		sentFixate = false;
+
+	if(BASIC_VISION)
+	{
+		colourElements = 4; // [colour] [x] [y] [pixels]
+		targetTypes["colour"] = 4;
+	}
+	else
+	{
+		colourElements = 5; // "colour" [colour] [x] [y] [pixels]
+		targetTypes["colour"] = 5;
+		targetTypes["shape"] = 7;  //"shape" [square|circle|triangle] [colour] [x] [y] [width] [height]
+		targetTypes["edge"] = 12;  //"edge" [x_centre] [y_centre] [num_pts=4] [x1][y1][x2][y2]... (default 4 points)
+		targetTypes["motion"] = 6; //"motion" [speed px/s] [x0] [y0] [x1] [y1]
 	}
 
-	visible = false;
+
 }
 
 
@@ -50,42 +48,29 @@ bool Target::initTarget(string robot)
 {
 	Network yarp;
 
-	if(ulster)
+	if(robot.compare("icubSim")==0)
 	{
-		portUU.open("/target/status");
-//		yarp.connect("/rosyarp/saccade_coords", "/target/read");
-//		yarp.connect("/target/status", "/rosyarp/saccade_command");
+		porttargetsleft.open("/targetSim/left/read");
+		porttargetsright.open("/targetSim/right/read");
 
+		yarp.connect("/targetSim/left/data", "/targetSim/left/read");	//TODO move these you yarp manager
+		yarp.connect("/targetSim/right/data", "/targetSim/right/read");
 	}
 	else
 	{
-		if(robot.compare("icubSim")==0)
-		{
-			porttargetsleft.open("/targetSim/left/read");
-			porttargetsright.open("/targetSim/right/read");
+		porttargetsleft.open("/target/left/read");
+		porttargetsright.open("/target/right/read");
 
-			yarp.connect("/targetSim/left/data", "/targetSim/left/read");
-			yarp.connect("/targetSim/right/data", "/targetSim/right/read");
-		}
-		else
-		{
-			porttargetsleft.open("/target/left/read");
-			porttargetsright.open("/target/right/read");
-
-			yarp.connect("/target/left/data", "/target/left/read");
-			yarp.connect("/target/right/data", "/target/right/read");
-		}
-
+		yarp.connect("/target/left/data", "/target/left/read");
+		yarp.connect("/target/right/data", "/target/right/read");
 	}
 
-
 	centred = false;
+	return true;
 }
 
 bool Target::getTarget(double* targX, double* targY)
 {
-	if(ulster)
-		return uuGetTarget(targX, targY);
 
 //	porttargetsright.read(0);	//Clears last target for when target is no longer visible
 	Time::delay(0.15);
@@ -94,23 +79,116 @@ bool Target::getTarget(double* targX, double* targY)
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
-			int col = randGenerator(numColours);
-			printf("***********Target colours detected: %i, Target selected: %i*************\n", numColours, col);
+			int numTargets;
+			if(BASIC_VISION)
+				numTargets = size/colourElements;
+			else{
+				int numElements;
+				for(int i=0; i<size;)
+				{
+					numTargets++;
+					string type = target->get(i).asString();
+					numElements = targetTypes[type];
 
-			col *= elements;
+					i+= numElements;
+				}
+			}
 
-			visible = true;
-			colour = target->get(0+col).asString();
-			*targX = target->get(1+col).asDouble();
-			*targY = target->get(2+col).asDouble();
-			size   = target->get(3+col).asInt();
-			printf("Colour: %s  X: %.3f  Y: %.3f\n",
-					colour.c_str(),
-					*targX, *targY);
+			int col = randGenerator(numTargets);
+			printf("***********Number of targets detected: %i, Target selected: %i*************\n", numTargets, col);
 
-			targetlogfile << target->get(0).asString().c_str() << " " <<
-					*targX << " " << *targY;
+
+			if(BASIC_VISION)
+			{
+				col *= colourElements;
+				visible = true;
+				colour = target->get(0+col).asString();
+				*targX = target->get(1+col).asDouble();
+				*targY = target->get(2+col).asDouble();
+				size   = target->get(3+col).asInt();
+				printf("Colour: %s  X: %.3f  Y: %.3f\n",
+						colour.c_str(),
+						*targX, *targY);
+
+				targetlogfile << colour << " " << *targX << " " << *targY;
+			}
+			else
+			{
+				numTargets=0;
+				int numElements=0;
+				int index=0;
+				while(index<size && numTargets!=col)
+				{
+					numTargets++;
+					string type = target->get(index).asString();
+					numElements = targetTypes[type];
+
+					index+= numElements;
+				}
+				string type = target->get(index).asString();
+				if(type.compare("colour")==0)
+				{
+					visible = true;
+					colour = target->get(1+index).asString();
+					*targX = target->get(2+index).asDouble();
+					*targY = target->get(3+index).asDouble();
+					size   = target->get(4+index).asInt();
+					printf("Colour: %s  X: %.3f  Y: %.3f\n",
+							colour.c_str(),
+							*targX, *targY);
+
+					targetlogfile << colour << " " << *targX << " " << *targY;
+				}
+				else if(type.compare("motion")==0)
+				{
+					//TODO: Make use of the starting point and speed.
+					visible = true;
+					colour = "motion";
+					*targX = target->get(4+index).asDouble();
+					*targY = target->get(5+index).asDouble();
+					size = target->get(2+index).asDouble();
+					printf("Motion: %s  X: %.3f  Y: %.3f\n",
+							colour.c_str(),
+							*targX, *targY);
+
+					targetlogfile << colour << " " << *targX << " " << *targY;
+
+				}
+				else if(type.compare("edge")==0)
+				{
+					//centre coordinates and edge coordinates give.
+					//randomly selecting one of the 4 coordinates to set as target
+					size = target->get(3+index).asDouble();	//TODO: Check these indicies are correct
+					int edge = randGenerator(size) *2;
+					visible = true;
+					colour = "edge";
+					*targX = target->get(4+index+edge).asDouble();
+					*targY = target->get(4+index+edge+1).asDouble();
+					printf("Edge: %s  X: %.3f  Y: %.3f\n",
+							colour.c_str(),
+							*targX, *targY);
+
+					targetlogfile << colour << " " << *targX << " " << *targY;
+
+				}
+				else if(type.compare("shape")==0)
+				{
+					//TODO: Make better use of shape information.
+					visible = true;
+					colour = target->get(1+index).asString();
+					*targX = target->get(3+index).asDouble();
+					*targY = target->get(4+index).asDouble();
+					size = target->get(5+index).asDouble();
+					printf("Shape: %s  X: %.3f  Y: %.3f\n",
+							colour.c_str(),
+							*targX, *targY);
+
+					targetlogfile << colour << " " << *targX << " " << *targY;
+
+				}
+
+			}
+
 
 			double dist;
 			if(fovea(*targX, *targY, &dist))
@@ -151,8 +229,6 @@ bool Target::getTarget(double* targX, double* targY)
 
 bool Target::getTarget(double* targX, double* targY, const string colourTest)	//look for specific colour
 {
-	if(ulster)
-		return uuGetTarget(targX, targY);
 
 //	porttargetsright.read(0);	//Clears last target for when target is no longer visible
 	Time::delay(0.15);
@@ -162,39 +238,152 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
-			for(int i=0; i<numColours; i++)
-			{
-				string col;
-				col = target->get(i*elements).asString();
-				if(col.compare(colourTest)==0)
+			int numTargets;
+			if(BASIC_VISION)
+				numTargets = size/colourElements;
+			else{
+				int numElements;
+				for(int i=0; i<size;)
 				{
-					visible = true;
-					colour = target->get(i*elements).asString();
-					*targX = target->get(i*elements +1).asDouble();
-					*targY = target->get(i*elements +2).asDouble();
-					size   = target->get(i*elements +3).asInt();
-					printf("Colour: %s  X: %.3f  Y: %.3f\n",
-							colour.c_str(),
-							*targX, *targY);
+					numTargets++;
+					string type = target->get(i).asString();
+					numElements = targetTypes[type];
 
-					targetlogfile << colour << " " <<
-							*targX << " " << *targY;
-
-					double dist;
-					if(fovea(*targX, *targY, &dist))
-					{
-						printf("Central\n");
-						targetlogfile << " " << dist <<" Central";
-					}
-					else
-						targetlogfile << " " << dist;
-					targetlogfile << endl;
-					lastX = *targX;
-					lastY = *targY;
-					return true;
+					i+= numElements;
 				}
 			}
+
+			if(BASIC_VISION)
+			{
+				for(int i=0; i<numTargets; i++)
+				{
+					string col;
+					col = target->get(i*colourElements).asString();
+					if(col.compare(colourTest)==0)
+					{
+						visible = true;
+						colour = target->get(i*colourElements).asString();
+						*targX = target->get(i*colourElements +1).asDouble();
+						*targY = target->get(i*colourElements +2).asDouble();
+						size   = target->get(i*colourElements +3).asInt();
+						printf("Colour: %s  X: %.3f  Y: %.3f\n",
+								colour.c_str(),
+								*targX, *targY);
+
+						targetlogfile << colour << " " <<
+								*targX << " " << *targY;
+
+						double dist;
+						if(fovea(*targX, *targY, &dist))
+						{
+							printf("Central\n");
+							targetlogfile << " " << dist <<" Central";
+						}
+						else
+							targetlogfile << " " << dist;
+						targetlogfile << endl;
+						lastX = *targX;
+						lastY = *targY;
+						return true;
+					}
+				}
+			}
+			else
+			{
+
+				int numElements=0;
+				int index=0;
+				while(index<size)
+				{
+					numTargets++;
+					string type = target->get(index).asString();
+					numElements = targetTypes[type];
+
+					index+= numElements;
+
+
+
+					if(type.compare("colour")==0)
+					{
+						visible = true;
+						colour = target->get(1+index).asString();
+						if(colour.compare(colourTest)==0)
+						{
+							*targX = target->get(2+index).asDouble();
+							*targY = target->get(3+index).asDouble();
+							size   = target->get(4+index).asInt();
+							printf("Colour: %s  X: %.3f  Y: %.3f\n",
+									colour.c_str(),
+									*targX, *targY);
+
+							targetlogfile << colour << " " << *targX << " " << *targY;
+						}
+						else
+							continue;
+					}
+					else if(type.compare("motion")==0)
+					{
+						if(colourTest.compare(type)==0)
+						{
+							//TODO: Make use of the starting point and speed.
+							visible = true;
+							colour = "motion";
+							*targX = target->get(4+index).asDouble();
+							*targY = target->get(5+index).asDouble();
+							size = target->get(2+index).asDouble();
+							printf("Motion: %s  X: %.3f  Y: %.3f\n",
+									colour.c_str(),
+									*targX, *targY);
+
+							targetlogfile << colour << " " << *targX << " " << *targY;
+						}
+						else continue;
+					}
+					else if(type.compare("edge")==0)
+					{
+						if(colourTest.compare(type)==0)
+						{
+							//centre coordinates and edge coordinates give.
+							//randomly selecting one of the 4 coordinates to set as target
+							size = target->get(3+index).asDouble();	//TODO: Check these indices are correct
+							int edge = randGenerator(size) *2;
+							visible = true;
+							colour = "edge";
+							*targX = target->get(4+index+edge).asDouble();
+							*targY = target->get(4+index+edge+1).asDouble();
+							printf("Edge: %s  X: %.3f  Y: %.3f\n",
+									colour.c_str(),
+									*targX, *targY);
+
+							targetlogfile << colour << " " << *targX << " " << *targY;
+						}
+						else continue;
+					}
+					else if(type.compare("shape")==0)
+					{
+						colour = target->get(1+index).asString();
+						if(colourTest.compare(colour)==0)
+						{
+							//TODO: Make better use of shape information.
+							visible = true;
+
+							*targX = target->get(3+index).asDouble();
+							*targY = target->get(4+index).asDouble();
+							size = target->get(5+index).asDouble();
+							printf("Shape: %s  X: %.3f  Y: %.3f\n",
+									colour.c_str(),
+									*targX, *targY);
+
+							targetlogfile << colour << " " << *targX << " " << *targY;
+						}
+						else
+							continue;
+					}
+				}
+
+
+			}
+
 		}
 	}
 	visible = false;
@@ -243,14 +432,14 @@ string Target::getNearestObject(double* targX, double* targY, double* dist)
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
+			int numColours = size/colourElements;
 			for(int i=0; i<numColours; i++)
 			{
 				visible = true;
-				string col = target->get(i*elements).asString().c_str();
-				*targX = target->get(i*elements +1).asDouble();
-				*targY = target->get(i*elements +2).asDouble();
-				size   = target->get(i*elements +3).asInt();
+				string col = target->get(i*colourElements).asString().c_str();
+				*targX = target->get(i*colourElements +1).asDouble();
+				*targY = target->get(i*colourElements +2).asDouble();
+				size   = target->get(i*colourElements +3).asInt();
 
 				fovea(*targX, *targY, dist);
 				if(*dist < closestDist)
@@ -291,16 +480,16 @@ vector<string> Target::getNearestObjects()
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
+			int numColours = size/colourElements;
 			double distances[numColours];
 
 			for(int i=0; i<numColours; i++)
 			{
 				visible = true;
-				string col = target->get(i*elements).asString().c_str();
-				targX = target->get(i*elements +1).asDouble();
-				targY = target->get(i*elements +2).asDouble();
-				size   = target->get(i*elements +3).asInt();
+				string col = target->get(i*colourElements).asString().c_str();
+				targX = target->get(i*colourElements +1).asDouble();
+				targY = target->get(i*colourElements +2).asDouble();
+				size   = target->get(i*colourElements +3).asInt();
 
 				fovea(targX, targY, &dist);
 				distances[i] = dist;
@@ -320,7 +509,7 @@ vector<string> Target::getNearestObjects()
 						minDist = distances[j];
 					}
 				}
-				coloursDist.push_back(target->get(id*elements).asString().c_str());
+				coloursDist.push_back(target->get(id*colourElements).asString().c_str());
 				distances[id] = 10000;
 
 			}
@@ -344,14 +533,14 @@ std::string Target::getNearestTo(const int x, const int y, double* targX, double
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
+			int numColours = size/colourElements;
 			for(int i=0; i<numColours; i++)
 			{
 				visible = true;
-				string col = target->get(i*elements).asString().c_str();
-				*targX = target->get(i*elements +1).asDouble();
-				*targY = target->get(i*elements +2).asDouble();
-				size   = target->get(i*elements +3).asInt();
+				string col = target->get(i*colourElements).asString().c_str();
+				*targX = target->get(i*colourElements +1).asDouble();
+				*targY = target->get(i*colourElements +2).asDouble();
+				size   = target->get(i*colourElements +3).asInt();
 
 				*dist = sqrt((*targX - x)*(*targX - x) + (*targY - y)*(*targY - y));
 				if(*dist < closestDist)
@@ -429,99 +618,7 @@ bool Target::fovea(double x, double y, double* dist)
 }
 
 
-bool Target::uuGetTarget(double* targX, double* targY)
-{
-//	if(sentFixate)
-//	{
-//		*targX = lastX;
-//		*targY = lastY;
-//		return true;
-//	}
 
-	Time::delay(1.5);
-	Bottle& status = portUU.prepare();
-	status.clear();
-	if(requestROI)
-	{
-		status.addDouble(requestNewROI);
-		requestROI = false;
-	}
-	else
-		status.addDouble(whereIsROI);
-	portUU.write();
-
-	if (target = porttargetsright.read(1))	//blocking till target available?
-	{
-		visible = true;
-		colour = "Object";
-		*targX = target->get(0).asDouble();
-		*targY = target->get(1).asDouble();
-		if(*targX == -1 || *targY == -1)	//No target
-		{
-			visible = false;
-			*targX = 0;
-			*targY = 0;
-			printf("no target\n");
-			targetlogfile << "- 0 0 No target" << endl;
-			return false;
-		}
-		else if(*targX==-2 || *targY == -2)		//UU finished training
-		{
-			requestROI = true;
-			sentFixate = false;
-			return uuGetTarget(targX, targY);
-		}
-		else if(*targX==-3 || *targY == -3)		//no novel target
-		{
-			requestROI = true;
-			sentFixate = false;
-			return uuGetTarget(targX, targY);
-		}
-		else
-		{
-			*targX/=2;		//convert from 640 to 320 image
-			*targY/=2;		//convert from 480 to 240 image
-		}
-		printf("Colour: %s  X: %.3f  Y: %.3f\n",
-				colour.c_str(),
-				*targX, *targY);
-
-		targetlogfile << target->get(0).asString().c_str() << " " <<
-				*targX << " " << *targY;
-
-		double dist;
-		if(fovea(*targX, *targY, &dist))
-		{
-//			if(!sentFixate)
-//			{
-				Bottle& fixed = portUU.prepare();
-				fixed.clear();
-				fixed.addDouble(fixated);
-				portUU.write();
-				sentFixate = true;
-//			}
-			printf("Central\n");
-			targetlogfile << " " << dist << " Central";
-		}
-		else
-			targetlogfile << " " << dist;
-		targetlogfile << endl;
-		lastX = *targX;
-		lastY = *targY;
-
-		return true;
-
-	}
-	else
-	{
-		visible = false;
-		*targX = 0;
-		*targY = 0;
-		printf("no target\n");
-		targetlogfile << "- 0 0 No target" << endl;
-		return false;
-	}
-}
 
 
 bool Target::getLeft(double* targX, double* targY, string colourTest)
@@ -534,18 +631,18 @@ bool Target::getLeft(double* targX, double* targY, string colourTest)
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numColours = size/elements;
+			int numColours = size/colourElements;
 			for(int i=0; i<numColours; i++)
 			{
 				string col;
-				col = target->get(i*elements).asString();
+				col = target->get(i*colourElements).asString();
 				if(col.compare(colourTest)==0)
 				{
 					visible = true;
-					colour = target->get(i*elements).asString();
-					*targX = target->get(i*elements +1).asDouble();
-					*targY = target->get(i*elements +2).asDouble();
-					size   = target->get(i*elements +3).asInt();
+					colour = target->get(i*colourElements).asString();
+					*targX = target->get(i*colourElements +1).asDouble();
+					*targY = target->get(i*colourElements +2).asDouble();
+					size   = target->get(i*colourElements +3).asInt();
 					printf("LEFT Colour: %s  X: %.3f  Y: %.3f\n",
 							colour.c_str(),
 							*targX, *targY);
@@ -597,11 +694,6 @@ void Target::logSaccadeBreak(int saccadeCount)
 {
 	targetlogfile << "*******************************" << endl;
 	targetlogfile << "Starting saccade: " << saccadeCount << endl;
-	if(ulster)
-	{
-		requestROI = true;
-		sentFixate = false;
-	}
 }
 
 void Target::closeLog()

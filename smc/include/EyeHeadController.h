@@ -22,8 +22,6 @@
 #include <string>
 #include <time.h>
 
-const int eyeOnlyDuration = 30*60;		//time in seconds
-const int headDuration = 30*60;		//Total experiment time, 1hr
 const bool MOTOR_DYNAMIC_MAP = true;
 const bool RETINA_DYNAMIC_MAP = false;
 const int INPUT_MAP_TYPE = POLAR_MAP;
@@ -52,6 +50,7 @@ class EyeHeadSaccading
 {
 public:
 	EyeHeadSaccading(GazeMap* gm, Target* target);
+	EyeHeadSaccading(Target* target);
 	~EyeHeadSaccading();
 
 
@@ -63,7 +62,9 @@ public:
 	bool saveMaps();
 
 
-	int learnEyeSaccades(int maximum = 100);		//returns the number of saccades made
+
+
+	int learnEyeSaccades();		//returns the number of saccades made
 	int learnEyeHeadSaccades(int maximum = 100);
 
 	bool learn_iStyleHeadLinks();
@@ -143,6 +144,21 @@ public:
 	headSaccading* getHeadSaccader(){return headSac;}
 	headController* getHeadController(){return headCont;}
 
+	void setEyeHeadThreshold(double eyeHeadThreshold)
+	{
+		this->eyeHeadThreshold = eyeHeadThreshold;
+	}
+
+	void setEyeThreshold(double eyeThreshold)
+	{
+		this->eyeThreshold = eyeThreshold;
+	}
+
+	void setUseThresholds(bool useThresholds)
+	{
+		this->useThresholds = useThresholds;
+	}
+
 private:
 	bool initYarp();
 
@@ -174,15 +190,20 @@ private:
 
 	yarp::dev::PolyDriver *motordriver;
 
+	bool useThresholds;
+
 	//eye threshold
 	double eyeThreshold;		//Rolling average of the number of steps required for eye to fixate on target
 	double rollingAverage;			//based on number of steps used for the eye to fixate on a target
 	list<int> rollingBlock;			//The array used to calculate rolling averages for the eye threshold
 
+	int eyeOnlyDuration;		//time in seconds
+
+
 	//head threshold
 	double eyeHeadThreshold;
 	int combiThreshold;
-
+	int headDuration;		//Total experiment time, 1hr
 
 	//Stats
 	int eyeOnlyCounter;

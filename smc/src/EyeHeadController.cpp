@@ -19,8 +19,6 @@ using namespace yarp::dev;
 EyeHeadSaccading::EyeHeadSaccading(GazeMap* pGM, Target* ptarget)
 {
 	target = ptarget;
-//	synchronous = pSynch;
-//	nearestNeighbour = pNeigh;
 
 	initYarp();
 	init();
@@ -29,6 +27,24 @@ EyeHeadSaccading::EyeHeadSaccading(GazeMap* pGM, Target* ptarget)
 
 
 }
+
+
+/**
+ * This is currently only used by the BBcontroller, as the gazemap is not
+ * necessary.  If wanting to use this later, will have to pass the gazemap
+ * back, and link it in elsewhere.
+ */
+EyeHeadSaccading::EyeHeadSaccading(Target* ptarget)
+{
+	target = ptarget;
+
+	initYarp();
+	init();
+
+	gm = new GazeMap();	//TODO this will be lost unless passed back
+
+}
+
 
 EyeHeadSaccading::~EyeHeadSaccading()
 {
@@ -61,6 +77,10 @@ void EyeHeadSaccading::init()
 
 	eyeOnlyCounter = 0;	//eye saccades
 	saccadeCounter = 0;
+
+	eyeOnlyDuration = 30*60;
+	headDuration = 30*60;
+	useThresholds = true;
 
 	rollingAverage = 100;
 	eyeThreshold = 2.0;
@@ -151,22 +171,8 @@ bool EyeHeadSaccading::initMaps()
 	if(params.m_LOAD)
 		loadFile(params.m_FILENAME);
 
-	char in;
-	cout << "Should random moves be made between saccades? y/n" << endl;
-	cin >> in;
-	if(in == 'y')
-	{
-		randomMove = true;
-		cout << "Random starting points have been enabled" << endl;
-	}
-	else
-	{
-		randomMove = false;
-		cout << "Random moves will not be made between saccades" << endl;
-	}
+	randomMove = params.m_RANDOM_MOVES;
 
-
-	srand( time(NULL));
 	return true;
 }
 
@@ -326,14 +332,17 @@ void EyeHeadSaccading::initLogs()
 }
 
 
-int EyeHeadSaccading::learnEyeSaccades(int maximum)
+int EyeHeadSaccading::learnEyeSaccades()
 {
+
 	time_t startSeconds;
 	startSeconds = time(NULL);
 	int counter = 0;
 	time_t timeTaken = startSeconds-startSeconds;
+
 //	while(timeTaken < eyeOnlyDuration)	//learn for 1hr
-	while(rollingAverage > eyeThreshold && counter < maximum)
+//	while(rollingAverage > eyeThreshold)
+	while((useThresholds && (rollingAverage > eyeThreshold)) || (!useThresholds && (timeTaken < eyeOnlyDuration)))
 	{
 		bool success = eyeSaccade();
 		if(success)

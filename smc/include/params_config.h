@@ -20,6 +20,29 @@ bool const LEARN = true;
 bool const SYNCHRONOUS = false;
 bool const NEAREST_NEIGHBOUR = true;
 bool const SAFEMODE = true;
+bool const BASIC_VISION = false;
+
+
+unsigned char const COLOUR = 0x01;
+unsigned char const MOTION = 0x02;
+unsigned char const EDGE   = 0x03;
+unsigned char const SHAPE  = 0x04;
+
+/*
+ * to turn on bits:
+ *   unsigned char myflags = 0x00;
+ *   myflags |= COLOUR;
+ *   myflags |= MOTION;
+ *
+ * to turn off bits:
+ *   myflags &= ~EDGES;
+ *
+ * to toggle options:
+ *   myflags ^= SHAPE;
+ *
+ * to query bit states:
+ *   if(myflags & MOTION) ...//motion is set.
+ */
 
 
 struct var_params{
@@ -27,6 +50,11 @@ struct var_params{
 	std::string m_PATH="../../data/";
 	bool m_LOAD=true;
 	std::string m_ROBOT = "icubSim";
+
+	bool m_RANDOM_MOVES=true;
+
+	unsigned char m_VISION_FLAGS=COLOUR;
+
 }params;
 
 

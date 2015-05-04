@@ -151,17 +151,17 @@ void ShortTermMemory::update(int holdingObjectID)
 
 	if(size>0)
 	{
-		int numObjs = size/elements;
+		int numObjs = size/colourElements;
 		string colour;
 		double targX, targY, depth;
 		int size;
 
 		for(int i=0; i<numObjs; i++)
 		{
-			colour = bottle->get(i*elements).asString();
-			targX  = bottle->get(i*elements+1).asDouble();
-			targY  = bottle->get(i*elements+2).asDouble();
-			size   = bottle->get(i*elements+3).asInt();
+			colour = bottle->get(i*colourElements).asString();
+			targX  = bottle->get(i*colourElements+1).asDouble();
+			targY  = bottle->get(i*colourElements+2).asDouble();
+			size   = bottle->get(i*colourElements+3).asInt();
 
 			if(colour == "")
 				continue;

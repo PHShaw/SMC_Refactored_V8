@@ -120,7 +120,7 @@ int main(int argc, char* argv[])
 		params.m_ROBOT = "icubSim";
 	}
 
-	target = new Target(params.m_ROBOT);
+	target = new Target();
 
 	params.m_LOAD = false;
 //	string path, filename;
