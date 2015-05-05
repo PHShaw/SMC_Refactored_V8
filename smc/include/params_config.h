@@ -16,7 +16,7 @@
 //std::string static robot = "icubSimF";
 
 
-bool const LEARN = true;
+bool LEARN = true;	//TODO move this into var_params!
 bool const SYNCHRONOUS = false;
 bool const NEAREST_NEIGHBOUR = true;
 bool const SAFEMODE = true;

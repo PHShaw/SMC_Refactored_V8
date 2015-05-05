@@ -179,16 +179,9 @@ bool EyeHeadSaccading::initMaps()
 
 bool EyeHeadSaccading::loadFile(string filename)
 {
-//	cout << "Would you like to load an existing mapping? y/n" << endl;
-//	char in;
-//	cin >> in;
+
 	bool success = false;
-//	if (in == 'y')
-//	{
-//		cout << "Enter the path to the directory containing the files: e.g. ./ " <<endl;
-//		cin >> path;
-//		cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV9" << endl;
-//		cin >> filename;
+
 		FFM_IO io;
 
 		try{

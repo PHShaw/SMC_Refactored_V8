@@ -50,34 +50,37 @@
 
 #include "graspController.h"
 #include "monitor.h"
+#include "Excitation.h"
 
 /*
  * Various parameters are defined in params_config.h
  */
 
 void setVisionParams(int acuity, int fov);
+void setVisionModules();
+void learningMode();
+void experimentMode();
 
 /**
  * Startup routine:
  * 0. create target
- //* 1. create hand eye coordination - this is not required for this.
  * a. get path and filenames if needing to load up maps.
- * 2. load gazeReachMap, returning pointer to it
  * 3. create eye head controller
- * 4. create arm reaching
+ * 4. obtain arm controller for controlling the hand
  */
 
 EyeHeadSaccading* ehCont;
 graspController* grippy;
-armReaching* armReach;
 Target* target;
 
+using namespace smc;
 
 yarp::os::BufferedPort<yarp::os::Bottle> portReachCommands;
 yarp::os::BufferedPort<yarp::os::Bottle> portReachFeedback;
 yarp::os::Bottle* reachResponse;
 
 yarp::os::BufferedPort<yarp::os::Bottle> portVisionParameters;
+yarp::os::BufferedPort<yarp::os::Bottle> portVisionModules;
 
 void saveAndQuit(int param)
 {
@@ -171,12 +174,9 @@ int main(int argc, char* argv[])
 
 	target->initLog(params.m_PATH);
 
-	heCoor = new handEyeCoordination();
-	GazeMap* gm = heCoor->getGazeMap();
-	ehCont = new EyeHeadSaccading(gm, target);
-	armReach = new armReaching(gm);
-
-	grippy = new graspController(armReach->getArmController());
+	ehCont = new EyeHeadSaccading(target);
+	armController ac = new armController(true);	//grippy only.
+	grippy = new graspController(ac);
 
 	if(LEARN)
 		signal(SIGINT, saveAndQuit);
@@ -189,10 +189,13 @@ int main(int argc, char* argv[])
 	portReachFeedback.open("/smc/reaching/in");
 //	yarp.connect("/smc/reaching/out", "/aber/reach/control:i");		//Move to a yarp application manager
 //	yarp.connect("/aber/reach/status:o", "/smc/reaching/in");
+	//Reach feedback connects to /aber/reach/BBfeedback:o
 
 
 	portVisionParameters.open("/smc/vision/parameters/out");	//acuity / fov / brightness / threshold [string, int]
-	//This should be connected to both /target/{CAM}/parameter ports by yarp application manager.
+	//This connects to /target/parameter by yarp application manager.
+
+	portVisionModules.open("/smc/vision/modules/out");
 
 	char ready;
 	cout << "Make the connections then press a key to continue" << endl;
@@ -205,12 +208,87 @@ int main(int argc, char* argv[])
 
 	if(LEARN)
 	{
-		ehCont->setUseThresholds(true);
+		learningMode();
+	}
+	else //Experiment mode
+	{
+		//need to control eye, hand and arm using novelty excitations.
+		experimentMode();
+	}
+
+
+}
+
+/**
+ * Send configuration parameters to vision module for acuity and field of view.
+ *
+ * @param acuity 	int 	odd number - this is the size of the matrix used to blur the image.
+ * 											Larger numbers cause greater blurriness
+ * @param fov 		int 	percentatge of adult (full) field of view
+ *
+ * TODO add variable for processing types i.e. colour, motion, shape and edge.  This can be
+ * 			done with bitwise operations on an unsigned char.
+ *
+ */
+void setVisionParams(int acuity, int fov)
+{
+	if(acuity % 2 == 0)
+		acuity++;
+
+	yarp::os::Bottle& b = portVisionParameters.prepare();
+		b.clear();
+		b.addString("acuity");
+		b.addInt(acuity);	//accuity must be an odd number
+
+		b.addString("fov");
+		b.addInt(fov);	//percentage indicating FOV.
+	portVisionParameters.write();
+}
+
+/**
+ * This uses the params.visionFlags to turn relevant modules on and off.
+ */
+void setVisionModules()
+{
+	yarp::os::Bottle& b = portVisionModules.prepare();
+		b.clear();
+		b.addString("colour");
+		if(params.m_VISION_FLAGS & COLOUR)
+			b.addInt(1);	//enable
+		else
+			b.addInt(0);	//disable
+
+		b.addString("shape");
+		if(params.m_VISION_FLAGS & SHAPE)
+			b.addInt(1);	//enable
+		else
+			b.addInt(0);	//disable
+
+		b.addString("edge");
+		if(params.m_VISION_FLAGS & EDGE)
+			b.addInt(1);	//enable
+		else
+			b.addInt(0);	//disable
+
+		b.addString("motion");
+		if(params.m_VISION_FLAGS & MOTION)
+			b.addInt(1);	//enable
+		else
+			b.addInt(0);	//disable
+
+	portVisionModules.writer();
+}
+
+
+void learningMode()
+{
+	ehCont->setUseThresholds(true);
 		string filename = params.m_FILENAME;
 
 
 		//***********Weeks 0-1***********
 		params.m_VISION_FLAGS |= COLOUR;
+		setVisionModules();
 		setVisionParams(21,30);
 		ehCont->setEyeThreshold(4.0);
 		int numEyeSaccades = ehCont->learnEyeSaccades();
@@ -245,7 +323,7 @@ int main(int argc, char* argv[])
 
 		//***********Weeks 7-10***********
 		params.m_VISION_FLAGS |= MOTION;
-
+		setVisionModules();
 		setVisionParams(7,65);
 		ehCont->setEyeThreshold(1.2);
 		numEyeSaccades = ehCont->learnEyeSaccades();
@@ -258,6 +336,7 @@ int main(int argc, char* argv[])
 
 		//***********Weeks 10-13***********
 		params.m_VISION_FLAGS |= EDGE;
+		setVisionModules();
 		setVisionParams(9,70);
 		ehCont->setEyeThreshold(1.1);
 		numEyeSaccades = ehCont->learnEyeSaccades();
@@ -281,6 +360,7 @@ int main(int argc, char* argv[])
 
 		//***********Weeks 16-19***********
 		params.m_VISION_FLAGS |= SHAPE;
+		setVisionModules();
 		setVisionParams(13,85);
 		ehCont->setEyeThreshold(1.1);
 		numEyeSaccades = ehCont->learnEyeSaccades();
@@ -290,33 +370,31 @@ int main(int argc, char* argv[])
 		ehCont->saveMaps();
 
 		yarp::os::Time::delay(1.0);
-	}
-
 }
 
-/**
- * Send configuration parameters to vision module for acuity and field of view.
- *
- * @param acuity 	int 	odd number - this is the size of the matrix used to blur the image.
- * 											Larger numbers cause greater blurriness
- * @param fov 		int 	percentatge of adult (full) field of view
- *
- * TODO add variable for processing types i.e. colour, motion, shape and edge.  This can be
- * 			done with bitwise operations on an unsigned char.
- *
- */
-void setVisionParams(int acuity, int fov)
+
+
+void experimentMode()
 {
-	if(acuity % 2 == 0)
-		acuity++;
+	Excitation novelty(0.1);
 
-	yarp::os::Bottle& b = portVisionParameters.prepare();
-		b.clear();
-		b.addString("acuity");
-		b.addInt(acuity);	//accuity must be an odd number
+	LEARN = false;
+	string filename = params.m_FILENAME;
 
-		b.addString("fov");
-		b.addInt(fov);	//percentage indicating FOV.
-	portVisionParameters.write();
+	//connect to reaching
+	//initialise hand //TODO add fist and spread to grippy options.
+
+	//***********Weeks 0-1***********
+		params.m_VISION_FLAGS |= COLOUR;
+		setVisionModules();
+		setVisionParams(21,30);
+
+		//Load week 1 files
+		//Using global excitation, and current max, decide on actions and frequency/delays between actions.
+		params.m_FILENAME = filename+"1";
+
+
+
+
+
 }
-

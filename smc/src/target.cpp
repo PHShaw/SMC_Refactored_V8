@@ -97,6 +97,7 @@ bool Target::getTarget(double* targX, double* targY)
 			int col = randGenerator(numTargets);
 			printf("***********Number of targets detected: %i, Target selected: %i*************\n", numTargets, col);
 
+			//TODO More advanced visual features should be preferred over simpler features.
 
 			if(BASIC_VISION)
 			{
@@ -474,7 +475,7 @@ vector<string> Target::getNearestObjects()
 	double targX, targY, dist;
 	Time::delay(0.15);
 	bool found = false;
-
+//TODO need to consider vision flags when selecting target.
 	if(target = porttargetsright.read(0))
 	{
 		int size = target->size();	//[colour, x, y]
