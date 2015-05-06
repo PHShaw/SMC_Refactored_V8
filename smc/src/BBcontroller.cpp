@@ -66,6 +66,7 @@ bool experimentConfiguration(string stageName, int acuity, int fov, int reachSta
 void sendArmTarget(double x, double y, double z, bool right_arm);
 float getReachFeedback();
 bool getGazeCoordinates(double *x, double *y, double *z);
+void command(string cmd);
 
 /**
  * Startup routine:
@@ -183,7 +184,7 @@ int main(int argc, char* argv[])
 
 	ehCont = new EyeHeadSaccading(target);
 	armController* ac = new armController(true);	//grippy only.
-	grippy = new graspController(params.m_ROBOT, ac);
+	grippy = new graspController(params.m_ROBOT, ac, false);
 
 	if(params.LEARN)
 		signal(SIGINT, saveAndQuit);
@@ -449,6 +450,12 @@ void experimentMode()
 		reachSaturation = 0.57;
 
 		experimentConfiguration("4", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
+
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 
 
 	//***********Weeks 4-7***********
@@ -458,6 +465,12 @@ void experimentMode()
 		reachSaturation = 0.9;
 
 		experimentConfiguration("4", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
+
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 
 	//***********Weeks 7-10***********
 		params.m_VISION_FLAGS |= MOTION;
@@ -468,6 +481,12 @@ void experimentMode()
 		reachSaturation = 0.33;
 
 		experimentConfiguration("10", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
+
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 
 	//***********Weeks 10-13***********
 		params.m_VISION_FLAGS |= EDGE;
@@ -477,7 +496,12 @@ void experimentMode()
 		reachSaturation = 0.66;
 
 		experimentConfiguration("13", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
 
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 
 	//***********Weeks 13-16***********
 		acuity=11;
@@ -486,6 +510,12 @@ void experimentMode()
 		reachSaturation = 0.9;
 
 		experimentConfiguration("16", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
+
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 
 	//***********Weeks 16-19***********
 		params.m_VISION_FLAGS |= SHAPE;
@@ -495,6 +525,12 @@ void experimentMode()
 		reachSaturation = 0.33;
 
 		experimentConfiguration("19", acuity, fov, reachStage, reachSaturation);
+		bbExperiment(reachStage);
+
+		cout << "Finished stage 1-4" << endl;
+		yarp::os::Time::delay(10);
+
+		cout << "Moving to stage 4-7" << endl;
 }
 
 
@@ -581,9 +617,19 @@ void bbExperiment(int reachStage)
 						 */
 						int arm = randGenerator(2);	//0 or 1
 						if(arm == 0)
-							sendArmTarget(-0.28, -0.13, 0.13, false);
+							sendArmTarget(-0.35, -0.25, 0.30, false); //y -0.25 -> -0.05
 						else
-							sendArmTarget(-0.28, 0.13, 0.33, true);
+							sendArmTarget(-0.34, 0.05, 0.27, true);
+
+						float hand = novelty.getExcitation(smc::HAND);
+						activityLevel = randGenerator(10);
+						if(activityLevel<=(hand*10))
+						{
+							grippy->release(arm);
+						}
+						else
+							grippy->fist(arm);
+
 					}
 					else// if(reachStage==1 || reachStage==2)
 					{
@@ -593,20 +639,42 @@ void bbExperiment(int reachStage)
 						novelty.updateEyeExcitation(steps, success);
 						double x,y,z;
 						getGazeCoordinates(&x, &y, &z);
+						//x negative is forward
+						//can go up to -0.20
 						x /= 1000;	//TODO: Double check suitable ranges with Alex for the two stages.
+						if(reachStage==1 && x < -0.2)
+							x = -0.2;
+						else if(reachStage==2 && x < -0.35)
+							x = -0.35;
 						y /= 1000;
 						z /= 1000;
+						bool arm;
 						if(z>0){
-							sendArmTarget(x,y,z, true);
+							arm = true;
+							sendArmTarget(x,y,z, arm);
 						}
 						else
-							sendArmTarget(x,y,z, false);
+						{
+							arm = false;
+							sendArmTarget(x,y,z, arm);
+						}
+
+						float hand = novelty.getExcitation(smc::HAND);
+						activityLevel = randGenerator(10);
+						if(activityLevel<=(hand*10))
+						{
+							grippy->release(arm);
+						}
+						else
+							grippy->fist(arm);
+
 					}
-					//wait till reach finished?
+					//TODO:wait till reach finished?
 					//Get feedback from reaching
 					float dist = getReachFeedback();
 					novelty.updateReachExcitation(dist);
-
+					//TODO: Return hand to home position;
+					command("home");
 					break;
 				}
 				default:
@@ -643,9 +711,23 @@ void sendArmTarget(double x, double y, double z, bool right_arm)
 
 float getReachFeedback()
 {
+	/*
+	   do{
+			yarp::os::Time::delay(0.3);
+			reachResponse=portIn.read(true);
+			message = reachResponse->get(0).asString().c_str();
+			cout << "received: " << message << endl;
+		}while(message.compare("complete")!=0);
+		dist = reachResponse->get(1).asDouble();
+		cout << "Reach distance: " << dist;
+	 */
+
+
+
+	//[stage] [dist] ?
 	float dist;
 	yarp::os::Bottle* target = portReachFeedback.read(0);
-	dist = target->get(0).asDouble();	//TODO check with Alex what data is actually being sent here.
+	dist = target->get(1).asDouble();	//TODO check with Alex what data is actually being sent here.
 
 	return dist;
 }
@@ -663,4 +745,13 @@ bool getGazeCoordinates(double *x, double *y, double *z)
 	CalculateTargetWorldRef(torsoMotorConfig, headMotorConfig, x, y, z);	// returned in mm
 	cout << "The gaze point in world space is: (" << *x << ", " << *y << ", " << *z << ")" << endl;
 	return success;
+}
+
+void command(string cmd)
+{
+	//Send command to reaching
+	yarp::os::Bottle& b = portOut.prepare();
+	b.clear();
+	b.addString(cmd.c_str());
+	portOut.write(true);
 }

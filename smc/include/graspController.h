@@ -28,7 +28,8 @@ class graspController //: public armController
 {
 	public:
 
-		graspController(std::string robot, armController* arm);
+		graspController(std::string robot, armController* arm, bool skin=true);
+
 		bool initGrasp(std::string robot);
 		bool move(const double* position,bool block=true, const bool rightArm=true);
 		bool handsStationary();
@@ -37,6 +38,8 @@ class graspController //: public armController
 		bool release(bool rightArm=true);
 		bool openThumb(bool rightArm);
 		bool closeThumb(bool rightArm);
+
+		bool fist(bool rightArm);
 
 		bool isHolding(){return grasping;}
 
@@ -51,6 +54,7 @@ class graspController //: public armController
 		yarp::os::Bottle* data;
 
 		bool grasping;
+		bool skin;
 //		bool handEmpty;
 
 		float avgRight[SENSORS];

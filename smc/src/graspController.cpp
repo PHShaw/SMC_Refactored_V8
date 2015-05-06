@@ -20,10 +20,12 @@ using namespace std;
 using namespace yarp::os;
 using namespace yarp::dev;
 
-graspController::graspController(string robot, armController* arm)
+graspController::graspController(string robot, armController* arm, bool useSkin)
 {
 	//Calls constructor on armController first... grrrrr
 //	board=false;
+
+	skin = useSkin;
 
 //	initYarp();
 	ac = arm;
@@ -67,6 +69,10 @@ bool graspController::initGrasp(string robot)
 #ifdef LEFT_ARM
 	inputLeft= portLeft.read();
 #endif
+
+	if(skin)
+	{
+
 
 	//collect skin data for some time, and compute the 95% percentile
 	float skinRight[SAMPLES][SENSORS];
@@ -214,7 +220,7 @@ bool graspController::initGrasp(string robot)
 	cout << "   " << left  << endl;
 #endif
 
-
+	}
 //	delete skinLeft;
 //	delete skinRight;
 //	delete varLeft;
@@ -754,6 +760,23 @@ bool graspController::release(bool rightArm)
 //	move(currentArmPose, true, rightArm);
 	return !grasping;
 }
+
+bool graspController::fist(bool rightArm)
+{
+	double* currentArmPose = new double[16];
+	ac->getCurrentPosition(currentArmPose,rightArm);
+
+	currentArmPose[8] = 85;
+	currentArmPose[9] = 5;
+	currentArmPose[10] = 40;
+	currentArmPose[11] = 60;
+	currentArmPose[12] = 60;
+	currentArmPose[13] = 60;
+	currentArmPose[14] = 60;
+	currentArmPose[15] = 120;
+
+}
+
 
 bool graspController::openThumb(bool rightArm)
 {
