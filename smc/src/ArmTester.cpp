@@ -43,6 +43,10 @@ GazeMap* gm;
 
 string path;
 string filename;
+var_params params;
+
+
+
 
 yarp::os::BufferedPort<yarp::os::Bottle> portOut;
 yarp::os::BufferedPort<yarp::os::Bottle> portIn;
@@ -146,6 +150,9 @@ void quit(int param)
 
 int main(int argc, char* argv[])
 {
+
+	params.LEARN = true;
+
 	srand( time(NULL));
 	yarp::os::Property options;
 	if(argc>=2)
@@ -220,9 +227,9 @@ int main(int argc, char* argv[])
 	graspController* grippy;
 
 	heCoor->init(ehCont, armReach, target);
-	grippy = new graspController(armReach->getArmController());
+	grippy = new graspController(params.m_ROBOT, armReach->getArmController());
 
-	if(LEARN)
+	if(params.LEARN)
 		signal(SIGINT, saveAndQuit);
 	else
 		signal(SIGINT, quit);
@@ -1108,7 +1115,7 @@ int main(int argc, char* argv[])
 #endif
 
 
-	if(LEARN)
+	if(params.LEARN)
 		saveAndQuit(0);
 	else
 		quit(0);

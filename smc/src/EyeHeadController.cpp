@@ -66,7 +66,7 @@ void EyeHeadSaccading::init()
 	cout << "Eye controllers initialised" << endl;
 
 	headCont = new headController(motordriver);
-	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
+	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, params.LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
 
 	cout << "Head controllers initialised" << endl;
 
@@ -153,14 +153,14 @@ void EyeHeadSaccading::smallBabble(double maxRange)
 
 bool EyeHeadSaccading::initMaps()
 {
-
-		eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, 320.f,   0.f, 240.f,
+//TODO: Adjust this to use parameters of retina dimensions from params_config.h
+		eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, RETINA_WIDTH,   0.f, RETINA_HEIGHT,
 						  OUTPUT_MAP_TYPE,  -60.f,  60.f, -53.f,  53.f);
 							//relative motor values
 
 	//Head vision now in eye-head gaze space, y should have max 360, but need
 	//to keep fovea in same location as in retina map.
-		head_ppm = new ffm(INPUT_MAP_TYPE, -310.f, 630.f, -270.f, 510.f,
+		head_ppm = new ffm(INPUT_MAP_TYPE, -1*RETINA_WIDTH, 2*RETINA_WIDTH, -1*RETINA_HEIGHT, 2*RETINA_HEIGHT,
 					       OUTPUT_MAP_TYPE,   -101.f, 101.f,  -56.f,  56.f);
 								//relative motor values
 //	size_t numFields;
@@ -171,7 +171,7 @@ bool EyeHeadSaccading::initMaps()
 	if(params.m_LOAD)
 		loadFile(params.m_FILENAME);
 
-	randomMove = params.m_RANDOM_MOVES;
+	randomMove = RANDOM_MOVES;
 
 	return true;
 }
@@ -193,7 +193,7 @@ bool EyeHeadSaccading::loadFile(string filename)
 		catch(const IMapException & ime)
 		{
 			cout << "Error trying to load eye mappings, generating blank mapping" << endl;
-				eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, 320.f,   0.f, 240.f,
+				eye_ppm = new ffm(INPUT_MAP_TYPE,  0.f, RETINA_WIDTH,   0.f, RETINA_HEIGHT,
 								  OUTPUT_MAP_TYPE,  -60.f,  60.f, -53.f,  53.f);
 									//relative motor values
 		}
@@ -206,7 +206,7 @@ bool EyeHeadSaccading::loadFile(string filename)
 		catch(const IMapException & ime)
 		{
 			cout << "Error trying to load head mappings, generating blank mapping" << endl;
-				head_ppm = new ffm(INPUT_MAP_TYPE, -310.f, 630.f, -270.f, 510.f,
+				head_ppm = new ffm(INPUT_MAP_TYPE, -1*RETINA_WIDTH, 2*RETINA_WIDTH, -1*RETINA_HEIGHT, 2*RETINA_HEIGHT,
 								   OUTPUT_MAP_TYPE,   -101.f, 101.f,  -56.f,  56.f);
 		}
 
@@ -381,7 +381,7 @@ bool EyeHeadSaccading::fixate(double targX, double targY, string colour, bool si
 
 	if(!success && !simple)
 	{
-		centreEyesInHead();
+//		centreEyesInHead(); //TODO, make this check if using head yet or not!!
 		saccadeCounter++;
 		success = eyeSac->saccade(saccadeCounter,targX, targY, colour);
 	}
@@ -605,7 +605,7 @@ bool EyeHeadSaccading::eyeSaccade(){	//extract from main method on motorControll
 	eyeStats();
 
 
-	if(LEARN)
+	if(params.LEARN)
 	{
 		addGazeField();
 	}
@@ -807,7 +807,7 @@ bool EyeHeadSaccading::eyeHeadSaccade(){		//extract of main method from motorCon
 		eyeStats();
 		headStats();
 
-		if(LEARN && target->targetCentred(&targX, &targY, startColour))
+		if(params.LEARN && target->targetCentred(&targX, &targY, startColour))
 		{
 			addGazeField();
 		}
@@ -1025,7 +1025,7 @@ bool EyeHeadSaccading::learn_iStyleHeadLinks()
 		counter ++;
 
 
-		if(LEARN)
+		if(params.LEARN)
 		{
 			addGazeField();
 		}
@@ -1504,7 +1504,7 @@ bool EyeHeadSaccading::checkCombiLinks(double targX, double targY, string colour
 				//make small eye saccade to target
 	//			bool success = eyeSac->simpleSaccade(targX, targY, colour);
 	//			bool success = eyeSac->saccade(saccadeCounter,targX,targY,colour);
-				if(LEARN)
+				if(params.LEARN)
 				{
 					FieldLink* link = eye_ppm->getLink(eyeInput, eyeOutput);
 					link->useField();
@@ -1562,7 +1562,7 @@ bool EyeHeadSaccading::checkCombiLinks(double targX, double targY, string colour
 		{
 			autoCenter(colour);
 			//Increment usage counts for all of the fields involved
-			if(LEARN)
+			if(params.LEARN)
 			{
 				PolarField* eyeInput = new PolarField();
 				PolarField* headInput = new PolarField();

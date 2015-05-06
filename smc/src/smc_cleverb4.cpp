@@ -3,6 +3,7 @@
 
 using namespace std;
 
+var_params params;
 
 bool initYarp()
 {
@@ -67,7 +68,7 @@ bool init(int argc, char* argv[])
 		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]+F" << endl;
 		robot = "icubSim";
 	}
-
+	params.m_LOAD = true;
 	if(options.check("path",val))
 	{
 		path = val->asString().c_str();
@@ -92,13 +93,12 @@ bool init(int argc, char* argv[])
 		cin >> filename;
 	}
 	target->initLog(path);
-	bool load = true;
 
-	heCoor = new handEyeCoordination(load, path, filename);
+	heCoor = new handEyeCoordination();
 	GazeMap* gm = heCoor->getGazeMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, LEARN);
-	armReach = new armReaching(robot, gm, LEARN, safe);
-	heCoor->init(ehCont, armReach, target, LEARN);
+	ehCont = new EyeHeadSaccading(gm, target);
+	armReach = new armReaching(gm);
+	heCoor->init(ehCont, armReach, target);
 	stm = new ShortTermMemory(target, ehCont);
 
 	ehCont->getEyeController()->verg(5,false);

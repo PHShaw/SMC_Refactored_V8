@@ -355,6 +355,8 @@ void testPeripheralPerceptions(EyeHeadSaccading* ehCont)
 		int size = bottle->size();
 		if(size>0)
 		{
+			//TODO THIS NEEDS TO BE UPDATED TO HANDLE NEW VISION
+			int colourElements =4;
 			int numObjs = size/colourElements;
 			string colour;
 			double targX, targY, gX, gY;

@@ -53,7 +53,7 @@ bool Target::initTarget(string robot)
 		porttargetsleft.open("/targetSim/left/read");
 		porttargetsright.open("/targetSim/right/read");
 
-		yarp.connect("/targetSim/left/data", "/targetSim/left/read");	//TODO move these you yarp manager
+		yarp.connect("/targetSim/left/data", "/targetSim/left/read");	//TODO move these to use yarp manager
 		yarp.connect("/targetSim/right/data", "/targetSim/right/read");
 	}
 	else
@@ -87,7 +87,7 @@ bool Target::getTarget(double* targX, double* targY)
 				for(int i=0; i<size;)
 				{
 					numTargets++;
-					string type = target->get(i).asString();
+					string type = target->get(i).asString().c_str();
 					numElements = targetTypes[type];
 
 					i+= numElements;
@@ -96,8 +96,10 @@ bool Target::getTarget(double* targX, double* targY)
 
 			int col = randGenerator(numTargets);
 			printf("***********Number of targets detected: %i, Target selected: %i*************\n", numTargets, col);
-
+			//TODO need to consider vision flags when selecting target.
 			//TODO More advanced visual features should be preferred over simpler features.
+			//TODO For the novelty system, ideally need to know how many of each type of target
+			//			are currently visible.  Add method that can be called to find this out.
 
 			if(BASIC_VISION)
 			{
@@ -121,12 +123,12 @@ bool Target::getTarget(double* targX, double* targY)
 				while(index<size && numTargets!=col)
 				{
 					numTargets++;
-					string type = target->get(index).asString();
+					string type = target->get(index).asString().c_str();
 					numElements = targetTypes[type];
 
 					index+= numElements;
 				}
-				string type = target->get(index).asString();
+				string type = target->get(index).asString().c_str();
 				if(type.compare("colour")==0)
 				{
 					visible = true;
@@ -247,7 +249,7 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 				for(int i=0; i<size;)
 				{
 					numTargets++;
-					string type = target->get(i).asString();
+					string type = target->get(i).asString().c_str();
 					numElements = targetTypes[type];
 
 					i+= numElements;
@@ -297,7 +299,7 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 				while(index<size)
 				{
 					numTargets++;
-					string type = target->get(index).asString();
+					string type = target->get(index).asString().c_str();
 					numElements = targetTypes[type];
 
 					index+= numElements;
@@ -475,7 +477,7 @@ vector<string> Target::getNearestObjects()
 	double targX, targY, dist;
 	Time::delay(0.15);
 	bool found = false;
-//TODO need to consider vision flags when selecting target.
+
 	if(target = porttargetsright.read(0))
 	{
 		int size = target->size();	//[colour, x, y]
@@ -601,12 +603,12 @@ bool Target::targetCentred()
 
 bool Target::fovea(double x, double y, double* dist)
 {
-	int centreX = 320/2;
-	int centreY = 240/2;
+	int centreX = RETINA_WIDTH/2;
+	int centreY = RETINA_HEIGHT/2;
 
 
 	*dist = sqrt((x - centreX)*(x - centreX) + (y - centreY)*(y - centreY));
-	if(*dist <= 16)
+	if(*dist <= 0.05*RETINA_WIDTH)
 	{
 		centred = true;
 		return true;

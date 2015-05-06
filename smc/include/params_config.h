@@ -9,6 +9,8 @@
 #ifndef SMC_PARAMETER_CONFIGURATION
 	#define SMC_PARAMETER_CONFIGURATION
 
+#include <string>
+
 //std::string static robot;
 //std::string static robot = "icub";
 //std::string static robot = "icubF";		//preferred
@@ -16,17 +18,19 @@
 //std::string static robot = "icubSimF";
 
 
-bool LEARN = true;	//TODO move this into var_params!
-bool const SYNCHRONOUS = false;
-bool const NEAREST_NEIGHBOUR = true;
-bool const SAFEMODE = true;
-bool const BASIC_VISION = false;
+ bool const SYNCHRONOUS = false;
+ bool const NEAREST_NEIGHBOUR = true;
+ bool const RANDOM_MOVES=true;
+ bool const SAFEMODE = true;
+ bool const BASIC_VISION = false;
 
+ float const RETINA_WIDTH = 640.f;	// OR 320
+ float const RETINA_HEIGHT = 480.f; 	// OR 240
 
-unsigned char const COLOUR = 0x01;
-unsigned char const MOTION = 0x02;
-unsigned char const EDGE   = 0x03;
-unsigned char const SHAPE  = 0x04;
+ unsigned char const COLOUR = 0x01;
+ unsigned char const MOTION = 0x02;
+ unsigned char const EDGE   = 0x03;
+ unsigned char const SHAPE  = 0x04;
 
 /*
  * to turn on bits:
@@ -46,16 +50,17 @@ unsigned char const SHAPE  = 0x04;
 
 
 struct var_params{
-	std::string m_FILENAME = "testXV10";
-	std::string m_PATH="../../data/";
-	bool m_LOAD=true;
-	std::string m_ROBOT = "icubSim";
+	bool LEARN;
+	std::string m_FILENAME;// = "testXV10";
+	std::string m_PATH;//="../../data/";
+	bool m_LOAD;//=true;
+	std::string m_ROBOT;// = "icubSim";
 
-	bool m_RANDOM_MOVES=true;
 
-	unsigned char m_VISION_FLAGS=COLOUR;
 
-}params;
+	unsigned char m_VISION_FLAGS; //=COLOUR;
+
+}extern params;
 
 
 #endif

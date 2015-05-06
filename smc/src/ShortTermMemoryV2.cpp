@@ -130,6 +130,7 @@ void ShortTermMemory::update(int holdingObjectID)
 {
 	Bottle* bottle = target->getAllTargets();
 
+
 	for(multimap<object*, GazeField*>::iterator it = objectToFieldMemory.begin();
 			it!=objectToFieldMemory.end();
 			++it)
@@ -148,7 +149,8 @@ void ShortTermMemory::update(int holdingObjectID)
 		bottle = target->getAllTargets();
 		size = bottle->size();
 	}
-
+//TODO THIS NEEDS TO BE UPDATED TO HANDLE NEW VISION
+	int colourElements =4;
 	if(size>0)
 	{
 		int numObjs = size/colourElements;

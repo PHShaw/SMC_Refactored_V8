@@ -6,7 +6,7 @@
  */
 
 #include "Excitation.h"
-#include "params_config.h"
+
 
 using namespace std;
 
@@ -35,9 +35,9 @@ Excitation::~Excitation()
 	{
 		unsigned int elements = subsystems.size();
 		globalExcitation = 0;
-		for(auto& x: subsystems)
+		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
 		{
-			globalExcitation += x.second;
+			globalExcitation += it->second;
 		}
 		globalExcitation /= elements;
 	}
@@ -46,10 +46,10 @@ Excitation::~Excitation()
 	{
 		float max = 0;
 		System element;
-		for(auto& x: subsystems)
+		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
 		{
-			if(x.second>max)
-				element = x.first;
+			if(it->second>max)
+				element = it->first;
 		}
 		return element;
 	}
@@ -96,10 +96,12 @@ Excitation::~Excitation()
 	 * This version is used when not learning, and is purely based on the number of steps.
 	 * excitation is high when not many steps are required.
 	 */
-	void Excitation::updateEyeExcitation(int steps)
+	void Excitation::updateEyeExcitation(int steps, bool success)
 	{
 		//1 step is the best, more than that is bad.  1st saccade could be as bad as 100.
 		float excitation = log(steps/10.0)*-1;	//100 -> -1
+		if(!success)
+			excitation/=2;
 		float current = subsystems[EYE];
 		excitation += current;
 		excitation /= 2;
@@ -257,6 +259,11 @@ Excitation::~Excitation()
 	}
 
 
+	float Excitation::getExcitation(System system)
+	{
+		return subsystems[system];
+	}
+
  	void Excitation::decay(System subsystem)
 	{
 		float current = subsystems[subsystem];
@@ -266,6 +273,15 @@ Excitation::~Excitation()
 		}
 		updateGlobalExcitation();
 	}
+
+ 	void Excitation::printExcitations()
+ 	{
+ 		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
+		{
+			cout << "[" << it->first << ":" << it->second << "] ";
+		}
+ 		cout << endl;
+ 	}
 
 } /* namespace smc */
 

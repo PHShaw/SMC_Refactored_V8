@@ -52,6 +52,8 @@
 #include "monitor.h"
 #include "Excitation.h"
 
+using namespace smc;
+
 /*
  * Various parameters are defined in params_config.h
  */
@@ -60,6 +62,10 @@ void setVisionParams(int acuity, int fov);
 void setVisionModules();
 void learningMode();
 void experimentMode();
+bool experimentConfiguration(string stageName, int acuity, int fov, int reachStage, float reachSaturation);
+void sendArmTarget(double x, double y, double z, bool right_arm);
+float getReachFeedback();
+bool getGazeCoordinates(double *x, double *y, double *z);
 
 /**
  * Startup routine:
@@ -72,8 +78,10 @@ void experimentMode();
 EyeHeadSaccading* ehCont;
 graspController* grippy;
 Target* target;
+Excitation novelty(0.1);
+var_params params;
 
-using namespace smc;
+
 
 yarp::os::BufferedPort<yarp::os::Bottle> portReachCommands;
 yarp::os::BufferedPort<yarp::os::Bottle> portReachFeedback;
@@ -88,7 +96,6 @@ void saveAndQuit(int param)
 	ehCont->closeLogs();
 
 	ehCont->saveMaps();
-	saveGazeMap();
 
 	delete ehCont;
 
@@ -131,14 +138,14 @@ int main(int argc, char* argv[])
 
 	if(options.check("path",val))
 	{
-		path = val->asString().c_str();
+		params.m_PATH = val->asString().c_str();
 		params.m_LOAD = true;
-		cout << "Loading files from path: " << path << endl;
+		cout << "Loading files from path: " << params.m_PATH << endl;
 
 		if(options.check("name",val))
 		{
 			params.m_FILENAME = val->asString().c_str();
-			cout << "Loading file set: " << filename << endl;
+			cout << "Loading file set: " << params.m_FILENAME << endl;
 		}
 		else
 		{
@@ -175,10 +182,10 @@ int main(int argc, char* argv[])
 	target->initLog(params.m_PATH);
 
 	ehCont = new EyeHeadSaccading(target);
-	armController ac = new armController(true);	//grippy only.
-	grippy = new graspController(ac);
+	armController* ac = new armController(true);	//grippy only.
+	grippy = new graspController(params.m_ROBOT, ac);
 
-	if(LEARN)
+	if(params.LEARN)
 		signal(SIGINT, saveAndQuit);
 	else
 		signal(SIGINT, quit);
@@ -206,7 +213,7 @@ int main(int argc, char* argv[])
 
 	//in learning mode, trigger learning with specified thresholds.  Save mappings in between.
 
-	if(LEARN)
+	if(params.LEARN)
 	{
 		learningMode();
 	}
@@ -225,9 +232,6 @@ int main(int argc, char* argv[])
  * @param acuity 	int 	odd number - this is the size of the matrix used to blur the image.
  * 											Larger numbers cause greater blurriness
  * @param fov 		int 	percentatge of adult (full) field of view
- *
- * TODO add variable for processing types i.e. colour, motion, shape and edge.  This can be
- * 			done with bitwise operations on an unsigned char.
  *
  */
 void setVisionParams(int acuity, int fov)
@@ -276,20 +280,27 @@ void setVisionModules()
 		else
 			b.addInt(0);	//disable
 
-	portVisionModules.writer();
+	portVisionModules.write();
 }
 
 
 void learningMode()
 {
+	ehCont->getEyeController()->verg(10,true);
+
+
 	ehCont->setUseThresholds(true);
 		string filename = params.m_FILENAME;
 
+		int acuity,fov;	//Acuity has a range from 1 to 199, and must be odd.
+						//TODO The numbers used will need to be tuned once vision is running on the iCub.
 
 		//***********Weeks 0-1***********
 		params.m_VISION_FLAGS |= COLOUR;
 		setVisionModules();
-		setVisionParams(21,30);
+		acuity = 21;
+		fov = 30;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(4.0);
 		int numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 0-1: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -300,7 +311,9 @@ void learningMode()
 		yarp::os::Time::delay(1.0);
 
 		//***********Weeks 1-4***********
-		setVisionParams(17,45);
+		acuity=17;
+		fov=45;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(2.0);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 1-4: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -311,7 +324,9 @@ void learningMode()
 		yarp::os::Time::delay(1.0);
 
 		//***********Weeks 4-7***********
-		setVisionParams(5,55);
+		acuity=5;
+		fov=55;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(1.5);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 4-7: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -324,7 +339,9 @@ void learningMode()
 		//***********Weeks 7-10***********
 		params.m_VISION_FLAGS |= MOTION;
 		setVisionModules();
-		setVisionParams(7,65);
+		acuity=7;
+		fov=65;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(1.2);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 7-10: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -337,7 +354,9 @@ void learningMode()
 		//***********Weeks 10-13***********
 		params.m_VISION_FLAGS |= EDGE;
 		setVisionModules();
-		setVisionParams(9,70);
+		acuity=9;
+		fov=70;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(1.1);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 10-13: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -348,7 +367,9 @@ void learningMode()
 		yarp::os::Time::delay(1.0);
 
 		//***********Weeks 13-16***********
-		setVisionParams(11,80);
+		acuity=11;
+		fov=80;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(1.1);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 13-16: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -361,7 +382,9 @@ void learningMode()
 		//***********Weeks 16-19***********
 		params.m_VISION_FLAGS |= SHAPE;
 		setVisionModules();
-		setVisionParams(13,85);
+		acuity=13;
+		fov=85;
+		setVisionParams(acuity,fov);
 		ehCont->setEyeThreshold(1.1);
 		numEyeSaccades = ehCont->learnEyeSaccades();
 		cout << "***********Weeks 16-19: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -376,9 +399,16 @@ void learningMode()
 
 void experimentMode()
 {
-	Excitation novelty(0.1);
+	//TODO: Set vergence angle;
+	ehCont->getEyeController()->verg(10,true);
 
-	LEARN = false;
+
+	int acuity,fov;
+	int reachStage;
+	float reachSaturation;
+
+
+	params.LEARN = false;
 	string filename = params.m_FILENAME;
 
 	//connect to reaching
@@ -387,14 +417,250 @@ void experimentMode()
 	//***********Weeks 0-1***********
 		params.m_VISION_FLAGS |= COLOUR;
 		setVisionModules();
-		setVisionParams(21,30);
+		acuity = 21;
+		fov = 30;
+		setVisionParams(acuity,fov);
 
-		//Load week 1 files
+
+		reachStage=0;
+		reachSaturation=0.14;	//predefined saturation threshold for learning.
+								//Ideally this should come from learning, integrated with vision control.
+
+		//Load week 1 eye mapping files
+		filename = params.m_FILENAME+"1";
+		ehCont->loadFile(filename);
+		int links = ehCont->getEyeMap()->getNumGoodLinks();	//good coverage typically around 500 links.
+		float saturation = links/500 * 100.0;
+		novelty.setEyeExcitation((int)saturation);
+
+		//Set up the current levels of excitation.
+		novelty.setFovealExcitation(acuity,fov);
+		novelty.setRetinaExcitation();	//takes parameters from params.m_vision_flags.
+		novelty.setReachExcitation(reachStage, reachSaturation);
+
+
 		//Using global excitation, and current max, decide on actions and frequency/delays between actions.
-		params.m_FILENAME = filename+"1";
+
+		//TODO Acuity still needs to be tuned once running on iCub.
+	//***********Weeks 1-4***********
+		acuity = 17;
+		fov = 45;
+		reachStage = 0;
+		reachSaturation = 0.57;
+
+		experimentConfiguration("4", acuity, fov, reachStage, reachSaturation);
 
 
+	//***********Weeks 4-7***********
+		acuity=5;
+		fov=55;
+		reachStage = 0;
+		reachSaturation = 0.9;
+
+		experimentConfiguration("4", acuity, fov, reachStage, reachSaturation);
+
+	//***********Weeks 7-10***********
+		params.m_VISION_FLAGS |= MOTION;
+		setVisionModules();
+		acuity=7;
+		fov=65;
+		reachStage = 1;
+		reachSaturation = 0.33;
+
+		experimentConfiguration("10", acuity, fov, reachStage, reachSaturation);
+
+	//***********Weeks 10-13***********
+		params.m_VISION_FLAGS |= EDGE;
+		acuity=9;
+		fov=70;
+		reachStage = 1;
+		reachSaturation = 0.66;
+
+		experimentConfiguration("13", acuity, fov, reachStage, reachSaturation);
 
 
+	//***********Weeks 13-16***********
+		acuity=11;
+		fov=80;
+		reachStage = 1;
+		reachSaturation = 0.9;
 
+		experimentConfiguration("16", acuity, fov, reachStage, reachSaturation);
+
+	//***********Weeks 16-19***********
+		params.m_VISION_FLAGS |= SHAPE;
+		acuity=13;
+		fov=85;
+		reachStage = 2;
+		reachSaturation = 0.33;
+
+		experimentConfiguration("19", acuity, fov, reachStage, reachSaturation);
+}
+
+
+bool experimentConfiguration(string stageName, int acuity, int fov, int reachStage, float reachSaturation)
+{
+	float eyeLinkSaturationPoint = 500.0;
+
+	setVisionModules();
+	setVisionParams(acuity,fov);
+
+	//Load week X eye mapping files
+	string filename = params.m_FILENAME+stageName;
+	bool success = ehCont->loadFile(filename);
+	int links = ehCont->getEyeMap()->getNumGoodLinks();	//good coverage typically around 500 links.
+	float saturation = links/eyeLinkSaturationPoint * 100.0;
+	novelty.setEyeExcitation((int)saturation);
+	novelty.setReachExcitation(reachStage, reachSaturation);
+
+	//Update up the current levels of excitation.
+	novelty.updateFovealExcitation(acuity,fov);
+	novelty.updateRetinaExcitation();	//takes parameters from params.m_vision_flags.
+
+
+	return success;
+}
+
+
+void bbExperiment(int reachStage)
+{
+	//Get global excitation [0..1] decide on activity level
+	//Get most excited subsystem, and perform action using that subsystem
+	//Decay?
+
+	//Retina, fovea, eye -> eye saccade
+	//Arm, hand -> reach
+
+	//duration of experiment.
+	time_t experimentDuration = 150;
+	//2* blocks (1 fast (30s), 1 slow (60s), 60s gap between blocks, total time 2:30s)
+
+	time_t startSeconds;
+	startSeconds = time(NULL);
+	int counter = 0;
+	time_t timeTaken = startSeconds-startSeconds;
+	while(timeTaken < experimentDuration)
+	{
+		float globalEx = novelty.getGlobalExcitation();		//returns a number between 0 and 1.
+		printf("Global Excitation: %f.2\n", globalEx);
+
+		System excited = novelty.getMaxExcitation();
+		cout << "Most excited subsystem: " << excited << endl;
+
+		int activityLevel = randGenerator(10);
+		if(activityLevel<=(globalEx*10))
+		{
+			//perform an action
+			switch (excited){
+				case RETINA:
+				case FOVEAL:
+				case EYE:
+				{
+					bool success = ehCont->fixate();
+					int steps = ehCont->getEyeSaccader()->getStepCounter();
+						//update novelty.
+						//if not managed to fixate, novelty should be going down.
+						//but likely to be a large number of steps as well, before failure.
+					novelty.updateEyeExcitation(steps, success);
+					break;
+				}
+				case ARM:
+				case smc::HAND:
+				{
+					// if excitation for hand is high, then want to open hand, otherwise hand should be fisted
+					//need to take into account reach stage, to select reach target.  In later stages, this will
+					//be preceded by a saccade to get the location of the visual target.
+
+					//TODO incorportate the hand control here!!!
+					if(reachStage==0)
+					{
+						/*
+						 * Stage 0, reflex mode:
+						 * left arm: -0.28 -0.13 0.13 horizontal (accuracy 0.077) ?
+						 * right arm: -0.28 0.13 0.33 horizontal (accuracy 0.123) ?
+						 */
+						int arm = randGenerator(2);	//0 or 1
+						if(arm == 0)
+							sendArmTarget(-0.28, -0.13, 0.13, false);
+						else
+							sendArmTarget(-0.28, 0.13, 0.33, true);
+					}
+					else// if(reachStage==1 || reachStage==2)
+					{
+						//vision should be starting to get involved.
+						bool success = ehCont->fixate();
+						int steps = ehCont->getEyeSaccader()->getStepCounter();
+						novelty.updateEyeExcitation(steps, success);
+						double x,y,z;
+						getGazeCoordinates(&x, &y, &z);
+						x /= 1000;	//TODO: Double check suitable ranges with Alex for the two stages.
+						y /= 1000;
+						z /= 1000;
+						if(z>0){
+							sendArmTarget(x,y,z, true);
+						}
+						else
+							sendArmTarget(x,y,z, false);
+					}
+					//wait till reach finished?
+					//Get feedback from reaching
+					float dist = getReachFeedback();
+					novelty.updateReachExcitation(dist);
+
+					break;
+				}
+				default:
+					break;
+			}
+
+		}
+
+		yarp::os::Time::delay(1);	//wait a second
+		time_t current = time(NULL);
+		timeTaken=current - startSeconds;
+	}
+}
+
+/**
+ * coordinates should be given in meters, e.g. -0.28 0.13 0.13
+ */
+void sendArmTarget(double x, double y, double z, bool right_arm)
+{
+	yarp::os::Bottle& b = portReachCommands.prepare();
+	b.clear();
+	b.addString("target");
+	if(right_arm)
+		b.addString("right_arm");
+	else
+		b.addString("left_arm");
+	b.addDouble(x);	// /1000
+	b.addDouble(y);
+	b.addDouble(z);
+	//can add "horizontal" or "vertical" at end of this message, but defaults to "horizontal"
+	b.addString("horizontal");
+	portReachCommands.write();
+}
+
+float getReachFeedback()
+{
+	float dist;
+	yarp::os::Bottle* target = portReachFeedback.read(0);
+	dist = target->get(0).asDouble();	//TODO check with Alex what data is actually being sent here.
+
+	return dist;
+}
+
+bool getGazeCoordinates(double *x, double *y, double *z)
+{
+	double torsoMotorConfig[3] = {0,0,0};
+	double* headMotorConfig = new double[6];
+
+	bool success = ehCont->getHeadController()->getCurrentPosition(headMotorConfig);
+	cout << "Head motor config: ";
+	for(int i=0; i<6; i++)
+		cout << headMotorConfig[i] << " ";
+	cout << endl;
+	CalculateTargetWorldRef(torsoMotorConfig, headMotorConfig, x, y, z);	// returned in mm
+	cout << "The gaze point in world space is: (" << *x << ", " << *y << ", " << *z << ")" << endl;
+	return success;
 }

@@ -13,6 +13,7 @@
 #include <iostream>
 #include <fstream>
 #include <math.h>
+#include <map>
 #include <string.h>
 
 #include <utilities.h>

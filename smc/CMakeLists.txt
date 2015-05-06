@@ -29,6 +29,7 @@ FILE(GLOB folder_source
 	src/armCompensator.cpp
 	src/armController.cpp
 	src/armReaching.cpp
+	src/Excitation.cpp
 	src/eyeController.cpp
 	src/eyeHeadCalc.cpp
 	src/EyeHeadController.cpp
@@ -64,11 +65,13 @@ ADD_ExECUTABLE(emotionController ${PROJECT_SOURCE_DIR}/src/emotionController.cpp
 ADD_EXECUTABLE(ArmTester ${PROJECT_SOURCE_DIR}/src/ArmTester.cpp ${folder_header})
 ADD_EXECUTABLE(TactileGrasp ${PROJECT_SOURCE_DIR}/src/TactileGrasp.cpp ${folder_header})
 ADD_EXECUTABLE(demoVid ${PROJECT_SOURCE_DIR}/src/demoVid.cpp ${folder_header})
+ADD_EXECUTABLE(BBcontroller ${PROJECT_SOURCE_DIR}/src/BBcontroller.cpp ${folder_header})
 
 TARGET_LINK_LIBRARIES(learningMenu ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
 TARGET_LINK_LIBRARIES(smc_cleverb4 ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
 TARGET_LINK_LIBRARIES(rpcController ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
 TARGET_LINK_LIBRARIES(emotionController ${YARP_LIBRARIES})
 TARGET_LINK_LIBRARIES(ArmTester ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
+TARGET_LINK_LIBRARIES(BBcontroller ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
 TARGET_LINK_LIBRARIES(demoVid ${YARP_LIBRARIES} ${Boost_thread_LIBRARY} ${XERCES_LIBRARIES} kinLib mapsLib smcLib)
 TARGET_LINK_LIBRARIES(TactileGrasp ${YARP_LIBRARIES})

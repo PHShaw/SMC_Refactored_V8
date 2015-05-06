@@ -51,8 +51,10 @@ std::map<int, GazeField*> prevFields;
 
 const int reachDepthThreshold = 70;
 const bool rightArm=false;
-string path;
-string filename;
+
+var_params params;
+//string path;
+//string filename;
 
 /*
  * In experiments for sequential vs synchronous learning, these variable should be changed!
@@ -84,7 +86,7 @@ void loadGazeReachMap()
 {
 	Gaze_IO gm_io;
 	delete gm;
-	gm = gm_io.loadMappingFromXML(path + "GM_" + filename);
+	gm = gm_io.loadMappingFromXML(params.m_PATH + "GM_" + params.m_FILENAME);
 	cout << "There are " << gm->getNumGazeFields() << " fields in the gaze map" << endl;
 
 }
@@ -93,7 +95,7 @@ void saveGazeMap()
 	Gaze_IO gmIO;
 	try{
 		cout << "There are " << gm->getNumGazeFields() << " gaze fields to save" << endl;
-		gmIO.saveMappingToXML(gm, path+"GM_" + filename);
+		gmIO.saveMappingToXML(gm, params.m_PATH+"GM_" + params.m_FILENAME);
 		cout << "Successfully saved: ";
 		cout << gm->getNumGazeFields() << " Gaze fields, ";
 //		cout << gm->getNumReachFields() << " Reach fields and ";
@@ -736,6 +738,8 @@ void get_speech_excitation(yarp::os::Bottle *reply, const char *word) {
 
 int main(int argc, char* argv[])
 {
+	params.LEARN = false;
+
 	srand(NULL);
 
 	yarp::os::Property options;
@@ -743,42 +747,42 @@ int main(int argc, char* argv[])
 		options.fromCommand(argc,argv);
 
 	yarp::os::Value* val;
-	std::string robot;
+//	std::string robot;
 	if(options.check("robot",val))
 	{
-		robot = val->asString().c_str();
-		cout << "Selected robot: " << robot << endl;
+		params.m_ROBOT = val->asString().c_str();
+		cout << "Selected robot: " << params.m_ROBOT << endl;
 	}
 	else
 	{
 		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]+F" << endl;
-		robot = "icub";
+		params.m_ROBOT = "icub";
 	}
 	bool load = true;
 
 	if(options.check("path",val))
 	{
-		path = val->asString().c_str();
-		cout << "Loading files from path: " << path << endl;
+		params.m_PATH = val->asString().c_str();
+		cout << "Loading files from path: " << params.m_PATH << endl;
 
 		if(options.check("name",val))
 		{
-			filename = val->asString().c_str();
-			cout << "Loading file set: " << filename << endl;
+			params.m_FILENAME = val->asString().c_str();
+			cout << "Loading file set: " << params.m_FILENAME << endl;
 		}
 		else
 		{
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
+			cin >> params.m_FILENAME;
 		}
 	}
 	else
 	{
 
 		cout << "Enter the path to the directory containing the files: e.g. ../../data/ " <<endl;
-		cin >> path;
+		cin >> params.m_PATH;
 		cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-		cin >> filename;
+		cin >> params.m_FILENAME;
 	}
 
 	yarp::os::Network yarp;
@@ -786,14 +790,14 @@ int main(int argc, char* argv[])
 	target = new Target();
 
 	//TODO: VAM
-	target->initLog(path);
+	target->initLog(params.m_PATH);
 	loadGazeReachMap();
 
-	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, true);
-	tor = new torsoSaccading(robot, ehCont, target, true, NEAREST_NEIGHBOUR, path, load, filename);
+	ehCont = new EyeHeadSaccading(gm, target);
+	tor = new torsoSaccading(ehCont, target);
 //	armReach = new armReaching(robot, gm, true, true);
-	ac = new armController(true, robot);
-	grippy = new graspController(robot, ac);
+	ac = new armController(true);
+	grippy = new graspController(params.m_ROBOT, ac);
 
 	printf("Initiating short term memory...\n");
 	stm = new ShortTermMemory(target, ehCont);//, tor);

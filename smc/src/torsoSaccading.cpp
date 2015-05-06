@@ -74,7 +74,7 @@ bool torsoSaccading::saveMapping()
 	bool success;
 	FFM_IO io;
 	try{
-		io.saveMappingToXML(torso_ppm,params.m_PATH + "torso_" + filename +".xml");
+		io.saveMappingToXML(torso_ppm,params.m_PATH + "torso_" + params.m_FILENAME +".xml");
 		cout << torso_ppm->getNumLinks() << " Torso links successfully saved"<<endl;
 		success=true;
 	}
@@ -560,7 +560,7 @@ bool torsoSaccading::saccade(int saccadecounter, string colour)
 
 //	bool success = true; //calcLink(v);	//just testing basic links at the moment, to try and get that right
 	bool success = false;
-	if(LEARN)
+	if(params.LEARN)
 		success = calcLink(colour);
 	return success;
 }

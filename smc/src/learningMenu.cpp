@@ -39,6 +39,9 @@ handEyeCoordination* heCoor;
 Target* target;
 torsoSaccading* tor;
 
+var_params params;
+
+
 /**
  * In experiments for sequential vs synchronous learning, these variable should be changed!
  * Moving to params_config.h
@@ -102,6 +105,8 @@ void quit(int param)
 
 int main(int argc, char* argv[])
 {
+	params.LEARN = true;
+
 	srand( time(NULL));
 
 	yarp::os::Property options;
@@ -129,14 +134,14 @@ int main(int argc, char* argv[])
 
 	if(options.check("path",val))
 	{
-		path = val->asString().c_str();
+		params.m_PATH = val->asString().c_str();
 		params.m_LOAD = true;
-		cout << "Loading files from path: " << path << endl;
+		cout << "Loading files from path: " << params.m_PATH << endl;
 
 		if(options.check("name",val))
 		{
 			params.m_FILENAME = val->asString().c_str();
-			cout << "Loading file set: " << filename << endl;
+			cout << "Loading file set: " << params.m_FILENAME << endl;
 		}
 		else
 		{

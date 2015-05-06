@@ -277,7 +277,7 @@ bool eyeSaccading::simpleSaccade(double targX, double targY, string colour, bool
 		startInputField = getNearestLearntInput(targX, targY, &distf);
 		fr.nearestInput = startInputField;
 		fr.dist = distf;
-		NEAREST_NEIGHBOUR = true;
+		fr.nearestNeighbour = true;
 	}
 	else
 		startInputField = getRetinaField(targX, targY);
@@ -597,7 +597,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				{
 					PolarField* linkedOutput = (PolarField*)ppm->getLinkedOutput(inputField);
 
-					if(LEARN)
+					if(params.LEARN)
 					{
 						linkedOutput->useField();
 						inputField->useField();
@@ -614,7 +614,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				else
 				{
 					PolarField* nearbyOutput = (PolarField*)ppm->getLinkedOutput(nearbyInput);
-					if(LEARN)
+					if(params.LEARN)
 					{
 						nearbyInput->useField();
 						nearbyInput->setCalcdLinks(1);
@@ -666,7 +666,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 
 					PolarField* output = (PolarField*)ppm->getLinkedOutput(inputField);
 					//ppm->deleteLink(inputField, output);
-					if(LEARN)
+					if(params.LEARN)
 					{
 						inputField->setCalcdLinks(0);
 						inputField->linkFailed();
@@ -726,7 +726,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 						failedNeighbourCounter++;
 					}
 					logEntry("Dis-using a failed neighbour");
-					if(LEARN)
+					if(params.LEARN)
 					{
 						FieldLink* link = ppm->getLink(nearbyInput, nearbyOutput);
 						link->linkFailed();
@@ -819,7 +819,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 				if(gotfield)
 					motor = getMotorField(relX, relY);
 
-				if(LEARN && gotfield)
+				if(params.LEARN && gotfield)
 				{
 					bool ok = ppm->addLink(startInputField, motor);
 					if(ok)
@@ -836,7 +836,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 		}
 
 
-		if(LEARN)
+		if(params.LEARN)
 			linksLearnt = learnChain();
 
 
@@ -1577,12 +1577,12 @@ void eyeSaccading::closeLogs()
 
 void eyeSaccading::stopLearning()
 {
-	LEARN=false;
+	params.LEARN=false;
 }
 
 void eyeSaccading::startLearning()
 {
-	LEARN=true;
+	params.LEARN=true;
 }
 
 /* *****************************************************************

@@ -19,6 +19,7 @@ EyeHeadSaccading* ehCont;
 graspController* grippy;
 Target* target;
 torsoSaccading* tor;
+var_params params;
 
 yarp::os::BufferedPort<yarp::os::Bottle> portOut;
 yarp::os::BufferedPort<yarp::os::Bottle> portIn;
@@ -74,57 +75,55 @@ int main(int argc, char* argv[])
 		options.fromCommand(argc,argv);
 
 	yarp::os::Value* val;
-	std::string robot;
 	if(options.check("robot",val))
 	{
-		robot = val->asString().c_str();
-		cout << "Selected robot: " << robot << endl;
+		params.m_ROBOT = val->asString().c_str();
+		cout << "Selected robot: " << params.m_ROBOT << endl;
 	}
 	else
 	{
 		cout << "A robot can be specified from the command line e.g. --robot [icub|icubSim]+F" << endl;
-		robot = "icub";
+		params.m_ROBOT = "icub";
 	}
 
 	target = new Target();
-	bool load = true;
-	string path, filename;
+	params.m_LOAD = true;
 
 	if(options.check("path",val))
 	{
-		path = val->asString().c_str();
-		load = true;
-		cout << "Loading files from path: " << path << endl;
+		params.m_PATH = val->asString().c_str();
+		params.m_LOAD = true;
+		cout << "Loading files from path: " << params.m_PATH << endl;
 
 		if(options.check("name",val))
 		{
-			filename = val->asString().c_str();
-			cout << "Loading file set: " << filename << endl;
+			params.m_FILENAME = val->asString().c_str();
+			cout << "Loading file set: " << params.m_FILENAME << endl;
 		}
 		else
 		{
 			cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-			cin >> filename;
+			cin >> params.m_FILENAME;
 		}
 	}
 	else
 	{
 
 		cout << "Enter the path to the directory containing the files: e.g. ../data/ " <<endl;
-		cin >> path;
+		cin >> params.m_PATH;
 		cout << "Enter the generic name of the files (minus eye/head/GM_ and .xml): e.g. testXV10" << endl;
-		cin >> filename;
+		cin >> params.m_FILENAME;
 	}
 
-	target->initLog(path);
+	target->initLog(params.m_PATH);
 	bool learn = true;
 
 	GazeMap* gm = new GazeMap();
-	ehCont = new EyeHeadSaccading(robot, gm, target, SYNCHRONOUS, NEAREST_NEIGHBOUR, load, path, filename, learn);
-	tor = new torsoSaccading(robot, ehCont, target, learn, NEAREST_NEIGHBOUR, path, load, filename);
+	ehCont = new EyeHeadSaccading(gm, target);
+	tor = new torsoSaccading(ehCont, target);
 
-	armController* ac = new armController(true, robot);
-	grippy = new graspController(robot, ac);
+	armController* ac = new armController(true);
+	grippy = new graspController(params.m_ROBOT, ac);
 
 	yarp::os::Network yarp;
 

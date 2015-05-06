@@ -11,6 +11,13 @@
 #ifndef EXCITATION_H_
 #define EXCITATION_H_
 
+#include <iostream>
+#include <map>
+#include <math.h>
+#include <string.h>
+
+#include "params_config.h"
+
 namespace smc
 {
 
@@ -28,7 +35,7 @@ public:
 	System getMaxExcitation();
 	void setEyeExcitation(int mapSaturation);	//Indication of learning completeness
 	void updateEyeExcitation(int steps, int fieldsLearnt); //update as learning
-	void updateEyeExcitation(int steps);		//updates the EYE value, when not learning
+	void updateEyeExcitation(int steps, bool success);		//updates the EYE value, when not learning
 
 	void setFovealExcitation(int acuity, int fov);
 	void updateFovealExcitation(int acuity, int fov);	//updates the FOVEAL value
@@ -39,9 +46,12 @@ public:
 	void setReachExcitation(int stage, float mapSaturation);
 	void updateReachExcitation(float distance);		//updates the ARM and HAND value
 
+	float getExcitation(System system);
+
 
 	void decay(System subsystem);
 
+	void printExcitations();
 //	TODO: print and log excitation levels.
 private:
 	float globalExcitation;
