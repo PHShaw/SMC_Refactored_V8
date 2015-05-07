@@ -67,6 +67,7 @@ void sendArmTarget(double x, double y, double z, bool right_arm);
 float getReachFeedback();
 bool getGazeCoordinates(double *x, double *y, double *z);
 void command(string cmd);
+void bbExperiment(int reachStage);
 
 /**
  * Startup routine:
@@ -750,8 +751,8 @@ bool getGazeCoordinates(double *x, double *y, double *z)
 void command(string cmd)
 {
 	//Send command to reaching
-	yarp::os::Bottle& b = portOut.prepare();
+	yarp::os::Bottle& b = portReachCommands.prepare();
 	b.clear();
 	b.addString(cmd.c_str());
-	portOut.write(true);
+	portReachCommands.write(true);
 }
