@@ -1,9 +1,7 @@
-Target: 103.633 122.519
-Eye input field: centre: [99.4,119.99] radius: 9.1 Learnt and used 7 times
-Eye output field: centre: [-15.47,0] radius: 3.9 Learnt and used 24 times
-Target: 200 121
-Target: 194.5 114
-Target: 118 176
-Target: 204.175 69.55
-Target: 119 173
-**************END**************
+Target: 150 105
+Target: 130 131
+Eye input field: centre: [134.01,128.44] radius: 5.8 Learnt and used 0 times
+Eye output field: centre: [-6.46,-3.29] radius: 3.2 Learnt and used 0 times
+Target: 118 90
+Eye input field: centre: [117.8,98.49] radius: 7.8 Learnt and used 1 times
+Eye output field: centre: [-12.25,6.24] radius: 3.7 Learnt and used 3 times

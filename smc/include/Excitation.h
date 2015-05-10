@@ -13,7 +13,7 @@
 
 #include <iostream>
 #include <map>
-#include <math.h>
+#include <cmath>
 #include <string.h>
 
 #include "params_config.h"
@@ -41,7 +41,8 @@ public:
 	void updateFovealExcitation(int acuity, int fov);	//updates the FOVEAL value
 
 	void setRetinaExcitation();
-	void updateRetinaExcitation();		//updates the RETINA value (using the flags from params_config.h)
+	void updateRetinaExcitation(int visualTargets=0);		//updates the RETINA value (using the flags from params_config.h)
+	void updateRetinaExcitation(int colourTargets, int motionTargets);
 
 	void setReachExcitation(int stage, float mapSaturation);
 	void updateReachExcitation(float distance);		//updates the ARM and HAND value
@@ -50,6 +51,9 @@ public:
 
 
 	void decay(System subsystem);
+	void stimulateSystem();
+	void stimulateSubSystem(System subsystem);
+
 
 	void printExcitations();
 //	TODO: print and log excitation levels.

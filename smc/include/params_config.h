@@ -22,7 +22,7 @@
  bool const NEAREST_NEIGHBOUR = true;
  bool const RANDOM_MOVES=true;
  bool const SAFEMODE = true;
- bool const BASIC_VISION = true;
+ bool const BASIC_VISION = false;
 
  float const RETINA_WIDTH = 320.f;	// OR 320
  float const RETINA_HEIGHT = 240.f; 	// OR 240

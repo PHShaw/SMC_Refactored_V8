@@ -24,15 +24,15 @@ Target::Target()
 	if(BASIC_VISION)
 	{
 		colourElements = 4; // [colour] [x] [y] [pixels]
-		targetTypes["colour"] = 4;
+		elementsPerTargetTypes["colour"] = 4;
 	}
 	else
 	{
 		colourElements = 5; // "colour" [colour] [x] [y] [pixels]
-		targetTypes["colour"] = 5;
-		targetTypes["shape"] = 7;  //"shape" [square|circle|triangle] [colour] [x] [y] [width] [height]
-		targetTypes["edge"] = 12;  //"edge" [x_centre] [y_centre] [num_pts=4] [x1][y1][x2][y2]... (default 4 points)
-		targetTypes["motion"] = 6; //"motion" [speed px/s] [x0] [y0] [x1] [y1]
+		elementsPerTargetTypes["colour"] = 5;
+		elementsPerTargetTypes["shape"] = 7;  //"shape" [square|circle|triangle] [colour] [x] [y] [width] [height]
+		elementsPerTargetTypes["edge"] = 12;  //"edge" [x_centre] [y_centre] [num_pts=4] [x1][y1][x2][y2]... (default 4 points)
+		elementsPerTargetTypes["motion"] = 6; //"motion" [speed px/s] [x0] [y0] [x1] [y1]
 	}
 
 
@@ -53,20 +53,27 @@ bool Target::initTarget(string robot)
 		porttargetsleft.open("/targetSim/left/read");
 		porttargetsright.open("/targetSim/right/read");
 
-		yarp.connect("/targetSim/left/data", "/targetSim/left/read");	//TODO move these to use yarp manager
-		yarp.connect("/targetSim/right/data", "/targetSim/right/read");
+//		yarp.connect("/targetSim/left/data", "/targetSim/left/read");
+//		yarp.connect("/targetSim/right/data", "/targetSim/right/read");
 	}
 	else
 	{
 		porttargetsleft.open("/target/left/read");
 		porttargetsright.open("/target/right/read");
 
-		yarp.connect("/target/left/data", "/target/left/read");
-		yarp.connect("/target/right/data", "/target/right/read");
+//		yarp.connect("/target/left/data", "/target/left/read");
+//		yarp.connect("/target/right/data", "/target/right/read");
 	}
 
 	centred = false;
 	return true;
+}
+
+int Target::getNumTargets(std::string type)
+{
+	if(numVisibleTargets.find(type)==numVisibleTargets.end())
+		return 0;
+	return numVisibleTargets[type];
 }
 
 bool Target::getTarget(double* targX, double* targY)
@@ -79,16 +86,26 @@ bool Target::getTarget(double* targX, double* targY)
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
-			int numTargets;
+			numTargets=0;
 			if(BASIC_VISION)
+			{
+				numVisibleTargets.clear();
 				numTargets = size/colourElements;
+				numVisibleTargets["colour"] = numTargets;
+			}
 			else{
 				int numElements;
+				numVisibleTargets.clear();
 				for(int i=0; i<size;)
 				{
 					numTargets++;
 					string type = target->get(i).asString().c_str();
-					numElements = targetTypes[type];
+					numElements = elementsPerTargetTypes[type];
+					if(numVisibleTargets.find(type)==numVisibleTargets.end())
+					{
+						numVisibleTargets[type] = 0;
+					}
+					numVisibleTargets[type] ++;
 
 					i+= numElements;
 				}
@@ -96,10 +113,6 @@ bool Target::getTarget(double* targX, double* targY)
 
 			int col = randGenerator(numTargets);
 			printf("***********Number of targets detected: %i, Target selected: %i*************\n", numTargets, col);
-			//TODO need to consider vision flags when selecting target.
-			//TODO More advanced visual features should be preferred over simpler features.
-			//TODO For the novelty system, ideally need to know how many of each type of target
-			//			are currently visible.  Add method that can be called to find this out.
 
 			if(BASIC_VISION)
 			{
@@ -117,20 +130,36 @@ bool Target::getTarget(double* targX, double* targY)
 			}
 			else
 			{
-				numTargets=0;
+				//TODO need to consider vision flags when selecting target.
+				//TODO More advanced visual features should be preferred over simpler features.
+
+				bool motion=false;
+				if(getNumTargets("motion")>0 && (params.m_VISION_FLAGS & MOTION))
+				{
+					motion=true;
+					//selection a motion target
+					col = randGenerator(numVisibleTargets["motion"]);
+				}
+
+
+				int targetNum=0;
 				int numElements=0;
 				int index=0;
-				while(index<size && numTargets!=col)
+				while(index<size && targetNum!=col)
 				{
-					numTargets++;
-					string type = target->get(index).asString().c_str();
-					numElements = targetTypes[type];
 
+					string type = target->get(index).asString().c_str();
+					numElements = elementsPerTargetTypes[type];
 					index+= numElements;
+					if(motion && type=="motion")
+						targetNum++;
+					else if(!motion && type=="colour")
+						targetNum++;
 				}
 				string type = target->get(index).asString().c_str();
 				if(type.compare("colour")==0)
 				{
+//					["colour" colour x y size]
 					visible = true;
 					colour = target->get(1+index).asString();
 					*targX = target->get(2+index).asDouble();
@@ -144,6 +173,7 @@ bool Target::getTarget(double* targX, double* targY)
 				}
 				else if(type.compare("motion")==0)
 				{
+//					["motion" speed x0 y0 x1 y1]
 					//TODO: Make use of the starting point and speed.
 					visible = true;
 					colour = "motion";
@@ -159,14 +189,15 @@ bool Target::getTarget(double* targX, double* targY)
 				}
 				else if(type.compare("edge")==0)
 				{
+//					["edge" x_centre y_centre points(4) x1 y1 x2 y2 ...]
 					//centre coordinates and edge coordinates give.
 					//randomly selecting one of the 4 coordinates to set as target
 					size = target->get(3+index).asDouble();	//TODO: Check these indicies are correct
-					int edge = randGenerator(size) *2;
+					int edge = randGenerator(size);
 					visible = true;
 					colour = "edge";
-					*targX = target->get(4+index+edge).asDouble();
-					*targY = target->get(4+index+edge+1).asDouble();
+					*targX = target->get(4+index+edge*2).asDouble();
+					*targY = target->get(4+index+edge*2+1).asDouble();
 					printf("Edge: %s  X: %.3f  Y: %.3f\n",
 							colour.c_str(),
 							*targX, *targY);
@@ -176,9 +207,10 @@ bool Target::getTarget(double* targX, double* targY)
 				}
 				else if(type.compare("shape")==0)
 				{
+//					["shape" shapeType[square|circle|triangle] colour x y w h]
 					//TODO: Make better use of shape information.
 					visible = true;
-					colour = target->get(1+index).asString();
+					colour = target->get(1+index).asString();	//shape
 					*targX = target->get(3+index).asDouble();
 					*targY = target->get(4+index).asDouble();
 					size = target->get(5+index).asDouble();
@@ -206,6 +238,12 @@ bool Target::getTarget(double* targX, double* targY)
 			lastX = *targX;
 			lastY = *targY;
 
+			for(map<string,int>::iterator it=numVisibleTargets.begin(); it!=numVisibleTargets.end(); it++)
+			{
+				cout << "[" << it->first << ":" << it->second << "] ";
+			}
+			cout << endl;
+
 			return true;
 		}
 		else
@@ -221,6 +259,7 @@ bool Target::getTarget(double* targX, double* targY)
 	}
 	else
 	{
+		numTargets = 0;
 		visible = false;
 		*targX = 0;
 		*targY = 0;
@@ -250,7 +289,7 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 				{
 					numTargets++;
 					string type = target->get(i).asString().c_str();
-					numElements = targetTypes[type];
+					numElements = elementsPerTargetTypes[type];
 
 					i+= numElements;
 				}
@@ -300,7 +339,7 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 				{
 					numTargets++;
 					string type = target->get(index).asString().c_str();
-					numElements = targetTypes[type];
+					numElements = elementsPerTargetTypes[type];
 
 					index+= numElements;
 

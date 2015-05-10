@@ -34,22 +34,35 @@ Excitation::~Excitation()
 	void Excitation::updateGlobalExcitation()
 	{
 		unsigned int elements = subsystems.size();
+		if(elements == 0)
+		{
+			cout << "Fixing elements size" << endl;
+			elements = 5;
+		}
 		globalExcitation = 0;
 		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
 		{
 			globalExcitation += it->second;
 		}
 		globalExcitation /= elements;
+
+		if(isinf(globalExcitation))
+		{
+			stimulateSystem();
+		}
 	}
 
 	System Excitation::getMaxExcitation()
 	{
-		float max = 0;
+		float max = 0.0;
 		System element;
 		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
 		{
-			if(it->second>max)
+			if(it->second > max)
+			{
+				max = it->second;
 				element = it->first;
+			}
 		}
 		return element;
 	}
@@ -87,6 +100,8 @@ Excitation::~Excitation()
 			decay(EYE);
 		}
 		float current = subsystems[EYE];
+		if(current < 0.0001)
+			current = 0.0001;
 		current += excitation;
 		current /= 2;
 		subsystems[EYE] = current;
@@ -107,6 +122,9 @@ Excitation::~Excitation()
 			excitation = subsystems[EYE] /=2;
 		}
 		float current = subsystems[EYE];
+		if(current < 0.0001)
+			current = 0.0001;
+
 		excitation += current;
 		excitation /= 2;
 		if(excitation <0)
@@ -122,12 +140,12 @@ Excitation::~Excitation()
 	 */
 	void Excitation::setFovealExcitation(int acuity, int fov)
 	{
-		float eFOV = fov/100;
-		float eAcuity =  1 - (acuity/200);
+		float eFOV = (float)fov/100.0/2.0;
+		float eAcuity =  (1.0 - ((float)acuity/200.0))/2.0;
 
-		float excitation = (eFOV + eAcuity)/2;
+		float excitation = (eFOV + eAcuity)/2.0;
 
-		if(excitation <0)
+		if(excitation <=0)
 			excitation = 0.1;
 
 		subsystems[FOVEAL] = excitation;
@@ -157,6 +175,8 @@ Excitation::~Excitation()
 			eChange = 0.1;
 
 		float current = subsystems[FOVEAL];
+		if(current < 0.0001)
+			current = 0.0001;
 		subsystems[FOVEAL] = (current + eChange)/2;
 
 		updateGlobalExcitation();
@@ -184,13 +204,15 @@ Excitation::~Excitation()
 		updateGlobalExcitation();
 
 	}
-	void Excitation::updateRetinaExcitation()
+	void Excitation::updateRetinaExcitation(int visualTargets)
 	{
 		//TODO NOTE: if disabling a type of visual feature, this will also cause excessive excitation.
 		//addition of vision modes is very exciting.
 		//how many visual stimuli are currently present, and what type are they?
 
 		float excitation = 0;
+
+		excitation += ((float)visualTargets * 0.2);
 
 		//start by comparing current to params
 		unsigned char change = currentVisionFlags ^ params.m_VISION_FLAGS;	//XOR
@@ -208,14 +230,30 @@ Excitation::~Excitation()
 			excitation = 1;
 
 		float current = subsystems[RETINA];
+		if(current < 0.0001)
+			current = 0.0001;
 		excitation += current;
 		excitation /= 2;
 		subsystems[RETINA] = excitation;
 
 		updateGlobalExcitation();
 
-		//TODO: Next ideally need to know how many of each type of stimulus is present.
-		//in target selection, more advanced types should be preferred over the basic types.
+	}
+
+	void Excitation::updateRetinaExcitation(int colourTargets, int motionTargets)
+	{
+		float excitation = 0;
+		excitation += ((float)colourTargets * 0.1);
+		excitation += ((float)motionTargets * 0.2);
+
+		float current = subsystems[RETINA];
+		if(current < 0.0001)
+			current = 0.0001;
+		excitation += current;
+		excitation /= 2;
+		subsystems[RETINA] = excitation;
+
+		updateGlobalExcitation();
 
 	}
 
@@ -265,6 +303,9 @@ Excitation::~Excitation()
 
 		float excitation = 1-distance;
 		float current = subsystems[ARM];
+		if(current < 0.0001)
+			current = 0.0001;
+
 		excitation += current;
 		excitation /= 2;
 
@@ -291,6 +332,44 @@ Excitation::~Excitation()
 		subsystems[subsystem] = current;
 		updateGlobalExcitation();
 	}
+ 	void Excitation::stimulateSystem()
+ 	{
+ 		for(map<System,float>::iterator it=subsystems.begin(); it!=subsystems.end(); it++)
+		{
+ 			if(it->second <0.0)
+ 			{
+ 				it->second = 0.001;
+ 			}
+ 			else if(it->second < 0.1)
+ 			{
+ 				it->second*=3;
+ 			}
+ 			else if(it->second < 0.2)
+ 			{
+ 				it->second*=2;
+ 			}
+		}
+ 		updateGlobalExcitation();
+ 	}
+
+ 	void Excitation::stimulateSubSystem(System system)
+ 	{
+ 		float current = subsystems[system];
+ 		if(current <0.0)
+ 			{
+ 				current = 0.001;
+ 			}
+ 			else if(current < 0.1)
+ 			{
+ 				current*=3;
+ 			}
+ 			else if(current < 0.2)
+ 			{
+ 				current*=2;
+ 			}
+ 		subsystems[system] = current;
+ 		updateGlobalExcitation();
+ 	}
 
  	void Excitation::printExcitations()
  	{

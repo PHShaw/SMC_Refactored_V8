@@ -1,4 +1,6 @@
-Requesting retina field at: 103.633, 122.519
+Requesting retina field at: 130, 131
 Field returned: 
-coordinates: [100.09,119.99] Unlearnt
-**************END**************
+coordinates: [134.32,133.08] Unlearnt
+Requesting retina field at: 118, 90
+Field returned: 
+coordinates: [116.08,97.62] Unlearnt

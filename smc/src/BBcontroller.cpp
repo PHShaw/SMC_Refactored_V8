@@ -63,10 +63,7 @@ void setVisionModules();
 void learningMode(int stage = 1);
 void experimentMode(int stage =1);
 bool experimentConfiguration(string stageName, int acuity, int fov, int reachStage, float reachSaturation);
-void sendArmTarget(double x, double y, double z, bool right_arm);
-float getReachFeedback();
 bool getGazeCoordinates(double *x, double *y, double *z);
-void command(string cmd);
 void bbExperiment(int reachStage);
 
 /**
@@ -85,7 +82,8 @@ Excitation novelty(0.1);
 var_params params;
 
 const int acuityLevels[7]=
-{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };
+//{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
+{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
 //week
 //   1		4		7	  10	   13		16	   19
 const int fovLevels[7]=
@@ -695,6 +693,13 @@ void bbExperiment(int reachStage)
 	time_t timeTaken = startSeconds-startSeconds;
 	while(timeTaken < experimentDuration)
 	{
+		double targX, targY;
+		target->getTarget(&targX, &targY);
+		int colourTargs = target->getNumTargets("colour");
+		int motionTargs = target->getNumTargets("motion");
+
+		novelty.updateRetinaExcitation(colourTargs,motionTargs);
+
 		float globalEx = novelty.getGlobalExcitation();		//returns a number between 0 and 1.
 		printf("Global Excitation: %f.2\n", globalEx);
 		novelty.printExcitations();
@@ -706,17 +711,21 @@ void bbExperiment(int reachStage)
 		//Testing specific system
 //		System excited = EYE;
 
+		int inactivityCounter = 0;	//count number of sequential cases of inactivity;
 		int activityLevel = randGenerator(10);
+		printf("Activation level: %f.2\n", ((float)activityLevel/10.0));
 		if(activityLevel<=(globalEx*10))
 		{
+			inactivityCounter=0;	// break in inactivity, so reset counter;
 			//perform an action
 			switch (excited){
-				case RETINA:
 				case FOVEAL:
+					novelty.decay(FOVEAL);
+				case RETINA:
 					//TODO check for how many stimuli are currently visible.
 				case EYE:
 				{
-					bool success = ehCont->fixate();
+					bool success = ehCont->fixate();	//TODO: Maybe this should be multi-threaded?
 					int steps = ehCont->getEyeSaccader()->getStepCounter();
 						//update novelty.
 						//if not managed to fixate, novelty should be going down.
@@ -839,6 +848,12 @@ void bbExperiment(int reachStage)
 		}//if activity level
 		else{
 			cout << "Not excited enough to move" << endl;
+			inactivityCounter++;
+		}
+		if(inactivityCounter>=10)
+		{
+			novelty.stimulateSystem();
+			inactivityCounter=0;
 		}
 
 		yarp::os::Time::delay(1);	//wait a second

@@ -413,7 +413,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 	entry += " from ";
 	logEntry(entry, startX, startY);
 
-	int noTargetThreshold = 100;
+	int noTargetThreshold = 50;
 	noTargetThreshold = max((int)(100.0/(saccadeCounter+1)),noTargetThreshold);
 
 	bool centred = target->targetCentred(&targX, &targY, colour);

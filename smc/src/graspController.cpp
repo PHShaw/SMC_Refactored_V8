@@ -60,6 +60,9 @@ bool graspController::initGrasp(string robot)
 	yarp.connect(fullSkinny.c_str(), "/skinTest/leftHand");
 #endif
 
+	if(skin)
+	{
+
 
 	Bottle *inputRight = NULL;
 	Bottle *inputLeft = NULL;
@@ -70,8 +73,6 @@ bool graspController::initGrasp(string robot)
 	inputLeft= portLeft.read();
 #endif
 
-	if(skin)
-	{
 
 
 	//collect skin data for some time, and compute the 95% percentile
@@ -299,11 +300,25 @@ bool graspController:: move(const double* position,bool block, bool rightArm)
 //		cout << " " << checked[i];
 	}
 	cout << endl;
+	bool timeOut=false;
+	time_t startSeconds;
+	startSeconds = time(NULL);
+	time_t timeTaken = startSeconds-startSeconds;
 	while(block && !handsStationary())
 	{
+		time_t current = time(NULL);
+		timeTaken=current - startSeconds;
+		if(timeTaken > 30)
+		{
+			timeOut = true;
+			cout << "Time out on grasp action" << endl;
+			break;
+		}
+
+
 		Time::delay(0.2);
 	}
-
+	return !timeOut;
 }
 
 //TODO: Make this function into a thread, this can then be interrupted by input

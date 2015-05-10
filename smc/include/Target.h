@@ -42,6 +42,8 @@ public:
 	std::string getColour();
 	int getSize(){return size;}
 
+	int getNumTargets(){return numTargets;}
+	int getNumTargets(std::string type);
 
 	bool getLeft(double* targX, double* targY, std::string colour);
 
@@ -73,8 +75,10 @@ private:
 	int size;
 	bool centred;
 
-	std::map<std::string, int> targetTypes;
+	std::map<std::string, int> elementsPerTargetTypes;
+	std::map<std::string, int> numVisibleTargets;
 	int colourElements; // "colour" [colour] [x] [y] [pixels]
+	int numTargets;
 };
 
 const int shapeElements = 7;  //"shape" [square|circle|triangle] [colour] [x] [y] [width] [height]
