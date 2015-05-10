@@ -1,0 +1,37 @@
+<application>
+<name>Vision</name>
+<dependencies>
+      <port>/root</port>
+</dependencies> 
+
+
+<connection>
+  <to>/aber/reach/control:i</to>
+  <from>/smc/reaching/out</from>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <from>/aber/reach/status:o</from>
+  <to>/smc/reaching/in</to>
+  <protocol>tcp</protocol>
+</connection>
+
+<connection>
+  <to>/smc/reaching/in</to>
+  <from>/aber/reach/BBfeedback:o</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <to>/target/parameter</to>
+  <from>/smc/vision/parameters/out</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/smc/vision/modules/out</from>
+  <to>/target/modules</to>
+  <protocol>tcp</protocol>
+</connection>
+
+</application>
+

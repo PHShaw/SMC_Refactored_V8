@@ -131,13 +131,14 @@ void Vision::run()
 
 			findTarget(&yarpImage, &imgout);
 			camPortout.write();
+			cvReleaseImage(&cvImage);
 		}
 		else
 		{
 			printf("no imgin\n");
 			yarp::os::Time::delay(1);
 		}
-//		yarp::os::Time::delay(0.05);
+		yarp::os::Time::delay(0.1);
 	}
 }
 void quit(int param)
@@ -989,6 +990,9 @@ ImageOf<PixelBgr> Vision::adjustAccuity(int percent, ImageOf<PixelBgr>* imgin)
 	//Create a new openCV image of correct size
 	cvImage = cvCreateImage(cvSize(width,height),
                                       IPL_DEPTH_8U, 3 );
+
+//	IplImage *tmp = cvCreateImage(cvSize(width,height),
+//                                      IPL_DEPTH_8U, 3 );
 	//copy yarp image to an openCV/IPL image
 	cvCvtColor((IplImage*)imgin->getIplImage(), cvImage, CV_RGB2BGR);
 
@@ -1000,8 +1004,9 @@ ImageOf<PixelBgr> Vision::adjustAccuity(int percent, ImageOf<PixelBgr>* imgin)
 	if(vBlockSize%2 ==0)
 		vBlockSize ++;
 	//Blur the image
-	cvSmooth(cvImage, cvImage, CV_GAUSSIAN,acuity,acuity);//hBlockSize,vBlockSize);
 
+	cvSmooth(cvImage, cvImage, CV_GAUSSIAN,acuity,acuity);//hBlockSize,vBlockSize);
+//	cvReleaseImage(&tmp);
 	//display image
 //	cvNamedWindow("test",1);
 //  cvShowImage("test",cvImage);

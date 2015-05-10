@@ -46,6 +46,7 @@ class graspController;
 class armController{
 public:
 	armController(bool grippyOnly, bool board=false);
+	~armController();
 
 	bool armsStationary();
 	void move(const double* position, bool block=true, bool rightArm=true, bool moveHand=false);

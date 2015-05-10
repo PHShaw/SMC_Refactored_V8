@@ -87,6 +87,12 @@ armController::armController(bool handOnly, bool pBoard)
 }
 
 
+armController::~armController()
+{
+	leftArmDriver->close();
+	rightArmDriver->close();
+}
+
 
 void armController::armsToRest()
 {	//first move doesn't block, while second does, so both arms move together.

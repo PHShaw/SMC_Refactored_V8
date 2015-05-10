@@ -56,6 +56,8 @@ public:
 
 	void init();
 	bool initMaps();
+	bool reloadMaps(){return reloadMaps(params.m_FILENAME);}
+	bool reloadMaps(std::string filename);
 	void initLogs();
 	bool loadFile(std::string filename);
 
@@ -172,20 +174,10 @@ private:
 
 	vor* v;
 
-	//Variables defined in params_config.h
-//	bool learn;
-//	bool synchronous;
-//	bool nearestNeighbour;
-	bool randomMove;
-
 	ffm* eye_ppm;
 	ffm* head_ppm;
 
 	GazeMap* gm;
-
-	bool load;
-	std::string path;
-	std::string filename;
 
 
 	yarp::dev::PolyDriver *motordriver;

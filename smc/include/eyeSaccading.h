@@ -121,6 +121,8 @@ public:
 	eyeSaccading(eyeController* pEye, Target* pTarget, ffm* eye_ppm);
 	~eyeSaccading();
 
+	void reloadMaps( ffm* eye_ppm){ppm=eye_ppm;}
+
 
 	//Methods taken from original eye saccading, may require some redesign
 //	void makeRandomMove();
@@ -189,6 +191,8 @@ public:
 	bool verge(std::string colour);
 	bool verge(double lx, double ly, double rx, double ry);
 
+
+	eyeController* getEyeController(){return eye;}
 
 	FailureReport fr;
 private:

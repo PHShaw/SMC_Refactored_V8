@@ -9,19 +9,17 @@
 using namespace std;
 using namespace yarp::os;
 
-headSaccading::headSaccading(headController* pHead, eyeController* pEye, eyeSaccading* pEyeSac, Target* pTarget, ffm* phead_ppm,
-		bool pLearn, bool pNeigh, string ppath)
+headSaccading::headSaccading(headController* pHead, eyeSaccading* pEyeSac,
+								Target* pTarget, ffm* phead_ppm)
 {
 	head = pHead;
+
 	eyeSac = pEyeSac;
-	eye = pEye;
+	eye = eyeSac->getEyeController();
 	target = pTarget;
-	nearestNeighbour = pNeigh;	//TODO: used in calcLink
 
 	head_ppm = phead_ppm;
 
-	learn = pLearn;
-	path = ppath;
 
 	openLogs();
 
@@ -255,7 +253,7 @@ bool headSaccading:: calcLink(string colour, vor* v)
 
 	PolarField* eyeMotor = new PolarField();
 	float dist = 0;
-	if(nearestNeighbour)
+	if(NEAREST_NEIGHBOUR)
 		eyeMotor = eyeSac->getNearestLearntOutput(eyeCompensationX, eyeCompensationY, &dist);	//isMotorField(eyeCompensationX, eyeCompensationY);
 	else
 	{
@@ -452,7 +450,7 @@ bool headSaccading::saccade(int saccadecounter, double pstargX, double pstargY, 
 
 //	bool success = true; //calcLink(v);	//just testing basic links at the moment, to try and get that right
 	bool success = false;
-	if(learn)
+	if(params.LEARN)
 		success = calcLink(colour, v);
 	return success;
 }
@@ -610,7 +608,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 			float dist = 0;
 			nearbyInput = getNearestLearntInput(targX, targY, &dist);	//ppm->getNearestLearntInputField((float)targX, (float)targY, &dist);
 			double radius = inputField->getRadius();
-			if(dist<(radius*1.5) && dist>0 && nearbyInput->getUsage()>=0  && nearestNeighbour)
+			if(dist<(radius*1.5) && dist>0 && nearbyInput->getUsage()>=0  && NEAREST_NEIGHBOUR)
 			{
 				cout << "Following nearby link" << endl;
 				bool gotField = isLinkedOutput(nearbyInput);
@@ -678,7 +676,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 				{
 					PolarField* linkedOutput =  getLinkedOutput(inputField);
 
-					if(learn)
+					if(params.LEARN)
 					{
 						linkedOutput->useField();
 						inputField->useField();
@@ -693,7 +691,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 				else
 				{
 					PolarField* nearbyOutput = getLinkedOutput(nearbyInput);
-					if(learn)
+					if(params.LEARN)
 					{
 						nearbyInput->useField();
 						nearbyInput->setCalcdLinks(1);
@@ -739,7 +737,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 				{
 					PolarField* output = getLinkedOutput(inputField);
 					//ppm->deleteLink(inputField, output);
-					if(learn)
+					if(params.LEARN)
 					{
 						inputField->setCalcdLinks(0);
 						inputField->linkFailed();
@@ -793,7 +791,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 					{
 						failedNeighbourCounter++;
 					}
-					if(learn)
+					if(params.LEARN)
 					{
 						FieldLink* link = head_ppm->getLink(nearbyInput, nearbyOutput);
 						link->linkFailed();
@@ -872,7 +870,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 				if(gotfield)
 					motor = getMotorField(relX, relY);
 
-				if(learn && gotfield)
+				if(params.LEARN && gotfield)
 				{
 					bool ok = head_ppm->addLink(startInputField, motor);
 					if(ok)
@@ -886,7 +884,7 @@ bool headSaccading::iStyleSaccade(int saccadeCounter, double targX, double targY
 		}
 
 		int linksLearnt;
-		if(learn)
+		if(params.LEARN)
 			linksLearnt = learnChain();
 
 
@@ -1076,10 +1074,10 @@ PolarField* headSaccading::getNearestLearntOutput(double x, double y, float* dis
 
 void headSaccading::openLogs()
 {
-	string fullpath = path + "headmotorlog.txt";
+	string fullpath = params.m_PATH + "headmotorlog.txt";
 	motorlogfile.open(fullpath.c_str());
 
-	fullpath = path + "headlog.txt";
+	fullpath = params.m_PATH + "headlog.txt";
 	logfile.open(fullpath.c_str());
 
 

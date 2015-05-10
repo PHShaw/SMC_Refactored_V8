@@ -66,7 +66,7 @@ void EyeHeadSaccading::init()
 	cout << "Eye controllers initialised" << endl;
 
 	headCont = new headController(motordriver);
-	headSac = new headSaccading(headCont, eyeCont, eyeSac, target, head_ppm, params.LEARN, NEAREST_NEIGHBOUR, params.m_PATH);
+	headSac = new headSaccading(headCont, eyeSac, target, head_ppm);
 
 	cout << "Head controllers initialised" << endl;
 
@@ -171,9 +171,19 @@ bool EyeHeadSaccading::initMaps()
 	if(params.m_LOAD)
 		loadFile(params.m_FILENAME);
 
-	randomMove = RANDOM_MOVES;
 
 	return true;
+}
+
+bool EyeHeadSaccading::reloadMaps(string filename)
+{
+	bool success = loadFile(filename);
+	if(success)
+	{
+		eyeSac->reloadMaps(eye_ppm);
+		headSac->reloadMaps(head_ppm);
+	}
+	return success;
 }
 
 
@@ -471,7 +481,11 @@ bool EyeHeadSaccading::fixate()
 		return fixate(targX, targY, colour, false);
 	}
 	else
+	{
+		cout << "No target visible" <<endl;
+		eyeCont->babble();
 		return false;
+	}
 }
 
 //fixate on a target of colour...
@@ -558,7 +572,7 @@ bool EyeHeadSaccading::eyeSaccade(){	//extract from main method on motorControll
 	target->logSaccadeBreak(eyeOnlyCounter);
 	double targX, targY;
 
-	if(randomMove)
+	if(RANDOM_MOVES)
 	{
 		//Move eyes and head to an initial starting point
 		cout << "Making a random movement to new starting position" << endl;
@@ -654,7 +668,7 @@ int EyeHeadSaccading::learnEyeHeadSaccades(int maximum)
 			while(rollingAverage>eyeThreshold)
 			{
 				bool success = eyeSaccade();
-				if(!success && randomMove)	//target may be out of reach so move head to new position
+				if(!success && RANDOM_MOVES)	//target may be out of reach so move head to new position
 					headCont->babble();
 			}
 //			eyeSac->stopLearning();
@@ -702,7 +716,7 @@ bool EyeHeadSaccading::eyeHeadSaccade(){		//extract of main method from motorCon
 	target->logSaccadeBreak(saccadeCounter);
 	headSac->startSaccadeLog(saccadeCounter);
 	double targX, targY;
-	if(randomMove)
+	if(RANDOM_MOVES)
 	{
 		//Move eyes and head to an initial starting point
 		cout << "Making a random movement to new starting position" << endl;
@@ -994,7 +1008,7 @@ bool EyeHeadSaccading::learn_iStyleHeadLinks()
 		cout << "*************Starting new naughty head only saccade**************" << endl;
 		double targX, targY;
 
-		if(randomMove)
+		if(RANDOM_MOVES)
 		{
 			//Move eyes and head to an initial starting point
 			cout << "Making a random movement to new starting position" << endl;

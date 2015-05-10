@@ -38,6 +38,7 @@ FILE(GLOB folder_source
 	src/handEyeCoordination.cpp
 	src/headController.cpp
 	src/headSaccading.cpp
+	src/ReachController.cpp
 	src/ShortTermMemoryV2.cpp
 	src/target.cpp
 	src/testFunctions.cpp

@@ -31,6 +31,7 @@ class graspController //: public armController
 		graspController(std::string robot, armController* arm, bool skin=true);
 
 		bool initGrasp(std::string robot);
+		void closePorts();
 		bool move(const double* position,bool block=true, const bool rightArm=true);
 		bool handsStationary();
 		bool grasp(bool rightArm=true);

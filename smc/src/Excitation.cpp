@@ -79,6 +79,8 @@ Excitation::~Excitation()
 			float fields = 1 - (1/fieldsLearnt);
 			excitation += fields;
 			excitation /= 2;
+			if(excitation <0)
+			excitation = 0.1;
 		}
 		else
 		{
@@ -101,10 +103,14 @@ Excitation::~Excitation()
 		//1 step is the best, more than that is bad.  1st saccade could be as bad as 100.
 		float excitation = log(steps/10.0)*-1;	//100 -> -1
 		if(!success)
-			excitation/=2;
+		{
+			excitation = subsystems[EYE] /=2;
+		}
 		float current = subsystems[EYE];
 		excitation += current;
 		excitation /= 2;
+		if(excitation <0)
+			excitation = 0.1;
 		subsystems[EYE] = excitation;
 
 		updateGlobalExcitation();
@@ -120,6 +126,9 @@ Excitation::~Excitation()
 		float eAcuity =  1 - (acuity/200);
 
 		float excitation = (eFOV + eAcuity)/2;
+
+		if(excitation <0)
+			excitation = 0.1;
 
 		subsystems[FOVEAL] = excitation;
 
@@ -144,6 +153,8 @@ Excitation::~Excitation()
 
 		if(eChange>1)
 			eChange = 1;
+		if(eChange <0)
+			eChange = 0.1;
 
 		float current = subsystems[FOVEAL];
 		subsystems[FOVEAL] = (current + eChange)/2;
@@ -224,6 +235,9 @@ Excitation::~Excitation()
 		excitation *= (1-mapSaturation);
 		subsystems[ARM] = excitation;
 
+		if(excitation <0)
+			excitation = 0.1;
+
 		//if(stage==0)
 			subsystems[HAND] = excitation;
 
@@ -253,6 +267,9 @@ Excitation::~Excitation()
 		float current = subsystems[ARM];
 		excitation += current;
 		excitation /= 2;
+
+		if(excitation <0)
+			excitation = 0.1;
 		subsystems[ARM] = excitation;
 
 		updateGlobalExcitation();
@@ -271,6 +288,7 @@ Excitation::~Excitation()
 		{
 			current -= 0.015;
 		}
+		subsystems[subsystem] = current;
 		updateGlobalExcitation();
 	}
 

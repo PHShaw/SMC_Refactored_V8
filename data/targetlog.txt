@@ -1,0 +1,544 @@
+Colour x y distFromCentre comment
+red 103.633 122.519 56.4233
+red 102.964 121.833 57.0652
+red 159.136 122.429 2.57767 Central
+red 162.738 119.517 2.78017 Central
+red 161.66 119.348 1.78323 Central
+red 160.15 120.054 0.159248 Central
+red 161.076 120.124 1.083 Central
+red 159.201 120.157 0.814071 Central
+red 159.229 120.405 0.87122 Central
+red 160.993 120.096 0.997769 Central
+red 159.903 120.13 0.162338 Central
+red 158.64 120.367 1.40856 Central
+red 159.415 120.354 0.683665 Central
+red 160.365 120.208 0.419691 Central
+red 159.449 120.305 0.629882 Central
+red 158.712 120.423 1.35614 Central
+red 160.075 120.342 0.350655 Central
+red 159.946 120.311 0.316007 Central
+red 159.527 120.162 0.5 Central
+red 159.057 120.368 1.01176 Central
+red 157.312 118.948 2.88609 Central
+red 200 121 40.0125
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+red 164.5 89.5 30.8302
+red 155.5 129.7 10.693 Central
+red 156.5 120 3.5 Central
+red 153 120 7 Central
+red 171 118.5 11.1018 Central
+- 0 0 No target of specified colour
+red 161 118.8 1.56205 Central
+red 157 119 3.16228 Central
+- 0 0 No target of specified colour
+red 170.333 119.667 10.3387 Central
+red 162 120 2 Central
+red 170 120 10 Central
+red 171 119.5 11.0114 Central
+- 0 0 No target
+- 0 0 No target
+green 194.5 114 35.0179
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 180 89 36.8917
+green 179 89 36.3593
+green 180.5 89 37.1652
+green 180.5 89 37.1652
+green 180 89 36.8917
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 208.625 120.75 48.6308
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 234 103 75.9276
+green 235 104 76.6877
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 143 120 17
+green 132 123 28.1603
+green 156.5 110 10.5948 Central
+green 159.8 121.4 1.41421 Central
+green 160 120 0 Central
+green 160.5 120.25 0.559017 Central
+green 159.2 120.2 0.824623 Central
+green 160 120.5 0.5 Central
+green 161 120 1 Central
+green 160.571 120.143 0.589014 Central
+green 160 120 0 Central
+green 158.5 120.5 1.58114 Central
+red 118 176 70
+- 0 0 No target of specified colour
+red 133.8 93.95 36.9465
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+red 160 74 46
+red 150 125.4 11.3649 Central
+red 161 121 1.41421 Central
+red 161 121 1.41421 Central
+red 160.5 119.75 0.559017 Central
+red 159.5 118.5 1.58114 Central
+green 204.175 69.55 67.0569
+green 204.051 69.6667 66.8877
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 194.364 81.0606 51.934
+green 194.378 80.9459 52.0297
+green 194.273 80.9697 51.9421
+green 135.182 98.8864 32.5842
+green 134.947 98.5526 32.9791
+green 135.244 98.6341 32.7011
+green 135.122 98.7317 32.7301
+green 240.68 59.48 100.856
+green 240.182 59.8182 100.255
+green 206.333 66.7667 70.5731
+green 206.393 66.75 70.6248
+green 206.594 66.6875 70.804
+green 206.222 66.7407 70.5198
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 247.524 84.381 94.4941
+green 248.12 84.48 95.0095
+green 248 84.4138 94.923
+green 248.548 117.484 88.5841
+green 248.552 117.483 88.5875
+green 247.968 117.355 88.0075
+green 247.972 117.472 88.0085
+green 123.556 52.4444 76.759
+green 244.611 134.333 85.8166
+green 129.786 124 30.4779
+green 153.787 111.83 10.2641 Central
+green 160.256 120.419 0.490579 Central
+green 160.146 120.293 0.327235 Central
+green 160.225 120.05 0.230495 Central
+green 159.9 120.32 0.335263 Central
+green 160.143 120.405 0.429231 Central
+green 160.359 120.128 0.381185 Central
+green 160.163 120.163 0.230897 Central
+green 160.66 120.3 0.724987 Central
+green 157.333 120.889 2.81092 Central
+red 119 173 67.0075
+red 119 173 67.0075
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+**************END**************

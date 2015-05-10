@@ -22,10 +22,10 @@
  bool const NEAREST_NEIGHBOUR = true;
  bool const RANDOM_MOVES=true;
  bool const SAFEMODE = true;
- bool const BASIC_VISION = false;
+ bool const BASIC_VISION = true;
 
- float const RETINA_WIDTH = 640.f;	// OR 320
- float const RETINA_HEIGHT = 480.f; 	// OR 240
+ float const RETINA_WIDTH = 320.f;	// OR 320
+ float const RETINA_HEIGHT = 240.f; 	// OR 240
 
  unsigned char const COLOUR = 0x01;
  unsigned char const MOTION = 0x02;

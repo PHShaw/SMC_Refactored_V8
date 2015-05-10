@@ -413,8 +413,8 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 	entry += " from ";
 	logEntry(entry, startX, startY);
 
-	int noTargetThreshold = 10;
-	noTargetThreshold = max((int)(100.0/(saccadeCounter+1)),10);
+	int noTargetThreshold = 100;
+	noTargetThreshold = max((int)(100.0/(saccadeCounter+1)),noTargetThreshold);
 
 	bool centred = target->targetCentred(&targX, &targY, colour);
 
@@ -554,7 +554,7 @@ bool eyeSaccading::saccade(int pSaccadeCounter, double targX, double targY, stri
 		else
 		{
 			noTargetCounter ++;
-			if(noTargetCounter >= 20)
+			if(noTargetCounter >= noTargetThreshold)
 			{
 				cout << "Not likely to be able to reach an invisible target" << endl;
 				cout << "Or started on a colour that I've not been able to locate again" << endl;

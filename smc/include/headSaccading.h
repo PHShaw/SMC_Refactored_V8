@@ -25,9 +25,10 @@ typedef FieldFieldMapping ffm;
 class headSaccading
 {
 public:
-	headSaccading(headController* pHead, eyeController* pEye,  eyeSaccading* pEyeSac, Target* pTarget, ffm* head_ppm, bool learn,
-			bool pNeigh, std::string path);
+	headSaccading(headController* pHead, eyeSaccading* pEyeSac, Target* pTarget, ffm* head_ppm);
 	virtual ~headSaccading();
+
+	void reloadMaps( ffm* ppm){head_ppm=ppm;}
 
 	bool allStationary();
 	void recordPrePositions();
@@ -95,8 +96,6 @@ private:
 	double EyeX1, EyeX2, EyeY1, EyeY2;	//pre and post eye saccade
 	double HeadX1, HeadY1;
 
-	bool learn;
-	bool nearestNeighbour;
 
 	int saccadeCounter;
 
@@ -104,7 +103,6 @@ private:
 	std::list<position> saccadeSteps;
 	//--------------------
 
-	std::string path;
 	std::ofstream motorlogfile;
 	std::ofstream logfile;
 };

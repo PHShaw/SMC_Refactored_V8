@@ -226,9 +226,14 @@ bool graspController::initGrasp(string robot)
 //	delete varLeft;
 //	delete varRight;
 
-
-
 }
+
+void graspController::closePorts()
+{
+	portRight.close();
+	portLeft.close();
+}
+
 
 bool graspController::handsStationary()
 {
@@ -773,7 +778,9 @@ bool graspController::fist(bool rightArm)
 	currentArmPose[12] = 60;
 	currentArmPose[13] = 60;
 	currentArmPose[14] = 60;
-	currentArmPose[15] = 120;
+	currentArmPose[15] = 150;
+
+	move(currentArmPose, true, rightArm);
 
 }
 
