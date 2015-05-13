@@ -44,6 +44,10 @@ class graspController //: public armController
 
 		bool isHolding(){return grasping;}
 
+		bool isHandOpen() const
+		{
+			return handOpen;
+		}
 
 	private:
 		yarp::os::BufferedPort < yarp::os::Bottle > portRight;
@@ -66,6 +70,8 @@ class graspController //: public armController
 
 		float maxDiffRight[SENSORS];
 		float maxDiffLeft[SENSORS];
+
+		bool handOpen;	//true is open, false is closed (fisted/grasping)
 
 		armController* ac;
 //		yarp::dev::IVelocityControl *velRight;

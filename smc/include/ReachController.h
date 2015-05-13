@@ -31,6 +31,7 @@ namespace smc
 	enum Status {COMPLETE, HOME, WAITING, STOPPED, REACHING, UNREACHABLE, UNKNOWN};
 
 
+
 	class ReachController : public yarp::os::TypedReaderCallback<yarp::os::Bottle>
 	{
 		public:
@@ -48,21 +49,45 @@ namespace smc
 			void command(std::string cmd);
 			void command(std::string cmd, bool arm);
 
+			void setCurrentStatus(Status pstatus){status = pstatus;}
 			Status getCurrentStatus(){return status;}
+			std::string statusToString(Status status);
 			float getDistance(){return dist;}
 			bool isReachingOkay();
+
+			char getCurArm() const
+			{
+				return arms;
+			}
+
+			float getX() const
+			{
+				return x;
+			}
+
+			float getY() const
+			{
+				return y;
+			}
+
+			float getZ() const
+			{
+				return z;
+			}
 
 		private:
 			yarp::os::BufferedPort<yarp::os::Bottle> portReachCommands;
 			yarp::os::BufferedPort<yarp::os::Bottle> portReachFeedback;
 			yarp::os::Bottle* reachResponse;
 
-			float dist;
+			float dist, x,y,z;
 			int ratio;	//quality of current reach, >2 good, <2 bad;
 			Status status;
+
+			char arms; //l/r/b;		(left right both)
 
 
 	};
 
-} /* namespace std */
+} /* namespace smc */
 #endif /* REACHCONTROLLER_H_ */

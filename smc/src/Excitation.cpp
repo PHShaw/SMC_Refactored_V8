@@ -380,6 +380,35 @@ Excitation::~Excitation()
  		cout << endl;
  	}
 
+
+ 	std::string Excitation::excitationToString(System sys)
+	{
+		switch(sys)
+		{
+			case RETINA:
+				return "retina";
+				break;
+			case FOVEAL:
+				return "foveal";
+				break;
+			case ARM:
+				return "arm";
+				break;
+			case HAND:
+				return "hand";
+				break;
+			case EYE:
+				return "eye";
+				break;
+			default:
+				return "unknown";
+				break;
+		}
+		return "unknown";
+	}
+
+
+
 } /* namespace smc */
 
 

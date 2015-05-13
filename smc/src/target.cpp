@@ -359,6 +359,18 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 									*targX, *targY);
 
 							targetlogfile << colour << " " << *targX << " " << *targY;
+							double dist;
+							if(fovea(*targX, *targY, &dist))
+							{
+								printf("Central\n");
+								targetlogfile << " " << dist <<" Central";
+							}
+							else
+								targetlogfile << " " << dist;
+							targetlogfile << endl;
+							lastX = *targX;
+							lastY = *targY;
+							return true;
 						}
 						else
 							continue;
@@ -378,6 +390,18 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 									*targX, *targY);
 
 							targetlogfile << colour << " " << *targX << " " << *targY;
+							double dist;
+							if(fovea(*targX, *targY, &dist))
+							{
+								printf("Central\n");
+								targetlogfile << " " << dist <<" Central";
+							}
+							else
+								targetlogfile << " " << dist;
+							targetlogfile << endl;
+							lastX = *targX;
+							lastY = *targY;
+							return true;
 						}
 						else continue;
 					}
@@ -398,6 +422,18 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 									*targX, *targY);
 
 							targetlogfile << colour << " " << *targX << " " << *targY;
+							double dist;
+							if(fovea(*targX, *targY, &dist))
+							{
+								printf("Central\n");
+								targetlogfile << " " << dist <<" Central";
+							}
+							else
+								targetlogfile << " " << dist;
+							targetlogfile << endl;
+							lastX = *targX;
+							lastY = *targY;
+							return true;
 						}
 						else continue;
 					}
@@ -417,6 +453,18 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 									*targX, *targY);
 
 							targetlogfile << colour << " " << *targX << " " << *targY;
+							double dist;
+							if(fovea(*targX, *targY, &dist))
+							{
+								printf("Central\n");
+								targetlogfile << " " << dist <<" Central";
+							}
+							else
+								targetlogfile << " " << dist;
+							targetlogfile << endl;
+							lastX = *targX;
+							lastY = *targY;
+							return true;
 						}
 						else
 							continue;

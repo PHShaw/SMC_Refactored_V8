@@ -23,6 +23,7 @@ namespace smc
 
 enum System {RETINA, FOVEAL, ARM, HAND, EYE};
 
+
 class Excitation
 {
 public:
@@ -56,6 +57,7 @@ public:
 
 
 	void printExcitations();
+	std::string excitationToString(System sys);
 //	TODO: print and log excitation levels.
 private:
 	float globalExcitation;

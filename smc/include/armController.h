@@ -38,7 +38,7 @@ const double absMaxJointRanges[] = {  5, 140,  75, 100,  50,   0,  25, 60, 90, 9
 
 const double ARM_REST[] =	 	{  5, 10,  0, 15,  0,-30,  0, 55,  0, 66, 32,  5,  5,  5,  5,  5};
 const double ARM_BOARD_REST[] =	{-38, 64, 50, 15, 20,-30,  0, 55,  0, 66, 32,  5,  5,  5,  5,  5};
-const double ARM_VELOCITY[] = 	{ 12, 12, 12, 10, 10, 10, 10, 20, 40, 50, 60, 60, 70, 70, 80, 100};
+const double ARM_VELOCITY[] = 	{ 12, 12, 12, 10, 10, 10, 10, 20, 40, 50, 60, 60, 60, 60, 70, 80};
 
 class graspController;
 

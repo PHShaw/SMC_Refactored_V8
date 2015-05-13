@@ -31,6 +31,7 @@ graspController::graspController(string robot, armController* arm, bool useSkin)
 	ac = arm;
 	initGrasp(robot);
 	grasping=false;
+	handOpen=true;
 #ifdef RIGHT_ARM
 	release(true);	//rightarm
 #endif
@@ -758,6 +759,7 @@ bool graspController::grasp(bool rightArm)
 	}
 
 	grasping = grasped;
+	handOpen = false;
 	return grasped;
 
 }
@@ -773,6 +775,7 @@ bool graspController::release(bool rightArm)
 	}
 	move(currentArmPose, true, rightArm);
 	grasping = false;
+	handOpen=true;
 	Time::delay(1.5);
 	currentArmPose[10] = 32;
 //	currentArmPose[9] = 66;
@@ -795,7 +798,8 @@ bool graspController::fist(bool rightArm)
 	currentArmPose[14] = 60;
 	currentArmPose[15] = 150;
 
-	move(currentArmPose, true, rightArm);
+	handOpen = !move(currentArmPose, true, rightArm);
+	return !handOpen;
 
 }
 

@@ -13,8 +13,13 @@ namespace smc
 
 ReachController::ReachController()
 {
-	status = UNKNOWN;
+	status = HOME;
 	dist = 0;
+	x = 0;
+	y = 0;
+	z = 0;
+	ratio= 1;
+	arms = 'b';
 }
 
 ReachController::~ReachController()
@@ -41,15 +46,25 @@ void ReachController::closePorts()
 
 void ReachController::onRead(yarp::os::Bottle& b) {
 	 std::cout<<"[BOTTLE] Reach Feedback received: '"<<b.toString()<<"' size: "<<b.size()<<std::endl;
+	 //[status dist x y z]
 	 string message = b.get(0).asString().c_str();
 	 if(message == msg_COMPLETE || message == msg_COMPLETED)
 	 {
 		 status = COMPLETE;
 		 dist = b.get(1).asDouble();
+		 x = b.get(2).asDouble();
+		 y = b.get(3).asDouble();
+		 z = b.get(4).asDouble();
 	 }
 	 else if(message == msg_HOME)
 	 {
 		 status = HOME;
+		 string which = b.get(1).asString().c_str();
+		 arms = which[0];
+		 dist = 0;
+		 x = b.get(2).asDouble();
+		 y = b.get(3).asDouble();
+		 z = b.get(4).asDouble();
 	 }
 	 else if(message == msg_WAITING)
 	 {
@@ -59,7 +74,10 @@ void ReachController::onRead(yarp::os::Bottle& b) {
 	 {
 		 status = REACHING;
 		 dist = b.get(1).asDouble();
-		 ratio = b.get(2).asInt();	//Quality of reach, 1 is good, 0 is bad.
+		 x = b.get(2).asDouble();
+		 y = b.get(3).asDouble();
+		 z = b.get(4).asDouble();
+		 ratio = b.get(5).asInt();	//Quality of reach, 1 is good, 0 is bad.
 	 }
 	 else if(message == msg_STOPPED)
 	 {
@@ -89,6 +107,11 @@ bool ReachController::isReachingOkay()
  */
 void ReachController::sendArmTarget(double x, double y, double z, bool right_arm)
 {
+	if(right_arm)
+		arms = 'r';
+	else
+		arms = 'l';
+
 	yarp::os::Bottle& b = portReachCommands.prepare();
 	b.clear();
 	b.addString("target");
@@ -107,6 +130,7 @@ void ReachController::sendArmTarget(double x, double y, double z, bool right_arm
 
 void ReachController::command(string cmd)
 {
+	arms = 'b';
 	//Send command to reaching
 	yarp::os::Bottle& b = portReachCommands.prepare();
 	b.clear();
@@ -116,6 +140,10 @@ void ReachController::command(string cmd)
 
 void ReachController::command(string cmd, bool arm)
 {
+	if(arm)
+		arms = 'r';
+	else
+		arms = 'l';
 	//Send command to reaching
 	yarp::os::Bottle& b = portReachCommands.prepare();
 	b.clear();
@@ -152,7 +180,37 @@ float getReachFeedback()
 }
 */
 
+	std::string ReachController::statusToString(Status status)
+	{
+		switch(status)
+		{
+			case COMPLETE:
+				return "complete";
+				break;
+			case HOME:
+				return "home";
+				break;
+			case WAITING:
+				return "waiting";
+				break;
+			case STOPPED:
+				return "stopped";
+				break;
+			case REACHING:
+				return "reaching";
+				break;
+			case UNREACHABLE:
+				return "unreachable";
+				break;
+			case UNKNOWN:
+			default:
+				return "unknown";
+				break;
+		}
+		return "unknown";
+	}
 
-} /* namespace std */
+
+} /* namespace smc */
 
 
