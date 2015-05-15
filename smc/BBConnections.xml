@@ -11,12 +11,13 @@
   <protocol>tcp</protocol>
 </connection>
 
+<!--
 <connection>
   <from>/aber/reach/status:o</from>
   <to>/smc/reaching/in</to>
   <protocol>tcp</protocol>
 </connection>
-
+-->
 <connection>
   <to>/smc/reaching/in</to>
   <from>/aber/reach/BBfeedback:o</from>

@@ -87,9 +87,9 @@ public:
 	bool checkCombiLinks(double targX, double targY);
 	bool checkCombiLinks(double targX, double targY, std::string colour, bool check=true);
 	bool fixate(double targX, double targY, std::string colour, bool simple=true);
-	bool fixate(int xl, int yl, int xr, int yr);
-	bool fixate();	//Fixate on something
-	bool fixate(std::string colour);	//fixate on a target of colour...
+	bool fixate(int xl, int yl, int xr, int yr, bool simple=true);
+	bool fixate(bool simple=true);	//Fixate on something
+	bool fixate(std::string colour, bool simple=true);	//fixate on a target of colour...
 
 	bool fixateEyeHead(int xr, int yr);
 
@@ -159,6 +159,12 @@ public:
 	void setUseThresholds(bool useThresholds)
 	{
 		this->useThresholds = useThresholds;
+	}
+
+	void resetRollingAverage(){
+		rollingAverage=0;
+		rollingBlock.clear();
+		saccadeCounter=0;
 	}
 
 private:

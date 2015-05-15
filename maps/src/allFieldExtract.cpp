@@ -22,13 +22,13 @@ int main()
 	ofstream outputFields;
 
 
-	inputFields.open("../data/fields/allInputFields.txt");
+	inputFields.open("../../data/fields/allInputFields.txt");
 	inputFields << "x y radius\n";
 
-	outputFields.open("../data/fields/allOutputFields.txt");
+	outputFields.open("../../data/fields/allOutputFields.txt");
 	outputFields << "x y radius\n";
 
-	ffm* ppm = new ffm(POLAR_MAP, 0.f, 324.f, 0.f, 244.f, POLAR_MAP, -60.f, 60.f, -53.f, 53.f);
+	ffm* ppm = new ffm(POLAR_MAP, 0.f, 320.f, 0.f, 240.f, POLAR_MAP, -60.f, 60.f, -53.f, 53.f);
 
 
 	size_t numFields;

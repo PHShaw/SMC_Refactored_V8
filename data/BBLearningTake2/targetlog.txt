@@ -1,0 +1,2108 @@
+Colour x y distFromCentre comment
+*******************************
+Starting saccade: 0
+green 142.179 68.4947 54.5012
+green 142.153 68.4339 54.5671
+*******************************
+Starting saccade: 0
+yellow 89.9621 152.658 77.2776
+yellow 90.017 152.731 77.259
+yellow 142.274 107.573 21.6479
+yellow 155.474 119.072 4.61976 Central
+yellow 160.554 120.05 0.556087 Central
+yellow 160.536 120.051 0.537966 Central
+yellow 160.088 119.975 0.0918662 Central
+yellow 160.054 119.973 0.0599624 Central
+yellow 160.044 120.005 0.0440865 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 1
+yellow 125.025 220.346 106.267
+yellow 124.931 220.379 106.329
+yellow 176.425 126.859 17.7997
+yellow 149.55 130.908 15.1062 Central
+yellow 161.175 119.31 1.3623 Central
+yellow 161.146 119.34 1.32266 Central
+yellow 159.63 119.997 0.37005 Central
+yellow 159.613 119.988 0.386722 Central
+yellow 159.668 119.952 0.335384 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 2
+green 185.975 124.33 26.3338
+green 185.975 124.374 26.3411
+green 158.827 128.252 8.33546 Central
+green 160.555 119.955 0.556814 Central
+green 160.683 119.95 0.684958 Central
+green 159.902 119.975 0.101056 Central
+green 159.827 120.025 0.175022 Central
+green 159.922 119.981 0.0800576 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 3
+yellow 146.379 109.066 17.4669
+yellow 146.396 109.084 17.4426
+yellow 157.415 120.804 2.70678 Central
+yellow 160.297 119.961 0.299741 Central
+yellow 160.33 119.933 0.336692 Central
+yellow 159.991 119.949 0.0521279 Central
+yellow 160.059 119.954 0.0744019 Central
+yellow 160.039 119.957 0.058079 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 4
+green 231.148 49.3571 100.262
+green 231.066 49.3607 100.201
+green 171.926 126.744 13.7008 Central
+green 158.724 119.956 1.27663 Central
+green 158.897 119.685 1.14761 Central
+green 160.068 120.271 0.278855 Central
+green 159.881 120.153 0.194078 Central
+green 159.956 120.223 0.227538 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 5
+red 66.2683 48.7805 117.719
+red 66.4857 48.4857 117.725
+*******************************
+Starting saccade: 5
+green 164.571 102.704 17.8895
+green 164.398 102.675 17.8748
+green 160.791 112.483 7.55892 Central
+green 159.416 120.045 0.585849 Central
+green 159.654 120 0.346344 Central
+green 159.937 120.034 0.0716774 Central
+green 159.897 120.005 0.103572 Central
+green 159.868 120.039 0.138042 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 6
+red 99.5467 168.938 77.7786
+red 99.4178 169.022 77.9319
+*******************************
+Starting saccade: 6
+yellow 104.014 161.766 69.8484
+yellow 103.985 161.806 69.8956
+yellow 155.282 119.989 4.71774 Central
+yellow 160.583 119.993 0.582733 Central
+yellow 160.55 120.005 0.550363 Central
+yellow 159.901 119.942 0.114635 Central
+yellow 159.97 119.945 0.0625556 Central
+yellow 160.039 119.975 0.0465331 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 7
+green 114.649 38.5081 93.2613
+green 114.793 38.5217 93.1791
+green 165.239 100.468 20.2227
+green 148.693 112.322 13.6673 Central
+green 160.842 120.748 1.12564 Central
+green 160.92 120.871 1.26694 Central
+green 159.765 120.15 0.278793 Central
+green 159.787 120.094 0.232731 Central
+green 159.746 120.274 0.373574 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 8
+green 272.406 20.4783 150.132
+green 272.513 20.7308 150.045
+green 226.298 20.9894 119.158
+green 226.6 20.9579 119.352
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 166.315 28.9157 91.3029
+green 156.502 109.212 11.341 Central
+green 159.96 120.209 0.21271 Central
+green 159.851 120.203 0.251504 Central
+green 160.141 120.087 0.165691 Central
+green 160.139 119.995 0.138699 Central
+green 160.105 120.085 0.135089 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 9
+yellow 123.991 135.528 39.2139
+yellow 124.031 135.514 39.1724
+yellow 162.491 129.573 9.89159 Central
+yellow 159.734 119.418 0.639759 Central
+yellow 159.671 119.508 0.591358 Central
+yellow 159.957 119.936 0.0767542 Central
+yellow 160.015 119.969 0.0346755 Central
+yellow 160.025 119.96 0.0474391 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 10
+yellow 106.61 224.183 117.067
+yellow 105.802 224.14 117.399
+yellow 193.318 145.554 41.9891
+yellow 165.78 117.142 6.44802 Central
+yellow 159.344 120.416 0.776577 Central
+yellow 159.392 120.37 0.711839 Central
+yellow 159.731 119.964 0.270908 Central
+yellow 159.762 119.945 0.243835 Central
+yellow 159.788 119.961 0.215266 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 11
+green 149.778 66.5026 54.4652
+green 149.75 66.5729 54.4014
+*******************************
+Starting saccade: 11
+yellow 65.6667 157.667 101.575
+yellow 65.5 157.5 101.669
+yellow 151.623 120.709 8.40688 Central
+yellow 161.024 119.949 1.02519 Central
+yellow 161.001 119.939 1.0029 Central
+yellow 159.767 119.956 0.236867 Central
+yellow 159.863 119.909 0.164275 Central
+yellow 159.866 119.92 0.156165 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 12
+yellow 84.5337 104.325 77.0771
+yellow 84.8099 104.285 76.8147
+yellow 206.734 131.431 48.1114
+yellow 160.488 107.913 12.0966 Central
+yellow 159.859 120.838 0.850034 Central
+yellow 159.804 120.839 0.861808 Central
+yellow 160.034 119.907 0.0993127 Central
+yellow 160.057 119.913 0.103923 Central
+yellow 160.104 119.902 0.142448 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 13
+yellow 161.737 224.737 104.751
+yellow 162.2 224.75 104.773
+yellow 180.277 148.155 34.697
+yellow 169.971 115.788 10.8237 Central
+yellow 158.803 120.929 1.51531 Central
+yellow 158.867 120.839 1.40947 Central
+yellow 160.12 119.94 0.13402 Central
+yellow 160.074 119.951 0.0884583 Central
+yellow 160.049 119.954 0.0672174 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 14
+yellow 180.629 216.533 98.7127
+yellow 180.576 216.536 98.704
+yellow 167.158 122.88 7.7157 Central
+yellow 159.191 119.809 0.831537 Central
+yellow 159.179 119.816 0.841453 Central
+yellow 159.899 119.908 0.136205 Central
+yellow 159.955 119.897 0.11185 Central
+yellow 159.922 119.905 0.123326 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 15
+green 98.4121 112.98 61.9867
+green 98.403 113.04 61.989
+green 167.727 113.527 10.08 Central
+green 158.837 120.177 1.17601 Central
+green 158.931 120.167 1.08201 Central
+green 160.113 120.039 0.119372 Central
+green 160.195 119.885 0.22639 Central
+green 160.257 119.932 0.266104 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 16
+green 106.366 32.8015 102.373
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 212.373 117.238 52.4458
+green 148.176 126.647 13.5639 Central
+green 161.714 120.045 1.71416 Central
+green 161.639 120.163 1.64673 Central
+green 159.907 119.922 0.121763 Central
+green 159.906 119.931 0.116832 Central
+green 159.745 119.915 0.268798 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 17
+green 171.18 113.529 12.9173 Central
+green 171.177 113.498 12.9312 Central
+green 158.738 120.144 1.27051 Central
+green 158.71 120.15 1.29869 Central
+green 158.782 120.218 1.23768 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 18
+red 93.3586 131.43 67.6146
+red 93.4704 131.379 67.4958
+*******************************
+Starting saccade: 18
+yellow 195.287 209.329 96.0461
+yellow 195.348 209.294 96.0364
+yellow 156.76 131.82 12.2556 Central
+yellow 160.39 118.994 1.07878 Central
+yellow 160.377 118.994 1.07395 Central
+yellow 159.904 120.148 0.176592 Central
+yellow 159.967 120.118 0.123017 Central
+yellow 159.999 120.062 0.0623789 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 19
+green 230.793 84.6632 79.1221
+green 230.852 84.5357 79.2321
+*******************************
+Starting saccade: 19
+green 183.723 46.0621 77.6505
+green 183.638 45.9459 77.7351
+*******************************
+Starting saccade: 19
+yellow 206.311 205.597 97.3218
+yellow 206.285 205.599 97.3112
+yellow 168.187 123.943 9.0873 Central
+yellow 158.861 119.932 1.14088 Central
+yellow 158.864 119.909 1.13926 Central
+yellow 160.192 119.957 0.19648 Central
+yellow 160.206 119.957 0.210227 Central
+yellow 160.172 119.952 0.178739 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 20
+green 138.207 19.3448 102.987
+green 138.111 19.2963 103.055
+green 135.824 114.776 24.7337
+green 162.886 110.559 9.87191 Central
+green 158.961 120.51 1.15753 Central
+green 159.005 120.45 1.09228 Central
+green 160.154 120.104 0.18629 Central
+green 160.09 120.135 0.16225 Central
+green 160.322 120.149 0.354397 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 21
+green 178.685 117.239 18.8882
+green 178.67 117.185 18.881
+green 176.337 117.538 16.5217
+green 169.289 121.829 9.46752 Central
+green 159.141 119.791 0.884215 Central
+green 159.015 119.822 1.00114 Central
+green 160.193 120.099 0.216975 Central
+green 160.073 120.093 0.118081 Central
+green 160.299 120.025 0.30003 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 22
+green 192.753 25.5323 99.9845
+green 192.706 25.65 99.8578
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 259.314 102.644 100.819
+*******************************
+Starting saccade: 22
+yellow 191.703 113.023 32.4613
+yellow 191.661 113.029 32.419
+yellow 153.669 119.028 6.4051 Central
+yellow 159.926 120.193 0.206359 Central
+yellow 159.832 120.134 0.215018 Central
+yellow 159.834 119.995 0.166555 Central
+yellow 159.939 119.959 0.0731548 Central
+yellow 160.015 119.935 0.0665123 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 23
+green 209.226 95.4422 55.0118
+green 209.313 95.4545 55.0842
+green 138.794 129.456 23.2186
+green 158.251 111.14 9.03084 Central
+green 159.877 120.163 0.203942 Central
+green 159.827 120.198 0.263121 Central
+green 160.039 120.058 0.0700083 Central
+green 160.099 120.025 0.101557 Central
+green 160.005 120.02 0.0204062 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 24
+green 281.181 55.6667 137.199
+green 281.333 55.5655 137.381
+green 241.774 45.5706 110.575
+green 180.835 108.355 23.8685
+green 142.024 113.981 18.9568
+green 155.943 120.746 4.1255 Central
+green 160.485 120.206 0.527156 Central
+green 160.532 120.244 0.585499 Central
+green 159.833 120.069 0.181123 Central
+green 159.879 119.905 0.153821 Central
+green 159.905 120.03 0.0996251 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 25
+green 255.568 91.6211 99.693
+green 255.503 91.6632 99.6179
+green 150.836 126.328 11.1369 Central
+green 161.105 119.957 1.10611 Central
+green 161.144 119.875 1.15103 Central
+green 159.955 119.95 0.0669289 Central
+green 159.936 119.98 0.0673378 Central
+green 159.811 120.065 0.199813 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 26
+red 68.4225 141.246 94.0098
+red 67.9702 140.851 94.3623
+*******************************
+Starting saccade: 26
+green 242.129 42.3315 113.038
+green 241.948 42.2486 112.964
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 244.747 77.2796 94.906
+green 109.658 121.302 50.3585
+green 165.966 121.712 6.20698 Central
+green 159.502 120.108 0.50921 Central
+green 159.412 120.083 0.594115 Central
+green 160.204 119.874 0.239792 Central
+green 160.239 119.888 0.264051 Central
+green 160.18 119.98 0.181533 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 27
+green 150.254 27.0317 93.4777
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 165.206 20.9691 99.1677
+green 153.51 98.0392 22.8998
+green 155.176 112.495 8.92133 Central
+green 160.155 120.952 0.964164 Central
+green 160.252 120.985 1.01725 Central
+green 159.848 120.142 0.20809 Central
+green 159.851 120.149 0.21003 Central
+green 159.808 120.177 0.261458 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 28
+green 123.411 116.668 36.7405
+green 123.475 116.691 36.6741
+green 161.252 111.069 9.01809 Central
+green 159.559 120.233 0.49826 Central
+green 159.655 120.246 0.423766 Central
+green 159.861 120.114 0.180269 Central
+green 159.901 120.084 0.129949 Central
+green 159.855 120.095 0.173354 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 29
+yellow 97.8813 95.553 66.7562
+yellow 98.0829 95.3508 66.6432
+yellow 153.058 119.912 6.94232 Central
+yellow 162.094 119.956 2.09444 Central
+yellow 162.059 119.986 2.0593 Central
+yellow 159.57 120.068 0.435281 Central
+yellow 159.604 120.064 0.401018 Central
+yellow 159.606 120.064 0.399467 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 30
+green 140.033 41.7322 80.7746
+green 140.162 41.7598 80.716
+green 142.596 115.591 17.9537
+green 163.961 115.714 5.83645 Central
+green 159.063 120.19 0.955711 Central
+green 159.198 120.074 0.805417 Central
+green 160.005 120.087 0.0870943 Central
+green 159.975 120.118 0.12017 Central
+green 159.98 120.143 0.144212 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 31
+yellow 106.649 154.12 63.3287
+yellow 106.761 154.098 63.2221
+yellow 152.061 119.94 7.93901 Central
+yellow 160.842 120.089 0.846591 Central
+yellow 160.839 120.046 0.839821 Central
+yellow 159.862 119.995 0.138571 Central
+yellow 159.97 119.999 0.0302305 Central
+yellow 159.967 119.977 0.039981 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 32
+red 114.322 169.21 67.1427
+red 114.446 168.887 66.8219
+*******************************
+Starting saccade: 32
+yellow 126.821 213.902 99.5914
+yellow 126.985 213.796 99.4368
+yellow 155.703 115.027 6.57186 Central
+yellow 160.673 120.538 0.861725 Central
+yellow 160.731 120.436 0.851439 Central
+yellow 159.707 119.955 0.295962 Central
+yellow 159.685 119.956 0.318286 Central
+yellow 159.696 119.964 0.306346 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 33
+red 50 64.5 123.208
+- 0 0 No target of specified colour
+red 50 60 125.3
+*******************************
+Starting saccade: 33
+yellow 124.989 101.077 39.7978
+yellow 125.027 101.099 39.7541
+yellow 151.554 111.655 11.8733 Central
+yellow 160.832 120.735 1.10996 Central
+yellow 160.832 120.735 1.10996 Central
+yellow 160.035 119.914 0.0931895 Central
+yellow 160.021 119.952 0.0528521 Central
+yellow 160.017 119.947 0.0556881 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 34
+green 149.784 28.5568 92.0122
+green 149.8 28.5135 92.0533
+green 153.876 129.094 10.9637 Central
+green 161.204 119.874 1.21049 Central
+green 160.986 119.884 0.992301 Central
+green 159.985 119.975 0.0288614 Central
+green 159.981 119.976 0.0310853 Central
+green 159.966 120.049 0.0601336 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 35
+green 103.865 41.0865 96.8426
+green 103.905 41.1844 96.7396
+*******************************
+Starting saccade: 35
+yellow 125.648 205.728 92.3545
+yellow 125.424 206.205 92.8804
+yellow 125.271 206.646 93.3472
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+yellow 166.332 219.975 100.176
+yellow 168.87 104.221 18.1017
+yellow 164.341 106.971 13.7332 Central
+yellow 159.498 120.619 0.796903 Central
+yellow 159.529 120.615 0.774625 Central
+yellow 159.871 119.93 0.14689 Central
+yellow 159.965 119.934 0.0745556 Central
+yellow 160.011 119.958 0.0435786 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 36
+yellow 73 142 89.7385
+yellow 72 142 90.7083
+yellow 174.512 120.927 14.542 Central
+yellow 158.275 119.913 1.7272 Central
+yellow 158.315 119.9 1.68767 Central
+yellow 160.263 119.94 0.269526 Central
+yellow 160.192 119.93 0.203879 Central
+yellow 160.228 119.939 0.236006 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 37
+green 157.17 98.5777 21.6085
+green 157.284 98.5274 21.6438
+green 169.08 114.661 10.5338 Central
+green 158.744 120.847 1.51521 Central
+green 158.822 120.885 1.47308 Central
+green 159.916 120.167 0.187256 Central
+green 151.667 116.667 8.97527 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 38
+green 162.684 19.5789 100.457
+- 0 0 No target of specified colour
+green 213.606 59.6543 80.7171
+*******************************
+Starting saccade: 38
+green 264.262 41.3988 130.571
+green 264.132 41.3772 130.48
+green 184.797 125.416 25.3816
+green 157.592 129.08 9.39348 Central
+green 160.639 120.158 0.657966 Central
+green 160.567 120.139 0.584026 Central
+green 166.714 119.857 6.7158 Central
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 38
+yellow 96.4248 163.373 76.9611
+yellow 96.5344 163.181 76.7625
+yellow 144.246 123.091 16.0541
+yellow 159.882 125.793 5.79404 Central
+yellow 160.104 119.743 0.277589 Central
+yellow 160.096 119.753 0.264594 Central
+yellow 159.868 119.953 0.140235 Central
+yellow 159.888 119.93 0.131538 Central
+yellow 159.887 119.919 0.139111 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 39
+red 100.889 139.164 62.1399
+red 101.332 138.995 61.6667
+*******************************
+Starting saccade: 39
+green 118.115 65.7592 68.5303
+green 118.222 65.899 68.3542
+green 152.976 121.844 7.26236 Central
+green 160.799 120.226 0.830378 Central
+green 160.817 120.198 0.840493 Central
+green 159.966 119.951 0.0601336 Central
+green 159.946 120.005 0.0544077 Central
+green 159.947 119.971 0.0608198 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 40
+red 157.903 149.198 29.2737
+red 158.187 149.346 29.4015
+red 163.016 110.592 9.87906 Central
+red 161.114 120.453 1.20286 Central
+red 160.43 120.371 0.567676 Central
+red 160.34 119.882 0.359907 Central
+red 160.458 119.83 0.488893 Central
+red 160.224 120.128 0.257907 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 41
+red 169.688 130.204 14.0701 Central
+red 169.378 130.757 14.271 Central
+red 158.73 118.722 1.80175 Central
+red 158.264 118.691 2.1746 Central
+red 158.25 119.016 2.00756 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 42
+red 122.143 22.5714 104.525
+red 122.833 22.75 104.11
+red 159.689 121.098 1.14167 Central
+red 160.24 119.76 0.339411 Central
+red 160.139 119.852 0.203002 Central
+red 160.253 119.961 0.256306 Central
+red 160.142 120.103 0.175881 Central
+red 159.939 119.907 0.11117 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 43
+red 70.8182 69.0649 102.702
+red 70.9747 68.7975 102.7
+red 157.57 134.614 14.8142 Central
+red 160.391 118.951 1.11933 Central
+red 160.038 119.23 0.771364 Central
+red 160.587 119.549 0.739977 Central
+red 160.699 119.664 0.775372 Central
+red 160.317 119.696 0.439151 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 44
+yellow 165.255 116.767 6.17016 Central
+yellow 165.255 116.767 6.17016 Central
+yellow 159.341 119.96 0.659866 Central
+yellow 159.347 119.986 0.653065 Central
+yellow 159.33 119.962 0.671396 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 45
+red 179.049 75.0447 48.8245
+red 178.68 74.6139 49.0798
+red 170.913 138.216 21.2354
+red 159.23 126.736 6.78025 Central
+red 159.996 119.659 0.341488 Central
+red 160.245 119.888 0.26923 Central
+red 159.636 120.024 0.36479 Central
+red 159.725 120.247 0.369574 Central
+red 159.893 119.984 0.108312 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 46
+red 126.139 24.2639 101.548
+red 126.064 24.5 101.35
+red 164.101 124.739 6.26748 Central
+red 159.192 119.472 0.965312 Central
+red 159.129 119.724 0.913655 Central
+red 160.103 119.75 0.270558 Central
+red 160.225 119.652 0.414237 Central
+red 159.927 120.444 0.450343 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 47
+yellow 145.863 120.4 14.1426 Central
+yellow 145.804 120.439 14.2025 Central
+yellow 158.326 119.979 1.6741 Central
+yellow 158.34 119.952 1.66025 Central
+yellow 158.332 119.935 1.66915 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 48
+yellow 86.3975 127.349 73.9685
+- 0 0 No target of specified colour
+yellow 165.242 143 23.5897
+yellow 160.815 115.985 4.09653 Central
+yellow 160.13 120.219 0.25498 Central
+yellow 160.14 120.24 0.277538 Central
+yellow 159.762 119.953 0.242694 Central
+yellow 159.777 119.958 0.226996 Central
+yellow 159.777 119.958 0.226996 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 49
+yellow 62.2029 116.899 97.8463
+yellow 61.9355 116.21 98.1377
+yellow 144.167 118.315 15.9223 Central
+yellow 161.974 120.272 1.99274 Central
+yellow 161.98 120.258 1.99663 Central
+yellow 159.555 120.005 0.444651 Central
+yellow 159.567 119.996 0.432907 Central
+yellow 159.598 119.963 0.403591 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 50
+red 134.124 97.2509 34.4544
+red 134.202 97.0542 34.5259
+red 154.441 116.168 6.75176 Central
+red 161.204 120.122 1.21049 Central
+red 161.089 120.298 1.12887 Central
+red 159.647 120.051 0.356864 Central
+red 159.886 119.763 0.262865 Central
+red 159.812 120.077 0.20316 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 51
+red 100.952 175.452 81.0037
+red 101.047 175.395 80.896
+*******************************
+Starting saccade: 51
+yellow 75.2326 138.558 86.7751
+yellow 75.3333 139.039 86.781
+yellow 159.273 141.161 21.1732
+yellow 154.951 113.888 7.9279 Central
+yellow 160.532 120.785 0.948664 Central
+yellow 160.534 120.832 0.988175 Central
+yellow 160.051 119.884 0.127089 Central
+yellow 160.046 119.872 0.135686 Central
+yellow 160.051 119.884 0.127089 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 52
+green 237.99 113.302 78.2771
+green 238.01 113.437 78.2858
+green 150.438 127.08 11.8977 Central
+green 161.098 119.927 1.1 Central
+green 161.168 119.99 1.16831 Central
+green 159.853 119.98 0.148366 Central
+green 159.845 120.034 0.159008 Central
+green 159.883 120.01 0.117487 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 53
+yellow 176.214 101.457 24.6319
+yellow 176.17 101.492 24.5768
+yellow 150.382 120.931 9.66263 Central
+yellow 160.289 119.939 0.295612 Central
+yellow 160.278 119.93 0.28673 Central
+yellow 160.016 119.949 0.0538612 Central
+yellow 160.004 119.965 0.0350338 Central
+yellow 160.004 119.966 0.0339624 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 54
+yellow 145.466 97.2643 26.9842
+yellow 145.447 97.2789 26.9822
+yellow 155.166 114.941 6.997 Central
+yellow 160.639 120.498 0.810366 Central
+yellow 160.659 120.507 0.831776 Central
+yellow 159.796 119.913 0.22183 Central
+yellow 159.785 119.925 0.227938 Central
+yellow 159.773 119.935 0.236347 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 55
+yellow 91.7092 89.389 74.8376
+yellow 91.8463 89.4709 74.679
+yellow 143.063 115.83 17.4427
+yellow 164.535 115.97 6.06656 Central
+yellow 159.616 120.327 0.504462 Central
+yellow 159.634 120.326 0.490373 Central
+yellow 159.833 119.928 0.181703 Central
+yellow 159.873 119.907 0.157761 Central
+yellow 159.891 119.92 0.135103 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 56
+yellow 64.2449 103.776 97.1199
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+yellow 114.291 220.003 109.954
+yellow 172.828 111.119 15.6019 Central
+yellow 158.384 120.899 1.8496 Central
+yellow 158.376 120.879 1.84611 Central
+yellow 160.31 119.86 0.340025 Central
+yellow 160.281 119.889 0.302346 Central
+yellow 160.24 119.918 0.254171 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 57
+yellow 84.5146 107.684 76.4836
+yellow 84.4368 107.891 76.5272
+yellow 159.473 127.28 7.299 Central
+yellow 159.833 119.571 0.460061 Central
+yellow 159.877 119.554 0.462628 Central
+yellow 160.05 119.984 0.0522764 Central
+yellow 160.062 119.964 0.0717531 Central
+yellow 160.062 119.964 0.0717531 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 58
+yellow 81.2053 113.897 79.0307
+yellow 81.3584 114.099 78.8627
+yellow 155.271 134.937 15.6679 Central
+yellow 160.742 118.961 1.27691 Central
+yellow 160.742 118.961 1.27691 Central
+yellow 160.075 120.01 0.0756863 Central
+yellow 160.1 119.966 0.105475 Central
+yellow 160.088 119.975 0.0918662 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 59
+yellow 67.5 72 104.213
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+yellow 128.112 198.499 84.7287
+yellow 178.389 131.269 21.5669
+yellow 151.432 133.986 16.402
+yellow 170.629 114.314 12.0543 Central
+yellow 158.466 120.889 1.77289 Central
+yellow 158.519 120.862 1.71371 Central
+yellow 160.212 119.908 0.230801 Central
+yellow 160.178 119.93 0.191217 Central
+yellow 160.2 119.915 0.217256 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 60
+green 145.05 116.427 15.3708 Central
+green 144.956 116.558 15.4324 Central
+green 161.522 120.244 1.54138 Central
+green 161.518 120.249 1.53801 Central
+green 161.502 120.21 1.51701 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 61
+green 191.822 120.599 31.8274
+green 191.921 120.55 31.9255
+green 166.569 124.376 7.89349 Central
+green 159.404 119.961 0.597355 Central
+green 159.236 120.03 0.764122 Central
+green 160.072 120.063 0.0958933 Central
+green 160.193 120.02 0.194082 Central
+green 160.005 120.069 0.068801 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 62
+red 61.4 65.8 112.515
+red 61.3889 64.7222 113.048
+red 146.016 126.802 15.5505 Central
+red 162.159 119.807 2.16805 Central
+red 162.137 119.703 2.15716 Central
+red 159.502 119.874 0.514081 Central
+red 159.64 120.228 0.425755 Central
+red 159.502 120.099 0.50809 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 63
+yellow 123.91 223.596 109.702
+yellow 123.897 223.596 109.707
+yellow 155.714 133.882 14.5286 Central
+yellow 160.544 119.031 1.11077 Central
+yellow 160.602 119.059 1.11715 Central
+yellow 159.909 120.033 0.0969162 Central
+yellow 159.878 120.014 0.122622 Central
+yellow 159.953 119.989 0.0482239 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 64
+red 173.265 144.819 28.1412
+red 173.195 144.774 28.0685
+red 162.426 113.801 6.65699 Central
+red 159.805 120.607 0.637716 Central
+red 159.718 120.346 0.446006 Central
+red 160.111 119.939 0.126565 Central
+red 160.132 119.919 0.154706 Central
+red 160.039 120.043 0.0581967 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 65
+red 82.8015 138.654 79.4204
+red 82.8369 138.44 79.3358
+red 174.461 106.676 19.6636
+red 147.284 126.064 14.0875 Central
+red 161.967 119.807 1.97619 Central
+red 162.007 119.512 2.0654 Central
+red 159.31 119.977 0.690692 Central
+red 159.452 119.881 0.56059 Central
+red 159.395 120.234 0.648761 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 66
+yellow 64.5347 117.822 95.4902
+yellow 64.6735 117.469 95.3601
+yellow 147.544 118.264 12.5766 Central
+yellow 161.908 120.189 1.91781 Central
+yellow 161.943 120.201 1.95329 Central
+yellow 159.618 119.978 0.38216 Central
+yellow 159.627 119.973 0.374353 Central
+yellow 159.634 119.952 0.369527 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 67
+red 157.644 142.051 22.1765
+red 158.048 141.952 22.0383
+red 157.389 108.493 11.7995 Central
+red 160.594 120.509 0.782417 Central
+red 160.714 120.892 1.14256 Central
+red 159.881 119.696 0.326402 Central
+red 159.776 119.724 0.355422 Central
+red 159.91 119.882 0.148244 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 68
+green 174.17 66.69 55.1611
+green 174.227 66.7291 55.1379
+green 174.359 66.6869 55.2129
+green 144.829 52.4599 69.223
+*******************************
+Starting saccade: 68
+green 251.728 84.2565 98.4458
+green 251.647 84.369 98.3298
+green 174.039 125.084 14.9315 Central
+green 159.02 119.68 1.03127 Central
+green 158.986 119.739 1.0475 Central
+green 160.04 119.896 0.111799 Central
+green 159.876 120.04 0.129946 Central
+green 159.985 120.08 0.0809918 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 69
+green 129.615 31.4835 93.5863
+green 129.53 31.5027 93.596
+*******************************
+Starting saccade: 69
+yellow 80.1089 107.819 80.8143
+yellow 80.1465 107.523 80.8225
+yellow 151.803 130.879 13.6209 Central
+yellow 161.077 119.492 1.19104 Central
+yellow 161.092 119.474 1.21198 Central
+yellow 159.665 119.974 0.336391 Central
+yellow 159.659 119.986 0.341463 Central
+yellow 159.67 119.993 0.330102 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 70
+yellow 179.46 176.951 60.1844
+yellow 179.401 176.866 60.0844
+yellow 158.156 108.148 11.9942 Central
+yellow 160.198 120.924 0.94455 Central
+yellow 160.185 120.956 0.973963 Central
+yellow 159.79 119.961 0.213211 Central
+yellow 159.831 119.951 0.175851 Central
+yellow 159.89 119.932 0.129153 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 71
+yellow 72.0298 132.507 88.8548
+- 0 0 No target of specified colour
+yellow 104.516 107.937 56.7804
+yellow 148.506 116.904 11.9033 Central
+yellow 161.599 120.306 1.62762 Central
+yellow 161.598 120.257 1.61822 Central
+yellow 159.592 119.994 0.407778 Central
+yellow 159.59 119.978 0.410086 Central
+yellow 159.619 119.983 0.381584 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 72
+red 157.464 43.2634 76.7785
+red 157.423 42.8558 77.1872
+red 161.844 125.992 6.26887 Central
+red 159.613 119.831 0.422026 Central
+red 159.668 119.504 0.596427 Central
+red 159.996 120.389 0.389144 Central
+red 159.803 120.389 0.43622 Central
+red 160.094 120.646 0.65257 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 73
+red 62 61 114.39
+red 61 69 111.364
+red 145.902 127.606 16.0184
+red 162.414 129.553 9.85291 Central
+red 159.565 119.837 0.464359 Central
+red 159.749 119.596 0.475873 Central
+red 159.834 120.493 0.520604 Central
+red 160.004 120.375 0.375025 Central
+red 160.022 120.328 0.328294 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 74
+green 216.677 91.5404 63.4209
+green 216.685 91.5431 63.4272
+green 152.867 101.064 20.2349
+green 154.795 116.278 6.39873 Central
+green 160.271 120.126 0.299031 Central
+green 160.312 120.089 0.324355 Central
+green 160.054 119.897 0.116778 Central
+green 160.029 119.985 0.0327208 Central
+green 159.961 120.025 0.0462463 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 75
+red 237.429 155.143 85.0306
+red 236 154.5 83.4641
+*******************************
+Starting saccade: 75
+yellow 105.846 182.612 82.7822
+yellow 105.856 182.516 82.703
+*******************************
+Starting saccade: 75
+yellow 163.84 198.42 78.5143
+yellow 164.114 198.41 78.5183
+yellow 151.053 106.949 15.8237 Central
+yellow 160.476 120.945 1.05803 Central
+yellow 160.436 120.968 1.06199 Central
+yellow 160.106 119.926 0.129192 Central
+yellow 160.059 119.931 0.0905558 Central
+yellow 160.07 119.911 0.113121 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 76
+yellow 64.2581 137.944 97.4089
+yellow 64.0708 137.071 97.4363
+yellow 167.14 112.913 10.0603 Central
+yellow 159.204 120.586 0.988902 Central
+yellow 159.149 120.675 1.08646 Central
+yellow 160.057 119.896 0.118597 Central
+yellow 160.097 119.89 0.146545 Central
+yellow 160.057 119.896 0.118597 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 77
+green 152.697 116.49 8.10278 Central
+green 152.429 116.433 8.36938 Central
+green 160.8 120.315 0.859786 Central
+green 160.675 120.315 0.744886 Central
+green 160.756 120.381 0.846762 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 78
+red 141.125 181.659 64.4827
+red 140.983 181.823 64.682
+red 139.55 37.0828 85.4017
+*******************************
+Starting saccade: 78
+red 97.5645 135.347 64.294
+red 97.4318 134.826 64.3007
+*******************************
+Starting saccade: 78
+green 235.039 41.7318 108.429
+green 234.946 41.7989 108.316
+green 147.063 125 13.8692 Central
+green 161.78 119.971 1.78073 Central
+green 161.701 120.07 1.70292 Central
+green 159.731 119.95 0.273229 Central
+green 159.832 119.97 0.17092 Central
+green 159.826 119.945 0.18253 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 79
+green 200.493 127.551 41.1907
+green 200.579 127.554 41.2766
+green 159.566 104.961 15.0457 Central
+green 159.368 120.199 0.662435 Central
+green 159.416 120.218 0.623441 Central
+green 159.892 120.118 0.160377 Central
+green 159.876 120.094 0.155452 Central
+green 159.911 120.089 0.126022 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 80
+green 187.954 73.665 54.1145
+green 187.851 73.641 54.0819
+*******************************
+Starting saccade: 80
+red 141.839 160.238 44.1467
+red 141.843 159.905 43.8417
+red 166.289 113.994 8.69649 Central
+red 159.073 120.963 1.33676 Central
+red 159.323 121.104 1.2949 Central
+red 160.077 119.432 0.573094 Central
+red 159.875 119.339 0.672537 Central
+red 159.761 119.38 0.664365 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 81
+yellow 70.6383 119.128 89.366
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+yellow 190.301 184.002 70.812
+yellow 169.516 115.779 10.4101 Central
+yellow 158.899 120.398 1.17123 Central
+yellow 158.934 120.386 1.13399 Central
+yellow 159.919 119.933 0.105215 Central
+yellow 159.989 119.936 0.0648099 Central
+yellow 160.032 119.947 0.0616616 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 82
+green 139.621 62.5949 60.9153
+green 139.663 62.544 60.9489
+green 141.951 111.297 20.0381
+green 155.841 118.409 4.45273 Central
+green 160.214 120.09 0.231916 Central
+green 160.357 120.221 0.419739 Central
+green 159.985 119.816 0.185037 Central
+green 160.025 119.814 0.187877 Central
+green 159.985 119.816 0.185037 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 83
+green 122.808 127.172 37.8774
+green 122.821 127.269 37.883
+green 160.897 121.379 1.64508 Central
+green 159.861 120.198 0.241713 Central
+green 159.861 120.224 0.263675 Central
+green 159.97 120.03 0.0420093 Central
+green 159.911 120.01 0.0892142 Central
+green 159.98 119.975 0.0313904 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 84
+green 109.076 79.9239 64.8023
+green 108.985 79.8934 64.8929
+green 161.261 121.077 1.65841 Central
+green 160.049 120.01 0.0499971 Central
+green 159.985 120.01 0.017766 Central
+green 160.133 119.981 0.134685 Central
+green 159.926 120.034 0.0811457 Central
+green 159.966 119.961 0.0523643 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 85
+green 193.868 59.4815 69.3507
+green 193.952 59.4762 69.3967
+green 164.26 114.333 7.08922 Central
+green 159.539 120.093 0.470104 Central
+green 159.637 120.064 0.368303 Central
+green 159.848 120.147 0.211467 Central
+green 159.892 120.029 0.111788 Central
+green 159.891 120.089 0.140726 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 86
+green 109.398 23.9432 108.57
+green 109.514 23.9832 108.481
+green 148.981 100.762 22.1703
+green 160.034 117.704 2.29637 Central
+green 159.902 120.151 0.179964 Central
+green 159.995 120.078 0.0778187 Central
+green 160.12 120.029 0.123607 Central
+green 160.01 120.02 0.0219253 Central
+green 160.043 120.038 0.0578946 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 87
+yellow 83.906 79.9145 86.0067
+- 0 0 No target of specified colour
+yellow 121.055 97.0394 45.2098
+yellow 171.035 105.429 18.2778
+yellow 167.933 105.95 16.1345
+yellow 161.958 110.074 10.1176 Central
+yellow 159.619 120.88 0.959164 Central
+yellow 159.672 120.878 0.937789 Central
+yellow 160.186 119.9 0.211363 Central
+yellow 160.177 119.9 0.203155 Central
+yellow 160.177 119.911 0.198007 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 88
+green 156.876 62.6891 57.396
+green 157 62.6818 57.3966
+green 201.432 42.2919 88.0636
+*******************************
+Starting saccade: 88
+green 133.479 80.4014 47.6594
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 189.762 113.149 30.5408
+green 151.166 118.688 8.93108 Central
+green 160.836 120.279 0.881028 Central
+green 160.861 120.174 0.878139 Central
+green 159.851 120.094 0.175796 Central
+green 159.91 120.055 0.104951 Central
+green 159.945 120.005 0.0555108 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 89
+yellow 77.7809 148.498 87.0179
+yellow 77.7013 148.219 87.0021
+yellow 185.902 116.837 26.0939
+yellow 159.058 120.941 1.33161 Central
+yellow 160.042 119.936 0.0767354 Central
+yellow 160.011 119.946 0.0551443 Central
+yellow 160.044 119.973 0.0518393 Central
+yellow 160.068 119.958 0.0793731 Central
+yellow 160.05 119.959 0.0643243 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 90
+red 122.131 32.5882 95.2623
+red 122.101 33.2302 94.6855
+red 166.343 111.469 10.6309 Central
+red 158.993 120.57 1.15699 Central
+red 158.977 120.49 1.13449 Central
+red 160.18 119.671 0.374695 Central
+red 160.089 120.152 0.176035 Central
+red 160.122 119.776 0.255493 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 91
+yellow 85.9163 106.467 75.3095
+- 0 0 No target of specified colour
+yellow 149.952 142.627 24.7582
+yellow 150.24 109.065 14.6568 Central
+yellow 161.061 120.964 1.43352 Central
+yellow 161.073 120.953 1.43511 Central
+yellow 159.661 119.952 0.341931 Central
+yellow 159.723 119.983 0.277876 Central
+yellow 159.774 119.947 0.23221 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 92
+red 68.4375 143.646 94.5665
+red 68.72 145.373 94.7409
+red 159.219 110.759 9.27392 Central
+red 160.354 120.227 0.420589 Central
+red 160.422 120.04 0.42371 Central
+red 159.657 119.935 0.349062 Central
+red 159.844 120.037 0.160498 Central
+red 159.817 119.765 0.297807 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 93
+green 105.362 116.179 54.7712
+green 105.381 116.108 54.757
+green 161.685 116.493 3.89103 Central
+green 159.7 120.251 0.391677 Central
+green 159.76 120.3 0.384193 Central
+green 159.908 119.879 0.152435 Central
+green 159.955 120.05 0.0669289 Central
+green 159.98 119.975 0.031699 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 94
+green 119.047 62.3037 70.7531
+green 119.104 62.3073 70.7172
+green 153.201 118.152 7.04571 Central
+green 160.768 120.128 0.779079 Central
+green 160.695 120.15 0.71101 Central
+green 159.985 119.842 0.15833 Central
+green 159.9 120.01 0.0999987 Central
+green 159.926 120 0.0738983 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 95
+yellow 64.7391 127.594 95.5631
+yellow 64.5641 127.885 95.761
+yellow 167.018 105.164 16.4119
+yellow 162.443 107.824 12.4182 Central
+yellow 159.625 120.806 0.888498 Central
+yellow 159.616 120.772 0.861688 Central
+yellow 160.153 119.907 0.179533 Central
+yellow 160.197 119.878 0.231783 Central
+yellow 160.196 119.862 0.239689 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 96
+green 238.101 69.6878 92.9032
+green 238.07 69.6364 92.905
+*******************************
+Starting saccade: 96
+red 89.9672 176.885 90.2248
+red 89.5222 175.833 89.9137
+red 184.676 107.557 27.6355
+red 160.156 119.958 0.161346 Central
+red 160.014 119.769 0.231898 Central
+red 159.976 120.014 0.0277664 Central
+red 159.986 119.76 0.240817 Central
+red 160.03 119.535 0.465634 Central
+red 159.962 119.538 0.463138 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 97
+yellow 103.787 160.435 69.2448
+- 0 0 No target of specified colour
+yellow 93.2064 181.476 90.7785
+yellow 166.424 99.9984 21.0078
+yellow 149.476 112.32 13.0287 Central
+yellow 160.735 120.882 1.14794 Central
+yellow 160.755 120.903 1.17706 Central
+yellow 159.99 119.923 0.0776183 Central
+yellow 159.952 119.946 0.0722044 Central
+yellow 159.965 119.901 0.105217 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 98
+green 145.693 48.5573 72.8612
+green 145.746 48.5337 72.8739
+green 142.562 46.1459 75.8848
+green 244.69 73.5722 96.5811
+green 167.193 113.932 9.41057 Central
+green 158.851 120.149 1.15808 Central
+green 159.078 120.087 0.926463 Central
+green 160.188 120.024 0.189035 Central
+green 160.192 120.029 0.194458 Central
+green 160.214 120.01 0.214491 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 99
+green 134.851 101.985 30.9351
+green 134.73 101.995 31.0279
+green 152.961 120.633 7.06704 Central
+green 160.751 120.274 0.799532 Central
+green 160.761 120.234 0.796429 Central
+green 159.868 120.039 0.138042 Central
+green 159.99 119.946 0.0545362 Central
+green 159.876 120.005 0.124474 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 100
+green 180.783 42.25 80.4799
+green 180.855 42.3871 80.366
+*******************************
+Starting saccade: 100
+green 231.892 25.0299 119.113
+green 231.893 25.0414 119.104
+green 166.783 113.172 9.62436 Central
+green 159.217 119.981 0.782847 Central
+green 159.086 120.014 0.913992 Central
+green 160.181 119.936 0.192237 Central
+green 160.312 119.878 0.335167 Central
+green 160.21 119.951 0.21536 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 101
+red 72.2903 151.161 93.0807
+red 72.6047 150.849 92.6801
+red 167.215 118.12 7.45612 Central
+red 159.124 120.165 0.891763 Central
+red 159.098 120.065 0.904528 Central
+red 159.996 119.447 0.552644 Central
+red 160.051 119.949 0.0714765 Central
+red 160.038 119.789 0.214664 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 102
+yellow 84.8044 87.0089 82.1145
+yellow 85.1624 86.56 81.9689
+yellow 186.416 112.972 27.3347
+yellow 148.925 119.017 11.1189 Central
+yellow 160.074 120.248 0.259186 Central
+yellow 160.079 120.235 0.247875 Central
+yellow 159.791 119.969 0.210814 Central
+yellow 159.762 119.984 0.238268 Central
+yellow 159.772 119.959 0.232048 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 103
+green 148.856 69.641 51.5772
+green 148.964 69.6856 51.5106
+green 152.925 118.637 7.20477 Central
+green 160.749 120.221 0.780713 Central
+green 160.795 120.2 0.819769 Central
+green 159.937 120.034 0.0716774 Central
+green 159.868 120.059 0.144137 Central
+green 159.864 120.092 0.164263 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 104
+yellow 83.6282 204.205 113.68
+yellow 83.6506 204.325 113.754
+yellow 83.2421 204.568 114.209
+yellow 83.3977 204.398 113.978
+yellow 92.2511 171.611 85.1679
+yellow 148.156 125.91 13.2364 Central
+yellow 161.281 119.906 1.28452 Central
+yellow 161.281 119.906 1.28452 Central
+yellow 159.741 119.928 0.268926 Central
+yellow 159.798 119.93 0.21348 Central
+yellow 159.832 119.895 0.198275 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 105
+red 81.0769 23.3077 124.813
+red 80.8333 23.9444 124.475
+red 158.42 101.676 18.3924
+red 159.11 122.833 2.9699 Central
+red 160.183 119.967 0.185795 Central
+red 160.057 120.245 0.251856 Central
+red 160.125 119.759 0.271483 Central
+red 160.097 119.691 0.323611 Central
+red 159.919 119.57 0.437685 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 106
+red 123.123 46.9777 81.8058
+red 123.044 47.1657 81.6735
+red 123.081 46.9676 81.8336
+red 123.149 46.5314 82.1928
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+red 141.975 152.181 36.8849
+red 142.065 152.112 36.781
+red 142.07 152.295 36.9382
+red 126.055 64.4195 65.1264
+red 170.341 120.543 10.3549 Central
+red 158.299 119.822 1.71035 Central
+red 158.263 120.154 1.74369 Central
+red 160.401 119.803 0.447225 Central
+red 160.406 119.619 0.556559 Central
+red 160.295 119.758 0.381425 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 107
+yellow 172.963 219.809 100.647
+yellow 173.018 219.918 100.762
+yellow 159.508 129.892 9.90379 Central
+yellow 160.276 119.155 0.889085 Central
+yellow 160.263 119.088 0.949492 Central
+yellow 159.881 120.105 0.159291 Central
+yellow 159.852 120.071 0.163876 Central
+yellow 159.846 120.089 0.17787 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 108
+green 234.943 28.2184 118.492
+green 234.864 28.2557 118.413
+green 166.911 116.505 7.7444 Central
+green 158.901 120.163 1.11049 Central
+green 158.872 120.172 1.14118 Central
+green 160.272 119.946 0.277671 Central
+green 160.408 120.015 0.408021 Central
+green 160.291 120.01 0.291422 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 109
+yellow 77.5864 134.568 83.6912
+yellow 77.3556 134.867 83.971
+yellow 152.555 100.899 20.5012
+yellow 154.955 116.82 5.96324 Central
+yellow 160.613 119.961 0.614711 Central
+yellow 160.584 119.983 0.584361 Central
+yellow 159.997 119.945 0.0551797 Central
+yellow 160.059 119.948 0.0788997 Central
+yellow 160.043 119.95 0.0664212 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 110
+yellow 82.1003 105.775 79.1878
+yellow 82.1906 105.801 79.0944
+yellow 155.479 126.958 8.29772 Central
+yellow 160.577 119.773 0.61986 Central
+yellow 160.581 119.762 0.627826 Central
+yellow 159.954 119.913 0.0988176 Central
+yellow 159.991 119.957 0.0441614 Central
+yellow 160.014 119.958 0.0439077 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 111
+green 280.267 41.2733 143.743
+green 280.494 41.1747 143.987
+green 166.736 102.184 19.0469
+green 148.71 114.2 12.6927 Central
+green 160.822 120.203 0.846473 Central
+green 160.827 120.198 0.850121 Central
+green 159.92 120.015 0.0809918 Central
+green 160.01 120.104 0.10495 Central
+green 160.07 119.985 0.0715961 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 112
+green 124.551 51.5668 77.0697
+green 124.654 51.6335 76.9629
+*******************************
+Starting saccade: 112
+yellow 157.393 93.4451 26.6825
+yellow 157.389 93.4174 26.7105
+yellow 161.697 120.818 1.88378 Central
+yellow 159.792 119.884 0.23814 Central
+yellow 159.836 119.892 0.196237 Central
+yellow 160.188 119.912 0.20819 Central
+yellow 160.188 119.912 0.20819 Central
+yellow 160.173 119.893 0.203006 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 113
+yellow 172.488 154.44 36.6336
+yellow 172.48 154.402 36.5957
+yellow 158.661 110.702 9.39378 Central
+yellow 160.278 120.723 0.774851 Central
+yellow 160.278 120.761 0.8098 Central
+yellow 159.892 119.86 0.177418 Central
+yellow 159.816 119.904 0.207122 Central
+yellow 159.867 119.839 0.208929 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 114
+green 231.66 83.6904 80.3339
+green 231.591 83.7094 80.2639
+green 151.023 109.191 14.0507 Central
+green 160.381 120.181 0.422334 Central
+green 160.448 120.262 0.518607 Central
+green 160.014 120.01 0.0171651 Central
+green 159.913 119.933 0.109627 Central
+green 159.875 120.029 0.128285 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 115
+red 83.6421 76.8316 87.7157
+red 83.5743 76.5446 87.9163
+*******************************
+Starting saccade: 115
+yellow 169.021 123.948 9.8467 Central
+yellow 169.054 123.942 9.8753 Central
+yellow 158.833 119.751 1.19367 Central
+yellow 158.832 119.783 1.18841 Central
+yellow 158.832 119.761 1.19194 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 116
+yellow 73.8649 161.87 95.7725
+yellow 73.802 162.071 95.917
+yellow 146.426 108.009 18.1116
+yellow 157.561 119.48 2.49377 Central
+yellow 160.255 119.941 0.26127 Central
+yellow 160.224 119.982 0.2243 Central
+yellow 160.096 119.949 0.10859 Central
+yellow 160.142 119.951 0.150227 Central
+yellow 160.118 119.952 0.127782 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 117
+green 169.96 80.5 40.7364
+green 169.867 80.449 40.7633
+*******************************
+Starting saccade: 117
+red 180.877 133.463 24.8418
+red 180.933 133.39 24.8489
+red 173.321 119.559 13.328 Central
+red 157.947 120.094 2.05526 Central
+red 158.139 120.024 1.86164 Central
+red 160.32 119.65 0.47427 Central
+red 160.266 119.725 0.382596 Central
+red 160.158 120.016 0.158515 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 118
+red 105.492 36.123 100.033
+red 105.426 35.845 100.301
+red 172.725 173.432 54.9266
+red 150.443 104.819 17.9385
+red 158.227 119.817 1.78231 Central
+red 160.341 119.703 0.452198 Central
+red 160.465 119.486 0.693137 Central
+red 159.584 119.659 0.538384 Central
+red 159.606 119.777 0.452392 Central
+red 159.767 119.668 0.405853 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 119
+green 216.988 20.7381 114.458
+green 217.221 20.7907 114.528
+green 145.235 105.49 20.7013
+green 155.732 116.146 5.75002 Central
+green 160.33 120.33 0.466623 Central
+green 160.265 120.385 0.467388 Central
+green 159.925 120.025 0.079455 Central
+green 159.9 120.01 0.0999987 Central
+green 159.876 120.065 0.140185 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 120
+red 149.216 85.4286 36.2143
+red 148.997 85.4014 36.3062
+red 154.12 112.308 9.68192 Central
+red 161.102 120.014 1.10212 Central
+red 161.13 119.874 1.13686 Central
+red 159.597 119.597 0.569614 Central
+red 159.6 119.878 0.418201 Central
+red 159.711 119.656 0.448793 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 121
+red 153.517 159.955 40.478
+red 153.58 159.776 40.2909
+red 160.203 121.572 1.5849 Central
+red 159.852 119.761 0.281071 Central
+red 159.87 119.906 0.160933 Central
+red 160.026 119.908 0.0957909 Central
+red 159.828 120.214 0.273936 Central
+red 159.957 119.816 0.188489 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 122
+yellow 194.218 219.665 105.375
+yellow 194.219 219.873 105.572
+yellow 156.944 153.742 33.8803
+yellow 162.802 114.948 5.77732 Central
+yellow 159.778 120.102 0.244052 Central
+yellow 159.72 120.146 0.315407 Central
+yellow 160.094 119.97 0.0981785 Central
+yellow 160.116 119.964 0.121887 Central
+yellow 160.082 119.98 0.0847135 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 123
+yellow 149.826 214.38 94.9264
+yellow 149.757 214.38 94.9347
+yellow 73.5226 139.101 88.5617
+yellow 208.9 128.996 49.7208
+yellow 162.787 105.293 14.9685 Central
+yellow 159.57 121.018 1.10545 Central
+yellow 159.543 121.024 1.12123 Central
+yellow 160.062 119.964 0.0717531 Central
+yellow 160.044 119.966 0.0559068 Central
+yellow 160.073 119.966 0.0808702 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 124
+red 74.75 26.25 126.715
+red 74.9091 24.3636 128.011
+red 141.071 120.444 18.9345
+red 155.367 113.118 8.29603 Central
+red 160.801 120.69 1.05685 Central
+red 160.873 120.722 1.13267 Central
+red 159.877 119.778 0.253436 Central
+red 159.846 119.821 0.236399 Central
+red 159.932 120.02 0.0710225 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 125
+yellow 117.039 203.893 94.2531
+yellow 116.956 203.954 94.3456
+yellow 164.857 95.6396 24.8399
+yellow 165.142 116.965 5.9714 Central
+yellow 159.437 120.496 0.750269 Central
+yellow 159.514 120.362 0.606015 Central
+yellow 159.697 119.95 0.307536 Central
+yellow 159.796 119.956 0.208292 Central
+yellow 159.796 119.956 0.208292 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 126
+green 105.376 104.98 56.6518
+green 105.462 104.974 56.5704
+green 153.885 113.215 9.13363 Central
+green 160.159 120.213 0.265704 Central
+green 160.257 120.238 0.350446 Central
+green 160.106 120.063 0.123448 Central
+green 159.883 119.946 0.128791 Central
+green 160.005 120.052 0.0525993 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 127
+green 247.366 105.759 88.5195
+green 247.332 105.87 88.4672
+green 160.951 119.553 1.05106 Central
+green 159.738 120.039 0.264992 Central
+green 159.876 120.033 0.128218 Central
+green 159.847 120.062 0.16526 Central
+green 159.837 120.01 0.162955 Central
+green 159.917 120.005 0.0830747 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 128
+green 140.174 119.932 19.8262
+green 140.301 119.99 19.6986
+green 154.796 112.951 8.76142 Central
+green 160 120.263 0.263161 Central
+green 160.062 120.354 0.359486 Central
+green 159.783 119.961 0.220801 Central
+green 159.773 119.961 0.230317 Central
+green 159.79 119.907 0.229326 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 129
+green 105.301 44.9699 92.8521
+- 0 0 No target of specified colour
+green 108.521 58.3041 80.3524
+green 134.884 125.633 25.7398
+green 161.255 121.913 2.2882 Central
+green 159.859 119.956 0.148119 Central
+green 159.855 120.01 0.145249 Central
+green 159.899 119.962 0.108044 Central
+green 159.832 120.029 0.170729 Central
+green 159.923 120.005 0.0774517 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 130
+green 144.888 101.927 23.5582
+green 144.883 101.927 23.5613
+green 155.467 112.175 9.04358 Central
+green 159.792 120.827 0.85248 Central
+green 160.029 120.908 0.908235 Central
+green 159.904 120.01 0.0966402 Central
+green 159.986 119.976 0.0280331 Central
+green 159.897 119.98 0.104787 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 131
+green 291.811 54.4054 147.23
+green 291.733 54.3333 147.193
+green 167.976 124.266 9.04491 Central
+green 159.188 119.899 0.817916 Central
+green 159.097 119.845 0.916512 Central
+green 160.29 119.962 0.292969 Central
+green 160.382 119.939 0.386969 Central
+green 160.258 119.928 0.26816 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 132
+yellow 152.328 214.471 94.7818
+yellow 152.29 214.47 94.7838
+yellow 171.02 118.346 11.1436 Central
+yellow 158.503 120.028 1.49685 Central
+yellow 158.518 120.008 1.482 Central
+yellow 160.214 119.935 0.22362 Central
+yellow 160.226 119.954 0.231132 Central
+yellow 160.196 119.983 0.196266 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 133
+red 122.426 32.4255 95.295
+red 122.556 33.4014 94.3469
+red 166.386 111.715 10.4601 Central
+red 159.052 120.089 0.952653 Central
+red 158.99 120.066 1.01262 Central
+red 160.179 119.948 0.18598 Central
+red 160.095 120.064 0.114705 Central
+red 160.201 120.021 0.202464 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 134
+green 189.899 98.404 36.8827
+green 189.877 98.4216 36.855
+green 253.544 20.3676 136.664
+green 253.176 20.4118 136.381
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+green 182.455 90.9765 36.6961
+green 154.812 109.772 11.4683 Central
+green 160.305 120.244 0.390799 Central
+green 160.338 120.203 0.394364 Central
+green 159.833 119.931 0.180247 Central
+green 159.833 119.931 0.180247 Central
+green 159.855 120.01 0.145249 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 135
+yellow 107.701 96.4994 57.3362
+yellow 107.912 96.4727 57.1554
+yellow 148.34 131.467 16.3537
+yellow 143.765 133.704 21.2458
+yellow 163.182 114.246 6.57487 Central
+yellow 159.39 120.831 1.03103 Central
+yellow 159.402 120.826 1.01998 Central
+yellow 160.098 119.892 0.146232 Central
+yellow 160.148 119.889 0.185157 Central
+yellow 160.149 119.886 0.187636 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 136
+yellow 61.9 153.1 103.534
+yellow 61.9167 153.25 103.566
+yellow 147.957 115.956 12.7033 Central
+yellow 161.563 120.386 1.61023 Central
+yellow 161.514 120.43 1.57349 Central
+yellow 159.603 119.972 0.398081 Central
+yellow 159.638 119.972 0.363452 Central
+yellow 159.593 119.972 0.408043 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 137
+red 82.7603 161.769 87.8099
+red 83.0185 162.333 87.8536
+red 175.405 110.935 17.874
+red 175.378 110.827 17.9062
+red 143.567 132.302 20.5275
+red 163.142 113.132 7.55233 Central
+red 159.587 120.539 0.679215 Central
+red 159.741 120.663 0.71186 Central
+red 159.841 119.841 0.225315 Central
+red 160.014 120.017 0.0217793 Central
+red 159.967 120.026 0.0424048 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 138
+green 156.138 98.0381 22.2989
+green 156.052 98.1127 22.2406
+green 167.828 114.877 9.35547 Central
+green 159 120.316 1.04868 Central
+green 159.034 120.314 1.01593 Central
+green 160.038 120.057 0.0680277 Central
+green 159.874 119.981 0.127088 Central
+green 159.908 119.951 0.104234 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 139
+red 82.8761 110.044 77.7638
+red 82.5852 109.393 78.1382
+red 174.935 121.732 15.0349 Central
+red 157.8 120.102 2.20235 Central
+red 157.819 120.152 2.18627 Central
+red 160.264 119.74 0.370613 Central
+red 160.296 119.829 0.341915 Central
+red 160.461 119.73 0.533843 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 140
+red 184.905 125.924 25.6002
+red 184.767 125.823 25.4422
+red 157.364 130.415 10.7434 Central
+red 160.052 119.623 0.380681 Central
+red 160.075 119.489 0.517005 Central
+red 160.01 119.977 0.0253016 Central
+red 159.928 119.964 0.0809104 Central
+red 159.924 119.898 0.126975 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 141
+yellow 64.3425 147.027 99.4024
+yellow 64.2619 147.44 99.593
+yellow 151.76 108.445 14.1917 Central
+yellow 160.893 120.908 1.27327 Central
+yellow 160.908 120.875 1.26048 Central
+yellow 159.791 119.948 0.215512 Central
+yellow 159.829 119.917 0.189927 Central
+yellow 159.861 119.932 0.154652 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 142
+yellow 190.54 180.192 67.4964
+yellow 190.527 180.046 67.3605
+yellow 169.427 111.768 12.5156 Central
+yellow 158.824 120.77 1.40563 Central
+yellow 158.806 120.826 1.45198 Central
+yellow 160.226 119.798 0.302912 Central
+yellow 160.224 119.852 0.268569 Central
+yellow 160.204 119.862 0.245969 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 143
+yellow 77 221.375 131.019
+yellow 77 221.375 131.019
+yellow 136.154 152.448 40.2679
+yellow 81.3763 121.078 78.6311
+yellow 108.346 141.601 55.9888
+yellow 164.625 99.8574 20.6667
+yellow 147.673 112.081 14.6515 Central
+yellow 161.03 120.942 1.39613 Central
+yellow 161.051 120.897 1.38187 Central
+yellow 159.801 119.891 0.22657 Central
+yellow 159.792 119.913 0.225726 Central
+yellow 159.815 119.881 0.220177 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 144
+yellow 91.4669 104.356 70.2958
+- 0 0 No target of specified colour
+yellow 59.1786 165.321 110.54
+yellow 144.344 127.289 17.2692
+yellow 159.85 129.903 9.90369 Central
+yellow 160.329 119.303 0.771163 Central
+yellow 160.373 119.316 0.778769 Central
+yellow 159.667 119.994 0.332701 Central
+yellow 159.661 120.006 0.339129 Central
+yellow 159.668 119.983 0.332878 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 145
+yellow 104.5 225 118.766
+yellow 104 225 119
+yellow 150.136 121.985 10.0619 Central
+yellow 161.187 119.949 1.18797 Central
+yellow 161.185 119.953 1.18634 Central
+yellow 159.66 119.97 0.341063 Central
+yellow 159.743 119.959 0.259941 Central
+yellow 159.743 119.959 0.259941 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 146
+green 123.014 105.092 39.8771
+green 123 105.053 39.9052
+green 152.995 115.049 8.57805 Central
+green 160.952 120.357 1.01662 Central
+green 160.66 120.407 0.775495 Central
+green 159.816 119.932 0.196585 Central
+green 159.912 120.112 0.142468 Central
+green 159.883 119.927 0.137384 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 147
+red 188.764 133.625 31.8277
+red 188.739 133.603 31.7957
+red 163.679 121.26 3.88829 Central
+red 159.289 119.585 0.822812 Central
+red 159.185 119.958 0.815754 Central
+red 160.265 119.575 0.500555 Central
+red 160.328 119.675 0.461364 Central
+red 160.104 119.959 0.111536 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 148
+yellow 154.695 100.976 19.75
+yellow 154.706 100.982 19.7409
+yellow 156.55 116.923 4.6227 Central
+yellow 160.234 119.964 0.237317 Central
+yellow 160.239 119.952 0.243918 Central
+yellow 159.959 119.943 0.0699372 Central
+yellow 159.939 119.927 0.0950171 Central
+yellow 159.912 119.916 0.121556 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 149
+green 123.088 105.034 39.8307
+green 123.405 105.005 39.548
+green 153.07 115.423 8.30495 Central
+green 160.737 120.01 0.736652 Central
+green 160.744 119.918 0.748476 Central
+green 159.836 120.01 0.164529 Central
+green 159.773 120.114 0.254345 Central
+green 159.913 120.058 0.10451 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 150
+yellow 172.273 93.3407 29.3488
+yellow 172.282 93.3435 29.35
+yellow 147.861 112.801 14.113 Central
+yellow 159.463 120.597 0.802907 Central
+yellow 159.471 120.586 0.788864 Central
+yellow 159.878 119.914 0.14932 Central
+yellow 159.954 119.9 0.109656 Central
+yellow 159.93 119.943 0.0901364 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 151
+yellow 108.187 104.082 54.2028
+yellow 108.166 104.118 54.2125
+yellow 152.282 112.787 10.5638 Central
+yellow 160.89 120.427 0.98711 Central
+yellow 161.021 120.325 1.07106 Central
+yellow 159.609 120.03 0.39218 Central
+yellow 159.662 119.991 0.337977 Central
+yellow 159.738 119.978 0.263303 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 152
+yellow 153.895 119.878 6.10654 Central
+yellow 153.86 119.879 6.14114 Central
+yellow 160.58 119.963 0.58082 Central
+yellow 160.59 119.941 0.592971 Central
+yellow 160.582 119.965 0.582684 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 153
+green 173.929 109.109 17.6813
+green 173.936 109.132 17.6727
+green 146.842 127.856 15.325 Central
+green 161.746 119.806 1.75701 Central
+green 161.792 119.827 1.80044 Central
+green 159.688 119.98 0.312502 Central
+green 159.857 119.901 0.17353 Central
+green 159.854 119.902 0.175887 Central
+- 0 0 No target of specified colour
+- 0 0 No target of specified colour
+*******************************
+Starting saccade: 154
+yellow 71.6562 183.039 108.529
+yellow 71.7594 183.286 108.589
+**************END**************

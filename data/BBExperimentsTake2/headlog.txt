@@ -1,0 +1,262 @@
+Requesting retina field at: 186.748, 64.2517
+Field returned: 
+coordinates: [178.51,63.02] Unlearnt
+Requesting retina field at: 131.538, 116.343
+Field returned: 
+coordinates: [131.53,115.49] Unlearnt
+Requesting retina field at: 93.3785, 66.4064
+Field returned: 
+coordinates: [93.68,71.82] Unlearnt
+Requesting retina field at: 87, 121.648
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 218.528, 122.309
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 98.5866, 113.966
+Field returned: 
+coordinates: [100.09,119.99] Unlearnt
+Requesting retina field at: 124.717, 119.968
+Field returned: 
+coordinates: [121.08,120] Unlearnt
+Requesting retina field at: 220.909, 119.474
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 226.69, 115.203
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 122.013, 121.831
+Field returned: 
+coordinates: [121.08,120] Unlearnt
+Requesting retina field at: 117.297, 119.333
+Field returned: 
+coordinates: [121.08,120] Unlearnt
+Requesting retina field at: 197.637, 115.734
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 150.104, 104.907
+Field returned: 
+coordinates: [148.85,104.65] Unlearnt
+Requesting retina field at: 95.5059, 119.721
+Field returned: 
+coordinates: [100.09,119.99] Unlearnt
+Requesting retina field at: 196.251, 116.209
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 88.1062, 120.792
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 84.4362, 120.967
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 179.689, 179.298
+Field returned: 
+coordinates: [178.51,176.97] Unlearnt
+Requesting retina field at: 223.648, 121.722
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 136.572, 120.32
+Field returned: 
+coordinates: [141.03,120] Unlearnt
+Requesting retina field at: 201.109, 119.043
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 201.528, 118.1
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 61.8443, 120.322
+Field returned: 
+coordinates: [54.86,119.99] Unlearnt
+Requesting retina field at: 90.5159, 123.979
+Field returned: 
+coordinates: [90.07,131.07] Unlearnt
+Requesting retina field at: 73.1507, 128.404
+Field returned: 
+coordinates: [67.73,134.61] Unlearnt
+Requesting retina field at: 170.782, 97.139
+Field returned: 
+coordinates: [173.08,94.32] Unlearnt
+Requesting retina field at: 141.045, 121.116
+Field returned: 
+coordinates: [141.03,120] Unlearnt
+Requesting retina field at: 199.985, 117.072
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 204.622, 116.557
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 210.397, 122.121
+Field returned: 
+coordinates: [208.67,127.7] Unlearnt
+Requesting retina field at: 186.231, 116.97
+Field returned: 
+coordinates: [186.23,116.97] Unlearnt
+Requesting retina field at: 141.414, 120.31
+Field returned: 
+coordinates: [141.03,120] Unlearnt
+Requesting retina field at: 178.972, 119.883
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+Requesting retina field at: 71.7874, 122.429
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 78.6405, 118.083
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 59.9623, 133.175
+Field returned: 
+coordinates: [67.73,134.61] Unlearnt
+Requesting retina field at: 239.593, 96.1145
+Field returned: 
+coordinates: [239.592,96.114] Unlearnt
+Requesting retina field at: 179.064, 119.591
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+Requesting retina field at: 189.79, 119.987
+Field returned: 
+coordinates: [188.46,124.5] Unlearnt
+Requesting retina field at: 186.119, 116.249
+Field returned: 
+coordinates: [186.119,116.248] Unlearnt
+Requesting retina field at: 197.524, 121.117
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 270.562, 118.372
+Field returned: 
+coordinates: [265.13,120] Unlearnt
+Requesting retina field at: 79.0305, 120.593
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 86.4281, 126.611
+Field returned: 
+coordinates: [90.07,131.07] Unlearnt
+Requesting retina field at: 54, 197
+Field returned: 
+coordinates: [55.25,196.1] Unlearnt
+Requesting retina field at: 61, 136.2
+Field returned: 
+coordinates: [67.73,134.61] Unlearnt
+Requesting retina field at: 61, 136
+Field returned: 
+coordinates: [67.73,134.61] Unlearnt
+Requesting retina field at: 223.266, 162.313
+Field returned: 
+coordinates: [226.31,168.17] Unlearnt
+Requesting retina field at: 90.4467, 119.13
+Field returned: 
+coordinates: [100.09,119.99] Unlearnt
+Requesting retina field at: 219.235, 120.89
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 194.391, 118.209
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 176.882, 118.325
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+Requesting retina field at: 110.511, 119.536
+Field returned: 
+coordinates: [111.32,112.29] Unlearnt
+Requesting retina field at: 157, 99
+Field returned: 
+coordinates: [160,101.03] Unlearnt
+Requesting retina field at: 168.149, 138.427
+Field returned: 
+coordinates: [165.86,138.03] Unlearnt
+Requesting retina field at: 76.8696, 124.55
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 113.771, 110.957
+Field returned: 
+coordinates: [111.32,112.29] Unlearnt
+Requesting retina field at: 185.133, 120.364
+Field returned: 
+coordinates: [188.46,124.5] Unlearnt
+Requesting retina field at: 136, 99
+Field returned: 
+coordinates: [139.62,99.62] Unlearnt
+Requesting retina field at: 169.692, 139.693
+Field returned: 
+coordinates: [165.86,138.03] Unlearnt
+Requesting retina field at: 195.467, 120.158
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 189.298, 119.436
+Field returned: 
+coordinates: [188.46,124.5] Unlearnt
+Requesting retina field at: 140.501, 119.039
+Field returned: 
+coordinates: [141.03,120] Unlearnt
+Requesting retina field at: 181.71, 119.56
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+Requesting retina field at: 275.564, 116.214
+Field returned: 
+coordinates: [265.13,120] Unlearnt
+Requesting retina field at: 72.1248, 119.281
+Field returned: 
+coordinates: [78.03,119.99] Unlearnt
+Requesting retina field at: 284.349, 110.443
+Field returned: 
+coordinates: [289.46,120] Unlearnt
+Requesting retina field at: 50.1756, 121.049
+Field returned: 
+coordinates: [54.86,119.99] Unlearnt
+Requesting retina field at: 222.169, 120.89
+Field returned: 
+coordinates: [219.9,120] Unlearnt
+Requesting retina field at: 196.175, 119.812
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 124.128, 119.454
+Field returned: 
+coordinates: [121.08,120] Unlearnt
+Requesting retina field at: 199.638, 120.879
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 112.576, 119.037
+Field returned: 
+coordinates: [111.32,112.29] Unlearnt
+Requesting retina field at: 113.827, 122.426
+Field returned: 
+coordinates: [111.32,127.7] Unlearnt
+Requesting retina field at: 61.8864, 127.977
+Field returned: 
+coordinates: [67.73,134.61] Unlearnt
+Requesting retina field at: 239, 123
+Field returned: 
+coordinates: [241.96,120] Unlearnt
+Requesting retina field at: 208.345, 140.911
+Field returned: 
+coordinates: [203.91,142.37] Unlearnt
+Requesting retina field at: 90.297, 102.267
+Field returned: 
+coordinates: [90.07,108.92] Unlearnt
+Requesting retina field at: 239.5, 118
+Field returned: 
+coordinates: [241.96,120] Unlearnt
+Requesting retina field at: 239, 122.5
+Field returned: 
+coordinates: [241.96,120] Unlearnt
+Requesting retina field at: 49.6136, 140.909
+Field returned: 
+coordinates: [44.28,138.32] Unlearnt
+Requesting retina field at: 196.212, 117.468
+Field returned: 
+coordinates: [198.91,120] Unlearnt
+Requesting retina field at: 132.445, 119.503
+Field returned: 
+coordinates: [131.53,115.49] Unlearnt
+Requesting retina field at: 177.294, 120.516
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+Requesting retina field at: 112.993, 122.803
+Field returned: 
+coordinates: [111.32,127.7] Unlearnt
+Requesting retina field at: 210.132, 121.097
+Field returned: 
+coordinates: [208.67,127.7] Unlearnt
+Requesting retina field at: 176.21, 118.401
+Field returned: 
+coordinates: [178.96,120] Unlearnt
+**************END**************

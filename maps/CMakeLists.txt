@@ -62,9 +62,11 @@ TARGET_LINK_LIBRARIES(mapsLib)
 ADD_EXECUTABLE(fieldExtract ${PROJECT_SOURCE_DIR}/src/fieldExtract.cpp ${folder_header})
 #ADD_EXECUTABLE(gazeTester ${PROJECT_SOURCE_DIR}/src/gazeTester.cpp ${folder_header})
 ADD_EXECUTABLE(gazeExtract ${PROJECT_SOURCE_DIR}/src/gazeExtract.cpp ${folder_header})
+ADD_EXECUTABLE(allFieldExtract ${PROJECT_SOURCE_DIR}/src/allFieldExtract.cpp ${folder_header})
 
 #TARGET_LINK_LIBRARIES(FFMtester ${XERCES_LIBRARIES} kinLib mapsLib)
 TARGET_LINK_LIBRARIES(fieldExtract ${XERCES_LIBRARIES} kinLib mapsLib)
+TARGET_LINK_LIBRARIES(allFieldExtract ${XERCES_LIBRARIES} kinLib mapsLib)
 #TARGET_LINK_LIBRARIES(gazeTester ${XERCES_LIBRARIES} kinLib mapsLib)
 TARGET_LINK_LIBRARIES(gazeExtract ${XERCES_LIBRARIES} kinLib mapsLib)
 

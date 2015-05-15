@@ -128,7 +128,9 @@ Excitation::~Excitation()
 		excitation += current;
 		excitation /= 2;
 		if(excitation <0)
-			excitation = 0.1;
+			excitation = 0.01;
+		else if(excitation >=1)
+			excitation = 0.95;
 		subsystems[EYE] = excitation;
 
 		updateGlobalExcitation();
@@ -242,16 +244,28 @@ Excitation::~Excitation()
 
 	void Excitation::updateRetinaExcitation(int colourTargets, int motionTargets)
 	{
+
+
+
 		float excitation = 0;
 		excitation += ((float)colourTargets * 0.1);
 		excitation += ((float)motionTargets * 0.2);
 
-		float current = subsystems[RETINA];
-		if(current < 0.0001)
-			current = 0.0001;
-		excitation += current;
-		excitation /= 2;
-		subsystems[RETINA] = excitation;
+		if(excitation == 0)
+		{
+			decay(RETINA);
+			decay(HAND);
+		}
+		else
+		{
+			float current = subsystems[RETINA];
+			if(current < 0.0001)
+				current = 0.0001;
+			excitation += current;
+			excitation /= 2;
+			subsystems[RETINA] = excitation;
+			stimulateSubSystem(HAND);
+		}
 
 		updateGlobalExcitation();
 
@@ -268,9 +282,9 @@ Excitation::~Excitation()
 	 */
 	void Excitation::setReachExcitation(int stage, float mapSaturation)
 	{
-		float excitation = stage * 0.3 + 0.3;
+		float excitation = stage * 0.3;
 
-		excitation *= (1-mapSaturation);
+		excitation += ((1-mapSaturation)/4);
 		subsystems[ARM] = excitation;
 
 		if(excitation <0)

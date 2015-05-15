@@ -253,6 +253,7 @@ bool Target::getTarget(double* targX, double* targY)
 			*targY = 0;
 			printf("no target\n");
 			targetlogfile << "- 0 0 No target" << endl;
+			centred=false;
 			return false;
 		}
 
@@ -265,6 +266,7 @@ bool Target::getTarget(double* targX, double* targY)
 		*targY = 0;
 		printf("no target\n");
 		targetlogfile << "- 0 0 No target" << endl;
+		centred=false;
 		return false;
 	}
 }

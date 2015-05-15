@@ -96,8 +96,8 @@ bool reachTriggered;
 
 
 const int acuityLevels[7]=
-//{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
-{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
+{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
+//{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
 //week
 //   1		4		7	  10	   13		16	   19
 const int fovLevels[7]=
@@ -202,7 +202,7 @@ void configurePorts()
 void openBBLogFile()
 {
 	string fullpath = params.m_PATH + "BB_stats.csv";
-	BBlog.open(fullpath.c_str());
+	BBlog.open(fullpath.c_str(), ios::out | ios::app);
 
 	BBlog << "Timestamp, Week, ExperimentPhase, isFixated, isHandOpen, " <<
 			"ReachTriggered, CurrArm, ReachStatus, ReachDist, X, Y, Z, " <<
@@ -241,6 +241,8 @@ void addBBLogEntry()
 
 		  << endl;
 
+	reachTriggered=false;
+
 }
 
 void closePorts()
@@ -259,6 +261,8 @@ void saveAndQuit(int param)
 	target->closeLog();
 	ehCont->closeLogs();
 
+	closeBBLogFile();
+
 	ehCont->saveMaps();
 
 	delete ehCont;
@@ -274,7 +278,7 @@ void quit(int param)
 	closePorts();
 	target->closeLog();
 	ehCont->closeLogs();
-
+	closeBBLogFile();
 	delete ehCont;
 
 	std::exit(param);
@@ -306,9 +310,6 @@ int main(int argc, char* argv[])
 		signal(SIGINT, quit);
 
 
-	//move head to starting position
-	ehCont->getEyeController()->verg(10,true);
-	ehCont->getHeadController()->move(0,-15, true);
 
 
 //now ready to start learning or performing experiments?
@@ -317,8 +318,11 @@ int main(int argc, char* argv[])
 	{
 		cout << "Select stage [1-7] otherwise quit" << endl;
 		cin >> stage;
-		if(stage<0 || stage>7)
+		if(stage<=0 || stage>7)
 			break;
+
+			//move head to starting position
+		ehCont->getHeadController()->move(0,-15, true);
 
 		//in learning mode, trigger learning with specified thresholds.  Save mappings in between.
 		if(params.LEARN)
@@ -327,8 +331,12 @@ int main(int argc, char* argv[])
 		}
 		else //Experiment mode
 		{
+			openBBLogFile();
+			ehCont->getEyeController()->verg(10,true);
 			//need to control eye, hand and arm using novelty excitations.
 			experimentMode(stage);
+
+			closeBBLogFile();
 		}
 
 	}
@@ -436,6 +444,7 @@ void learningMode(int stage)
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(2.0);
 				ehCont->getEyeSaccader()->resetStats();
+				ehCont->resetRollingAverage();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 1-4: Completed " << numEyeSaccades << " eye saccades***********" << endl;
 
@@ -452,6 +461,7 @@ void learningMode(int stage)
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(1.5);
 				ehCont->getEyeSaccader()->resetStats();
+				ehCont->resetRollingAverage();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 4-7: Completed " << numEyeSaccades << " eye saccades***********" << endl;
 
@@ -469,6 +479,7 @@ void learningMode(int stage)
 				fov=fovLevels[3];
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(1.2);
+				ehCont->resetRollingAverage();
 				ehCont->getEyeSaccader()->resetStats();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 7-10: Completed " << numEyeSaccades << " eye saccades***********" << endl;
@@ -489,6 +500,7 @@ void learningMode(int stage)
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(1.1);
 				ehCont->getEyeSaccader()->resetStats();
+				ehCont->resetRollingAverage();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 10-13: Completed " << numEyeSaccades << " eye saccades***********" << endl;
 
@@ -507,6 +519,7 @@ void learningMode(int stage)
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(1.1);
 				ehCont->getEyeSaccader()->resetStats();
+				ehCont->resetRollingAverage();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 13-16: Completed " << numEyeSaccades << " eye saccades***********" << endl;
 
@@ -527,6 +540,7 @@ void learningMode(int stage)
 				setVisionParams(acuity,fov);
 				ehCont->setEyeThreshold(1.1);
 				ehCont->getEyeSaccader()->resetStats();
+				ehCont->resetRollingAverage();
 				numEyeSaccades = ehCont->learnEyeSaccades();
 				cout << "***********Weeks 16-19: Completed " << numEyeSaccades << " eye saccades***********" << endl;
 
@@ -576,27 +590,28 @@ void experimentMode(int stage)
 		reachSaturation=0.14;	//predefined saturation threshold for learning.
 								//Ideally this should come from learning, integrated with vision control.
 
-		//Load week 1 eye mapping files
-//		filename = params.m_FILENAME+"1";
-//		ehCont->loadFile(filename);
-//		ehCont->getEyeSaccader()->setMaps(ehCont->getEyeMap());
-		int links = ehCont->getEyeMap()->getNumGoodLinks();	//good coverage typically around 500 links.
-		float saturation = links/500 * 100.0;
-		novelty.setEyeExcitation((int)saturation);
-
-		//Set up the current levels of excitation.
-		novelty.setFovealExcitation(acuity,fov);
-		novelty.setRetinaExcitation();	//takes parameters from params.m_vision_flags.
-		novelty.setReachExcitation(reachStage, reachSaturation);
+		experimentConfiguration("1", acuity, fov, reachStage, reachSaturation);
+//		//Load week 1 eye mapping files
+////		filename = params.m_FILENAME+"1";
+////		ehCont->loadFile(filename);
+////		ehCont->getEyeSaccader()->setMaps(ehCont->getEyeMap());
+//		int links = ehCont->getEyeMap()->getNumGoodLinks();	//good coverage typically around 500 links.
+//		float saturation = links/500 * 100.0;
+//		novelty.setEyeExcitation((int)saturation);
+//
+//		//Set up the current levels of excitation.
+//		novelty.setFovealExcitation(acuity,fov);
+//		novelty.setRetinaExcitation();	//takes parameters from params.m_vision_flags.
+//		novelty.setReachExcitation(reachStage, reachSaturation);
 
 		bbExperiment(reachStage);
 
 		cout << "Finished stage 0-1" << endl;
 //		yarp::os::Time::delay(10);
 
-		cout << "Ready to move to stage 1-4 (2), press any key" << endl;
-		cin >> c;
-
+//		cout << "Ready to move to stage 1-4 (2), press any key" << endl;
+//		cin >> c;
+		break;
 	}
 		//Using global excitation, and current max, decide on actions and frequency/delays between actions.
 
@@ -615,8 +630,9 @@ void experimentMode(int stage)
 		cout << "Finished stage 1-4" << endl;
 		//yarp::os::Time::delay(10);
 
-		cout << "Ready to move to stage 4-7 (3), press any key" << endl;
-		cin >> c;
+//		cout << "Ready to move to stage 4-7 (3), press any key" << endl;
+//		cin >> c;
+		break;
 
 	//***********Weeks 4-7***********
 	case 3:
@@ -633,8 +649,9 @@ void experimentMode(int stage)
 		cout << "Finished stage 4-7" << endl;
 //		yarp::os::Time::delay(10);
 
-		cout << "Read to move to stage 7-10 (4), press any key" << endl;
-		cin >> c;
+//		cout << "Read to move to stage 7-10 (4), press any key" << endl;
+//		cin >> c;
+		break;
 
 	//***********Weeks 7-10***********
 	case 4:
@@ -653,8 +670,9 @@ void experimentMode(int stage)
 		cout << "Finished stage 7-10" << endl;
 //		yarp::os::Time::delay(10);
 
-		cout << "Ready to move to stage 10-13 (5), press any key" << endl;
-		cin >> c;
+//		cout << "Ready to move to stage 10-13 (5), press any key" << endl;
+//		cin >> c;
+		break;
 
 	//***********Weeks 10-13***********
 	case 5:
@@ -673,8 +691,9 @@ void experimentMode(int stage)
 		cout << "Finished stage 10-13" << endl;
 //		yarp::os::Time::delay(10);
 
-		cout << "Ready to move to stage 13-16 (6), press any key" << endl;
-		cin >> c;
+//		cout << "Ready to move to stage 13-16 (6), press any key" << endl;
+//		cin >> c;
+		break;
 
 	//***********Weeks 13-16***********
 	case 6:
@@ -693,8 +712,9 @@ void experimentMode(int stage)
 		cout << "Finished stage 10-16" << endl;
 //		yarp::os::Time::delay(10);
 
-		cout << "Ready to move to stage 16-19 (7), press any key" << endl;
-		cin >> c;
+//		cout << "Ready to move to stage 16-19 (7), press any key" << endl;
+//		cin >> c;
+		break;
 
 	//***********Weeks 16-19***********
 	case 7:
@@ -712,7 +732,8 @@ void experimentMode(int stage)
 		bbExperiment(reachStage);
 
 		cout << "Finished stage 16-19" << endl;
-		yarp::os::Time::delay(10);
+//		yarp::os::Time::delay(10);
+		break;
 
 	default:
 		cout << "Completed all stages" << endl;
@@ -739,8 +760,8 @@ bool experimentConfiguration(string stageName, int acuity, int fov, int reachSta
 	novelty.setReachExcitation(reachStage, reachSaturation);
 
 	//Update up the current levels of excitation.
-	novelty.updateFovealExcitation(acuity,fov);
-	novelty.updateRetinaExcitation();	//takes parameters from params.m_vision_flags.
+	novelty.setFovealExcitation(acuity,fov);
+	novelty.setRetinaExcitation();	//takes parameters from params.m_vision_flags.
 
 
 	return true;
@@ -766,14 +787,14 @@ void bbExperiment(int reachStage)
 		cin >> objSpeedPhase;
 		if(objSpeedPhase<0 || objSpeedPhase>2)
 			return;
-
+		addBBLogEntry();
 		//duration of experiment.
 
-		if(objSpeedPhase<=1)	//i.e. 0 or 1
-			experimentDuration = 60;
+		if(objSpeedPhase==1)	//i.e. 0 or 1
+			experimentDuration = 80;	//slow phase
 		else
-			experimentDuration = 30;
-		//2* blocks (1 fast (30s), 1 slow (60s), 60s gap between blocks, total time 2:30s)
+			experimentDuration = 60;	//fast and absent
+		//2* blocks (1 fast (60s), 1 slow (90s), 60s gap between blocks, total time 2:30s)
 
 		time_t startSeconds;
 		startSeconds = time(NULL);
@@ -802,6 +823,11 @@ void bbExperiment(int reachStage)
 
 			int inactivityCounter = 0;	//count number of sequential cases of inactivity;
 			int activityLevel = randGenerator(10);
+			activityLevel /= (colourTargs+motionTargs+1);
+
+			float globalExI = globalEx*10.0;
+			globalExI += (reachStage*2);
+
 			printf("Activation level: %f.2\n", ((float)activityLevel/10.0));
 			if(activityLevel<=(globalEx*10))
 			{
@@ -872,46 +898,62 @@ void bbExperiment(int reachStage)
 						else// if(reachStage==1 || reachStage==2)
 						{
 							//vision should be starting to get involved.
-							bool success = ehCont->fixate();
-							int steps = ehCont->getEyeSaccader()->getStepCounter();
-							novelty.updateEyeExcitation(steps, success);
-							double x,y,z;
-							getGazeCoordinates(&x, &y, &z);
-							//x negative is forward
-							//can go up to -0.20
-							x /= 1000;
-							if(reachStage==1 && x < -0.2)
-								x = -0.2;
-							else if(reachStage==2 && x < -0.35)
-								x = -0.35;
-							y /= 1000;
-							z /= 1000;
-							bool arm;
-							if(y>0){
-								arm = true;
-								reachCont.sendArmTarget(x,y,z, arm);
-							}
-							else
-							{
-								arm = false;
-								reachCont.sendArmTarget(x,y,z, arm);
-							}
-							reachTriggered = true;
+							bool success = ehCont->fixate(true);
 
-							float hand = novelty.getExcitation(smc::HAND);
-							activityLevel = randGenerator(10);
-							if(activityLevel<=(hand*10))
+							activityLevel=1;
+							if(!success)
 							{
-								cout << "opening hand" << endl;
-								grippy->release(arm);
+								activityLevel = randGenerator(week);
 							}
-							else
+
+							if(activityLevel <=3)
 							{
-								cout << "closing hand" << endl;
-								grippy->fist(arm);
+
+
+								int steps = ehCont->getEyeSaccader()->getStepCounter();
+								novelty.updateEyeExcitation(steps, success);
+								double x,y,z;
+								getGazeCoordinates(&x, &y, &z);
+								//x negative is forward
+								//can go up to -0.20
+								x /= 1000;
+								if(reachStage==1 && x < -0.2)
+									x = -0.2;
+								else if(reachStage==2 && x < -0.35)
+									x = -0.35;
+								y /= 1000;
+								z /= 1000;
+								bool arm;
+								if(y>0){
+									arm = true;
+									reachCont.sendArmTarget(x,y,z, arm);
+								}
+								else
+								{
+									arm = false;
+									reachCont.sendArmTarget(x,y,z, arm);
+								}
+								reachTriggered = true;
+
+								float hand = novelty.getExcitation(smc::HAND);
+								activityLevel = randGenerator(10);
+								if(success)
+									activityLevel/=2;
+								else
+									activityLevel*=2;
+								if(activityLevel<=(hand*10))
+								{
+									cout << "opening hand" << endl;
+									grippy->release(arm);
+								}
+								else
+								{
+									cout << "closing hand" << endl;
+									grippy->fist(arm);
+								}
+								//Log current values
+								addBBLogEntry();
 							}
-							//Log current values
-							addBBLogEntry();
 
 						}
 
@@ -942,12 +984,15 @@ void bbExperiment(int reachStage)
 				inactivityCounter=0;
 			}
 
-			yarp::os::Time::delay(1);	//wait a second
+			double delayTime =1;
+			delayTime = (20.0-randGenerator(week))/20.0;
+
+			yarp::os::Time::delay(delayTime);	//wait a second
 			time_t current = time(NULL);
 			timeTaken=current - startSeconds;
 		}
 
-
+		addBBLogEntry();
 	}//End while loop for phase selection
 }
 
@@ -969,10 +1014,15 @@ void checkReachStatus()
 		addBBLogEntry();
 
 		yarp::os::Time::delay(0.5);
-		//Return hand to home position;
-		reachCont.command("home");
-		grippy->fist(true);
-		grippy->fist(false);
+
+		int activityLevel = randGenerator(week);
+		if(activityLevel<=3)
+		{
+			//Return hand to home position;
+			reachCont.command("home");
+			grippy->fist(true);
+			grippy->fist(false);
+		}
 		reachCont.setCurrentStatus(WAITING);
 	}
 	else if(reachCont.getCurrentStatus()==REACHING)

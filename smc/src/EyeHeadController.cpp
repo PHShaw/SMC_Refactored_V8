@@ -345,13 +345,13 @@ int EyeHeadSaccading::learnEyeSaccades()
 
 //	while(timeTaken < eyeOnlyDuration)	//learn for 1hr
 //	while(rollingAverage > eyeThreshold)
-	while((useThresholds && (rollingAverage > eyeThreshold)) || (!useThresholds && (timeTaken < eyeOnlyDuration)))
+	while((useThresholds && (rollingAverage > eyeThreshold)) || (!useThresholds && (timeTaken < eyeOnlyDuration)) || saccadeCounter<10)
 	{
 		bool success = eyeSaccade();
 		if(success)
 		{
 			counter++;
-
+			saccadeCounter++;
 		}
 		Time::delay(0.5);
 		time_t current = time(NULL);
@@ -401,7 +401,7 @@ bool EyeHeadSaccading::fixate(double targX, double targY, string colour, bool si
 }
 
 
-bool EyeHeadSaccading::fixate(int xl, int yl, int xr, int yr)
+bool EyeHeadSaccading::fixate(int xl, int yl, int xr, int yr, bool simple)
 {
 	double dist;
 	bool success= target->fovea(xr,yr,&dist);
@@ -410,7 +410,7 @@ bool EyeHeadSaccading::fixate(int xl, int yl, int xr, int yr)
 		success = checkCombiLinks(xr, yr, "", false);	//Cannot supply a colour to check if this worked.
 		if(!success)// assume no matching head link found, try with just an eye saccade
 		{
-			success = eyeSac->simpleSaccade(xr, yr, "", false);
+			success = eyeSac->simpleSaccade(xr, yr, "", simple);
 		}
 		else
 		{
@@ -470,7 +470,7 @@ bool EyeHeadSaccading::fixate(int xl, int yl, int xr, int yr)
 }
 
 //Fixate on something
-bool EyeHeadSaccading::fixate()
+bool EyeHeadSaccading::fixate(bool simple)
 {
 	double targX, targY;
 	bool success = target->getTarget(&targX, &targY);
@@ -478,7 +478,7 @@ bool EyeHeadSaccading::fixate()
 	{
 		string colour;
 		colour = target->getColour();
-		return fixate(targX, targY, colour, false);
+		return fixate(targX, targY, colour, simple);
 	}
 	else
 	{
@@ -489,12 +489,12 @@ bool EyeHeadSaccading::fixate()
 }
 
 //fixate on a target of colour...
-bool EyeHeadSaccading::fixate(std::string colour)
+bool EyeHeadSaccading::fixate(std::string colour, bool simple)
 {
 	double targX, targY;
 	bool success = target->getTarget(&targX, &targY, colour);
 	if(success)
-		return fixate(targX, targY, colour, false);
+		return fixate(targX, targY, colour, simple);
 	else
 		return false;
 }
@@ -1625,20 +1625,24 @@ bool EyeHeadSaccading::checkCombiLinks(double targX, double targY, string colour
 
 bool EyeHeadSaccading::addGazeField()
 {
-	//Add field to gaze map
-	cout << "Attempting to add a gaze field" << endl;
-	double* headMotorPos = new double[6];
-
-	bool gotEnc = headCont->getCurrentPosition(headMotorPos);
-	if(gotEnc)
+	if(params.LEARN)
 	{
-		cout << "Adding gaze field" << endl;
-		gm->addGazeField(headMotorPos);
-	}
-	else
-		cout << "Didn't get the full array of head motor positions" << endl;
+		//Add field to gaze map
+		cout << "Attempting to add a gaze field" << endl;
+		double* headMotorPos = new double[6];
 
-	return gotEnc;
+		bool gotEnc = headCont->getCurrentPosition(headMotorPos);
+		if(gotEnc)
+		{
+			cout << "Adding gaze field" << endl;
+			gm->addGazeField(headMotorPos);
+		}
+		else
+			cout << "Didn't get the full array of head motor positions" << endl;
+
+		return gotEnc;
+	}
+	return true;
 }
 
 void EyeHeadSaccading::goToHeadConfig(HeadConfig* hc)
