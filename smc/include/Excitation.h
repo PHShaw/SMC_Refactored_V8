@@ -46,6 +46,7 @@ public:
 	void updateRetinaExcitation(int colourTargets, int motionTargets);
 
 	void setReachExcitation(int stage, float mapSaturation);
+	void setReachExcitation(int week, int stage, float mapSaturation);
 	void updateReachExcitation(float distance);		//updates the ARM and HAND value
 
 	float getExcitation(System system);
@@ -55,6 +56,25 @@ public:
 	void stimulateSystem();
 	void stimulateSubSystem(System subsystem);
 
+	/**
+	 * Excitation inhibits reaching - inspired by McGuire paper.
+	 */
+	float McGuireReachExcitation(int week){return 1/week;}
+
+	/**
+	 * For the BabyBot experiment, run over 19 weeks, cognitive capcity increases over time. - inspired by McGuire paper
+	 */
+	float McGuireCognitiveCapacity(int week){return week/19;}
+	float McGuireCognitiveAverage(int week){return (McGuireReachExcitation(week) + McGuireCognitiveCapacity(week))/2;}
+
+	/**
+	 * inhibition of the reach reflex - inspired by McGraw paper
+	 */
+	float McGrawReflexInhibition(int week){return 0.8*week;}
+	float McGrawCorticalControl(int reachStage, float saturation);
+	float McGrawCorticalCombination(int week, int reachStage, float saturation){
+		return abs(McGrawReflexInhibition(week)-McGrawCorticalControl(reachStage,saturation));
+	}
 
 	void printExcitations();
 	std::string excitationToString(System sys);

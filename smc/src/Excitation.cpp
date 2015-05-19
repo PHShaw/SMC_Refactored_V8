@@ -73,7 +73,8 @@ Excitation::~Excitation()
 	 */
 	void Excitation::setEyeExcitation(int mapSaturation)
 	{
-		subsystems[EYE] = 1 - (mapSaturation/100.0);
+		//	subsystems[EYE] = 1 - (mapSaturation/100.0); // version 1
+		subsystems[EYE] = mapSaturation/100.0;	// version 2, Jxl
 		updateGlobalExcitation();
 	}
 
@@ -280,7 +281,7 @@ Excitation::~Excitation()
 	 * mapSaturation [0..1] indication of % of fields learn on map
 	 * 				As the map becomes more saturation, the novelty decays.
 	 */
-	void Excitation::setReachExcitation(int stage, float mapSaturation)
+	void Excitation::setReachExcitation(int stage, float mapSaturation)	//Version 1
 	{
 		float excitation = stage * 0.3;
 
@@ -295,6 +296,24 @@ Excitation::~Excitation()
 
 		//Distance will need to have a large impact on the hand and arm.
 		updateGlobalExcitation();
+	}
+
+	/**
+	 * Combines the various cognitive and muscle control submodels to develop an overall excitation system
+	 */
+	void Excitation::setReachExcitation(int week, int stage, float mapSaturation) //version 2 jxl
+	{
+		float excitation = 0;
+
+		//likelihood of trying to reach
+		excitation = subsystems[EYE] * McGuireCognitiveAverage(week);
+		subsystems[HAND] = McGrawCorticalCombination(week, stage, mapSaturation);
+
+		excitation *= subsystems[HAND];
+
+		subsystems[ARM] = excitation;
+
+
 	}
 
 
@@ -329,6 +348,31 @@ Excitation::~Excitation()
 
 		updateGlobalExcitation();
 	}
+
+
+
+	float Excitation::McGrawCorticalControl(int reachStage, float saturation)
+	{
+		float cortCont = 0;
+
+		switch (reachStage)
+		{
+			case 0:
+				cortCont = 0.0;
+				break;
+			case 1:
+				cortCont = saturation/2;
+				break;
+			case 2:
+				cortCont = saturation/2 + 0.5;
+				break;
+			default:
+				break;
+		}
+
+		return cortCont;
+	}
+
 
 
 	float Excitation::getExcitation(System system)

@@ -757,7 +757,7 @@ bool experimentConfiguration(string stageName, int acuity, int fov, int reachSta
 	int links = ehCont->getEyeMap()->getNumGoodLinks();	//good coverage typically around 500 links.
 	float saturation = links/eyeLinkSaturationPoint * 100.0;
 	novelty.setEyeExcitation((int)saturation);
-	novelty.setReachExcitation(reachStage, reachSaturation);
+	novelty.setReachExcitation(week, reachStage, reachSaturation);
 
 	//Update up the current levels of excitation.
 	novelty.setFovealExcitation(acuity,fov);
