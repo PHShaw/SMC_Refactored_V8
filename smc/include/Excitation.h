@@ -13,8 +13,9 @@
 
 #include <iostream>
 #include <map>
-#include <cmath>
+#include <math.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "params_config.h"
 
@@ -59,22 +60,20 @@ public:
 	/**
 	 * Excitation inhibits reaching - inspired by McGuire paper.
 	 */
-	float McGuireReachExcitation(int week){return 1/week;}
+	float McGuireReachExcitation(int week){return 1.0/(float)week;}
 
 	/**
 	 * For the BabyBot experiment, run over 19 weeks, cognitive capcity increases over time. - inspired by McGuire paper
 	 */
-	float McGuireCognitiveCapacity(int week){return week/19;}
-	float McGuireCognitiveAverage(int week){return (McGuireReachExcitation(week) + McGuireCognitiveCapacity(week))/2;}
+	float McGuireCognitiveCapacity(int week){return (float)week/19.0;}
+	float McGuireCognitiveAverage(int week){return (McGuireReachExcitation(week) + McGuireCognitiveCapacity(week))/2.0;}
 
 	/**
 	 * inhibition of the reach reflex - inspired by McGraw paper
 	 */
-	float McGrawReflexInhibition(int week){return 0.8*week;}
+	float McGrawReflexInhibition(int week){return pow(0.8,(double)week);}
 	float McGrawCorticalControl(int reachStage, float saturation);
-	float McGrawCorticalCombination(int week, int reachStage, float saturation){
-		return abs(McGrawReflexInhibition(week)-McGrawCorticalControl(reachStage,saturation));
-	}
+	float McGrawCorticalCombination(int week, int reachStage, float saturation);
 
 	void printExcitations();
 	std::string excitationToString(System sys);

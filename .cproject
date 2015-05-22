@@ -8,8 +8,8 @@
 				<macros>
 					<stringMacro name="YARP_CONF" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2/build/conf"/>
 					<stringMacro name="YARP_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2"/>
-					<stringMacro name="ICUB_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/iCub"/>
 					<stringMacro name="YARP_DIR" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2/build"/>
+					<stringMacro name="ICUB_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/iCub"/>
 					<stringMacro name="ICUB_DIR" type="VALUE_TEXT" value="/home/icub/robsoft/iCub/main/build"/>
 				</macros>
 				<externalSettings/>
@@ -60,6 +60,10 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<sourceEntries>
+						<entry excluding="BBot" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="BBot"/>
+					</sourceEntries>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
@@ -69,8 +73,8 @@
 				<macros>
 					<stringMacro name="YARP_CONF" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2/build/conf"/>
 					<stringMacro name="YARP_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2"/>
-					<stringMacro name="ICUB_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/iCub"/>
 					<stringMacro name="YARP_DIR" type="VALUE_TEXT" value="/home/icub/robsoft/yarp2/build"/>
+					<stringMacro name="ICUB_ROOT" type="VALUE_TEXT" value="/home/icub/robsoft/iCub"/>
 					<stringMacro name="ICUB_DIR" type="VALUE_TEXT" value="/home/icub/robsoft/iCub/main/build"/>
 				</macros>
 				<externalSettings/>
@@ -112,6 +116,10 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<sourceEntries>
+						<entry excluding="BBot" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="BBot"/>
+					</sourceEntries>
 				</configuration>
 			</storageModule>
 			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>

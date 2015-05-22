@@ -1,3 +1,0 @@
-saccadeCounter combieyeonly combisuccessful combiclose combifailed unlearntInputFields(612) unlearntOutputFields(530) combisuccessrate NumLinks NumGoodLinks TimeStamp
-- - - - - - - - - - 1431548577
-**************END**************

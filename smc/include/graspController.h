@@ -36,11 +36,11 @@ class graspController //: public armController
 		bool handsStationary();
 		bool grasp(bool rightArm=true);
 
-		bool release(bool rightArm=true);
+		bool release(bool rightArm=true, bool block=true);
 		bool openThumb(bool rightArm);
 		bool closeThumb(bool rightArm);
 
-		bool fist(bool rightArm);
+		bool fist(bool rightArm, bool block=true);
 
 		bool isHolding(){return grasping;}
 

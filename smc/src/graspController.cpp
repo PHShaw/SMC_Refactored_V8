@@ -309,7 +309,7 @@ bool graspController:: move(const double* position,bool block, bool rightArm)
 	{
 		time_t current = time(NULL);
 		timeTaken=current - startSeconds;
-		if(timeTaken > 30)
+		if(timeTaken > 5)
 		{
 			timeOut = true;
 			cout << "Time out on grasp action" << endl;
@@ -765,7 +765,7 @@ bool graspController::grasp(bool rightArm)
 }
 
 
-bool graspController::release(bool rightArm)
+bool graspController::release(bool rightArm, bool block)
 {
 	double* currentArmPose = new double[16];
 	ac->getCurrentPosition(currentArmPose,rightArm);
@@ -773,7 +773,7 @@ bool graspController::release(bool rightArm)
 	{
 		currentArmPose[i] = 5;
 	}
-	move(currentArmPose, true, rightArm);
+	move(currentArmPose, block, rightArm);
 	grasping = false;
 	handOpen=true;
 	Time::delay(1.5);
@@ -784,7 +784,7 @@ bool graspController::release(bool rightArm)
 	return !grasping;
 }
 
-bool graspController::fist(bool rightArm)
+bool graspController::fist(bool rightArm, bool block)
 {
 	double* currentArmPose = new double[16];
 	ac->getCurrentPosition(currentArmPose,rightArm);
@@ -798,7 +798,7 @@ bool graspController::fist(bool rightArm)
 	currentArmPose[14] = 60;
 	currentArmPose[15] = 150;
 
-	handOpen = !move(currentArmPose, true, rightArm);
+	handOpen = !move(currentArmPose, block, rightArm);
 	return !handOpen;
 
 }

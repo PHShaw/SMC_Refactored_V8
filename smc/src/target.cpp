@@ -52,6 +52,8 @@ bool Target::initTarget(string robot)
 	{
 		porttargetsleft.open("/targetSim/left/read");
 		porttargetsright.open("/targetSim/right/read");
+//		porttargetsright.useCallback(*this);
+
 
 //		yarp.connect("/targetSim/left/data", "/targetSim/left/read");
 //		yarp.connect("/targetSim/right/data", "/targetSim/right/read");
@@ -69,6 +71,15 @@ bool Target::initTarget(string robot)
 	return true;
 }
 
+
+//void Target::onRead(yarp::os::Bottle& b) {
+////	 std::cout<<"[BOTTLE] Reach Feedback received: '"<<b.toString()<<"' size: "<<b.size()<<std::endl;
+//
+//	 target= new Bottle(b);
+////	 target = &b;
+//}
+
+
 int Target::getNumTargets(std::string type)
 {
 	if(numVisibleTargets.find(type)==numVisibleTargets.end())
@@ -81,8 +92,10 @@ bool Target::getTarget(double* targX, double* targY)
 
 //	porttargetsright.read(0);	//Clears last target for when target is no longer visible
 	Time::delay(0.15);
+
 	if (target = porttargetsright.read(0))
 	{
+		cout<<"[BOTTLE] get any target Feedback received: '"<<target->toString()<<"' size: "<<target->size()<<std::endl;
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
@@ -118,10 +131,7 @@ bool Target::getTarget(double* targX, double* targY)
 			{
 				col *= colourElements;
 				visible = true;
-				colour = target->get(0+col).asString();
-				*targX = target->get(1+col).asDouble();
-				*targY = target->get(2+col).asDouble();
-				size   = target->get(3+col).asInt();
+				colour = processColour(col, targX, targY, &size);
 				printf("Colour: %s  X: %.3f  Y: %.3f\n",
 						colour.c_str(),
 						*targX, *targY);
@@ -139,6 +149,10 @@ bool Target::getTarget(double* targX, double* targY)
 					motion=true;
 					//selection a motion target
 					col = randGenerator(numVisibleTargets["motion"]);
+				}
+				else
+				{
+					col = randGenerator(numVisibleTargets["colour"]);
 				}
 
 
@@ -161,10 +175,7 @@ bool Target::getTarget(double* targX, double* targY)
 				{
 //					["colour" colour x y size]
 					visible = true;
-					colour = target->get(1+index).asString();
-					*targX = target->get(2+index).asDouble();
-					*targY = target->get(3+index).asDouble();
-					size   = target->get(4+index).asInt();
+					colour = processColour(index, targX, targY, &size, true);
 					printf("Colour: %s  X: %.3f  Y: %.3f\n",
 							colour.c_str(),
 							*targX, *targY);
@@ -176,10 +187,7 @@ bool Target::getTarget(double* targX, double* targY)
 //					["motion" speed x0 y0 x1 y1]
 					//TODO: Make use of the starting point and speed.
 					visible = true;
-					colour = "motion";
-					*targX = target->get(4+index).asDouble();
-					*targY = target->get(5+index).asDouble();
-					size = target->get(2+index).asDouble();
+					colour = processMotion(index, targX, targY, &size);
 					printf("Motion: %s  X: %.3f  Y: %.3f\n",
 							colour.c_str(),
 							*targX, *targY);
@@ -210,7 +218,7 @@ bool Target::getTarget(double* targX, double* targY)
 //					["shape" shapeType[square|circle|triangle] colour x y w h]
 					//TODO: Make better use of shape information.
 					visible = true;
-					colour = target->get(1+index).asString();	//shape
+					colour = target->get(1+index).asString().c_str();	//shape
 					*targX = target->get(3+index).asDouble();
 					*targY = target->get(4+index).asDouble();
 					size = target->get(5+index).asDouble();
@@ -274,11 +282,14 @@ bool Target::getTarget(double* targX, double* targY)
 bool Target::getTarget(double* targX, double* targY, const string colourTest)	//look for specific colour
 {
 
-//	porttargetsright.read(0);	//Clears last target for when target is no longer visible
 	Time::delay(0.15);
+//	porttargetsright.read(0);	//Clears last target for when target is no longer visible
+
 	bool found = false;
-	if(target = porttargetsright.read(0))
+
+	if (target = porttargetsright.read(0))
 	{
+		cout<<"[BOTTLE] get coloured target Feedback received: '"<<target->toString()<<"' size: "<<target->size()<<std::endl;
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
@@ -302,14 +313,11 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 				for(int i=0; i<numTargets; i++)
 				{
 					string col;
-					col = target->get(i*colourElements).asString();
+					col = target->get(i*colourElements).asString().c_str();
 					if(col.compare(colourTest)==0)
 					{
 						visible = true;
-						colour = target->get(i*colourElements).asString();
-						*targX = target->get(i*colourElements +1).asDouble();
-						*targY = target->get(i*colourElements +2).asDouble();
-						size   = target->get(i*colourElements +3).asInt();
+						colour = processColour(i, targX, targY, &size);
 						printf("Colour: %s  X: %.3f  Y: %.3f\n",
 								colour.c_str(),
 								*targX, *targY);
@@ -343,14 +351,13 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 					string type = target->get(index).asString().c_str();
 					numElements = elementsPerTargetTypes[type];
 
-					index+= numElements;
-
-
-
 					if(type.compare("colour")==0)
 					{
 						visible = true;
-						colour = target->get(1+index).asString();
+						string colour = target->get(1+index).asString().c_str();
+
+						cout << "[colour] Comparing " << colour << " with " << colourTest << endl;
+
 						if(colour.compare(colourTest)==0)
 						{
 							*targX = target->get(2+index).asDouble();
@@ -375,18 +382,20 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 							return true;
 						}
 						else
+						{
+							index+= numElements;
 							continue;
+						}
 					}
 					else if(type.compare("motion")==0)
 					{
+						cout << "[motion] Comparing " << type << " with " << colourTest << endl;
+
 						if(colourTest.compare(type)==0)
 						{
 							//TODO: Make use of the starting point and speed.
 							visible = true;
-							colour = "motion";
-							*targX = target->get(4+index).asDouble();
-							*targY = target->get(5+index).asDouble();
-							size = target->get(2+index).asDouble();
+							colour = processMotion(index, targX, targY, &size);
 							printf("Motion: %s  X: %.3f  Y: %.3f\n",
 									colour.c_str(),
 									*targX, *targY);
@@ -405,7 +414,10 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 							lastY = *targY;
 							return true;
 						}
-						else continue;
+						else{
+							index+= numElements;
+							continue;
+						}
 					}
 					else if(type.compare("edge")==0)
 					{
@@ -437,11 +449,14 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 							lastY = *targY;
 							return true;
 						}
-						else continue;
+						else{
+							index+= numElements;
+							continue;
+						}
 					}
 					else if(type.compare("shape")==0)
 					{
-						colour = target->get(1+index).asString();
+						colour = target->get(1+index).asString().c_str();
 						if(colourTest.compare(colour)==0)
 						{
 							//TODO: Make better use of shape information.
@@ -469,10 +484,15 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 							return true;
 						}
 						else
+						{
+							index+= numElements;
 							continue;
+						}
 					}
-				}
 
+					index+= numElements;
+				}
+				cout << "Failed to match target" << endl;
 
 			}
 
@@ -489,7 +509,24 @@ bool Target::getTarget(double* targX, double* targY, const string colourTest)	//
 
 Bottle* Target::getAllTargets()
 {
-	if(target = porttargetsright.read(0))
+	Time::delay(0.15);
+	if(BASIC_VISION)
+		target = porttargetsright.read(0);
+		else
+		{
+
+			int backlog = 0;
+			backlog = porttargetsright.getPendingReads();
+			cout << "** There are " << backlog << " messages in the port" << endl;
+			while(backlog>1)
+			{
+				porttargetsright.read(0);	//Clears last target for when target is no longer visible
+				backlog --;
+			}
+			target = porttargetsright.read(0);
+
+		}
+	if (target != NULL)
 	{
 		return target;
 	}
@@ -519,8 +556,9 @@ string Target::getNearestObject(double* targX, double* targY, double* dist)
 	bool found = false;
 	string closestCol;
 	double closestDist=3000, closestX, closestY;
-	if(target = porttargetsright.read(0))
+	if (target = porttargetsright.read(0))
 	{
+		//TODO: Add handling for non basic vision
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
 		{
@@ -528,10 +566,7 @@ string Target::getNearestObject(double* targX, double* targY, double* dist)
 			for(int i=0; i<numColours; i++)
 			{
 				visible = true;
-				string col = target->get(i*colourElements).asString().c_str();
-				*targX = target->get(i*colourElements +1).asDouble();
-				*targY = target->get(i*colourElements +2).asDouble();
-				size   = target->get(i*colourElements +3).asInt();
+				string col = processColour(i, targX, targY, &size);
 
 				fovea(*targX, *targY, dist);
 				if(*dist < closestDist)
@@ -557,7 +592,29 @@ string Target::getNearestObject(double* targX, double* targY, double* dist)
 	*targY = 0;
 }
 
+string Target::processColour(int index, double* targX, double* targY, int* size, bool advanced)
+{
+	int position =0;
+	if(advanced)
+		position++;
 
+	string colour = target->get(index*colourElements +position).asString().c_str(); position++;
+	*targX = target->get(index*colourElements +position).asDouble(); position++;
+	*targY = target->get(index*colourElements +position).asDouble(); position++;
+	*size   = target->get(index*colourElements +position).asInt();
+
+	return colour;
+}
+
+string Target::processMotion(int index, double* targX, double* targY, int* size, bool advanced)
+{
+	string colour = "motion";
+	*targX = target->get(4+index).asDouble();
+	*targY = target->get(5+index).asDouble();
+	*size = target->get(2+index).asDouble();
+
+	return colour;
+}
 
 
 vector<string> Target::getNearestObjects()
@@ -567,7 +624,7 @@ vector<string> Target::getNearestObjects()
 	Time::delay(0.15);
 	bool found = false;
 
-	if(target = porttargetsright.read(0))
+	if (target = porttargetsright.read(0))
 	{
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
@@ -620,7 +677,7 @@ std::string Target::getNearestTo(const int x, const int y, double* targX, double
 	bool found = false;
 	string closestCol;
 	double closestDist=3000, closestX, closestY;
-	if(target = porttargetsright.read(0))
+	if (target = porttargetsright.read(0))
 	{
 		int size = target->size();	//[colour, x, y]
 		if(size>0)
@@ -715,8 +772,15 @@ bool Target::fovea(double x, double y, double* dist)
 
 bool Target::getLeft(double* targX, double* targY, string colourTest)
 {
-	porttargetsleft.read(0);	//Clears last target for when target is no longer visible
-	Time::delay(0.15);
+	int backlog = 0;
+	backlog = porttargetsleft.getPendingReads();
+	cout << "** There are " << backlog << " messages in the port" << endl;
+	while(backlog>1)
+	{
+		porttargetsleft.read(0);	//Clears last target for when target is no longer visible
+		backlog --;
+	}
+//	Time::delay(0.15);
 	bool found = false;
 	if(target = porttargetsleft.read(0))
 	{
@@ -727,11 +791,11 @@ bool Target::getLeft(double* targX, double* targY, string colourTest)
 			for(int i=0; i<numColours; i++)
 			{
 				string col;
-				col = target->get(i*colourElements).asString();
+				col = target->get(i*colourElements).asString().c_str();
 				if(col.compare(colourTest)==0)
 				{
 					visible = true;
-					colour = target->get(i*colourElements).asString();
+					colour = target->get(i*colourElements).asString().c_str();
 					*targX = target->get(i*colourElements +1).asDouble();
 					*targY = target->get(i*colourElements +2).asDouble();
 					size   = target->get(i*colourElements +3).asInt();

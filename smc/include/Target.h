@@ -22,7 +22,8 @@
 #include <yarp/os/all.h>
 #include <yarp/dev/all.h>
 
-class Target{
+class Target // : public yarp::os::TypedReaderCallback<yarp::os::Bottle>
+{
 public:
 	Target();
 	bool initTarget(std::string robot);
@@ -33,6 +34,8 @@ public:
 	std::vector<std::string> getNearestObjects();
 
 	std::string getNearestTo(const int x, const int y, double* targX, double* targY, double* dist);
+
+	//virtual void onRead(yarp::os::Bottle& b);
 
 	yarp::os::Bottle* getAllTargets();
 	bool targetCentred(double* targX, double* targY);
@@ -60,6 +63,11 @@ public:
 
 
 private:
+
+	std::string processColour(int index, double* targX, double* targY, int* size, bool advanced=false);
+	std::string processMotion(int index, double* targX, double* targY, int* size, bool advanced=true);
+
+
 	yarp::os::BufferedPort<yarp::os::Bottle> porttargetsleft;
 	yarp::os::BufferedPort<yarp::os::Bottle> porttargetsright;
 	yarp::os::BufferedPort<yarp::os::Bottle> portUU;
@@ -67,6 +75,8 @@ private:
 //	yarp::os::Bottle* target;
 	bool visible;
 	std::ofstream targetlogfile;
+
+
 
 	double lastX, lastY;
 

@@ -370,7 +370,16 @@ Excitation::~Excitation()
 				break;
 		}
 
-		return cortCont;
+		return cortCont+0.25;
+	}
+
+	float Excitation::McGrawCorticalCombination(int week, int reachStage, float saturation){
+		float temp = McGrawReflexInhibition(week)-McGrawCorticalControl(reachStage,saturation);
+		temp *=1000;
+		int i= (int)temp;
+		i = abs(i);
+		temp = (float)i/1000.0;
+		return temp;
 	}
 
 

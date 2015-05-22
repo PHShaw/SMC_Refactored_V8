@@ -138,7 +138,7 @@ void Vision::run()
 			printf("no imgin\n");
 			yarp::os::Time::delay(1);
 		}
-		yarp::os::Time::delay(0.1);
+		yarp::os::Time::delay(0.05);
 	}
 }
 void quit(int param)

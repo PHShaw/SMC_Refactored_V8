@@ -45,11 +45,12 @@ void ReachController::closePorts()
 
 
 void ReachController::onRead(yarp::os::Bottle& b) {
-	 std::cout<<"[BOTTLE] Reach Feedback received: '"<<b.toString()<<"' size: "<<b.size()<<std::endl;
+
 	 //[status dist x y z]
 	 string message = b.get(0).asString().c_str();
 	 if(message == msg_COMPLETE || message == msg_COMPLETED)
 	 {
+		 std::cout<<"[BOTTLE] Reach Feedback received: '"<<b.toString()<<"' size: "<<b.size()<<std::endl;
 		 status = COMPLETE;
 		 dist = b.get(1).asDouble();
 		 x = b.get(2).asDouble();

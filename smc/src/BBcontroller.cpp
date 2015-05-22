@@ -45,7 +45,7 @@
 #include <signal.h>		//used in the save and quit functions
 
 #include "EyeHeadController.h"
-#
+
 #include "tracker.h"
 #include "ReachController.h"
 #include "graspController.h"
@@ -96,8 +96,8 @@ bool reachTriggered;
 
 
 const int acuityLevels[7]=
-{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
-//{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
+//{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
+{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
 //week
 //   1		4		7	  10	   13		16	   19
 const int fovLevels[7]=
@@ -473,7 +473,7 @@ void learningMode(int stage)
 			case 4:
 				//***********Weeks 7-10***********
 				params.m_VISION_FLAGS |= COLOUR;
-				params.m_VISION_FLAGS |= MOTION;
+//				params.m_VISION_FLAGS |= MOTION;
 				setVisionModules();
 				acuity=acuityLevels[3];
 				fov=fovLevels[3];
@@ -492,8 +492,8 @@ void learningMode(int stage)
 			case 5:
 				//***********Weeks 10-13***********
 				params.m_VISION_FLAGS |= COLOUR;
-				params.m_VISION_FLAGS |= MOTION;
-				params.m_VISION_FLAGS |= EDGE;
+//				params.m_VISION_FLAGS |= MOTION;
+//				params.m_VISION_FLAGS |= EDGE;
 				setVisionModules();
 				acuity=acuityLevels[4];
 				fov=fovLevels[4];
@@ -512,8 +512,8 @@ void learningMode(int stage)
 			case 6:
 				//***********Weeks 13-16***********
 				params.m_VISION_FLAGS |= COLOUR;
-				params.m_VISION_FLAGS |= MOTION;
-				params.m_VISION_FLAGS |= EDGE;
+//				params.m_VISION_FLAGS |= MOTION;
+//				params.m_VISION_FLAGS |= EDGE;
 				acuity=acuityLevels[5];
 				fov=fovLevels[5];
 				setVisionParams(acuity,fov);
@@ -531,9 +531,9 @@ void learningMode(int stage)
 			case 7:
 				//***********Weeks 16-19***********
 				params.m_VISION_FLAGS |= COLOUR;
-				params.m_VISION_FLAGS |= MOTION;
-				params.m_VISION_FLAGS |= EDGE;
-				params.m_VISION_FLAGS |= SHAPE;
+//				params.m_VISION_FLAGS |= MOTION;
+//				params.m_VISION_FLAGS |= EDGE;
+//				params.m_VISION_FLAGS |= SHAPE;
 				setVisionModules();
 				acuity=acuityLevels[6];
 				fov=fovLevels[6];
@@ -744,7 +744,7 @@ void experimentMode(int stage)
 
 bool experimentConfiguration(string stageName, int acuity, int fov, int reachStage, float reachSaturation)
 {
-	float eyeLinkSaturationPoint = 500.0;
+	float eyeLinkSaturationPoint = 300.0;
 
 	setVisionModules();
 	setVisionParams(acuity,fov);
@@ -764,9 +764,130 @@ bool experimentConfiguration(string stageName, int acuity, int fov, int reachSta
 	novelty.setRetinaExcitation();	//takes parameters from params.m_vision_flags.
 
 
+	novelty.printExcitations();
+
 	return true;
 }
 
+void eyeAction()
+{
+	bool success = ehCont->fixate();	//TODO: Maybe this should be multi-threaded?
+//	int steps = ehCont->getEyeSaccader()->getStepCounter();
+		//update novelty.
+		//if not managed to fixate, novelty should be going down.
+		//but likely to be a large number of steps as well, before failure.
+//	novelty.updateEyeExcitation(steps, success);
+
+	//Log current values?
+	addBBLogEntry();
+}
+
+void handAction(int arm, int activityLevel)
+{
+	float hand = novelty.getExcitation(smc::HAND);
+	if(activityLevel<=(hand*10))
+	{
+		cout << "opening hand" << endl;
+		grippy->release(arm, false);
+	}
+	else
+	{
+		cout << "closing hand" << endl;
+		grippy->fist(arm, false);
+	}
+}
+
+void armAction(int reachStage)
+{
+// if excitation for hand is high, then want to open hand, otherwise hand should be fisted
+//need to take into account reach stage, to select reach target.  In later stages, this will
+//be preceded by a saccade to get the location of the visual target.
+
+	if(reachCont.getCurrentStatus()==REACHING)
+	{
+		bool okayReaching = reachCont.isReachingOkay();
+		//TODO Decide what to do here?
+	}
+
+	if(reachStage==0)
+	{
+		/*
+		 * Stage 0, reflex mode:
+		 * left arm: -0.28 -0.13 0.13 horizontal (accuracy 0.077) ?
+		 * right arm: -0.28 0.13 0.33 horizontal (accuracy 0.123) ?
+		 */
+		int arm = randGenerator(2);	//0 or 1
+		if(arm == 0)
+			reachCont.sendArmTarget(-0.35, -0.25, 0.30, false); //y -0.25 -> -0.05
+		else
+			reachCont.sendArmTarget(-0.34, 0.05, 0.27, true);
+
+		reachTriggered = true;
+
+		int activityLevel = randGenerator(10);
+		handAction(arm, activityLevel);
+
+		//Log current values
+		addBBLogEntry();
+
+	}
+	else// if(reachStage==1 || reachStage==2)
+	{
+		//vision should be starting to get involved.
+		bool success = ehCont->fixate(true);
+
+		int activityLevel=1;
+		if(!success)
+		{
+			activityLevel = randGenerator((novelty.getExcitation(ARM)+0.5)*10);
+		}
+
+		if(activityLevel <=((1-novelty.McGuireCognitiveCapacity(week))*10+1))	//If not seen target, should I do a reach. - less likely as weeks progress
+		{
+
+
+//			int steps = ehCont->getEyeSaccader()->getStepCounter();
+//			novelty.updateEyeExcitation(steps, success);
+			double x,y,z;
+			getGazeCoordinates(&x, &y, &z);		//Coordinates in mm
+			//x negative is forward
+			//can go up to -0.20
+			x /= 1000;							//reach coordinates in m
+			if(reachStage==1 && x < -0.2)		//Trying to make sure target is in reachable space.  Elbow locked in reach stage 1, so depth not as far.
+				x = -0.2;
+			else if(reachStage==2 && x < -0.35)
+				x = -0.35;
+			y /= 1000;
+			z /= 1000;
+			bool arm;
+			if(y>0){
+				arm = true;
+				reachCont.sendArmTarget(x,y,z, arm);
+			}
+			else
+			{
+				arm = false;
+				reachCont.sendArmTarget(x,y,z, arm);
+			}
+			reachTriggered = true;
+
+			activityLevel = randGenerator(10);
+			float hand = novelty.getExcitation(smc::HAND);
+			hand *=10;
+			hand /=2;
+			if(success)
+				activityLevel/=hand;
+			else
+				activityLevel*=hand;
+
+			handAction(arm,activityLevel);
+
+			//Log current values
+			addBBLogEntry();
+		}
+
+	}
+}
 
 void bbExperiment(int reachStage)
 {
@@ -791,10 +912,14 @@ void bbExperiment(int reachStage)
 		//duration of experiment.
 
 		if(objSpeedPhase==1)	//i.e. 0 or 1
-			experimentDuration = 80;	//slow phase
+			experimentDuration = 75;	//slow phase
 		else
 			experimentDuration = 60;	//fast and absent
 		//2* blocks (1 fast (60s), 1 slow (90s), 60s gap between blocks, total time 2:30s)
+
+		ehCont->toRest();
+		reachCont.command("home");
+		ehCont->getEyeController()->verg(10,false);
 
 		time_t startSeconds;
 		startSeconds = time(NULL);
@@ -806,7 +931,7 @@ void bbExperiment(int reachStage)
 			int colourTargs = target->getNumTargets("colour");
 			int motionTargs = target->getNumTargets("motion");
 
-			novelty.updateRetinaExcitation(colourTargs,motionTargs);
+//			novelty.updateRetinaExcitation(colourTargs,motionTargs);
 
 			float globalEx = novelty.getGlobalExcitation();		//returns a number between 0 and 1.
 			printf("Global Excitation: %f.2\n", globalEx);
@@ -822,152 +947,53 @@ void bbExperiment(int reachStage)
 	//		System excited = EYE;
 
 			int inactivityCounter = 0;	//count number of sequential cases of inactivity;
-			int activityLevel = randGenerator(10);
+			int activityLevel = randGenerator(10)+1;
 			activityLevel /= (colourTargs+motionTargs+1);
 
 			float globalExI = globalEx*10.0;
 			globalExI += (reachStage*2);
 
-			printf("Activation level: %f.2\n", ((float)activityLevel/10.0));
+			printf("Activation level: %f\n", ((float)activityLevel/10.0));
 			if(activityLevel<=(globalEx*10))
 			{
 				inactivityCounter=0;	// break in inactivity, so reset counter;
 				//perform an action
-				switch (excited){
-					case FOVEAL:
-						novelty.decay(FOVEAL);
-					case RETINA:
-					case EYE:
-					{
-						bool success = ehCont->fixate();	//TODO: Maybe this should be multi-threaded?
-						int steps = ehCont->getEyeSaccader()->getStepCounter();
-							//update novelty.
-							//if not managed to fixate, novelty should be going down.
-							//but likely to be a large number of steps as well, before failure.
-						novelty.updateEyeExcitation(steps, success);
 
-						//Log current values?
-						addBBLogEntry();
-						break;
-					}
-					case ARM:
-					case smc::HAND:
-					{
-						// if excitation for hand is high, then want to open hand, otherwise hand should be fisted
-						//need to take into account reach stage, to select reach target.  In later stages, this will
-						//be preceded by a saccade to get the location of the visual target.
+				//instead of winner takes all, allow all systems above activity threshold to act.
+				if(novelty.getExcitation(FOVEAL)>=activityLevel ||
+					novelty.getExcitation(RETINA)>=activityLevel ||
+					novelty.getExcitation(EYE)>=activityLevel
+				)
+				{
 
-						if(reachCont.getCurrentStatus()==REACHING)
-						{
-							bool okayReaching = reachCont.isReachingOkay();
-							//TODO Decide what to do here?
-						}
+//				switch (excited){
+//					case FOVEAL:
+//						novelty.decay(FOVEAL);
+//					case RETINA:
+//					case EYE:
+//					{
+						eyeAction();
+//						break;
+//					}
 
-						if(reachStage==0)
-						{
-							/*
-							 * Stage 0, reflex mode:
-							 * left arm: -0.28 -0.13 0.13 horizontal (accuracy 0.077) ?
-							 * right arm: -0.28 0.13 0.33 horizontal (accuracy 0.123) ?
-							 */
-							int arm = randGenerator(2);	//0 or 1
-							if(arm == 0)
-								reachCont.sendArmTarget(-0.35, -0.25, 0.30, false); //y -0.25 -> -0.05
-							else
-								reachCont.sendArmTarget(-0.34, 0.05, 0.27, true);
+				}
+				if(novelty.getExcitation(ARM)>=activityLevel ||
+					novelty.getExcitation(smc::HAND)>=activityLevel )
+				{
+//					case ARM:
+//					case smc::HAND:
+//					{
+						armAction(reachStage);
 
-							reachTriggered = true;
+				}
 
-
-							float hand = novelty.getExcitation(smc::HAND);
-							activityLevel = randGenerator(10);
-							if(activityLevel<=(hand*10))
-							{
-								cout << "opening hand" << endl;
-								grippy->release(arm);
-							}
-							else
-							{
-								cout << "closing hand" << endl;
-								grippy->fist(arm);
-							}
-							//Log current values
-							addBBLogEntry();
-
-						}
-						else// if(reachStage==1 || reachStage==2)
-						{
-							//vision should be starting to get involved.
-							bool success = ehCont->fixate(true);
-
-							activityLevel=1;
-							if(!success)
-							{
-								activityLevel = randGenerator(week);
-							}
-
-							if(activityLevel <=3)
-							{
-
-
-								int steps = ehCont->getEyeSaccader()->getStepCounter();
-								novelty.updateEyeExcitation(steps, success);
-								double x,y,z;
-								getGazeCoordinates(&x, &y, &z);
-								//x negative is forward
-								//can go up to -0.20
-								x /= 1000;
-								if(reachStage==1 && x < -0.2)
-									x = -0.2;
-								else if(reachStage==2 && x < -0.35)
-									x = -0.35;
-								y /= 1000;
-								z /= 1000;
-								bool arm;
-								if(y>0){
-									arm = true;
-									reachCont.sendArmTarget(x,y,z, arm);
-								}
-								else
-								{
-									arm = false;
-									reachCont.sendArmTarget(x,y,z, arm);
-								}
-								reachTriggered = true;
-
-								float hand = novelty.getExcitation(smc::HAND);
-								activityLevel = randGenerator(10);
-								if(success)
-									activityLevel/=2;
-								else
-									activityLevel*=2;
-								if(activityLevel<=(hand*10))
-								{
-									cout << "opening hand" << endl;
-									grippy->release(arm);
-								}
-								else
-								{
-									cout << "closing hand" << endl;
-									grippy->fist(arm);
-								}
-								//Log current values
-								addBBLogEntry();
-							}
-
-						}
-
-
-
-						//TODO: Tuning, do we leave the arm there (randomly)?
-						//TODO: What should be done with the hand here?
-
-						break;
-					}
-					default:
-						break;
-
-				}	//end of switch for excited system
+//
+//						break;
+//					}
+//					default:
+//						break;
+//
+//				}	//end of switch for excited system
 
 			}//if activity level
 			else{
@@ -984,8 +1010,8 @@ void bbExperiment(int reachStage)
 				inactivityCounter=0;
 			}
 
-			double delayTime =1;
-			delayTime = (20.0-randGenerator(week))/20.0;
+			double delayTime = 1-novelty.getGlobalExcitation();
+			//delayTime = (20.0-randGenerator(week))/20.0;
 
 			yarp::os::Time::delay(delayTime);	//wait a second
 			time_t current = time(NULL);
@@ -1009,7 +1035,7 @@ void checkReachStatus()
 	if(reachCont.getCurrentStatus()==COMPLETE)
 	{
 		dist = reachCont.getDistance();
-		novelty.updateReachExcitation(dist);
+//		novelty.updateReachExcitation(dist);
 		//Log current values?
 		addBBLogEntry();
 
@@ -1020,16 +1046,16 @@ void checkReachStatus()
 		{
 			//Return hand to home position;
 			reachCont.command("home");
-			grippy->fist(true);
-			grippy->fist(false);
+			grippy->fist(true, false);
+			grippy->fist(false, false);
 		}
 		reachCont.setCurrentStatus(WAITING);
 	}
 	else if(reachCont.getCurrentStatus()==REACHING)
 	{
 		dist = reachCont.getDistance();
-		if(reachCont.isReachingOkay())
-			novelty.updateReachExcitation(dist);
+//		if(reachCont.isReachingOkay())
+//			novelty.updateReachExcitation(dist);
 	}
 }
 
