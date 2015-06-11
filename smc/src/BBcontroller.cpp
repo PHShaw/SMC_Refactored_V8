@@ -1054,6 +1054,7 @@ void checkReachStatus()
 	else if(reachCont.getCurrentStatus()==REACHING)
 	{
 		dist = reachCont.getDistance();
+		addBBLogEntry();
 //		if(reachCont.isReachingOkay())
 //			novelty.updateReachExcitation(dist);
 	}
