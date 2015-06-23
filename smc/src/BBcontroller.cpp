@@ -96,8 +96,8 @@ bool reachTriggered;
 
 
 const int acuityLevels[7]=
-//{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
-{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
+{   40 ,   35  ,   25  ,  20	,	15	,	 10	,	 5 };	//basic vision
+//{   80 ,   70  ,   50  ,  40	,	30	,	 20	,	 10 };
 //week
 //   1		4		7	  10	   13		16	   19
 const int fovLevels[7]=
@@ -903,6 +903,10 @@ void bbExperiment(int reachStage)
 	while(true)
 	{
 
+		ehCont->toRest();
+		reachCont.command("home");
+		ehCont->getEyeController()->verg(10,false);
+
 		//Break experiment down into three phases of object movement: Fast, slow, absent
 		cout << "Specify experiment phase [ 0 1 2 ] other numbers to quit" << endl;
 		cin >> objSpeedPhase;
@@ -917,9 +921,7 @@ void bbExperiment(int reachStage)
 			experimentDuration = 60;	//fast and absent
 		//2* blocks (1 fast (60s), 1 slow (90s), 60s gap between blocks, total time 2:30s)
 
-		ehCont->toRest();
-		reachCont.command("home");
-		ehCont->getEyeController()->verg(10,false);
+
 
 		time_t startSeconds;
 		startSeconds = time(NULL);

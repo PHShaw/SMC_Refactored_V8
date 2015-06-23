@@ -1,0 +1,148 @@
+Requesting retina field at: 41, 154
+Field returned: 
+coordinates: [42.24,158.26] Unlearnt
+Requesting retina field at: 41, 154
+Field returned: 
+coordinates: [42.24,158.26] Unlearnt
+Requesting linked motor field for field:
+coordinates: [42.24,158.26] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates -41.59, -6.58
+Go to field target is unreachable from here
+Following a link with motor values -41.59, -6.58001
+Requesting retina field at: 127, 142
+Field returned: 
+coordinates: [125.08,145.36] Unlearnt
+Requesting retina field at: 127, 142
+Field returned: 
+coordinates: [125.08,145.36] Unlearnt
+Requesting linked motor field for field:
+coordinates: [125.08,145.36] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -20.66, -6.27
+Requesting retina field at: 147, 155
+Field returned: 
+coordinates: [149.17,153.33] Unlearnt
+Requesting retina field at: 147, 155
+Field returned: 
+coordinates: [149.17,153.33] Unlearnt
+Requesting linked motor field for field:
+coordinates: [149.17,153.33] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 1.92, -3.77
+Following a link with motor values 1.92, -3.77
+Requesting retina field at: 208, 156
+Field returned: 
+coordinates: [209.02,155.61] Unlearnt
+Requesting retina field at: 208, 156
+Field returned: 
+coordinates: [209.02,155.61] Unlearnt
+Requesting linked motor field for field:
+coordinates: [209.02,155.61] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 5.13, -5.13
+Following a link with motor values 5.13, -5.13
+Requesting retina field at: 217, 101
+Field returned: 
+coordinates: [217,101] Unlearnt
+Requesting retina field at: 217, 101
+Field returned: 
+coordinates: [217,101] Unlearnt
+Requesting linked motor field for field:
+coordinates: [217,101] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 6.46, 3.29
+Following a link with motor values -23.54, -8.71
+Requesting retina field at: 124, 194
+Field returned: 
+coordinates: [121.48,195.58] Unlearnt
+Requesting retina field at: 124, 194
+Field returned: 
+coordinates: [121.48,195.58] Unlearnt
+Requesting linked motor field for field:
+coordinates: [121.48,195.58] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -10.66, 4.72998
+Requesting retina field at: 166, 177
+Field returned: 
+coordinates: [168.77,175.38] Unlearnt
+Requesting retina field at: 166, 177
+Field returned: 
+coordinates: [168.77,175.38] Unlearnt
+Requesting linked motor field for field:
+coordinates: [168.77,175.38] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates -3.36, -4.63
+Following a link with motor values -14.02, 0.0999578
+Requesting retina field at: 179, 156
+Field returned: 
+coordinates: [177.72,154.79] Unlearnt
+Requesting retina field at: 179, 156
+Field returned: 
+coordinates: [177.72,154.79] Unlearnt
+Requesting linked motor field for field:
+coordinates: [177.72,154.79] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 4.63, -3.36
+Following a link with motor values -9.39, -3.26006
+Requesting retina field at: 46, 104
+Field returned: 
+coordinates: [43.59,101.56] Learnt and used 2 times
+Requesting retina field at: 46, 104
+Field returned: 
+coordinates: [43.59,101.56] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [43.59,101.56] Learnt and used 2 times
+Field returned: 
+coordinates: [-41.59,6.58] Learnt and used 25 times
+Moving to an existing linked field at relative coordinates -41.59, 6.58
+Go to field target is unreachable from here
+Following a link with motor values -41.5737, -4.70012
+Requesting retina field at: 199, 134
+Field returned: 
+coordinates: [201.04,133.33] Unlearnt
+Requesting retina field at: 199, 134
+Field returned: 
+coordinates: [201.04,133.33] Unlearnt
+Requesting linked motor field for field:
+coordinates: [201.04,133.33] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 15.47, 0
+Following a link with motor values -14.53, -4.70013
+Requesting retina field at: 189, 117
+Field returned: 
+coordinates: [187.32,120] Learnt and used 6 times
+Requesting retina field at: 189, 117
+Field returned: 
+coordinates: [187.32,120] Learnt and used 6 times
+Requesting linked motor field for field:
+coordinates: [187.32,120] Learnt and used 6 times
+Field returned: 
+coordinates: [8.81,0] Learnt and used 58 times
+Moving to an existing linked field at relative coordinates 8.81, 0
+Following a link with motor values 3.09103, -8.35638
+Requesting retina field at: 287, 129
+Field returned: 
+coordinates: [283.81,120] Unlearnt
+Requesting retina field at: 287, 129
+Field returned: 
+coordinates: [283.81,120] Unlearnt
+Requesting linked motor field for field:
+coordinates: [283.81,120] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 12.06, 0
+Following a link with motor values -17.94, -6
+Requesting retina field at: 151, 193
+Field returned: 
+coordinates: [148.29,193.87] Unlearnt
+Requesting retina field at: 151, 193
+Field returned: 
+coordinates: [148.29,193.87] Unlearnt
+Requesting linked motor field for field:
+coordinates: [148.29,193.87] Unlearnt
+Null input field returned
+Moving to an existing linked field at relative coordinates 0, -15.47
+Following a link with motor values -7.99999, -7.46999
+**************END**************

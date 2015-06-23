@@ -1,0 +1,119 @@
+Colour x y distFromCentre comment
+motion 0 219 188.152
+motion 0 151 162.975
+motion 0 91 162.607
+colour 0 34 181.648
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 0 36 180.71
+motion 0 81 164.685
+colour 0 128 160.2
+colour 0 128 160.2
+motion 0 168 167.045
+motion 0 233 195.88
+colour 0 270 219.317
+colour 0 270 219.317
+colour 0 283 228.405
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 0 251 206.787
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 189 174.244
+colour 0 211 184.068
+colour 0 211 184.068
+- 0 0 No target
+motion 0 193 175.866
+motion 0 148 162.432
+motion 0 188 173.851
+motion 0 184 172.325
+motion 0 199 178.44
+- 0 0 No target of specified colour
+- 0 0 No target
+motion 0 141 161.372
+motion 0 123 160.028
+- 0 0 No target of specified colour
+motion 0 229 193.6
+- 0 0 No target of specified colour
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+colour 0 142 161.505
+- 0 0 No target of specified colour
+colour 0 211 184.068
+colour 0 211 184.068
+colour 0 211 184.068
+colour 0 211 184.068
+colour 0 211 184.068
+colour 0 211 184.068
+colour 0 211 184.068
+- 0 0 No target of specified colour
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+**************END**************

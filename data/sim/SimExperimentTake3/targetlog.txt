@@ -1,0 +1,1827 @@
+Colour x y distFromCentre comment
+red 238.1 157.533 86.6508
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 215.913 158.838 68.0783
+red 165.432 158.513 38.8937
+red 111.009 157.999 62.0003
+red 103.106 157.985 68.4093
+red 129.573 144.661 39.1658
+red 114.596 115.071 45.671
+red 81 120 79
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 93.8442 114.959 66.3475
+red 95.7012 114.843 64.5053
+red 141.291 114.244 19.5745
+red 141.959 114.217 18.9452
+red 193.442 113.988 33.9783
+red 204.183 113.953 44.5954
+red 236.222 113.872 76.4678
+red 236.696 114.065 76.9252
+red 238.608 111.627 79.0525
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 226.881 167.352 81.9464
+red 182.876 167.528 52.7464
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 124.178 167.518 59.5074
+red 106.794 167.519 71.3366
+red 124.178 167.518 59.5074
+red 122.217 167.521 60.7103
+red 134.138 167.501 54.0849
+red 99.8004 167.265 76.5372
+red 116.641 167.559 64.3575
+red 114.512 167.579 65.825
+red 165.936 167.521 47.8904
+red 130.511 167.539 55.9424
+red 142.292 167.55 50.7403
+red 120.109 157.565 54.7943
+red 181.601 106.829 25.3003
+red 167.742 105.91 16.0771
+red 167.741 105.884 16.0991
+red 153.99 116.99 6.722 Central
+red 157.32 121.294 2.97633 Central
+red 157.43 122.145 3.34719 Central
+red 157.43 122.145 3.34719 Central
+red 157.43 122.145 3.34719 Central
+red 157.43 122.145 3.34719 Central
+red 157.422 122.132 3.34527 Central
+red 157.422 122.132 3.34527 Central
+red 129.474 122.332 30.6146
+red 94.5324 122.467 65.514
+red 82.1587 126.587 78.1195
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 238.545 157.273 86.9405
+- 0 0 No target
+red 137.359 158.352 44.5371
+red 82 161.458 88.3331
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 82.4653 160.307 87.3858
+red 82.4653 160.307 87.3858
+red 131.466 139.043 34.3051
+red 210.148 113.921 50.5152
+red 228.124 112.818 68.5019
+red 238.544 111.772 78.9737
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 147.302 95.1359 27.9188
+red 147.31 95.1224 27.9272
+red 147.318 95.1098 27.9349
+red 153.152 95.0193 25.9022
+red 139.459 95.2112 32.1936
+red 129.684 95.4287 39.0229
+red 135.475 95.2799 34.8215
+red 159.201 95.0116 25.0012
+red 145.36 95.1543 28.8382
+red 155.132 95.0026 25.467
+red 139.453 95.2239 32.1876
+red 141.42 95.2081 30.9816
+red 147.318 95.1098 27.9349
+red 147.31 95.1224 27.9272
+red 147.297 95.1231 27.9326
+red 147.31 95.1224 27.9272
+red 147.31 95.1224 27.9272
+red 147.297 95.1231 27.9326
+red 147.31 95.1224 27.9272
+red 147.297 95.1231 27.9326
+red 150.056 124.864 11.0702 Central
+red 156.479 121.716 3.9174 Central
+red 156.727 120.193 3.27899 Central
+red 156.736 120.181 3.26913 Central
+red 150.938 120.221 9.06452 Central
+red 131.66 120.4 28.3425
+red 107.948 125.398 52.3311
+red 89.1691 120.55 70.833
+red 84.4974 121.762 75.5232
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 252.725 157.373 99.9736
+red 248.04 158.513 96.0951
+red 244.034 159.166 92.7135
+red 211.033 158.565 63.9659
+red 112.854 109.776 48.2418
+red 76.1711 109.577 84.4744
+red 68.0682 110.92 92.3791
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 253.667 167.144 104.862
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 254.667 189 117.144
+red 235.318 187.135 100.896
+red 185 187.293 71.7872
+red 130.917 187.307 73.3213
+red 124.062 187.283 76.2795
+red 124.062 187.283 76.2795
+red 124.062 187.283 76.2795
+red 124.062 187.283 76.2795
+red 170.022 180.925 61.7435
+red 164.551 113.537 7.90464 Central
+red 164.53 112.972 8.36152 Central
+red 164.538 112.959 8.37614 Central
+red 164.546 112.947 8.39137 Central
+red 164.538 112.909 8.41886 Central
+red 164.538 112.909 8.41886 Central
+red 166.521 112.932 9.61666 Central
+red 182.566 112.955 23.6396
+red 170.409 112.961 12.5656 Central
+red 126.248 113.058 34.4589
+red 141.562 112.983 19.7282
+red 154.902 112.89 8.7486 Central
+red 162.575 112.925 7.52894 Central
+red 151.065 112.953 11.3798 Central
+red 191.133 112.872 31.9386
+red 160.606 112.933 7.0927 Central
+red 176.484 112.945 17.9308
+red 179.336 123.937 19.7323
+red 137.044 122.048 23.0468
+red 137.003 121.52 23.0476
+red 136.99 121.511 23.0598
+red 136.99 121.511 23.0598
+red 136.999 121.499 23.0501
+red 136.999 121.499 23.0501
+red 136.999 121.499 23.0501
+red 137.003 121.52 23.0476
+red 137.003 121.52 23.0476
+red 137.003 121.52 23.0476
+red 114.312 121.515 45.7136
+red 75.0595 122.192 84.9687
+red 67.6114 124.52 92.4991
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 250.401 157.993 98.0605
+- 0 0 No target
+red 194.924 159.013 52.3616
+red 152.863 158.485 39.1411
+red 114.187 140.608 50.2348
+red 72.7468 115.479 87.3703
+red 67.3564 118.406 92.6573
+- 0 0 No target
+- 0 0 No target
+red 71.3875 115.225 88.7411
+red 112.014 113.667 48.4022
+red 142.334 113.395 18.8599
+red 228.324 112.893 68.6929
+red 251.929 113.221 92.1785
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 249.262 176.924 105.868
+red 169.46 175.715 56.5127
+red 169.485 175.746 56.5472
+red 169.485 175.746 56.5472
+red 169.469 175.758 56.5559
+red 169.463 175.79 56.5873
+red 169.463 175.79 56.5873
+red 169.485 175.746 56.5472
+red 169.485 175.746 56.5472
+red 169.453 175.765 56.5606
+red 169.485 175.746 56.5472
+red 169.485 175.746 56.5472
+red 143.959 165.1 47.8679
+red 172.361 110.033 15.8784 Central
+red 154.872 108.711 12.3991 Central
+red 160.752 108.763 11.2623 Central
+red 178.277 108.786 21.4431
+red 132.14 109.05 29.9347
+red 170.471 108.771 15.3533 Central
+red 172.447 108.796 16.7465
+red 168.476 108.749 14.0861 Central
+red 176.311 108.791 19.7914
+red 197.065 108.657 38.7617
+red 214.383 108.403 55.6059
+red 145.245 122.124 14.9067 Central
+red 154.328 121.946 5.99696 Central
+red 154.4 121.421 5.77745 Central
+red 154.4 121.421 5.77745 Central
+red 154.413 121.423 5.765 Central
+red 154.4 121.421 5.77745 Central
+red 154.4 121.421 5.77745 Central
+red 154.413 121.423 5.765 Central
+red 154.424 121.411 5.75174 Central
+red 154.413 121.423 5.765 Central
+red 154.4 121.421 5.77745 Central
+red 119.735 121.617 40.297
+red 67.7605 124.641 92.3562
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 261.597 156.906 108.093
+- 0 0 No target
+red 214.595 81.433 66.8436
+red 151.095 81.3441 39.6682
+red 89.9278 81.4706 79.9664
+red 60.1748 86.3641 105.34
+red 57.8611 89.5556 106.58
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 67.2281 82.5278 100.054
+red 74.2788 81.9886 93.771
+red 116.149 81.3896 58.4267
+red 131.467 81.4099 47.9928
+red 186.556 81.4326 46.826
+red 194.682 81.3411 51.9358
+red 241.143 81.6831 89.7349
+red 248.662 81.9683 96.475
+red 259.918 84.3955 106.072
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 192.944 95.0992 41.2961
+red 192.956 95.11 41.2986
+red 192.956 95.11 41.2986
+red 192.956 95.11 41.2986
+red 192.968 95.0805 41.3265
+red 192.968 95.0805 41.3265
+red 178.727 106.969 22.8147
+red 165.56 125.487 7.81115 Central
+red 165.538 126.341 8.41919 Central
+red 165.524 126.379 8.4384 Central
+red 165.524 126.379 8.4384 Central
+red 165.538 126.341 8.41919 Central
+red 196.238 126.394 36.7978
+red 167.543 126.316 9.83818 Central
+red 185.67 126.373 26.4495
+red 165.538 126.341 8.41919 Central
+red 165.538 126.341 8.41919 Central
+red 144.236 126.449 17.0319
+red 171.462 126.254 13.0571 Central
+red 181.686 126.359 22.5993
+red 181.686 126.359 22.5993
+red 154.285 107.076 14.1309 Central
+red 165.699 120.649 5.73596 Central
+red 157.811 121.483 2.64375 Central
+red 157.811 121.483 2.64375 Central
+red 157.811 121.483 2.64375 Central
+red 157.811 121.483 2.64375 Central
+red 157.811 121.483 2.64375 Central
+red 157.811 121.483 2.64375 Central
+red 157.8 121.494 2.65982 Central
+red 157.8 121.494 2.65982 Central
+red 157.8 121.494 2.65982 Central
+red 157.8 121.494 2.65982 Central
+red 118.513 121.637 41.5196
+red 70.5162 122.032 89.5069
+red 59.1205 127.349 101.147
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 257.343 158.17 104.559
+- 0 0 No target
+red 192.917 158.951 50.9976
+red 72.5526 157.614 95.194
+red 59.673 160.994 108.379
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 112.175 97.1433 53.0063
+red 211.503 94.5062 57.4675
+red 211.515 94.51 57.4767
+red 255.848 93.8529 99.3508
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 250.893 113.258 91.1427
+red 216.497 113.455 56.8753
+red 216.497 113.455 56.8753
+red 216.497 113.455 56.8753
+red 190.327 127.255 31.1832
+red 169.516 120.688 9.54042 Central
+red 169.361 119.641 9.36796 Central
+red 169.328 119.612 9.33577 Central
+red 169.333 119.625 9.34065 Central
+red 169.333 119.625 9.34065 Central
+red 169.344 119.637 9.35116 Central
+red 169.356 119.629 9.36371 Central
+red 171.21 119.577 11.2184 Central
+red 138.409 119.6 21.5944
+red 175.2 119.61 15.2049 Central
+red 169.328 119.612 9.33577 Central
+red 144.041 119.58 15.9641 Central
+red 153.557 119.518 6.46101 Central
+red 187.408 119.612 27.4109
+red 171.21 119.577 11.2184 Central
+red 175.187 119.614 15.1922 Central
+red 179.179 119.661 19.1816
+red 169.328 119.612 9.33577 Central
+red 169.328 119.612 9.33577 Central
+red 169.328 119.612 9.33577 Central
+red 169.328 119.612 9.33577 Central
+red 169.328 119.612 9.33577 Central
+red 169.328 119.612 9.33577 Central
+red 169.333 119.625 9.34065 Central
+red 169.322 119.6 9.33028 Central
+red 169.333 119.625 9.34065 Central
+red 169.328 119.612 9.33577 Central
+red 67.1738 120.542 92.8278
+red 58.1905 125.881 101.979
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 267.676 156.86 113.81
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 241.852 56.6821 103.484
+red 171.38 108.885 15.9075 Central
+red 127.119 122.998 33.0177
+red 79.0802 124.076 81.0224
+red 56.7982 124.956 103.321
+red 50.1765 131.627 110.437
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 87.8214 70.7972 87.3537
+red 121.854 104.863 41.0393
+red 133.314 123.21 26.8782
+red 170.961 124.412 11.8158 Central
+red 182.976 124.453 23.4037
+red 188.546 124.428 28.8878
+red 194.062 124.609 34.3721
+red 186.639 118.945 26.6604
+red 186.671 118.905 26.6933
+red 168.94 118.709 9.03249 Central
+red 186.375 119.923 26.375
+red 257.184 120.682 97.1868
+red 265.216 121.147 105.222
+red 269.454 123.722 109.517
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 265.216 121.147 105.222
+red 238.777 120.448 78.7781
+red 204.145 120.292 44.1462
+red 155.051 120.349 4.96137 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.189 120.477 12.8198 Central
+red 147.202 120.473 12.8071 Central
+red 147.202 120.473 12.8071 Central
+red 147.202 120.473 12.8071 Central
+red 147.202 120.473 12.8071 Central
+red 137.367 120.462 22.6379
+red 158.813 120.23 1.20899 Central
+red 147.202 120.473 12.8071 Central
+red 158.813 120.23 1.20899 Central
+red 127.658 120.515 32.3465
+red 173.545 120.169 13.5459 Central
+red 112.227 120.569 47.7765
+red 175.539 120.157 15.5397 Central
+red 155.064 120.396 4.95224 Central
+red 147.214 120.464 12.7944 Central
+red 127.658 120.515 32.3465
+red 143.226 120.482 16.7806
+red 121.842 120.535 38.162
+red 117.981 120.521 42.0224
+red 147.202 120.473 12.8071 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 147.214 120.464 12.7944 Central
+red 146.927 120.462 13.0809 Central
+red 145.475 120.658 14.54 Central
+red 144.413 121.079 15.6246 Central
+red 144.208 121.257 15.842 Central
+red 143.989 121.369 16.0698
+red 151.978 123.896 8.91788 Central
+red 157.994 119.903 2.00878 Central
+red 67.9521 118.565 92.0591
+red 49 126 111.162
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 58.3351 158.078 108.562
+red 52.1554 162.297 115.843
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 92.5752 39.6203 104.914
+red 159.359 104.113 15.8995 Central
+red 222.527 124.696 62.7033
+red 270.058 125.208 110.182
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 194.281 48.5223 79.2733
+red 194.281 48.5223 79.2733
+red 194.281 48.5223 79.2733
+red 194.281 48.5223 79.2733
+red 167.393 93.2041 27.797
+red 162.484 128.159 8.5288 Central
+red 162.462 128.876 9.2113 Central
+red 162.455 128.889 9.22136 Central
+red 162.468 128.891 9.22703 Central
+red 162.468 128.891 9.22703 Central
+red 162.468 128.891 9.22703 Central
+red 162.469 128.916 9.25111 Central
+red 162.468 128.891 9.22703 Central
+red 170.327 128.962 13.6734 Central
+red 186.543 129.047 28.0428
+red 178.5 129.048 20.5942
+red 124.501 118.45 35.5332
+red 130.282 117.993 29.7855
+red 138.961 125.606 21.7727
+red 193.346 120.483 33.35
+red 179.223 119.632 19.2267
+red 183.226 119.683 23.2285
+red 123.531 119.618 36.4707
+red 164.55 120.14 4.55229 Central
+red 152.963 120.159 7.03869 Central
+red 164.572 120.159 4.57488 Central
+red 206.959 120.083 46.9592
+red 180.02 120.172 20.021
+red 200.248 120.014 40.2477
+red 180.02 120.172 20.021
+red 180.02 120.172 20.021
+red 179.994 120.143 19.995
+red 180.007 120.148 20.0079
+red 161.009 120.113 1.01496 Central
+red 159.721 120.1 0.296209 Central
+red 159.606 119.959 0.396118 Central
+red 159.593 119.957 0.408826 Central
+red 159.606 119.959 0.396118 Central
+red 159.593 119.957 0.408826 Central
+red 159.574 119.981 0.426709 Central
+red 159.606 119.959 0.396118 Central
+red 142.285 119.843 17.7156
+red 62.9474 120.654 97.0548
+red 50.5556 126.37 109.63
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 275.632 156.908 121.379
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 262.868 159.344 110.135
+red 234.155 159.559 84.0467
+red 163.45 158.533 38.6867
+red 126.595 158.207 50.7508
+red 90.9179 157.967 78.828
+red 59.5514 157.72 107.297
+red 45.1493 159.78 121.545
+red 43.2299 163.172 124.495
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 47.6059 158.43 118.782
+red 47.6059 158.43 118.782
+red 64.2463 157.703 102.909
+red 87.21 157.954 82.0909
+red 97.5845 158.046 73.0971
+red 134.335 158.32 46.1206
+red 143.125 158.42 41.9626
+red 153.902 158.469 38.9493
+red 194.889 159.033 52.3531
+red 206.353 159.175 60.6899
+red 225.088 159.48 76.1261
+red 260.362 159.441 107.834
+red 260.362 159.441 107.834
+red 275.157 156.985 120.951
+red 278.522 156.261 123.945
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 257.263 159.635 105.029
+red 209.338 159.208 63.02
+red 168.481 158.634 39.5538
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 147.058 158.483 40.6007
+red 169.458 129.735 13.5732 Central
+red 163.416 117.122 4.46697 Central
+red 163.295 115.637 5.46773 Central
+red 163.212 115.525 5.508 Central
+red 178.927 115.581 19.4363
+red 143.831 115.613 16.7531
+red 191.854 115.534 32.1659
+red 141.88 115.587 18.6492
+red 136.252 115.622 24.1479
+red 185.739 117.871 25.8264
+red 145.553 120.48 14.4553 Central
+red 159.075 120.569 1.08573 Central
+red 161.139 120.744 1.36034 Central
+red 157.133 120.682 2.94706 Central
+red 145.435 120.54 14.5748 Central
+red 122.355 120.713 37.652
+red 196.142 120.888 36.1532
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.257 120.72 4.7969 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.242 120.711 4.81113 Central
+red 155.245 120.723 4.80948 Central
+red 148.318 120.568 11.6955 Central
+red 113.041 120.806 46.9661
+red 76.1393 121.068 83.8675
+red 51.3269 121.732 108.687
+red 43.3176 126.718 116.876
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 270.904 158.34 117.344
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 254.712 159.705 102.698
+red 160.95 158.517 38.5286
+red 85.2619 157.931 83.8127
+red 43.7019 163.144 124.043
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 55.2275 157.907 111.419
+red 55.2376 157.897 111.406
+red 102.485 158.139 69.0116
+red 158.893 158.481 38.4969
+red 158.893 158.481 38.4969
+red 242.596 159.679 91.6327
+red 271.881 158.083 118.185
+red 271.881 158.083 118.185
+red 274.684 157.15 120.551
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 252.658 159.673 100.794
+red 169.481 158.634 39.7803
+red 147.068 158.471 40.5863
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.068 158.471 40.5863
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 147.079 158.459 40.572
+red 169.472 129.528 13.4351 Central
+red 163.353 117.346 4.2765 Central
+red 163.247 116.17 5.02131 Central
+red 178.799 115.906 19.2398
+red 161.352 116.055 4.17047 Central
+red 174.784 115.93 15.3336 Central
+red 161.352 116.055 4.17047 Central
+red 161.345 116.043 4.17977 Central
+red 185.41 115.922 25.735
+red 153.627 116.048 7.49843 Central
+red 142.02 116.092 18.3996
+red 174.326 118.221 14.4363 Central
+red 168.944 120.566 8.96197 Central
+red 155.097 120.522 4.93059 Central
+red 162.888 120.727 2.97844 Central
+red 162.875 120.727 2.96497 Central
+red 162.877 120.739 2.97056 Central
+red 162.888 120.727 2.97844 Central
+red 162.888 120.727 2.97844 Central
+red 162.888 120.727 2.97844 Central
+red 162.89 120.74 2.9834 Central
+red 162.877 120.739 2.97056 Central
+red 162.888 120.727 2.97844 Central
+red 162.89 120.74 2.9834 Central
+red 162.89 120.74 2.9834 Central
+red 162.89 120.74 2.9834 Central
+red 162.888 120.727 2.97844 Central
+red 162.888 120.727 2.97844 Central
+red 60.8252 121.139 99.1813
+red 44.5039 126.674 115.689
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 286.027 156.173 131.116
+- 0 0 No target
+red 277.409 158.666 123.612
+red 252.656 159.646 100.781
+red 223.034 159.442 74.3572
+red 178.975 158.789 43.1815
+red 145.094 158.435 41.2244
+red 115.899 158.108 58.2853
+red 76.6701 157.84 91.5191
+red 51.5401 157.694 114.823
+red 44.8289 157.984 121.273
+red 80.9334 126.276 79.3153
+red 60.5496 119.618 99.4511
+red 55.4243 119.246 104.578
+red 51.6658 119.377 108.336
+red 44.1149 120.263 115.885
+red 38.0909 124.143 121.979
+red 38.0909 124.143 121.979
+red 45.5292 120.332 114.471
+red 57.3155 119.933 102.684
+red 57.3155 119.933 102.684
+red 88.1032 119.881 71.8969
+red 98.9196 119.903 61.0804
+red 98.9196 119.903 61.0804
+red 118.492 119.875 41.5085
+red 145.157 119.863 14.8437 Central
+red 145.974 119.881 14.0266 Central
+red 174.009 119.917 14.0095 Central
+red 201.226 119.833 41.2268
+red 201.226 119.833 41.2268
+red 174.652 119.663 14.6555 Central
+red 184.327 119.969 24.3267
+red 191.348 119.927 31.3478
+red 188.61 119.932 28.6105
+red 176.429 119.981 16.4288
+red 182.454 120.025 22.454
+red 221.518 119.965 61.5182
+red 209.845 120.392 49.8467
+red 183.67 119.722 23.672
+red 186.429 119.695 26.4309
+red 194.602 119.702 34.6029
+red 216.977 119.807 56.977
+red 239.479 119.904 79.479
+red 239.476 119.871 79.4764
+red 253.818 119.966 93.8179
+red 275.019 120.263 115.02
+red 276.863 120.28 116.864
+red 279.209 120.419 119.209
+red 286.29 125.484 126.409
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 280.187 120.61 120.189
+red 270.882 120.182 110.882
+red 252.157 119.983 92.1573
+red 199.264 119.998 39.2635
+red 171.524 120.07 11.5243 Central
+red 137.92 119.967 22.0797
+red 106.167 120.062 53.8327
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8709 120.17 83.1293
+red 76.8751 120.158 83.125
+red 76.8751 120.158 83.125
+red 158.043 120.118 1.96076 Central
+red 159.979 119.987 0.0250563 Central
+red 160.263 119.969 0.264517 Central
+red 160.323 119.937 0.328735 Central
+red 160.335 119.94 0.340548 Central
+red 160.323 119.946 0.327595 Central
+red 160.316 119.949 0.319785 Central
+red 131.419 119.962 28.581
+red 160.329 119.924 0.337449 Central
+red 180.424 119.948 20.4239
+red 154.444 119.838 5.55845 Central
+red 175.849 119.915 15.8496 Central
+red 148.751 119.879 11.25 Central
+red 137.077 119.946 22.9232
+red 178.579 122.014 18.6883
+red 153.32 120.301 6.68629 Central
+red 151.287 120.058 8.71344 Central
+red 164.993 119.952 4.99351 Central
+red 166.713 119.9 6.71335 Central
+red 155.203 119.899 4.79765 Central
+red 157.008 119.901 2.99364 Central
+red 157.002 119.876 3.00009 Central
+red 157.002 119.876 3.00009 Central
+red 157.002 119.876 3.00009 Central
+red 157.002 119.876 3.00009 Central
+red 157.008 119.901 2.99364 Central
+red 156.998 119.889 3.00391 Central
+red 156.996 119.89 3.00631 Central
+red 157.008 119.901 2.99364 Central
+red 157.008 119.901 2.99364 Central
+red 157.008 119.901 2.99364 Central
+red 157.008 119.901 2.99364 Central
+red 156.998 119.889 3.00391 Central
+red 157.008 119.901 2.99364 Central
+red 157.008 119.901 2.99364 Central
+red 157.008 119.901 2.99364 Central
+red 135.85 119.719 24.1518
+red 108.4 120.137 51.5997
+red 55.6595 120.287 104.341
+red 40.5813 121.828 119.433
+red 33.2727 127.909 126.974
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 133.417 158.338 46.6524
+red 77.6701 157.84 90.6096
+red 34.0851 162.851 133.007
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 56.3382 196.562 128.87
+red 74.6855 197.297 115.124
+red 96.1666 197.765 100.609
+red 162.613 198.963 79.006
+red 195.917 199.602 87.3302
+red 195.917 199.602 87.3302
+red 214.216 199.928 96.5807
+red 264.449 138.501 106.075
+red 225.891 113.55 66.2065
+red 225.761 113.218 66.1094
+red 225.669 112.81 66.0615
+red 259.635 120.931 99.6389
+red 276.372 121.741 116.385
+red 237.821 121.452 77.8348
+red 182.677 121.493 22.7262
+red 113.889 121.668 46.1412
+red 76.8167 121.717 83.201
+red 76.8044 121.71 83.2131
+red 76.7927 121.714 83.2249
+red 76.816 121.703 83.2015
+red 76.8044 121.71 83.2131
+red 76.814 121.714 83.2037
+red 76.8262 121.721 83.1916
+red 76.8262 121.721 83.1916
+red 76.8262 121.721 83.1916
+red 76.8262 121.721 83.1916
+red 76.814 121.714 83.2037
+red 76.8262 121.721 83.1916
+red 76.8262 121.721 83.1916
+red 76.8262 121.721 83.1916
+red 158.425 121.46 2.14782 Central
+red 160.183 120.372 0.414625 Central
+red 160.32 119.949 0.324203 Central
+red 152.394 119.517 7.62138 Central
+red 131.398 119.667 28.6037
+red 170.188 119.75 10.1912 Central
+red 146.634 119.561 13.3731 Central
+red 171.912 119.707 11.9159 Central
+red 162.205 119.658 2.23174 Central
+red 162.205 119.658 2.23174 Central
+red 152.369 119.523 7.64573 Central
+red 158.417 119.6 1.63318 Central
+red 127.656 119.762 32.3452
+red 164.169 119.671 4.18161 Central
+red 184.563 119.927 24.5627
+red 154.334 119.503 5.68798 Central
+red 164.169 119.671 4.18161 Central
+red 160.314 119.635 0.481149 Central
+red 160.314 119.635 0.481149 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.332 119.608 0.513899 Central
+red 160.338 119.621 0.508335 Central
+red 160.326 119.628 0.494501 Central
+red 160.314 119.635 0.481149 Central
+red 160.314 119.635 0.481149 Central
+red 160.314 119.635 0.481149 Central
+red 160.314 119.635 0.481149 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 160.308 119.623 0.486926 Central
+red 37.5848 125.795 122.552
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 44.3652 157.597 121.593
+red 65.4147 157.714 101.827
+red 84.3647 157.955 84.6246
+red 93.076 158.006 76.9629
+red 191.043 134.109 34.0985
+red 207.017 116.337 47.1594
+red 214.139 115.905 54.2939
+red 210.243 115.628 50.4332
+red 206.207 120.925 46.2158
+red 294.325 127.275 134.522
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 277.751 113.97 117.905
+red 264.441 119.001 104.445
+red 240.14 121.954 80.1635
+red 209.017 121.005 49.027
+red 185.93 120.838 25.9436
+red 150.611 121.259 9.47261 Central
+red 99.1833 121.619 60.8383
+red 68.0336 121.698 91.982
+red 47.409 121.93 112.608
+red 34.6318 122.648 125.396
+red 26.1224 127.429 134.083
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 64.0928 91.3406 100.098
+red 119.053 115.54 41.1891
+red 119.389 120.711 40.6171
+red 136.094 121.508 23.9533
+red 172.182 121.734 12.3051 Central
+red 172.169 121.735 12.2925 Central
+red 172.182 121.734 12.3051 Central
+red 234.068 121.756 74.0885
+red 234.068 121.756 74.0885
+red 206.109 121.912 46.1485
+red 217.621 119.433 57.6236
+red 224.725 119.443 64.727
+red 214.194 119.036 54.203
+red 199.724 120.477 39.7272
+red 214.08 119.846 54.0805
+red 224.308 120.715 64.3122
+red 240.62 118.086 80.6428
+red 253.908 115.009 94.0403
+red 261.173 113 101.415
+red 261.992 113.184 102.219
+red 263.302 112.956 103.542
+red 274.063 111.777 114.359
+red 286.524 112.789 126.73
+red 287.445 113.136 127.63
+red 287.484 113.355 127.657
+red 294.556 118.944 134.56
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 291.568 115.386 131.649
+red 281.82 112.651 122.042
+red 273.3 113.184 113.505
+red 257.937 114.581 98.0871
+red 245.161 117.288 85.2039
+red 228.097 119.758 68.0975
+red 209.88 120.863 49.8871
+red 183.73 120.496 23.7347
+red 160.827 120.382 0.91115 Central
+red 136.311 120.651 23.6984
+red 110.885 120.568 49.1186
+red 92.0467 120.477 67.955
+red 92.0467 120.477 67.955
+red 92.0467 120.477 67.955
+red 92.0467 120.477 67.955
+red 92.0467 120.477 67.955
+red 162.875 120.515 2.92045 Central
+red 161.504 120.024 1.50443 Central
+red 161.505 119.923 1.50679 Central
+red 161.534 119.875 1.53906 Central
+red 161.534 119.875 1.53906 Central
+red 161.534 119.875 1.53906 Central
+red 161.521 119.899 1.52394 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 161.508 119.898 1.51163 Central
+red 179.461 119.973 19.4608
+red 138.312 119.991 21.6881
+red 177.423 119.949 17.4235
+red 151.877 119.9 8.12312 Central
+red 157.553 119.856 2.45119 Central
+red 173.121 120.017 13.1209 Central
+red 189.795 119.887 29.7956
+red 146.007 119.96 13.9934 Central
+red 173.121 120.017 13.1209 Central
+red 155.57 119.843 4.43291 Central
+red 169.3 119.927 9.30004 Central
+red 153.818 119.912 6.18217 Central
+red 142.264 119.959 17.7365
+red 159.712 121.564 1.59042 Central
+red 184.646 121.055 24.6683
+red 191.357 120.472 31.3606
+red 134.894 120.605 25.1133
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 170.762 120.537 10.7756 Central
+red 25.3846 162.654 141.211
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 291.565 156.766 136.606
+red 269.345 159.781 116.356
+red 205.316 159.091 59.8467
+red 154.888 158.459 38.7973
+red 89.1018 157.981 80.431
+red 44.6324 157.553 121.326
+red 26.3448 162.293 140.187
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 35.495 157.973 130.167
+red 35.495 157.973 130.167
+red 37.0881 157.747 128.577
+red 123.751 158.232 52.6848
+red 133.462 158.31 46.604
+red 133.462 158.31 46.604
+red 163.403 158.52 38.6702
+red 230.593 159.589 80.936
+red 259.208 159.747 106.874
+red 259.2 159.737 106.863
+red 265.3 159.759 112.556
+red 287.797 157.929 133.307
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 277.357 154.371 122.287
+red 268.055 154.494 113.427
+red 175.228 153.492 36.791
+red 77.1912 112.835 83.1181
+red 77.1796 111.517 83.2537
+red 153.387 133.433 14.9722 Central
+red 157.982 117.667 3.0849 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.941 117.097 3.55872 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.936 117.115 3.54747 Central
+red 157.941 117.097 3.55872 Central
+red 157.929 117.103 3.56135 Central
+red 157.929 117.103 3.56135 Central
+red 157.922 117.09 3.57557 Central
+red 157.929 117.103 3.56135 Central
+red 157.941 117.097 3.55872 Central
+red 157.936 117.115 3.54747 Central
+red 165.945 117.01 6.65487 Central
+red 175.752 116.896 16.0553
+red 148.39 117.166 11.9506 Central
+red 138.942 117.192 21.2448
+red 182.363 116.914 22.5747
+red 163.954 117.034 4.943 Central
+red 142.719 117.169 17.5118
+red 197.012 117.012 37.1323
+red 161.942 117.048 3.53345 Central
+red 159.934 117.075 2.92622 Central
+red 201.172 116.882 41.2894
+red 163.945 117.022 4.94305 Central
+red 159.934 117.075 2.92622 Central
+red 161.942 117.048 3.53345 Central
+red 184.412 116.937 24.6037
+red 140.731 117.178 19.4741
+red 180.278 116.866 20.5186
+red 142.716 117.182 17.5124
+red 169.725 116.929 10.1982 Central
+red 173.739 116.911 14.0818 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 157.948 117.109 3.54482 Central
+red 125.449 117.25 34.6598
+red 68.7286 117.465 91.3066
+red 41.284 118.15 118.73
+red 25.3571 125.357 134.749
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+**************END**************

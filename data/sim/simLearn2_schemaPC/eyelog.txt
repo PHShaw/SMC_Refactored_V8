@@ -1,0 +1,3761 @@
+*******************************
+Starting saccade: 0
+Requesting retina field at: 79.2774, 144.119
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 29 times
+Retrieved input field for target 79.2774, 144.119
+coordinates: [84.14,144.64] Learnt and used 29 times
+Starting saccade 0 from 17.9927, 14.647
+Requesting retina field at: 79.2723, 145.312
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 29 times
+Requesting linked motor field for field:
+coordinates: [84.14,144.64] Learnt and used 29 times
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 46 times
+Input field is linked to field 
+coordinates: [-32.619,-5.16] Learnt and used 46 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, -5.16
+Following a link with motor values -14.62, 9.70454
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 621 times
+Requesting retina field at: 154.919, 123.187
+Requesting retina field at: 154.919, 123.187
+Field returned: 
+coordinates: [154.88,123.71] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.4453, -4.5306
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 48 times
+Requesting retina field at: 79.2774, 144.119
+Requesting retina field at: 79.2774, 144.119
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 31 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.4453, -4.5306
+fixated on saccade 0 after 1 steps
+Successfully fixated on saccade: 0
+*******************************
+*******************************
+Starting saccade: 1
+Requesting retina field at: 103.264, 22.8243
+Field returned: 
+coordinates: [106.49,14.98] Unlearnt
+Retrieved input field for target 103.264, 22.8243
+coordinates: [106.49,14.98] Unlearnt
+Starting saccade 1 from 7.99725, -19.6189
+Made a random movement to 18.7111, -21.6277
+One of the targets was not visible to learn a link
+Made a random movement to 18.9529, -21.8442
+One of the targets was not visible to learn a link
+Made a random movement to 18.9936, -21.9402
+One of the targets was not visible to learn a link
+Made a random movement to 18.9987, -21.9727
+One of the targets was not visible to learn a link
+Made a random movement to -3.98395, 5.1445
+One of the targets was not visible to learn a link
+Requesting retina field at: 131.277, 99.9313
+Field returned: 
+coordinates: [131.64,99.4] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [131.64,99.4] Learnt and used 4 times
+Field returned: 
+coordinates: [-14.72,4.78] Learnt and used 65 times
+Input field is linked to field 
+coordinates: [-14.72,4.78] Learnt and used 65 times
+following direct link
+Moving to an existing linked field at relative coordinates -14.72, 4.78
+Following a link with motor values -18.7178, 10.4517
+Successfully followed link to centre
+Requesting motor field at: -24.9133, 29.4515
+Field returned: 
+coordinates: [-23.37,32.16] Learnt and used 2 times
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 622 times
+Requesting retina field at: 163.933, 118.968
+Requesting retina field at: 163.933, 118.968
+Field returned: 
+coordinates: [162.77,118.58] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -14.6444, 4.40137
+Field returned: 
+coordinates: [-14.72,4.78] Learnt and used 67 times
+Requesting retina field at: 131.277, 99.9313
+Requesting retina field at: 131.277, 99.9313
+Field returned: 
+coordinates: [131.64,99.4] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -14.6444, 4.40137
+Requesting motor field at: -26.6395, 29.6919
+Field returned: 
+coordinates: [-29.77,29.77] Learnt and used -5 times
+Requesting retina field at: 103.264, 22.8243
+Requesting retina field at: 103.264, 22.8243
+Field returned: 
+coordinates: [106.49,14.98] Learnt and used 0 times
+Adding link based on relative movement -26.6395, 29.6919
+fixated on saccade 1 after 6 steps
+Successfully fixated on saccade: 1
+*******************************
+*******************************
+Starting saccade: 2
+Requesting retina field at: 89.6349, 120.269
+Field returned: 
+coordinates: [90.04,119.99] Learnt and used 10 times
+Retrieved input field for target 89.6349, 120.269
+coordinates: [90.04,119.99] Learnt and used 10 times
+Starting saccade 2 from 13.8676, 9.98549
+Requesting retina field at: 88.8674, 120.412
+Field returned: 
+coordinates: [90.04,119.99] Learnt and used 10 times
+Requesting linked motor field for field:
+coordinates: [90.04,119.99] Learnt and used 10 times
+Field returned: 
+coordinates: [-30.89,0] Learnt and used 49 times
+Input field is linked to field 
+coordinates: [-30.89,0] Learnt and used 49 times
+following direct link
+Moving to an existing linked field at relative coordinates -30.89, 0
+Following a link with motor values -16.9159, 9.99339
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 623 times
+Requesting retina field at: 158.842, 120.419
+Requesting retina field at: 158.842, 120.419
+Field returned: 
+coordinates: [157.22,121.41] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -30.6248, 0.00800512
+Field returned: 
+coordinates: [-30.89,0] Learnt and used 51 times
+Requesting retina field at: 89.6349, 120.269
+Requesting retina field at: 89.6349, 120.269
+Field returned: 
+coordinates: [90.04,119.99] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -30.6248, 0.00800512
+fixated on saccade 2 after 1 steps
+Successfully fixated on saccade: 2
+*******************************
+*******************************
+Starting saccade: 3
+Requesting retina field at: 187.676, 127.861
+Field returned: 
+coordinates: [185.98,128.44] Learnt and used 11 times
+Retrieved input field for target 187.676, 127.861
+coordinates: [185.98,128.44] Learnt and used 11 times
+Starting saccade 3 from -28.9478, 11.8456
+Requesting retina field at: 188.336, 128.898
+Field returned: 
+coordinates: [185.98,128.44] Learnt and used 11 times
+Requesting linked motor field for field:
+coordinates: [185.98,128.44] Learnt and used 11 times
+Field returned: 
+coordinates: [8.81,0] Learnt and used 58 times
+Input field is linked to field 
+coordinates: [8.81,0] Learnt and used 58 times
+following direct link
+Moving to an existing linked field at relative coordinates 8.81, 0
+Following a link with motor values -20.1798, 11.9295
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 624 times
+Requesting retina field at: 169.405, 129.081
+Requesting retina field at: 169.405, 129.081
+Field returned: 
+coordinates: [170.49,127.62] Learnt and used 14 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 8.63365, 0.0853788
+Field returned: 
+coordinates: [8.81,0] Learnt and used 60 times
+Requesting retina field at: 187.676, 127.861
+Requesting retina field at: 187.676, 127.861
+Field returned: 
+coordinates: [185.98,128.44] Learnt and used 13 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 8.63365, 0.0853788
+fixated on saccade 3 after 1 steps
+Successfully fixated on saccade: 3
+*******************************
+*******************************
+Starting saccade: 4
+Requesting retina field at: 183.282, 131.648
+Field returned: 
+coordinates: [181.02,130.71] Unlearnt
+Retrieved input field for target 183.282, 131.648
+coordinates: [181.02,130.71] Unlearnt
+Starting saccade 4 from -26.9569, 12.7792
+Requesting retina field at: 183.744, 132.892
+Field returned: 
+coordinates: [181.02,130.71] Unlearnt
+Requesting linked motor field for field:
+coordinates: [182.1,136.05] Learnt and used 7 times
+Field returned: 
+coordinates: [5.13,-5.13] Learnt and used 50 times
+Found a nearby learnt field at distance 3
+Nearby field is: 
+coordinates: [5.13,-5.13] Learnt and used 50 times
+following nearest neighbour
+Moving to an existing linked field at relative coordinates 5.13, -5.13
+Following a link with motor values -21.8616, 7.76916
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 625 times
+Requesting retina field at: 172.329, 113.619
+Requesting retina field at: 172.329, 113.619
+Field returned: 
+coordinates: [170.49,112.37] Learnt and used 8 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 5.07333, -4.63442
+Field returned: 
+coordinates: [5.13,-5.13] Learnt and used 52 times
+Requesting retina field at: 183.282, 131.648
+Requesting retina field at: 183.282, 131.648
+Field returned: 
+coordinates: [181.02,130.71] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 5.07333, -4.63442
+fixated on saccade 4 after 1 steps
+Successfully fixated on saccade: 4
+*******************************
+*******************************
+Starting saccade: 5
+Requesting retina field at: 102.104, 100.502
+Field returned: 
+coordinates: [102.37,101.27] Learnt and used 1 times
+Retrieved input field for target 102.104, 100.502
+coordinates: [102.37,101.27] Learnt and used 1 times
+Starting saccade 5 from 8.96857, 5.19461
+Requesting retina field at: 100.857, 98.1338
+Field returned: 
+coordinates: [102.37,101.27] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [102.37,101.27] Learnt and used 1 times
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 66 times
+Input field is linked to field 
+coordinates: [-32.619,5.16] Learnt and used 66 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, 5.16
+Following a link with motor values -23.6233, 10.2347
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 626 times
+Requesting retina field at: 175.452, 119.006
+Requesting retina field at: 175.452, 119.006
+Field returned: 
+coordinates: [172.97,120] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.4522, 4.66294
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 68 times
+Requesting retina field at: 102.104, 100.502
+Requesting retina field at: 102.104, 100.502
+Field returned: 
+coordinates: [102.37,101.27] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.4522, 4.66294
+fixated on saccade 5 after 1 steps
+Successfully fixated on saccade: 5
+*******************************
+*******************************
+Starting saccade: 6
+Requesting retina field at: 183.397, 77.2356
+Field returned: 
+coordinates: [181.5,77.8] Learnt and used 10 times
+Retrieved input field for target 183.397, 77.2356
+coordinates: [181.5,77.8] Learnt and used 10 times
+Starting saccade 6 from -26.9961, 0.231684
+Requesting retina field at: 183.418, 76.0554
+Field returned: 
+coordinates: [181.5,77.8] Learnt and used 10 times
+Requesting linked motor field for field:
+coordinates: [181.5,77.8] Learnt and used 10 times
+Field returned: 
+coordinates: [7.09,9.76] Learnt and used 7 times
+Input field is linked to field 
+coordinates: [7.09,9.76] Learnt and used 7 times
+following direct link
+Moving to an existing linked field at relative coordinates 7.09, 9.76
+Following a link with motor values -19.9094, 9.85699
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 627 times
+Requesting retina field at: 167.633, 117.074
+Requesting retina field at: 167.633, 117.074
+Field returned: 
+coordinates: [168.55,115.63] Learnt and used 27 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 7.07819, 9.23738
+Field returned: 
+coordinates: [7.09,9.76] Learnt and used 9 times
+Requesting retina field at: 183.397, 77.2356
+Requesting retina field at: 183.397, 77.2356
+Field returned: 
+coordinates: [181.5,77.8] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 7.07819, 9.23738
+fixated on saccade 6 after 1 steps
+Successfully fixated on saccade: 6
+*******************************
+*******************************
+Starting saccade: 7
+Requesting retina field at: 137.019, 26.7388
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 7 times
+Retrieved input field for target 137.019, 26.7388
+coordinates: [145.08,25.82] Learnt and used 7 times
+Starting saccade 7 from -6.00035, -27.7368
+Made a random movement to 20.9956, 14.3465
+One of the targets was not visible to learn a link
+Requesting retina field at: 71.7399, 141.346
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 15 times
+Requesting linked motor field for field:
+coordinates: [74.37,147.82] Learnt and used 15 times
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 23 times
+Input field is linked to field 
+coordinates: [-37,-5.86] Learnt and used 23 times
+following direct link
+Moving to an existing linked field at relative coordinates -37, -5.86
+Following a link with motor values -16.0007, 8.86644
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 628 times
+Requesting retina field at: 157.93, 118.255
+Requesting retina field at: 157.93, 118.255
+Field returned: 
+coordinates: [157.79,117.79] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -36.9466, -5.60446
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 25 times
+Requesting retina field at: 71.7399, 141.346
+Requesting retina field at: 71.7399, 141.346
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 17 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -36.9466, -5.60446
+Requesting motor field at: -9.94699, 36.8588
+Field returned: 
+coordinates: [-12.28,37.81] Learnt and used -2 times
+Requesting retina field at: 137.019, 26.7388
+Requesting retina field at: 137.019, 26.7388
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 7 times
+Adding link based on relative movement -9.94699, 36.8588
+fixated on saccade 7 after 2 steps
+Successfully fixated on saccade: 7
+*******************************
+*******************************
+Starting saccade: 8
+Requesting retina field at: 104.282, 40.9623
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 16 times
+Retrieved input field for target 104.282, 40.9623
+coordinates: [100.76,38.46] Learnt and used 16 times
+Starting saccade 8 from 6.99735, -7.76896
+Requesting retina field at: 104.109, 39.8537
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 16 times
+Requesting linked motor field for field:
+coordinates: [100.76,38.46] Learnt and used 16 times
+Field returned: 
+coordinates: [-28.49,20.7] Learnt and used 10 times
+Input field is linked to field 
+coordinates: [-28.49,20.7] Learnt and used 10 times
+following direct link
+Moving to an existing linked field at relative coordinates -28.49, 20.7
+Following a link with motor values -21.4904, 12.7967
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 629 times
+Requesting retina field at: 171.039, 129.676
+Requesting retina field at: 171.039, 129.676
+Field returned: 
+coordinates: [171.61,131.61] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -28.4845, 20.3007
+Field returned: 
+coordinates: [-28.49,20.7] Learnt and used 12 times
+Requesting retina field at: 104.282, 40.9623
+Requesting retina field at: 104.282, 40.9623
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 18 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -28.4845, 20.3007
+fixated on saccade 8 after 1 steps
+Successfully fixated on saccade: 8
+*******************************
+*******************************
+Starting saccade: 9
+Requesting retina field at: 105.799, 23.4547
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -2 times
+Retrieved input field for target 105.799, 23.4547
+coordinates: [111.71,25.24] Learnt and used -2 times
+Starting saccade 9 from 6.99811, -20.6684
+Made a random movement to 12.9469, -12.9176
+One of the targets was not visible to learn a link
+Requesting retina field at: 90.198, 27.0297
+Field returned: 
+coordinates: [94.14,29.35] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [94.14,29.35] Learnt and used -2 times
+Field returned: 
+coordinates: [-29.08,40.03] Learnt and used -2 times
+Input field is linked to field 
+coordinates: [-29.08,40.03] Learnt and used -2 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.08, 40.03
+Go to field target is unreachable from here
+Following a link with motor values -16.0872, 27.6779
+Target unreachable from here
+Failed to fixate on saccade: 9
+*******************************
+*******************************
+Starting saccade: 9
+Requesting retina field at: 102.677, 132.57
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 0 times
+Retrieved input field for target 102.677, 132.57
+coordinates: [104.61,128.77] Learnt and used 0 times
+Starting saccade 9 from 8.8712, 12.2358
+Requesting retina field at: 101.122, 130.512
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [104.61,128.77] Learnt and used 0 times
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-26.76,0] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -26.76, 0
+Following a link with motor values -17.7775, 12.0905
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 630 times
+Requesting retina field at: 160.968, 129.908
+Requesting retina field at: 160.968, 129.908
+Field returned: 
+coordinates: [161.5,129.479] Learnt and used 9 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -26.484, -0.146524
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 2 times
+Requesting retina field at: 102.677, 132.57
+Requesting retina field at: 102.677, 132.57
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -26.484, -0.146524
+fixated on saccade 9 after 1 steps
+Successfully fixated on saccade: 9
+*******************************
+*******************************
+Starting saccade: 10
+Requesting retina field at: 92.6611, 23.0358
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 1 times
+Retrieved input field for target 92.6611, 23.0358
+coordinates: [87.22,19.83] Learnt and used 1 times
+Starting saccade 10 from 11.9967, -14.6814
+Requesting retina field at: 92.7215, 22.4528
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [87.22,19.83] Learnt and used 1 times
+Field returned: 
+coordinates: [-32.16,23.37] Learnt and used 4 times
+Input field is linked to field 
+coordinates: [-32.16,23.37] Learnt and used 4 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.16, 23.37
+Following a link with motor values -20.1605, 8.49227
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 631 times
+Requesting retina field at: 168.115, 111.687
+Requesting retina field at: 168.115, 111.687
+Field returned: 
+coordinates: [166.79,113.2] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.1535, 22.8744
+Field returned: 
+coordinates: [-32.16,23.37] Learnt and used 6 times
+Requesting retina field at: 92.6611, 23.0358
+Requesting retina field at: 92.6611, 23.0358
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.1535, 22.8744
+fixated on saccade 10 after 1 steps
+Successfully fixated on saccade: 10
+*******************************
+*******************************
+Starting saccade: 11
+Requesting retina field at: 83.6331, 76.2037
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 22 times
+Retrieved input field for target 83.6331, 76.2037
+coordinates: [84.41,81.48] Learnt and used 22 times
+Starting saccade 11 from 15.9604, 0.387715
+Requesting retina field at: 83.4244, 74.5992
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 22 times
+Requesting linked motor field for field:
+coordinates: [84.41,81.48] Learnt and used 22 times
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 30 times
+Input field is linked to field 
+coordinates: [-29.38,9.54] Learnt and used 30 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.38, 9.54
+Following a link with motor values -13.3877, 9.71707
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 632 times
+Requesting retina field at: 152.101, 114.985
+Requesting retina field at: 152.101, 114.985
+Field returned: 
+coordinates: [151.44,115.63] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -29.3058, 8.91458
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 32 times
+Requesting retina field at: 83.6331, 76.2037
+Requesting retina field at: 83.6331, 76.2037
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 24 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -29.3058, 8.91458
+fixated on saccade 11 after 1 steps
+Successfully fixated on saccade: 11
+*******************************
+*******************************
+Starting saccade: 12
+Requesting retina field at: 159.123, 33.7781
+Field returned: 
+coordinates: [160,29.97] Learnt and used 0 times
+Retrieved input field for target 159.123, 33.7781
+coordinates: [160,29.97] Learnt and used 0 times
+Starting saccade 12 from -16.9999, -10.7562
+Requesting retina field at: 159.103, 33.3854
+Field returned: 
+coordinates: [160,29.97] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [160,29.97] Learnt and used 0 times
+Field returned: 
+coordinates: [0,22.81] Learnt and used 1 times
+Input field is linked to field 
+coordinates: [0,22.81] Learnt and used 1 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 22.81
+Following a link with motor values -17, 11.9035
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 633 times
+Requesting retina field at: 160.801, 127.006
+Requesting retina field at: 160.801, 127.006
+Field returned: 
+coordinates: [160,126.32] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -5.80576e-05, 22.3678
+Field returned: 
+coordinates: [0,22.81] Learnt and used 3 times
+Requesting retina field at: 159.123, 33.7781
+Requesting retina field at: 159.123, 33.7781
+Field returned: 
+coordinates: [160,29.97] Learnt and used 2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -5.80576e-05, 22.3678
+fixated on saccade 12 after 1 steps
+Successfully fixated on saccade: 12
+*******************************
+*******************************
+Starting saccade: 13
+Requesting retina field at: 115.459, 23.9297
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -2 times
+Retrieved input field for target 115.459, 23.9297
+coordinates: [111.71,25.24] Learnt and used -2 times
+Starting saccade 13 from 1.99789, -14.6806
+Requesting retina field at: 115.957, 23.2583
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [111.71,25.24] Learnt and used -2 times
+Field returned: 
+coordinates: [-26.16,36.01] Learnt and used 3 times
+Input field is linked to field 
+coordinates: [-26.16,36.01] Learnt and used 3 times
+following direct link
+Moving to an existing linked field at relative coordinates -26.16, 36.01
+Go to field target is unreachable from here
+Following a link with motor values -24.1603, 21.1325
+Target unreachable from here
+Failed to fixate on saccade: 13
+*******************************
+*******************************
+Starting saccade: 13
+Requesting retina field at: 116.862, 20.2931
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -2 times
+Retrieved input field for target 116.862, 20.2931
+coordinates: [111.71,25.24] Learnt and used -2 times
+Starting saccade 13 from 1.99898, -17.7499
+Made a random movement to 24.9839, 4.29954
+One of the targets was not visible to learn a link
+Requesting retina field at: 60.9853, 95.1434
+Field returned: 
+coordinates: [64.14,88.85] Learnt and used 10 times
+Requesting linked motor field for field:
+coordinates: [64.14,88.85] Learnt and used 10 times
+Field returned: 
+coordinates: [-41.59,6.58] Learnt and used 25 times
+Input field is linked to field 
+coordinates: [-41.59,6.58] Learnt and used 25 times
+following direct link
+Moving to an existing linked field at relative coordinates -41.59, 6.58
+Following a link with motor values -16.5906, 11.4339
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 634 times
+Requesting retina field at: 159.866, 124.591
+Requesting retina field at: 159.866, 124.591
+Field returned: 
+coordinates: [159.51,123.08] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -41.5299, 6.30893
+Field returned: 
+coordinates: [-41.59,6.58] Learnt and used 27 times
+Requesting retina field at: 60.9853, 95.1434
+Requesting retina field at: 60.9853, 95.1434
+Field returned: 
+coordinates: [64.14,88.85] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -41.5299, 6.30893
+Requesting motor field at: -18.5296, 28.8994
+Field returned: 
+coordinates: [-20.7,28.49] Learnt and used 2 times
+Requesting retina field at: 116.862, 20.2931
+Requesting retina field at: 116.862, 20.2931
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -18.5296, 28.8994
+fixated on saccade 13 after 2 steps
+Successfully fixated on saccade: 13
+*******************************
+*******************************
+Starting saccade: 14
+Requesting retina field at: 134.926, 58.7685
+Field returned: 
+coordinates: [130.39,61.89] Learnt and used -1 times
+Retrieved input field for target 134.926, 58.7685
+coordinates: [130.39,61.89] Learnt and used -1 times
+Starting saccade 14 from -6.00359, -3.70003
+Requesting retina field at: 134.834, 57.2942
+Field returned: 
+coordinates: [138.38,53.47] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [138.38,53.47] Learnt and used 2 times
+Field returned: 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -9.54, 29.38
+Go to field target is unreachable from here
+Following a link with motor values -15.5406, 25.5056
+Target unreachable from here
+Failed to fixate on saccade: 14
+*******************************
+*******************************
+Starting saccade: 14
+Requesting retina field at: 64.7507, 38.6712
+Field returned: 
+coordinates: [59.83,47.22] Learnt and used -4 times
+Retrieved input field for target 64.7507, 38.6712
+coordinates: [59.83,47.22] Learnt and used -4 times
+Starting saccade 14 from 28.9988, -21.7643
+Made a random movement to 23.005, -0.730759
+One of the targets was not visible to learn a link
+Requesting retina field at: 65.5834, 69.0023
+Field returned: 
+coordinates: [65.239,71.71] Learnt and used 7 times
+Requesting linked motor field for field:
+coordinates: [65.239,71.71] Learnt and used 7 times
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 28 times
+Input field is linked to field 
+coordinates: [-42.33,13.75] Learnt and used 28 times
+following direct link
+Moving to an existing linked field at relative coordinates -42.33, 13.75
+Following a link with motor values -19.3293, 13.4696
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 635 times
+Requesting retina field at: 165.775, 132.23
+Requesting retina field at: 165.775, 132.23
+Field returned: 
+coordinates: [164,132.33] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -42.3157, 13.4543
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 30 times
+Requesting retina field at: 65.5834, 69.0023
+Requesting retina field at: 65.5834, 69.0023
+Field returned: 
+coordinates: [65.239,71.71] Learnt and used 9 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -42.3157, 13.4543
+Requesting motor field at: -48.3138, 34.9382
+Field returned: 
+coordinates: [-48.64,35.34] Learnt and used -2 times
+Requesting retina field at: 64.7507, 38.6712
+Requesting retina field at: 64.7507, 38.6712
+Field returned: 
+coordinates: [59.83,47.22] Learnt and used -4 times
+Adding link based on relative movement -48.3138, 34.9382
+fixated on saccade 14 after 2 steps
+Successfully fixated on saccade: 14
+*******************************
+*******************************
+Starting saccade: 15
+Requesting retina field at: 159.787, 23.0716
+Field returned: 
+coordinates: [160,19.21] Unlearnt
+Retrieved input field for target 159.787, 23.0716
+coordinates: [160,19.21] Unlearnt
+Starting saccade 15 from -17.9999, -20.6042
+Made a random movement to 13.9205, -34.2057
+One of the targets was not visible to learn a link
+Made a random movement to 0.0290151, -24.5524
+One of the targets was not visible to learn a link
+Made a random movement to 0.00568281, -24.2523
+One of the targets was not visible to learn a link
+Made a random movement to 0.000764994, -24.0968
+One of the targets was not visible to learn a link
+Made a random movement to 2.99932, 14.2924
+One of the targets was not visible to learn a link
+Requesting retina field at: 115.155, 140.569
+Field returned: 
+coordinates: [117.8,141.5] Learnt and used 36 times
+Requesting linked motor field for field:
+coordinates: [117.8,141.5] Learnt and used 36 times
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 112 times
+Input field is linked to field 
+coordinates: [-20.66,-3.27] Learnt and used 112 times
+following direct link
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -17.6601, 11.4585
+Successfully followed link to centre
+Requesting motor field at: 1.29052, 30.6128
+Field returned: 
+coordinates: [0,30.89] Learnt and used 0 times
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 636 times
+Requesting retina field at: 161.904, 128.823
+Requesting retina field at: 161.904, 128.823
+Field returned: 
+coordinates: [161.5,129.479] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -20.5715, -3.0282
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 114 times
+Requesting retina field at: 115.155, 140.569
+Requesting retina field at: 115.155, 140.569
+Field returned: 
+coordinates: [117.8,141.5] Learnt and used 38 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -20.5715, -3.0282
+Requesting motor field at: 0.428252, 32.3045
+Field returned: 
+coordinates: [0,30.89] Learnt and used 0 times
+Requesting retina field at: 159.787, 23.0716
+Requesting retina field at: 159.787, 23.0716
+Field returned: 
+coordinates: [160,19.21] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0.428252, 32.3045
+fixated on saccade 15 after 6 steps
+Successfully fixated on saccade: 15
+*******************************
+*******************************
+Starting saccade: 16
+Requesting retina field at: 168.912, 27.5284
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Retrieved input field for target 168.912, 27.5284
+coordinates: [174.91,25.82] Learnt and used -3 times
+Starting saccade 16 from -21.9998, -22.7701
+Made a random movement to -6.42022, -26.2883
+One of the targets was not visible to learn a link
+Made a random movement to -6.05714, -26.7269
+One of the targets was not visible to learn a link
+Made a random movement to -6.01117, -26.8753
+One of the targets was not visible to learn a link
+Made a random movement to 15.8054, -34.1685
+One of the targets was not visible to learn a link
+Made a random movement to 15.9683, -34.6519
+One of the targets was not visible to learn a link
+Made a random movement to 15.9957, -34.8664
+One of the targets was not visible to learn a link
+Made a random movement to -5.95443, -19.8236
+One of the targets was not visible to learn a link
+Made a random movement to -5.99257, -19.3448
+One of the targets was not visible to learn a link
+Made a random movement to -5.99899, -19.1323
+One of the targets was not visible to learn a link
+Made a random movement to 28.9756, 12.0204
+One of the targets was not visible to learn a link
+Requesting retina field at: 51.0295, 130.971
+Field returned: 
+coordinates: [54.96,136.63] Learnt and used 8 times
+Requesting linked motor field for field:
+coordinates: [54.96,136.63] Learnt and used 8 times
+Field returned: 
+coordinates: [-44.51,0] Learnt and used 14 times
+Input field is linked to field 
+coordinates: [-44.51,0] Learnt and used 14 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.51, 0
+Following a link with motor values -15.5133, 12.6241
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 637 times
+Requesting retina field at: 157.446, 132.14
+Requesting retina field at: 157.446, 132.14
+Field returned: 
+coordinates: [155.99,132.33] Learnt and used 9 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -44.433, 0.00275944
+Field returned: 
+coordinates: [-44.51,0] Learnt and used 16 times
+Requesting retina field at: 51.0295, 130.971
+Requesting retina field at: 51.0295, 130.971
+Field returned: 
+coordinates: [54.96,136.63] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -44.433, 0.00275944
+Requesting motor field at: 6.56347, 35.397
+Field returned: 
+coordinates: [5.86,37] Learnt and used 2 times
+Requesting retina field at: 168.912, 27.5284
+Requesting retina field at: 168.912, 27.5284
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Adding link based on relative movement 6.56347, 35.397
+fixated on saccade 16 after 11 steps
+Successfully fixated on saccade: 16
+*******************************
+*******************************
+Starting saccade: 17
+Requesting retina field at: 94.3844, 141.025
+Field returned: 
+coordinates: [93.47,141.61] Learnt and used 16 times
+Retrieved input field for target 94.3844, 141.025
+coordinates: [93.47,141.61] Learnt and used 16 times
+Starting saccade 17 from 11.8779, 14.6424
+Requesting retina field at: 94.2814, 142.683
+Field returned: 
+coordinates: [93.47,141.61] Learnt and used 16 times
+Requesting linked motor field for field:
+coordinates: [93.47,141.61] Learnt and used 16 times
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 49 times
+Input field is linked to field 
+coordinates: [-32.619,-5.16] Learnt and used 49 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, -5.16
+Following a link with motor values -20.6356, 9.7028
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 638 times
+Requesting retina field at: 167.32, 123.075
+Requesting retina field at: 167.32, 123.075
+Field returned: 
+coordinates: [166.01,121.95] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.346, -4.52784
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 51 times
+Requesting retina field at: 94.3844, 141.025
+Requesting retina field at: 94.3844, 141.025
+Field returned: 
+coordinates: [93.47,141.61] Learnt and used 18 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.346, -4.52784
+fixated on saccade 17 after 1 steps
+Successfully fixated on saccade: 17
+*******************************
+*******************************
+Starting saccade: 18
+Requesting retina field at: 110.961, 25.6621
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+Retrieved input field for target 110.961, 25.6621
+coordinates: [111.71,25.24] Learnt and used -1 times
+Starting saccade 18 from 4.9979, -19.6472
+Made a random movement to -26.9777, 10.0563
+One of the targets was not visible to learn a link
+Requesting retina field at: 183.731, 122.223
+Field returned: 
+coordinates: [183.3,123.69] Learnt and used 8 times
+Requesting linked motor field for field:
+coordinates: [183.3,123.69] Learnt and used 8 times
+Field returned: 
+coordinates: [8.81,0] Learnt and used 61 times
+Input field is linked to field 
+coordinates: [8.81,0] Learnt and used 61 times
+following direct link
+Moving to an existing linked field at relative coordinates 8.81, 0
+Following a link with motor values -18.1864, 10.6049
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 639 times
+Requesting retina field at: 164.351, 123.1
+Requesting retina field at: 164.351, 123.1
+Field returned: 
+coordinates: [165.11,123.71] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 8.67571, 0.00825101
+Field returned: 
+coordinates: [8.81,0] Learnt and used 63 times
+Requesting retina field at: 183.731, 122.223
+Requesting retina field at: 183.731, 122.223
+Field returned: 
+coordinates: [183.3,123.69] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 8.67571, 0.00825101
+Requesting motor field at: -23.3186, 30.2604
+Field returned: 
+coordinates: [-23.37,32.16] Learnt and used 2 times
+Requesting retina field at: 110.961, 25.6621
+Requesting retina field at: 110.961, 25.6621
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+Adding link based on relative movement -23.3186, 30.2604
+fixated on saccade 18 after 2 steps
+Successfully fixated on saccade: 18
+*******************************
+*******************************
+Starting saccade: 19
+Requesting retina field at: 117.169, 19.9932
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+Retrieved input field for target 117.169, 19.9932
+coordinates: [111.71,25.24] Learnt and used -1 times
+Starting saccade 19 from 0.999738, -16.8791
+Made a random movement to 21.3387, -21.0406
+One of the targets was not visible to learn a link
+Made a random movement to 21.9101, -21.6319
+One of the targets was not visible to learn a link
+Made a random movement to 19.0785, -17.8492
+One of the targets was not visible to learn a link
+Made a random movement to 19.0153, -17.3879
+One of the targets was not visible to learn a link
+Made a random movement to 19.0021, -17.1488
+One of the targets was not visible to learn a link
+Made a random movement to 19.0003, -17.0623
+One of the targets was not visible to learn a link
+Made a random movement to 19, -17.0239
+One of the targets was not visible to learn a link
+Made a random movement to -14.9802, 10.2154
+One of the targets was not visible to learn a link
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 640 times
+Requesting retina field at: 156.667, 122.762
+Requesting retina field at: 156.667, 122.762
+Field returned: 
+coordinates: [157.79,122.2] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -15.9959, 27.5207
+Field returned: 
+coordinates: [-14.99,29.43] Learnt and used 0 times
+Requesting retina field at: 117.169, 19.9932
+Requesting retina field at: 117.169, 19.9932
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+Adding link based on relative movement -15.9959, 27.5207
+fixated on saccade 19 after 8 steps
+Successfully fixated on saccade: 19
+*******************************
+*******************************
+Starting saccade: 20
+Requesting retina field at: 72.7648, 38.3475
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Retrieved input field for target 72.7648, 38.3475
+coordinates: [76.65,36.65] Learnt and used -1 times
+Starting saccade 20 from 19.9879, -8.59303
+Requesting retina field at: 72.5668, 37.1629
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [76.65,36.65] Learnt and used -1 times
+Field returned: 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+Input field is linked to field 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.5, 44.5
+Go to field target is unreachable from here
+Following a link with motor values -24.502, 35.6704
+Target unreachable from here
+Failed to fixate on saccade: 20
+*******************************
+*******************************
+Starting saccade: 20
+Requesting retina field at: 99.795, 32.2029
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 19 times
+Retrieved input field for target 99.795, 32.2029
+coordinates: [100.76,38.46] Learnt and used 19 times
+Starting saccade 20 from 13.999, -26.7324
+Made a random movement to 14, -21.5598
+One of the targets was not visible to learn a link
+Made a random movement to 14, -21.2557
+One of the targets was not visible to learn a link
+Made a random movement to 14, -21.0981
+One of the targets was not visible to learn a link
+Made a random movement to 14, -21.0411
+One of the targets was not visible to learn a link
+Made a random movement to -8.79657, -29.0706
+One of the targets was not visible to learn a link
+Made a random movement to -8.96024, -29.5755
+One of the targets was not visible to learn a link
+Made a random movement to -8.99459, -29.8371
+One of the targets was not visible to learn a link
+Made a random movement to -8.99927, -29.9375
+One of the targets was not visible to learn a link
+Made a random movement to 6.8585, -23.7216
+One of the targets was not visible to learn a link
+Made a random movement to 6.99685, -23.1159
+One of the targets was not visible to learn a link
+Made a random movement to 6.99937, -23.0529
+One of the targets was not visible to learn a link
+Made a random movement to 13.9951, 1.23541
+One of the targets was not visible to learn a link
+Requesting retina field at: 88.4383, 80.4503
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 25 times
+Requesting linked motor field for field:
+coordinates: [84.41,81.48] Learnt and used 25 times
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 33 times
+Input field is linked to field 
+coordinates: [-29.38,9.54] Learnt and used 33 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.38, 9.54
+Following a link with motor values -15.3807, 11.2466
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 641 times
+Requesting retina field at: 156.702, 122.019
+Requesting retina field at: 156.702, 122.019
+Field returned: 
+coordinates: [157.22,121.41] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -29.3376, 9.12895
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 35 times
+Requesting retina field at: 88.4383, 80.4503
+Requesting retina field at: 88.4383, 80.4503
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 27 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -29.3376, 9.12895
+Requesting motor field at: -29.3373, 37.568
+Field returned: 
+coordinates: [-29.08,40.03] Learnt and used -2 times
+Requesting retina field at: 99.795, 32.2029
+Requesting retina field at: 99.795, 32.2029
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 19 times
+Adding link based on relative movement -29.3373, 37.568
+fixated on saccade 20 after 13 steps
+Successfully fixated on saccade: 20
+*******************************
+*******************************
+Starting saccade: 21
+Requesting retina field at: 123, 19
+Field returned: 
+coordinates: [125.37,13.44] Unlearnt
+Retrieved input field for target 123, 19
+coordinates: [125.37,13.44] Unlearnt
+Starting saccade 21 from -0.000437587, -28.753
+Made a random movement to -22.9955, 7.3867
+One of the targets was not visible to learn a link
+Requesting retina field at: 174.619, 109.755
+Field returned: 
+coordinates: [176.15,108.26] Learnt and used 11 times
+Requesting linked motor field for field:
+coordinates: [176.15,108.26] Learnt and used 11 times
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 19 times
+Input field is linked to field 
+coordinates: [6.46,3.29] Learnt and used 19 times
+following direct link
+Moving to an existing linked field at relative coordinates 6.46, 3.29
+Following a link with motor values -16.5393, 11.0332
+Successfully followed link to centre
+Requesting motor field at: -16.4332, 38.5069
+Field returned: 
+coordinates: [-19.11,37.52] Learnt and used -2 times
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 642 times
+Requesting retina field at: 160.622, 122.175
+Requesting retina field at: 160.622, 122.175
+Field returned: 
+coordinates: [160.48,123.08] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 6.43234, 3.05274
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 21 times
+Requesting retina field at: 174.619, 109.755
+Requesting retina field at: 174.619, 109.755
+Field returned: 
+coordinates: [176.15,108.26] Learnt and used 13 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 6.43234, 3.05274
+Requesting motor field at: -16.5665, 39.549
+Field returned: 
+coordinates: [-19.11,37.52] Learnt and used -2 times
+Requesting retina field at: 123, 19
+Requesting retina field at: 123, 19
+Field returned: 
+coordinates: [125.37,13.44] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -16.5665, 39.549
+fixated on saccade 21 after 2 steps
+Successfully fixated on saccade: 21
+*******************************
+*******************************
+Starting saccade: 22
+Requesting retina field at: 118.288, 104.951
+Field returned: 
+coordinates: [118.95,106.66] Learnt and used 3 times
+Retrieved input field for target 118.288, 104.951
+coordinates: [118.95,106.66] Learnt and used 3 times
+Starting saccade 22 from 1.92106, 6.27202
+Requesting retina field at: 117.688, 103.508
+Field returned: 
+coordinates: [118.95,106.66] Learnt and used 3 times
+Requesting linked motor field for field:
+coordinates: [118.95,106.66] Learnt and used 3 times
+Field returned: 
+coordinates: [-13.58,2.15] Learnt and used 36 times
+Input field is linked to field 
+coordinates: [-13.58,2.15] Learnt and used 36 times
+following direct link
+Moving to an existing linked field at relative coordinates -13.58, 2.15
+Following a link with motor values -11.5954, 8.27424
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 643 times
+Requesting retina field at: 148.571, 111.486
+Requesting retina field at: 148.571, 111.486
+Field returned: 
+coordinates: [149.5,112.37] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -13.4583, 1.84385
+Field returned: 
+coordinates: [-13.58,2.15] Learnt and used 38 times
+Requesting retina field at: 118.288, 104.951
+Requesting retina field at: 118.288, 104.951
+Field returned: 
+coordinates: [118.95,106.66] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -13.4583, 1.84385
+fixated on saccade 22 after 1 steps
+Successfully fixated on saccade: 22
+*******************************
+*******************************
+Starting saccade: 23
+Requesting retina field at: 122.563, 31.6033
+Field returned: 
+coordinates: [116.71,35.04] Learnt and used 2 times
+Retrieved input field for target 122.563, 31.6033
+coordinates: [116.71,35.04] Learnt and used 2 times
+Starting saccade 23 from -1.00171, -11.7205
+Requesting retina field at: 122.698, 30.8826
+Field returned: 
+coordinates: [116.71,35.04] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [116.71,35.04] Learnt and used 2 times
+Field returned: 
+coordinates: [-23.37,32.16] Learnt and used 2 times
+Input field is linked to field 
+coordinates: [-23.37,32.16] Learnt and used 2 times
+following direct link
+Moving to an existing linked field at relative coordinates -23.37, 32.16
+Go to field target is unreachable from here
+Following a link with motor values -24.3702, 20.2673
+Target unreachable from here
+Failed to fixate on saccade: 23
+*******************************
+*******************************
+Starting saccade: 23
+Requesting retina field at: 143.347, 31.7674
+Field returned: 
+coordinates: [146.72,36.21] Learnt and used 5 times
+Retrieved input field for target 143.347, 31.7674
+coordinates: [146.72,36.21] Learnt and used 5 times
+Starting saccade 23 from -10.0014, -11.6838
+Requesting retina field at: 143.171, 31.046
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 7 times
+Requesting linked motor field for field:
+coordinates: [145.08,25.82] Learnt and used 7 times
+Field returned: 
+coordinates: [-3.87,24.46] Learnt and used 5 times
+Input field is linked to field 
+coordinates: [-3.87,24.46] Learnt and used 5 times
+following direct link
+Moving to an existing linked field at relative coordinates -3.87, 24.46
+Following a link with motor values -13.8703, 12.6044
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 644 times
+Requesting retina field at: 153.668, 130.088
+Requesting retina field at: 153.668, 130.088
+Field returned: 
+coordinates: [152.37,130.49] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -3.86853, 24.0011
+Field returned: 
+coordinates: [-3.87,24.46] Learnt and used 7 times
+Requesting retina field at: 143.347, 31.7674
+Requesting retina field at: 143.347, 31.7674
+Field returned: 
+coordinates: [146.72,36.21] Learnt and used 5 times
+Adding link based on relative movement -3.86853, 24.0011
+fixated on saccade 23 after 1 steps
+Successfully fixated on saccade: 23
+*******************************
+*******************************
+Starting saccade: 24
+Requesting retina field at: 63.238, 70.5376
+Field returned: 
+coordinates: [65.239,71.71] Learnt and used 10 times
+Retrieved input field for target 63.238, 70.5376
+coordinates: [65.239,71.71] Learnt and used 10 times
+Starting saccade 24 from 23.9864, -0.764064
+Requesting retina field at: 62.8967, 67.8627
+Field returned: 
+coordinates: [65.239,71.71] Learnt and used 10 times
+Requesting linked motor field for field:
+coordinates: [65.239,71.71] Learnt and used 10 times
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 31 times
+Input field is linked to field 
+coordinates: [-42.33,13.75] Learnt and used 31 times
+following direct link
+Moving to an existing linked field at relative coordinates -42.33, 13.75
+Following a link with motor values -18.3322, 12.8488
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 645 times
+Requesting retina field at: 163.737, 131.174
+Requesting retina field at: 163.737, 131.174
+Field returned: 
+coordinates: [164,132.33] Learnt and used 13 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -42.3043, 13.3159
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 33 times
+Requesting retina field at: 63.238, 70.5376
+Requesting retina field at: 63.238, 70.5376
+Field returned: 
+coordinates: [65.239,71.71] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -42.3043, 13.3159
+fixated on saccade 24 after 1 steps
+Successfully fixated on saccade: 24
+*******************************
+*******************************
+Starting saccade: 25
+Requesting retina field at: 141.331, 42.2018
+Field returned: 
+coordinates: [135.35,44.14] Learnt and used 0 times
+Retrieved input field for target 141.331, 42.2018
+coordinates: [135.35,44.14] Learnt and used 0 times
+Starting saccade 25 from -6.00034, -26.7426
+Made a random movement to 11.9875, -2.76128
+One of the targets was not visible to learn a link
+Requesting retina field at: 92.8418, 61.3479
+Field returned: 
+coordinates: [100.01,60.01] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [100.01,60.01] Learnt and used 2 times
+Field returned: 
+coordinates: [-36.8,36.8] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-36.8,36.8] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -36.8, 36.8
+Go to field target is unreachable from here
+Following a link with motor values -24.8017, 34.5079
+Target unreachable from here
+Failed to fixate on saccade: 25
+*******************************
+*******************************
+Starting saccade: 25
+Requesting retina field at: 119, 19
+Field returned: 
+coordinates: [125.37,13.44] Learnt and used 1 times
+Retrieved input field for target 119, 19
+coordinates: [125.37,13.44] Learnt and used 1 times
+Starting saccade 25 from -6.0006, -33.6594
+Made a random movement to -8.97347, -25.0261
+One of the targets was not visible to learn a link
+Made a random movement to 18.2647, -28.1913
+One of the targets was not visible to learn a link
+Made a random movement to 18.8563, -28.6307
+One of the targets was not visible to learn a link
+Made a random movement to 18.9805, -28.8583
+One of the targets was not visible to learn a link
+Made a random movement to 18.9968, -28.9407
+One of the targets was not visible to learn a link
+Made a random movement to 18.9996, -28.9772
+One of the targets was not visible to learn a link
+Made a random movement to -28.9921, 13.3452
+One of the targets was not visible to learn a link
+Requesting retina field at: 188.273, 136.191
+Field returned: 
+coordinates: [187.74,134.13] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [187.74,134.13] Learnt and used -1 times
+Field returned: 
+coordinates: [12.06,0] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [12.06,0] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates 12.06, 0
+Following a link with motor values -16.9385, 13.701
+Followed link but it didn't take me to the centre
+Requesting retina field at: 160.759, 137.177
+Field returned: 
+coordinates: [162.56,136.22] Learnt and used 22 times
+Requesting linked motor field for field:
+coordinates: [162.56,136.22] Learnt and used 22 times
+Field returned: 
+coordinates: [-0.86,-2.65] Learnt and used 33 times
+Input field is linked to field 
+coordinates: [-0.86,-2.65] Learnt and used 33 times
+following direct link
+Moving to an existing linked field at relative coordinates -0.86, -2.65
+Following a link with motor values -17.8604, 11.0563
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 646 times
+Requesting retina field at: 162.738, 129.236
+Requesting retina field at: 162.738, 129.236
+Field returned: 
+coordinates: [161.5,129.479] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -0.846616, -2.29424
+Field returned: 
+coordinates: [-0.86,-2.65] Learnt and used 35 times
+Requesting retina field at: 160.759, 137.177
+Requesting retina field at: 160.759, 137.177
+Field returned: 
+coordinates: [162.56,136.22] Learnt and used 24 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -0.846616, -2.29424
+Requesting motor field at: 11.1515, -2.28886
+Field returned: 
+coordinates: [12.06,0] Learnt and used -1 times
+Requesting retina field at: 188.273, 136.191
+Requesting retina field at: 188.273, 136.191
+Field returned: 
+coordinates: [187.74,134.13] Learnt and used -2 times
+Adding link based on relative movement 11.1515, -2.28886
+Requesting motor field at: -11.8464, 45.0715
+Field returned: 
+coordinates: [-13.75,42.33] Learnt and used 0 times
+Requesting retina field at: 119, 19
+Requesting retina field at: 119, 19
+Field returned: 
+coordinates: [125.37,13.44] Learnt and used 1 times
+Adding link based on relative movement -11.8464, 45.0715
+fixated on saccade 25 after 9 steps
+Successfully fixated on saccade: 25
+*******************************
+*******************************
+Starting saccade: 26
+Requesting retina field at: 101.513, 27.7215
+Field returned: 
+coordinates: [94.14,29.35] Learnt and used -2 times
+Retrieved input field for target 101.513, 27.7215
+coordinates: [94.14,29.35] Learnt and used -2 times
+Starting saccade 26 from 11.9991, -26.7415
+Made a random movement to 15.9972, 6.93303
+One of the targets was not visible to learn a link
+Requesting retina field at: 83.8744, 105.851
+Field returned: 
+coordinates: [86.12,108.29] Learnt and used 13 times
+Requesting linked motor field for field:
+coordinates: [86.12,108.29] Learnt and used 13 times
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 69 times
+Input field is linked to field 
+coordinates: [-32.619,5.16] Learnt and used 69 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, 5.16
+Following a link with motor values -16.6193, 12.7847
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 647 times
+Requesting retina field at: 158.864, 129.678
+Requesting retina field at: 158.864, 129.678
+Field returned: 
+coordinates: [158.49,129.479] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.4515, 4.75141
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 71 times
+Requesting retina field at: 83.8744, 105.851
+Requesting retina field at: 83.8744, 105.851
+Field returned: 
+coordinates: [86.12,108.29] Learnt and used 15 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.4515, 4.75141
+Requesting motor field at: -28.4509, 39.1176
+Field returned: 
+coordinates: [-29.08,40.03] Learnt and used -2 times
+Requesting retina field at: 101.513, 27.7215
+Requesting retina field at: 101.513, 27.7215
+Field returned: 
+coordinates: [94.14,29.35] Learnt and used -2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -28.4509, 39.1176
+fixated on saccade 26 after 2 steps
+Successfully fixated on saccade: 26
+*******************************
+*******************************
+Starting saccade: 27
+Requesting retina field at: 162.191, 26.9328
+Field returned: 
+coordinates: [160,29.97] Learnt and used 3 times
+Retrieved input field for target 162.191, 26.9328
+coordinates: [160,29.97] Learnt and used 3 times
+Starting saccade 27 from -18.9999, -27.7366
+Made a random movement to 25.9926, 14.3465
+One of the targets was not visible to learn a link
+Requesting retina field at: 58.7224, 141.751
+Field returned: 
+coordinates: [54.96,136.63] Learnt and used 11 times
+Requesting linked motor field for field:
+coordinates: [54.96,136.63] Learnt and used 11 times
+Field returned: 
+coordinates: [-44.51,0] Learnt and used 17 times
+Input field is linked to field 
+coordinates: [-44.51,0] Learnt and used 17 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.51, 0
+Following a link with motor values -18.5115, 14.7015
+Followed link but it didn't take me to the centre
+Requesting retina field at: 163.145, 141.43
+Field returned: 
+coordinates: [163.69,143.3] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [163.69,143.3] Learnt and used 2 times
+Field returned: 
+coordinates: [-0.66,-4.19] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-0.66,-4.19] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -0.66, -4.19
+Following a link with motor values -19.1179, 10.5134
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 648 times
+Requesting retina field at: 165.748, 125.206
+Requesting retina field at: 165.748, 125.206
+Field returned: 
+coordinates: [165.11,123.71] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -0.657675, -3.90964
+Field returned: 
+coordinates: [-0.66,-4.19] Learnt and used 2 times
+Requesting retina field at: 163.145, 141.43
+Requesting retina field at: 163.145, 141.43
+Field returned: 
+coordinates: [163.69,143.3] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -0.657675, -3.90964
+Requesting motor field at: -45.1141, -3.90781
+Field returned: 
+coordinates: [-46.39,-7.34] Learnt and used 1 times
+Requesting retina field at: 58.7224, 141.751
+Requesting retina field at: 58.7224, 141.751
+Field returned: 
+coordinates: [54.96,136.63] Learnt and used 10 times
+Adding link based on relative movement -45.1141, -3.90781
+Requesting motor field at: -0.115662, 38.5303
+Field returned: 
+coordinates: [0,39.76] Learnt and used -1 times
+Requesting retina field at: 162.191, 26.9328
+Requesting retina field at: 162.191, 26.9328
+Field returned: 
+coordinates: [160,29.97] Learnt and used 3 times
+Adding link based on relative movement -0.115662, 38.5303
+fixated on saccade 27 after 3 steps
+Successfully fixated on saccade: 27
+*******************************
+*******************************
+Starting saccade: 28
+Requesting retina field at: 78.7711, 19.6265
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 4 times
+Retrieved input field for target 78.7711, 19.6265
+coordinates: [87.22,19.83] Learnt and used 4 times
+Starting saccade 28 from 20.9957, -15.6674
+Requesting retina field at: 85.5455, 19.2727
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [87.22,19.83] Learnt and used 4 times
+Field returned: 
+coordinates: [-32.16,23.37] Learnt and used 7 times
+Input field is linked to field 
+coordinates: [-32.16,23.37] Learnt and used 7 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.16, 23.37
+Following a link with motor values -11.1606, 7.49764
+Followed link but it didn't take me to the centre
+Requesting retina field at: 147.661, 105.765
+Field returned: 
+coordinates: [148.26,103.84] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [148.26,103.84] Learnt and used 0 times
+Field returned: 
+coordinates: [-21.32,41.85] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-21.32,41.85] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -21.32, 41.85
+Go to field target is unreachable from here
+Following a link with motor values -32.4775, 49.0735
+Target unreachable from here
+Failed to fixate on saccade: 28
+*******************************
+*******************************
+Starting saccade: 28
+Requesting retina field at: 69.31, 130.95
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 18 times
+Retrieved input field for target 69.31, 130.95
+coordinates: [65.82,134.91] Learnt and used 18 times
+Starting saccade 28 from 21.925, 12.1284
+Requesting retina field at: 68.901, 130.376
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 18 times
+Requesting linked motor field for field:
+coordinates: [65.82,134.91] Learnt and used 18 times
+Field returned: 
+coordinates: [-41.59,-6.58] Learnt and used 22 times
+Input field is linked to field 
+coordinates: [-41.59,-6.58] Learnt and used 22 times
+following direct link
+Moving to an existing linked field at relative coordinates -41.59, -6.58
+Following a link with motor values -19.6002, 5.46926
+Followed link but it didn't take me to the centre
+Requesting retina field at: 166.278, 102.806
+Field returned: 
+coordinates: [166.17,101] Learnt and used 10 times
+Requesting linked motor field for field:
+coordinates: [166.17,101] Learnt and used 10 times
+Field returned: 
+coordinates: [-1.92,3.77] Learnt and used 11 times
+Input field is linked to field 
+coordinates: [-1.92,3.77] Learnt and used 11 times
+following direct link
+Moving to an existing linked field at relative coordinates -1.92, 3.77
+Following a link with motor values -21.4702, 9.50021
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 649 times
+Requesting retina field at: 170.888, 116
+Requesting retina field at: 170.888, 116
+Field returned: 
+coordinates: [168.55,115.63] Learnt and used 28 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -1.91022, 3.46652
+Field returned: 
+coordinates: [-1.92,3.77] Learnt and used 13 times
+Requesting retina field at: 166.278, 102.806
+Requesting retina field at: 166.278, 102.806
+Field returned: 
+coordinates: [166.17,101] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -1.91022, 3.46652
+Requesting motor field at: -43.3854, -2.93165
+Field returned: 
+coordinates: [-44.51,0] Learnt and used 16 times
+Requesting retina field at: 69.31, 130.95
+Requesting retina field at: 69.31, 130.95
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 17 times
+Adding link based on relative movement -43.3854, -2.93165
+fixated on saccade 28 after 2 steps
+Successfully fixated on saccade: 28
+*******************************
+*******************************
+Starting saccade: 29
+Requesting retina field at: 53.1155, 75.3851
+Field returned: 
+coordinates: [54.98,66.49] Learnt and used 8 times
+Retrieved input field for target 53.1155, 75.3851
+coordinates: [54.98,66.49] Learnt and used 8 times
+Starting saccade 29 from 27.935, 0.42337
+Requesting retina field at: 52.6991, 73.3461
+Field returned: 
+coordinates: [54.98,66.49] Learnt and used 8 times
+Requesting linked motor field for field:
+coordinates: [54.98,66.49] Learnt and used 8 times
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 34 times
+Input field is linked to field 
+coordinates: [-42.33,13.75] Learnt and used 34 times
+following direct link
+Moving to an existing linked field at relative coordinates -42.33, 13.75
+Following a link with motor values -14.3389, 13.9125
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 650 times
+Requesting retina field at: 154.667, 135.033
+Requesting retina field at: 154.667, 135.033
+Field returned: 
+coordinates: [152.54,134.63] Learnt and used 18 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -42.2619, 13.2169
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 36 times
+Requesting retina field at: 53.1155, 75.3851
+Requesting retina field at: 53.1155, 75.3851
+Field returned: 
+coordinates: [54.98,66.49] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -42.2619, 13.2169
+fixated on saccade 29 after 1 steps
+Successfully fixated on saccade: 29
+*******************************
+*******************************
+Starting saccade: 30
+Requesting retina field at: 176.279, 109.847
+Field returned: 
+coordinates: [176.15,108.26] Learnt and used 14 times
+Retrieved input field for target 176.279, 109.847
+coordinates: [176.15,108.26] Learnt and used 14 times
+Starting saccade 30 from -23.9605, 7.23687
+Requesting retina field at: 176.829, 107.666
+Field returned: 
+coordinates: [176.15,108.26] Learnt and used 14 times
+Requesting linked motor field for field:
+coordinates: [176.15,108.26] Learnt and used 14 times
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 22 times
+Input field is linked to field 
+coordinates: [6.46,3.29] Learnt and used 22 times
+following direct link
+Moving to an existing linked field at relative coordinates 6.46, 3.29
+Following a link with motor values -17.5346, 10.3809
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 651 times
+Requesting retina field at: 162.607, 119.945
+Requesting retina field at: 162.607, 119.945
+Field returned: 
+coordinates: [163.08,120.48] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 6.39273, 2.88143
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 24 times
+Requesting retina field at: 176.279, 109.847
+Requesting retina field at: 176.279, 109.847
+Field returned: 
+coordinates: [176.15,108.26] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 6.39273, 2.88143
+fixated on saccade 30 after 1 steps
+Successfully fixated on saccade: 30
+*******************************
+*******************************
+Starting saccade: 31
+Requesting retina field at: 108.815, 112.457
+Field returned: 
+coordinates: [104.61,111.22] Learnt and used 4 times
+Retrieved input field for target 108.815, 112.457
+coordinates: [104.61,111.22] Learnt and used 4 times
+Starting saccade 31 from 5.90308, 8.13506
+Requesting retina field at: 108.2, 111.547
+Field returned: 
+coordinates: [104.61,111.22] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [104.61,111.22] Learnt and used 4 times
+Field returned: 
+coordinates: [-22.81,0] Learnt and used 28 times
+Input field is linked to field 
+coordinates: [-22.81,0] Learnt and used 28 times
+following direct link
+Moving to an existing linked field at relative coordinates -22.81, 0
+Following a link with motor values -16.8258, 8.05653
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 652 times
+Requesting retina field at: 158.67, 111.839
+Requesting retina field at: 158.67, 111.839
+Field returned: 
+coordinates: [158.49,110.51] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -22.6312, -0.0791496
+Field returned: 
+coordinates: [-22.81,0] Learnt and used 30 times
+Requesting retina field at: 108.815, 112.457
+Requesting retina field at: 108.815, 112.457
+Field returned: 
+coordinates: [104.61,111.22] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -22.6312, -0.0791496
+fixated on saccade 31 after 1 steps
+Successfully fixated on saccade: 31
+*******************************
+*******************************
+Starting saccade: 32
+Requesting retina field at: 103.767, 42.907
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 19 times
+Retrieved input field for target 103.767, 42.907
+coordinates: [100.76,38.46] Learnt and used 19 times
+Starting saccade 32 from 18.9989, -29.7231
+Made a random movement to 24.9851, -15.8383
+One of the targets was not visible to learn a link
+Requesting retina field at: 79.5, 19
+Field returned: 
+coordinates: [87.22,19.83] Learnt and used 3 times
+Requesting linked motor field for field:
+coordinates: [87.22,19.83] Learnt and used 3 times
+Null input field returned
+Requesting linked motor field for field:
+coordinates: [68.14,28.14] Learnt and used 15 times
+Field returned: 
+coordinates: [-41.85,21.32] Learnt and used 10 times
+Found a nearby learnt field at distance 14
+Nearby field is: 
+coordinates: [-41.85,21.32] Learnt and used 10 times
+following nearest neighbour
+Moving to an existing linked field at relative coordinates -41.85, 21.32
+Following a link with motor values -16.8529, 5.93715
+Followed link but it didn't take me to the centre
+Dis-using a failed neighbour
+Requesting retina field at: 160.588, 99.7
+Field returned: 
+coordinates: [160,100.03] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [160,100.03] Learnt and used 1 times
+Field returned: 
+coordinates: [0,39.76] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [0,39.76] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 39.76
+Go to field target is unreachable from here
+Following a link with motor values -16.8482, 45.4255
+Target unreachable from here
+Failed to fixate on saccade: 32
+*******************************
+*******************************
+Starting saccade: 32
+Requesting retina field at: 145.625, 136.056
+Field returned: 
+coordinates: [143.31,136.68] Learnt and used 1 times
+Retrieved input field for target 145.625, 136.056
+coordinates: [143.31,136.68] Learnt and used 1 times
+Starting saccade 32 from -10.1044, 13.2629
+Requesting retina field at: 145.06, 135.043
+Field returned: 
+coordinates: [143.31,136.68] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [143.31,136.68] Learnt and used 1 times
+Field returned: 
+coordinates: [-4.19,-0.66] Learnt and used 27 times
+Input field is linked to field 
+coordinates: [-4.19,-0.66] Learnt and used 27 times
+following direct link
+Moving to an existing linked field at relative coordinates -4.19, -0.66
+Following a link with motor values -14.207, 12.4501
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 653 times
+Requesting retina field at: 154.248, 132.031
+Requesting retina field at: 154.248, 132.031
+Field returned: 
+coordinates: [155.99,132.33] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -4.0387, -0.726553
+Field returned: 
+coordinates: [-4.19,-0.66] Learnt and used 29 times
+Requesting retina field at: 145.625, 136.056
+Requesting retina field at: 145.625, 136.056
+Field returned: 
+coordinates: [143.31,136.68] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -4.0387, -0.726553
+fixated on saccade 32 after 1 steps
+Successfully fixated on saccade: 32
+*******************************
+*******************************
+Starting saccade: 33
+Requesting retina field at: 176.59, 101.069
+Field returned: 
+coordinates: [176.68,103.31] Learnt and used 5 times
+Retrieved input field for target 176.59, 101.069
+coordinates: [176.68,103.31] Learnt and used 5 times
+Starting saccade 33 from -23.9606, 5.40086
+Requesting retina field at: 176.692, 99.5995
+Field returned: 
+coordinates: [176.05,97.89] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [176.05,97.89] Learnt and used 0 times
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 25 times
+Input field is linked to field 
+coordinates: [6.46,3.29] Learnt and used 25 times
+following direct link
+Moving to an existing linked field at relative coordinates 6.46, 3.29
+Following a link with motor values -17.5346, 8.44382
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 654 times
+Requesting retina field at: 162.394, 111.906
+Requesting retina field at: 162.394, 111.906
+Field returned: 
+coordinates: [161.5,110.51] Learnt and used 8 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 6.39828, 2.80103
+Field returned: 
+coordinates: [6.46,3.29] Learnt and used 27 times
+Requesting retina field at: 176.59, 101.069
+Requesting retina field at: 176.59, 101.069
+Field returned: 
+coordinates: [176.68,103.31] Learnt and used 5 times
+Adding link based on relative movement 6.39828, 2.80103
+fixated on saccade 33 after 1 steps
+Successfully fixated on saccade: 33
+*******************************
+*******************************
+Starting saccade: 34
+Requesting retina field at: 187.865, 136.222
+Field returned: 
+coordinates: [187.74,134.13] Learnt and used -2 times
+Retrieved input field for target 187.865, 136.222
+coordinates: [187.74,134.13] Learnt and used -2 times
+Starting saccade 34 from -28.9472, 13.6976
+Requesting retina field at: 188.229, 137.337
+Field returned: 
+coordinates: [187.74,134.13] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [187.74,134.13] Learnt and used -2 times
+Field returned: 
+coordinates: [12.06,0] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [12.06,0] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates 12.06, 0
+Following a link with motor values -16.9328, 13.884
+Followed link but it didn't take me to the centre
+Requesting retina field at: 160.732, 138.048
+Field returned: 
+coordinates: [160,139.96] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [160,139.96] Learnt and used 4 times
+Field returned: 
+coordinates: [-3.36,-4.63] Learnt and used 75 times
+Input field is linked to field 
+coordinates: [-3.36,-4.63] Learnt and used 75 times
+following direct link
+Moving to an existing linked field at relative coordinates -3.36, -4.63
+Following a link with motor values -20.3359, 9.25459
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 655 times
+Requesting retina field at: 168.641, 120.355
+Requesting retina field at: 168.641, 120.355
+Field returned: 
+coordinates: [169.48,121.5] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -3.32388, -4.2614
+Field returned: 
+coordinates: [-3.36,-4.63] Learnt and used 77 times
+Requesting retina field at: 160.732, 138.048
+Requesting retina field at: 160.732, 138.048
+Field returned: 
+coordinates: [160,139.96] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -3.32388, -4.2614
+Requesting motor field at: 8.62856, -4.0743
+Field returned: 
+coordinates: [9.28,-4.73] Unlearnt
+Requesting retina field at: 187.865, 136.222
+Requesting retina field at: 187.865, 136.222
+Field returned: 
+coordinates: [187.74,134.13] Learnt and used -3 times
+Adding link based on relative movement 8.62856, -4.0743
+fixated on saccade 34 after 2 steps
+Successfully fixated on saccade: 34
+*******************************
+*******************************
+Starting saccade: 35
+Requesting retina field at: 97.565, 46.7398
+Field returned: 
+coordinates: [92.58,52.58] Learnt and used 1 times
+Retrieved input field for target 97.565, 46.7398
+coordinates: [92.58,52.58] Learnt and used 1 times
+Starting saccade 35 from 19.9965, -23.601
+Made a random movement to -6.76117, -18.6059
+One of the targets was not visible to learn a link
+Made a random movement to -6.96106, -18.2537
+One of the targets was not visible to learn a link
+Made a random movement to -6.9947, -18.0973
+One of the targets was not visible to learn a link
+Made a random movement to -20.8967, -27.0553
+One of the targets was not visible to learn a link
+Made a random movement to -20.9798, -27.5686
+One of the targets was not visible to learn a link
+Made a random movement to -20.9973, -27.8345
+One of the targets was not visible to learn a link
+Made a random movement to -20.9996, -27.9307
+One of the targets was not visible to learn a link
+Made a random movement to 6.79342, -34.3341
+One of the targets was not visible to learn a link
+Made a random movement to 6.96631, -34.7212
+One of the targets was not visible to learn a link
+Made a random movement to 6.99543, -34.893
+One of the targets was not visible to learn a link
+Made a random movement to 6.99909, -34.9511
+One of the targets was not visible to learn a link
+Made a random movement to 19.9974, 7.28578
+One of the targets was not visible to learn a link
+Requesting retina field at: 73.9224, 107.751
+Field returned: 
+coordinates: [76.21,106.72] Learnt and used 21 times
+Requesting linked motor field for field:
+coordinates: [76.21,106.72] Learnt and used 21 times
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 72 times
+Input field is linked to field 
+coordinates: [-32.619,5.16] Learnt and used 72 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, 5.16
+Following a link with motor values -12.6193, 12.8859
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 656 times
+Requesting retina field at: 150.066, 130.605
+Requesting retina field at: 150.066, 130.605
+Field returned: 
+coordinates: [148.38,131.61] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.4515, 4.75075
+Field returned: 
+coordinates: [-32.619,5.16] Learnt and used 74 times
+Requesting retina field at: 73.9224, 107.751
+Requesting retina field at: 73.9224, 107.751
+Field returned: 
+coordinates: [76.21,106.72] Learnt and used 23 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.4515, 4.75075
+Requesting motor field at: -32.4484, 36.0777
+Field returned: 
+coordinates: [-33.21,33.21] Learnt and used -2 times
+Requesting retina field at: 97.565, 46.7398
+Requesting retina field at: 97.565, 46.7398
+Field returned: 
+coordinates: [92.58,52.58] Learnt and used 1 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.4484, 36.0777
+fixated on saccade 35 after 13 steps
+Successfully fixated on saccade: 35
+*******************************
+*******************************
+Starting saccade: 36
+Requesting retina field at: 141.659, 25.6157
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 9 times
+Retrieved input field for target 141.659, 25.6157
+coordinates: [145.08,25.82] Learnt and used 9 times
+Starting saccade 36 from -9.00068, -23.6025
+Made a random movement to -0.026792, -6.15676
+One of the targets was not visible to learn a link
+Requesting retina field at: 120.717, 47.836
+Field returned: 
+coordinates: [121.48,44.41] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [121.48,44.41] Learnt and used -2 times
+Field returned: 
+coordinates: [-29.08,40.03] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-29.08,40.03] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.08, 40.03
+Go to field target is unreachable from here
+Following a link with motor values -29.0836, 34.5861
+Target unreachable from here
+Failed to fixate on saccade: 36
+*******************************
+*******************************
+Starting saccade: 36
+Requesting retina field at: 163.471, 32.2524
+Field returned: 
+coordinates: [160,29.97] Learnt and used 3 times
+Retrieved input field for target 163.471, 32.2524
+coordinates: [160,29.97] Learnt and used 3 times
+Starting saccade 36 from -19.0011, -11.6548
+Requesting retina field at: 163.398, 31.3446
+Field returned: 
+coordinates: [160,29.97] Learnt and used 3 times
+Requesting linked motor field for field:
+coordinates: [160,29.97] Learnt and used 3 times
+Field returned: 
+coordinates: [0,22.81] Learnt and used 4 times
+Input field is linked to field 
+coordinates: [0,22.81] Learnt and used 4 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 22.81
+Following a link with motor values -19.0002, 10.9424
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 657 times
+Requesting retina field at: 165.627, 121.943
+Requesting retina field at: 165.627, 121.943
+Field returned: 
+coordinates: [166.01,121.95] Learnt and used 17 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 0.000990394, 22.3052
+Field returned: 
+coordinates: [0,22.81] Learnt and used 6 times
+Requesting retina field at: 163.471, 32.2524
+Requesting retina field at: 163.471, 32.2524
+Field returned: 
+coordinates: [160,29.97] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0.000990394, 22.3052
+fixated on saccade 36 after 1 steps
+Successfully fixated on saccade: 36
+*******************************
+*******************************
+Starting saccade: 37
+Requesting retina field at: 109.457, 20.6
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+Retrieved input field for target 109.457, 20.6
+coordinates: [111.71,25.24] Learnt and used -1 times
+Starting saccade 37 from 4.99902, -18.7614
+Made a random movement to -12.4332, -22.2215
+One of the targets was not visible to learn a link
+Made a random movement to -12.9229, -22.7013
+One of the targets was not visible to learn a link
+Made a random movement to -16.9991, 14.3131
+One of the targets was not visible to learn a link
+Requesting retina field at: 160.739, 140.982
+Field returned: 
+coordinates: [160,139.96] Learnt and used 7 times
+Requesting linked motor field for field:
+coordinates: [160,139.96] Learnt and used 7 times
+Field returned: 
+coordinates: [-3.36,-4.63] Learnt and used 78 times
+Input field is linked to field 
+coordinates: [-3.36,-4.63] Learnt and used 78 times
+following direct link
+Moving to an existing linked field at relative coordinates -3.36, -4.63
+Following a link with motor values -20.3599, 10.1064
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 658 times
+Requesting retina field at: 168.477, 124.949
+Requesting retina field at: 168.477, 124.949
+Field returned: 
+coordinates: [168.55,124.36] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -3.34275, -4.25798
+Field returned: 
+coordinates: [-3.36,-4.63] Learnt and used 80 times
+Requesting retina field at: 160.739, 140.982
+Requesting retina field at: 160.739, 140.982
+Field returned: 
+coordinates: [160,139.96] Learnt and used 9 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -3.34275, -4.25798
+Requesting motor field at: -25.3416, 29.2398
+Field returned: 
+coordinates: [-26.49,26.49] Learnt and used 1 times
+Requesting retina field at: 109.457, 20.6
+Requesting retina field at: 109.457, 20.6
+Field returned: 
+coordinates: [111.71,25.24] Learnt and used -1 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -25.3416, 29.2398
+fixated on saccade 37 after 4 steps
+Successfully fixated on saccade: 37
+*******************************
+*******************************
+Starting saccade: 38
+Requesting retina field at: 162.812, 130
+Field returned: 
+coordinates: [161.5,129.479] Learnt and used 12 times
+Retrieved input field for target 162.812, 130
+coordinates: [161.5,129.479] Learnt and used 12 times
+Starting saccade 38 from -17.9841, 12.6027
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 659 times
+Requesting retina field at: 162.812, 130
+Requesting retina field at: 162.812, 130
+Field returned: 
+coordinates: [161.5,129.479] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+fixated on saccade 38 after 0 steps
+Successfully fixated on saccade: 38
+*******************************
+*******************************
+Starting saccade: 39
+Requesting retina field at: 154.687, 116.277
+Field returned: 
+coordinates: [154.88,116.28] Learnt and used 1 times
+Retrieved input field for target 154.687, 116.277
+coordinates: [154.88,116.28] Learnt and used 1 times
+Starting saccade 39 from -14.0477, 9.06272
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 660 times
+Requesting retina field at: 154.687, 116.277
+Requesting retina field at: 154.687, 116.277
+Field returned: 
+coordinates: [154.88,116.28] Learnt and used 1 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+fixated on saccade 39 after 0 steps
+Successfully fixated on saccade: 39
+*******************************
+*******************************
+Starting saccade: 40
+Requesting retina field at: 185.97, 140.85
+Field returned: 
+coordinates: [188.35,140.59] Learnt and used 1 times
+Retrieved input field for target 185.97, 140.85
+coordinates: [188.35,140.59] Learnt and used 1 times
+Starting saccade 40 from -27.9372, 14.6131
+Requesting retina field at: 185.87, 142.243
+Field returned: 
+coordinates: [188.35,140.59] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [188.35,140.59] Learnt and used 1 times
+Field returned: 
+coordinates: [15.36,-7.83] Learnt and used 3 times
+Input field is linked to field 
+coordinates: [15.36,-7.83] Learnt and used 3 times
+following direct link
+Moving to an existing linked field at relative coordinates 15.36, -7.83
+Following a link with motor values -12.6329, 7.03392
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 661 times
+Requesting retina field at: 151.227, 110.048
+Requesting retina field at: 151.227, 110.048
+Field returned: 
+coordinates: [152.37,109.5] Learnt and used 1 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 15.2822, -7.23974
+Field returned: 
+coordinates: [15.36,-7.83] Learnt and used 5 times
+Requesting retina field at: 185.97, 140.85
+Requesting retina field at: 185.97, 140.85
+Field returned: 
+coordinates: [188.35,140.59] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 15.2822, -7.23974
+fixated on saccade 40 after 1 steps
+Successfully fixated on saccade: 40
+*******************************
+*******************************
+Starting saccade: 41
+Requesting retina field at: 100.1, 139.536
+Field returned: 
+coordinates: [102.37,138.72] Learnt and used 4 times
+Retrieved input field for target 100.1, 139.536
+coordinates: [102.37,138.72] Learnt and used 4 times
+Starting saccade 41 from 9.88809, 14.6297
+Requesting retina field at: 99.2728, 141.644
+Field returned: 
+coordinates: [102.37,138.72] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [102.37,138.72] Learnt and used 4 times
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 115 times
+Input field is linked to field 
+coordinates: [-20.66,-3.27] Learnt and used 115 times
+following direct link
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -10.6782, 11.575
+Followed link but it didn't take me to the centre
+Requesting retina field at: 145.898, 129.52
+Field returned: 
+coordinates: [145.36,127.45] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [145.36,127.45] Learnt and used -2 times
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 662 times
+Input field is linked to field 
+coordinates: [1.22,0.62] Learnt and used 662 times
+following direct link
+Moving to an existing linked field at relative coordinates 1.22, 0.62
+Following a link with motor values -9.35216, 12.4573
+Followed link but it didn't take me to the centre
+Requesting retina field at: 143.806, 130.098
+Field returned: 
+coordinates: [143.84,131.73] Unlearnt
+nearest neighbour was unreliable, so making random movement instead
+Made a random movement to -4.00106, -27.3301
+Requesting retina field at: 131.582, 32.3216
+Field returned: 
+coordinates: [132.17,34.37] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [132.17,34.37] Learnt and used 2 times
+Field returned: 
+coordinates: [-13.07,25.66] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-13.07,25.66] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -13.07, 25.66
+Following a link with motor values -17.0702, -2.05955
+Followed link but it didn't take me to the centre
+Requesting retina field at: 160.338, 61.7278
+Field returned: 
+coordinates: [160,59.4] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [160,59.4] Learnt and used -1 times
+Field returned: 
+coordinates: [0,39.76] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [0,39.76] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 39.76
+Go to field target is unreachable from here
+Following a link with motor values -17.0687, 37.3716
+Target unreachable from here
+Failed to fixate on saccade: 41
+*******************************
+*******************************
+Starting saccade: 41
+Requesting retina field at: 163.162, 106.831
+Field returned: 
+coordinates: [164,107.66] Learnt and used 5 times
+Retrieved input field for target 163.162, 106.831
+coordinates: [164,107.66] Learnt and used 5 times
+Starting saccade 41 from -17.9989, 6.3556
+Requesting retina field at: 163.318, 103.487
+Field returned: 
+coordinates: [162.56,103.77] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [162.56,103.77] Learnt and used 1 times
+Field returned: 
+coordinates: [-1.92,3.77] Learnt and used 14 times
+Input field is linked to field 
+coordinates: [-1.92,3.77] Learnt and used 14 times
+following direct link
+Moving to an existing linked field at relative coordinates -1.92, 3.77
+Following a link with motor values -19.9198, 9.93241
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 661 times
+Requesting retina field at: 167.739, 117.691
+Requesting retina field at: 167.739, 117.691
+Field returned: 
+coordinates: [168.55,115.63] Learnt and used 29 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -1.91268, 3.29975
+Field returned: 
+coordinates: [-1.92,3.77] Learnt and used 16 times
+Requesting retina field at: 163.162, 106.831
+Requesting retina field at: 163.162, 106.831
+Field returned: 
+coordinates: [164,107.66] Learnt and used 5 times
+Adding link based on relative movement -1.91268, 3.29975
+fixated on saccade 41 after 1 steps
+Successfully fixated on saccade: 41
+*******************************
+*******************************
+Starting saccade: 42
+Requesting retina field at: 64.8129, 141.714
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 17 times
+Retrieved input field for target 64.8129, 141.714
+coordinates: [65.82,134.91] Learnt and used 17 times
+Starting saccade 42 from 23.9411, 14.7744
+Requesting retina field at: 64.1971, 143.424
+Field returned: 
+coordinates: [64.14,151.14] Learnt and used 4 times
+Requesting linked motor field for field:
+coordinates: [64.14,151.14] Learnt and used 4 times
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 26 times
+Input field is linked to field 
+coordinates: [-37,-5.86] Learnt and used 26 times
+following direct link
+Moving to an existing linked field at relative coordinates -37, -5.86
+Following a link with motor values -13.008, 9.05342
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 662 times
+Requesting retina field at: 151.624, 118.035
+Requesting retina field at: 151.624, 118.035
+Field returned: 
+coordinates: [150.51,118.49] Learnt and used 4 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -36.9046, -5.48788
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 28 times
+Requesting retina field at: 64.8129, 141.714
+Requesting retina field at: 64.8129, 141.714
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 17 times
+Adding link based on relative movement -36.9046, -5.48788
+fixated on saccade 42 after 1 steps
+Successfully fixated on saccade: 42
+*******************************
+*******************************
+Starting saccade: 43
+Requesting retina field at: 91.1868, 30.1602
+Field returned: 
+coordinates: [94.14,29.35] Learnt and used -1 times
+Retrieved input field for target 91.1868, 30.1602
+coordinates: [94.14,29.35] Learnt and used -1 times
+Starting saccade 43 from 20.999, -32.7261
+Made a random movement to -10.7542, -32.9799
+One of the targets was not visible to learn a link
+Made a random movement to -12, 8.30226
+One of the targets was not visible to learn a link
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 663 times
+Requesting retina field at: 149.8, 113.569
+Requesting retina field at: 149.8, 113.569
+Field returned: 
+coordinates: [149.5,112.37] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.999, 41.4583
+Field returned: 
+coordinates: [-32.14,44.24] Learnt and used -1 times
+Requesting retina field at: 91.1868, 30.1602
+Requesting retina field at: 91.1868, 30.1602
+Field returned: 
+coordinates: [94.14,29.35] Learnt and used -1 times
+Adding link based on relative movement -32.999, 41.4583
+fixated on saccade 43 after 2 steps
+Successfully fixated on saccade: 43
+*******************************
+*******************************
+Starting saccade: 44
+Requesting retina field at: 118.785, 58.3463
+Field returned: 
+coordinates: [118.88,63.4] Learnt and used -3 times
+Retrieved input field for target 118.785, 58.3463
+coordinates: [118.88,63.4] Learnt and used -3 times
+Starting saccade 44 from 0.994601, -3.68632
+Requesting retina field at: 118.676, 56.8168
+Field returned: 
+coordinates: [113.11,55.47] Learnt and used 8 times
+Requesting linked motor field for field:
+coordinates: [113.11,55.47] Learnt and used 8 times
+Field returned: 
+coordinates: [-29.08,40.03] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-29.08,40.03] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.08, 40.03
+Go to field target is unreachable from here
+Following a link with motor values -28.0809, 36.1613
+Target unreachable from here
+Failed to fixate on saccade: 44
+*******************************
+*******************************
+Starting saccade: 44
+Requesting retina field at: 109.633, 135.557
+Field returned: 
+coordinates: [110.86,135.96] Learnt and used 7 times
+Retrieved input field for target 109.633, 135.557
+coordinates: [110.86,135.96] Learnt and used 7 times
+Starting saccade 44 from 5.85406, 13.1429
+Requesting retina field at: 108.55, 134.59
+Field returned: 
+coordinates: [110.86,135.96] Learnt and used 7 times
+Requesting linked motor field for field:
+coordinates: [110.86,135.96] Learnt and used 7 times
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 114 times
+Input field is linked to field 
+coordinates: [-20.66,-3.27] Learnt and used 114 times
+following direct link
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -14.6838, 9.78981
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 664 times
+Requesting retina field at: 155.079, 121.376
+Requesting retina field at: 155.079, 121.376
+Field returned: 
+coordinates: [153.98,121.95] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -20.4494, -3.11506
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 116 times
+Requesting retina field at: 109.633, 135.557
+Requesting retina field at: 109.633, 135.557
+Field returned: 
+coordinates: [110.86,135.96] Learnt and used 9 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -20.4494, -3.11506
+fixated on saccade 44 after 1 steps
+Successfully fixated on saccade: 44
+*******************************
+*******************************
+Starting saccade: 45
+Requesting retina field at: 169.355, 19.9091
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Retrieved input field for target 169.355, 19.9091
+coordinates: [174.91,25.82] Learnt and used -3 times
+Starting saccade 45 from -24.999, -20.6042
+Made a random movement to 7.91796, -34.2057
+One of the targets was not visible to learn a link
+Made a random movement to 7.98665, -34.6675
+One of the targets was not visible to learn a link
+Made a random movement to 7.99818, -34.8724
+One of the targets was not visible to learn a link
+Made a random movement to -21.8297, -32.6133
+One of the targets was not visible to learn a link
+Made a random movement to -22.8409, -32.2353
+One of the targets was not visible to learn a link
+Made a random movement to -22.9784, -32.0903
+One of the targets was not visible to learn a link
+Made a random movement to -22.999, -32.0205
+One of the targets was not visible to learn a link
+Made a random movement to -19.0007, 11.3298
+One of the targets was not visible to learn a link
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 665 times
+Requesting retina field at: 165.694, 127.195
+Requesting retina field at: 165.694, 127.195
+Field returned: 
+coordinates: [166.79,126.79] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 5.9989, 32.2981
+Field returned: 
+coordinates: [5.16,32.619] Learnt and used -1 times
+Requesting retina field at: 169.355, 19.9091
+Requesting retina field at: 169.355, 19.9091
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Adding link based on relative movement 5.9989, 32.2981
+fixated on saccade 45 after 8 steps
+Successfully fixated on saccade: 45
+*******************************
+*******************************
+Starting saccade: 46
+Requesting retina field at: 69.7807, 142.22
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 18 times
+Retrieved input field for target 69.7807, 142.22
+coordinates: [74.37,147.82] Learnt and used 18 times
+Starting saccade 46 from 21.9992, 14.9689
+Requesting retina field at: 68.7643, 144.368
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 18 times
+Requesting linked motor field for field:
+coordinates: [74.37,147.82] Learnt and used 18 times
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 28 times
+Input field is linked to field 
+coordinates: [-37,-5.86] Learnt and used 28 times
+following direct link
+Moving to an existing linked field at relative coordinates -37, -5.86
+Following a link with motor values -15.0001, 9.12806
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 666 times
+Requesting retina field at: 156.148, 118.395
+Requesting retina field at: 156.148, 118.395
+Field returned: 
+coordinates: [157.22,118.58] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -36.9459, -5.58705
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 30 times
+Requesting retina field at: 69.7807, 142.22
+Requesting retina field at: 69.7807, 142.22
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 20 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -36.9459, -5.58705
+fixated on saccade 46 after 1 steps
+Successfully fixated on saccade: 46
+*******************************
+*******************************
+Starting saccade: 47
+Requesting retina field at: 176.308, 24.599
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Retrieved input field for target 176.308, 24.599
+coordinates: [174.91,25.82] Learnt and used -3 times
+Starting saccade 47 from -25.9997, -25.771
+Made a random movement to -15.0077, -5.63933
+One of the targets was not visible to learn a link
+Requesting retina field at: 155.101, 48.6625
+Field returned: 
+coordinates: [160,50.04] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [160,50.04] Learnt and used 0 times
+Field returned: 
+coordinates: [-13.75,42.33] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-13.75,42.33] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -13.75, 42.33
+Go to field target is unreachable from here
+Following a link with motor values -28.751, 37.0847
+Target unreachable from here
+Failed to fixate on saccade: 47
+*******************************
+*******************************
+Starting saccade: 47
+Requesting retina field at: 51.2592, 39.1089
+Field returned: 
+coordinates: [49.86,39.98] Learnt and used -2 times
+Retrieved input field for target 51.2592, 39.1089
+coordinates: [49.86,39.98] Learnt and used -2 times
+Starting saccade 47 from 28.9934, -7.70607
+Requesting retina field at: 51.2519, 38.59
+Field returned: 
+coordinates: [49.86,39.98] Learnt and used -2 times
+Requesting linked motor field for field:
+coordinates: [49.86,39.98] Learnt and used -2 times
+Field returned: 
+coordinates: [-47.06,15.29] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-47.06,15.29] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -47.06, 15.29
+Following a link with motor values -18.0609, 7.40279
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 667 times
+Requesting retina field at: 163.093, 106.055
+Requesting retina field at: 163.093, 106.055
+Field returned: 
+coordinates: [164,107.66] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -47.0384, 14.7786
+Field returned: 
+coordinates: [-47.06,15.29] Learnt and used 1 times
+Requesting retina field at: 51.2592, 39.1089
+Requesting retina field at: 51.2592, 39.1089
+Field returned: 
+coordinates: [49.86,39.98] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -47.0384, 14.7786
+fixated on saccade 47 after 1 steps
+Successfully fixated on saccade: 47
+*******************************
+*******************************
+Starting saccade: 48
+Requesting retina field at: 72.7598, 29.9231
+Field returned: 
+coordinates: [68.14,28.14] Learnt and used 14 times
+Retrieved input field for target 72.7598, 29.9231
+coordinates: [68.14,28.14] Learnt and used 14 times
+Starting saccade 48 from 19.9958, -11.7233
+Requesting retina field at: 72.7526, 29.25
+Field returned: 
+coordinates: [68.14,28.14] Learnt and used 14 times
+Requesting linked motor field for field:
+coordinates: [68.14,28.14] Learnt and used 14 times
+Field returned: 
+coordinates: [-41.85,21.32] Learnt and used 9 times
+Input field is linked to field 
+coordinates: [-41.85,21.32] Learnt and used 9 times
+following direct link
+Moving to an existing linked field at relative coordinates -41.85, 21.32
+Following a link with motor values -21.8502, 9.37772
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 668 times
+Requesting retina field at: 171.844, 115.973
+Requesting retina field at: 171.844, 115.973
+Field returned: 
+coordinates: [168.55,115.63] Learnt and used 30 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -41.842, 20.8509
+Field returned: 
+coordinates: [-41.85,21.32] Learnt and used 11 times
+Requesting retina field at: 72.7598, 29.9231
+Requesting retina field at: 72.7598, 29.9231
+Field returned: 
+coordinates: [68.14,28.14] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -41.842, 20.8509
+fixated on saccade 48 after 1 steps
+Successfully fixated on saccade: 48
+*******************************
+*******************************
+Starting saccade: 49
+Requesting retina field at: 137.316, 59.5072
+Field returned: 
+coordinates: [141.27,62.37] Learnt and used 8 times
+Retrieved input field for target 137.316, 59.5072
+coordinates: [141.27,62.37] Learnt and used 8 times
+Starting saccade 49 from -7.0041, -3.67387
+Requesting retina field at: 137.183, 57.6419
+Field returned: 
+coordinates: [138.38,53.47] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [138.38,53.47] Learnt and used 2 times
+Field returned: 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -9.54, 29.38
+Go to field target is unreachable from here
+Following a link with motor values -16.5406, 25.5051
+Target unreachable from here
+Failed to fixate on saccade: 49
+*******************************
+*******************************
+Starting saccade: 49
+Requesting retina field at: 68.5325, 80.9284
+Field returned: 
+coordinates: [75.04,76.71] Unlearnt
+Retrieved input field for target 68.5325, 80.9284
+coordinates: [75.04,76.71] Unlearnt
+Starting saccade 49 from 21.987, 1.30101
+Requesting retina field at: 68.332, 78.9361
+Field returned: 
+coordinates: [75.04,76.71] Unlearnt
+Requesting linked motor field for field:
+coordinates: [65.239,71.71] Learnt and used 13 times
+Field returned: 
+coordinates: [-42.33,13.75] Learnt and used 37 times
+Found a nearby learnt field at distance 7
+Nearby field is: 
+coordinates: [-42.33,13.75] Learnt and used 37 times
+following nearest neighbour
+Moving to an existing linked field at relative coordinates -42.33, 13.75
+Following a link with motor values -20.3321, 14.876
+Followed link but it didn't take me to the centre
+Dis-using a failed neighbour
+Requesting retina field at: 167.818, 138.284
+Field returned: 
+coordinates: [166.17,138.99] Learnt and used 11 times
+Requesting linked motor field for field:
+coordinates: [166.17,138.99] Learnt and used 11 times
+Field returned: 
+coordinates: [-0.86,-2.65] Learnt and used 36 times
+Input field is linked to field 
+coordinates: [-0.86,-2.65] Learnt and used 36 times
+following direct link
+Moving to an existing linked field at relative coordinates -0.86, -2.65
+Following a link with motor values -21.1749, 11.9019
+Followed link but it didn't take me to the centre
+Requesting retina field at: 170.249, 132.953
+Field returned: 
+coordinates: [171.61,131.61] Learnt and used 5 times
+Requesting linked motor field for field:
+coordinates: [171.61,131.61] Learnt and used 5 times
+Field returned: 
+coordinates: [6.46,-3.29] Learnt and used 3 times
+Input field is linked to field 
+coordinates: [6.46,-3.29] Learnt and used 3 times
+following direct link
+Moving to an existing linked field at relative coordinates 6.46, -3.29
+Following a link with motor values -14.7019, 8.97458
+Successfully followed link to centre
+Requesting motor field at: -38.3432, 8.66361
+Field returned: 
+coordinates: [-37,5.86] Unlearnt
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 669 times
+Requesting retina field at: 155.956, 117.213
+Requesting retina field at: 155.956, 117.213
+Field returned: 
+coordinates: [154.88,116.28] Learnt and used 2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 6.43233, -3.05192
+Field returned: 
+coordinates: [6.46,-3.29] Learnt and used 5 times
+Requesting retina field at: 170.249, 132.953
+Requesting retina field at: 170.249, 132.953
+Field returned: 
+coordinates: [171.61,131.61] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 6.43233, -3.05192
+Requesting motor field at: 5.58536, -5.33928
+Field returned: 
+coordinates: [5.13,-5.13] Learnt and used 53 times
+Requesting retina field at: 167.818, 138.284
+Requesting retina field at: 167.818, 138.284
+Field returned: 
+coordinates: [166.17,138.99] Learnt and used 10 times
+Adding link based on relative movement 5.58536, -5.33928
+Requesting motor field at: -36.7166, 7.91165
+Field returned: 
+coordinates: [-37,5.86] Learnt and used 0 times
+Requesting retina field at: 68.5325, 80.9284
+Requesting retina field at: 68.5325, 80.9284
+Field returned: 
+coordinates: [75.04,76.71] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -36.7166, 7.91165
+fixated on saccade 49 after 3 steps
+Successfully fixated on saccade: 49
+*******************************
+*******************************
+Starting saccade: 50
+Requesting retina field at: 106.58, 131.774
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 3 times
+Retrieved input field for target 106.58, 131.774
+coordinates: [104.61,128.77] Learnt and used 3 times
+Starting saccade 50 from 6.89997, 12.7784
+Requesting retina field at: 105.698, 133.55
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 3 times
+Requesting linked motor field for field:
+coordinates: [104.61,128.77] Learnt and used 3 times
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 3 times
+Input field is linked to field 
+coordinates: [-26.76,0] Learnt and used 3 times
+following direct link
+Moving to an existing linked field at relative coordinates -26.76, 0
+Following a link with motor values -19.7795, 12.8988
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 670 times
+Requesting retina field at: 166.801, 133.408
+Requesting retina field at: 166.801, 133.408
+Field returned: 
+coordinates: [167.45,134.63] Learnt and used 15 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -26.5421, 0.122235
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 5 times
+Requesting retina field at: 106.58, 131.774
+Requesting retina field at: 106.58, 131.774
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 5 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -26.5421, 0.122235
+fixated on saccade 50 after 1 steps
+Successfully fixated on saccade: 50
+*******************************
+*******************************
+Starting saccade: 51
+Requesting retina field at: 87.6732, 141.109
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 32 times
+Retrieved input field for target 87.6732, 141.109
+coordinates: [84.14,144.64] Learnt and used 32 times
+Starting saccade 51 from 14.8634, 14.6365
+Requesting retina field at: 86.7966, 142.226
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 32 times
+Requesting linked motor field for field:
+coordinates: [84.14,144.64] Learnt and used 32 times
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 52 times
+Input field is linked to field 
+coordinates: [-32.619,-5.16] Learnt and used 52 times
+following direct link
+Moving to an existing linked field at relative coordinates -32.619, -5.16
+Following a link with motor values -17.6376, 9.7005
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 671 times
+Requesting retina field at: 160.144, 123.473
+Requesting retina field at: 160.144, 123.473
+Field returned: 
+coordinates: [160.48,123.08] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -32.3613, -4.55846
+Field returned: 
+coordinates: [-32.619,-5.16] Learnt and used 54 times
+Requesting retina field at: 87.6732, 141.109
+Requesting retina field at: 87.6732, 141.109
+Field returned: 
+coordinates: [84.14,144.64] Learnt and used 34 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -32.3613, -4.55846
+fixated on saccade 51 after 1 steps
+Successfully fixated on saccade: 51
+*******************************
+*******************************
+Starting saccade: 52
+Requesting retina field at: 174.211, 27
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Retrieved input field for target 174.211, 27
+coordinates: [174.91,25.82] Learnt and used -3 times
+Starting saccade 52 from -24.9997, -27.7356
+Made a random movement to -29.4396, -29.9174
+One of the targets was not visible to learn a link
+Made a random movement to -29.9238, -30.5846
+One of the targets was not visible to learn a link
+Made a random movement to 22.9913, 12.3321
+One of the targets was not visible to learn a link
+Requesting retina field at: 66.4246, 132.422
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 17 times
+Requesting linked motor field for field:
+coordinates: [65.82,134.91] Learnt and used 17 times
+Field returned: 
+coordinates: [-44.51,0] Learnt and used 16 times
+Input field is linked to field 
+coordinates: [-44.51,0] Learnt and used 16 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.51, 0
+Following a link with motor values -21.5117, 12.695
+Followed link but it didn't take me to the centre
+Requesting retina field at: 170.579, 132.542
+Field returned: 
+coordinates: [171.61,131.61] Learnt and used 8 times
+Requesting linked motor field for field:
+coordinates: [171.61,131.61] Learnt and used 8 times
+Field returned: 
+coordinates: [6.46,-3.29] Learnt and used 6 times
+Input field is linked to field 
+coordinates: [6.46,-3.29] Learnt and used 6 times
+following direct link
+Moving to an existing linked field at relative coordinates 6.46, -3.29
+Following a link with motor values -14.9875, 9.40794
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 672 times
+Requesting retina field at: 156.81, 119.712
+Requesting retina field at: 156.81, 119.712
+Field returned: 
+coordinates: [156.91,119.51] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 6.43226, -3.04987
+Field returned: 
+coordinates: [6.46,-3.29] Learnt and used 8 times
+Requesting retina field at: 170.579, 132.542
+Requesting retina field at: 170.579, 132.542
+Field returned: 
+coordinates: [171.61,131.61] Learnt and used 10 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 6.43226, -3.04987
+Requesting motor field at: -38.0135, -3.04689
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 31 times
+Requesting retina field at: 66.4246, 132.422
+Requesting retina field at: 66.4246, 132.422
+Field returned: 
+coordinates: [65.82,134.91] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -38.0135, -3.04689
+Requesting motor field at: 9.98449, 37.3837
+Field returned: 
+coordinates: [12.28,37.81] Learnt and used 0 times
+Requesting retina field at: 174.211, 27
+Requesting retina field at: 174.211, 27
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Adding link based on relative movement 9.98449, 37.3837
+fixated on saccade 52 after 5 steps
+Successfully fixated on saccade: 52
+*******************************
+*******************************
+Starting saccade: 53
+Requesting retina field at: 123.288, 21.9827
+Field returned: 
+coordinates: [128.85,24.14] Learnt and used 4 times
+Retrieved input field for target 123.288, 21.9827
+coordinates: [128.85,24.14] Learnt and used 4 times
+Starting saccade 53 from -1.00146, -21.6248
+Made a random movement to -26.9949, 13.4041
+One of the targets was not visible to learn a link
+Requesting retina field at: 183.817, 137.121
+Field returned: 
+coordinates: [182.1,136.05] Learnt and used 9 times
+Requesting linked motor field for field:
+coordinates: [182.1,136.05] Learnt and used 9 times
+Field returned: 
+coordinates: [5.13,-5.13] Learnt and used 53 times
+Input field is linked to field 
+coordinates: [5.13,-5.13] Learnt and used 53 times
+following direct link
+Moving to an existing linked field at relative coordinates 5.13, -5.13
+Following a link with motor values -21.8693, 8.64134
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 673 times
+Requesting retina field at: 172.313, 117.989
+Requesting retina field at: 172.313, 117.989
+Field returned: 
+coordinates: [172.97,120] Learnt and used 17 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 5.10367, -4.71999
+Field returned: 
+coordinates: [5.13,-5.13] Learnt and used 55 times
+Requesting retina field at: 183.817, 137.121
+Requesting retina field at: 183.817, 137.121
+Field returned: 
+coordinates: [182.1,136.05] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 5.10367, -4.71999
+Requesting motor field at: -20.8942, 30.6762
+Field returned: 
+coordinates: [-20.7,28.49] Learnt and used 3 times
+Requesting retina field at: 123.288, 21.9827
+Requesting retina field at: 123.288, 21.9827
+Field returned: 
+coordinates: [128.85,24.14] Learnt and used 4 times
+Adding link based on relative movement -20.8942, 30.6762
+fixated on saccade 53 after 2 steps
+Successfully fixated on saccade: 53
+*******************************
+*******************************
+Starting saccade: 54
+Requesting retina field at: 75.1092, 37.0728
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Retrieved input field for target 75.1092, 37.0728
+coordinates: [76.65,36.65] Learnt and used -1 times
+Starting saccade 54 from 18.9959, -8.75734
+Requesting retina field at: 75.0757, 36.613
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [76.65,36.65] Learnt and used -1 times
+Field returned: 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+Input field is linked to field 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.5, 44.5
+Go to field target is unreachable from here
+Following a link with motor values -25.5006, 35.5931
+Target unreachable from here
+Failed to fixate on saccade: 54
+*******************************
+*******************************
+Starting saccade: 54
+Requesting retina field at: 158.811, 106.964
+Field returned: 
+coordinates: [160,107.02] Learnt and used 0 times
+Retrieved input field for target 158.811, 106.964
+coordinates: [160,107.02] Learnt and used 0 times
+Starting saccade 54 from -16.0137, 6.38827
+Requesting retina field at: 158.821, 103.351
+Field returned: 
+coordinates: [157.43,103.77] Learnt and used 7 times
+Requesting linked motor field for field:
+coordinates: [157.43,103.77] Learnt and used 7 times
+Field returned: 
+coordinates: [-4.63,3.36] Learnt and used 18 times
+Input field is linked to field 
+coordinates: [-4.63,3.36] Learnt and used 18 times
+following direct link
+Moving to an existing linked field at relative coordinates -4.63, 3.36
+Following a link with motor values -20.6316, 9.49656
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 674 times
+Requesting retina field at: 169.039, 115.562
+Requesting retina field at: 169.039, 115.562
+Field returned: 
+coordinates: [168.55,115.63] Learnt and used 31 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -4.59409, 2.83982
+Field returned: 
+coordinates: [-4.63,3.36] Learnt and used 20 times
+Requesting retina field at: 158.811, 106.964
+Requesting retina field at: 158.811, 106.964
+Field returned: 
+coordinates: [160,107.02] Learnt and used 0 times
+Adding link based on relative movement -4.59409, 2.83982
+fixated on saccade 54 after 1 steps
+Successfully fixated on saccade: 54
+*******************************
+*******************************
+Starting saccade: 55
+Requesting retina field at: 133.68, 21.7586
+Field returned: 
+coordinates: [128.85,24.14] Learnt and used 4 times
+Retrieved input field for target 133.68, 21.7586
+coordinates: [128.85,24.14] Learnt and used 4 times
+Starting saccade 55 from -6.00125, -22.58
+Made a random movement to -6.00014, -22.8523
+One of the targets was not visible to learn a link
+Made a random movement to -6.99793, -4.97617
+One of the targets was not visible to learn a link
+Requesting retina field at: 136.958, 50.9807
+Field returned: 
+coordinates: [138.38,53.47] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [138.38,53.47] Learnt and used 2 times
+Field returned: 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-9.54,29.38] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -9.54, 29.38
+Go to field target is unreachable from here
+Following a link with motor values -16.5397, 24.9713
+Target unreachable from here
+Failed to fixate on saccade: 55
+*******************************
+*******************************
+Starting saccade: 55
+Requesting retina field at: 178.287, 48.5248
+Field returned: 
+coordinates: [181.61,53.47] Learnt and used 1 times
+Retrieved input field for target 178.287, 48.5248
+coordinates: [181.61,53.47] Learnt and used 1 times
+Starting saccade 55 from -24.9992, -5.75429
+Requesting retina field at: 178.263, 47.4091
+Field returned: 
+coordinates: [171.7,46.12] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [171.7,46.12] Learnt and used 1 times
+Field returned: 
+coordinates: [0,44.51] Learnt and used 3 times
+Input field is linked to field 
+coordinates: [0,44.51] Learnt and used 3 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 44.51
+Go to field target is unreachable from here
+Following a link with motor values -25, 38.5613
+Target unreachable from here
+Failed to fixate on saccade: 55
+*******************************
+*******************************
+Starting saccade: 55
+Requesting retina field at: 147.791, 25.2179
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 9 times
+Retrieved input field for target 147.791, 25.2179
+coordinates: [145.08,25.82] Learnt and used 9 times
+Starting saccade 55 from -11.0004, -27.7011
+Made a random movement to 7.50098, -25.5047
+One of the targets was not visible to learn a link
+Made a random movement to -18.9441, -11.7306
+One of the targets was not visible to learn a link
+Requesting retina field at: 163.401, 31.6387
+Field returned: 
+coordinates: [160,29.97] Learnt and used 6 times
+Requesting linked motor field for field:
+coordinates: [160,29.97] Learnt and used 6 times
+Field returned: 
+coordinates: [0,22.81] Learnt and used 7 times
+Input field is linked to field 
+coordinates: [0,22.81] Learnt and used 7 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 22.81
+Following a link with motor values -18.9891, 11.4763
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 675 times
+Requesting retina field at: 165.63, 125.104
+Requesting retina field at: 165.63, 125.104
+Field returned: 
+coordinates: [165.11,123.71] Learnt and used 12 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -3.41515e-06, 22.5431
+Field returned: 
+coordinates: [0,22.81] Learnt and used 9 times
+Requesting retina field at: 163.401, 31.6387
+Requesting retina field at: 163.401, 31.6387
+Field returned: 
+coordinates: [160,29.97] Learnt and used 8 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -3.41515e-06, 22.5431
+Requesting motor field at: -7.98864, 38.9105
+Field returned: 
+coordinates: [-5.86,37] Learnt and used 0 times
+Requesting retina field at: 147.791, 25.2179
+Requesting retina field at: 147.791, 25.2179
+Field returned: 
+coordinates: [145.08,25.82] Learnt and used 9 times
+Adding link based on relative movement -7.98864, 38.9105
+fixated on saccade 55 after 3 steps
+Successfully fixated on saccade: 55
+*******************************
+*******************************
+Starting saccade: 56
+Requesting retina field at: 107.07, 139.514
+Field returned: 
+coordinates: [102.37,138.72] Learnt and used 3 times
+Retrieved input field for target 107.07, 139.514
+coordinates: [102.37,138.72] Learnt and used 3 times
+Starting saccade 56 from 6.89795, 14.6209
+Requesting retina field at: 105.957, 141.463
+Field returned: 
+coordinates: [102.37,138.72] Learnt and used 3 times
+Requesting linked motor field for field:
+coordinates: [102.37,138.72] Learnt and used 3 times
+Null input field returned
+Requesting linked motor field for field:
+coordinates: [110.03,145.45] Learnt and used 30 times
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 117 times
+Found a nearby learnt field at distance 5
+Nearby field is: 
+coordinates: [-20.66,-3.27] Learnt and used 117 times
+following nearest neighbour
+Moving to an existing linked field at relative coordinates -20.66, -3.27
+Following a link with motor values -13.6766, 11.5713
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 676 times
+Requesting retina field at: 152.855, 129.472
+Requesting retina field at: 152.855, 129.472
+Field returned: 
+coordinates: [152.37,130.49] Learnt and used 13 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -20.4861, -2.81001
+Field returned: 
+coordinates: [-20.66,-3.27] Learnt and used 119 times
+Requesting retina field at: 107.07, 139.514
+Requesting retina field at: 107.07, 139.514
+Field returned: 
+coordinates: [102.37,138.72] Learnt and used 3 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -20.4861, -2.81001
+fixated on saccade 56 after 1 steps
+Successfully fixated on saccade: 56
+*******************************
+*******************************
+Starting saccade: 57
+Requesting retina field at: 72.6235, 40.0823
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Retrieved input field for target 72.6235, 40.0823
+coordinates: [76.65,36.65] Learnt and used -1 times
+Starting saccade 57 from 19.9852, -7.57538
+Requesting retina field at: 72.6154, 39.2647
+Field returned: 
+coordinates: [76.65,36.65] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [76.65,36.65] Learnt and used -1 times
+Field returned: 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+Input field is linked to field 
+coordinates: [-44.5,44.5] Learnt and used 1 times
+following direct link
+Moving to an existing linked field at relative coordinates -44.5, 44.5
+Go to field target is unreachable from here
+Following a link with motor values -24.502, 36.6629
+Target unreachable from here
+Failed to fixate on saccade: 57
+*******************************
+*******************************
+Starting saccade: 57
+Requesting retina field at: 74.3125, 144.228
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 21 times
+Retrieved input field for target 74.3125, 144.228
+coordinates: [74.37,147.82] Learnt and used 21 times
+Starting saccade 57 from 19.9465, 14.9989
+Requesting retina field at: 74.2932, 144.221
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 21 times
+Requesting linked motor field for field:
+coordinates: [74.37,147.82] Learnt and used 21 times
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 32 times
+Input field is linked to field 
+coordinates: [-37,-5.86] Learnt and used 32 times
+following direct link
+Moving to an existing linked field at relative coordinates -37, -5.86
+Following a link with motor values -17.0105, 9.13948
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 677 times
+Requesting retina field at: 160.73, 118.802
+Requesting retina field at: 160.73, 118.802
+Field returned: 
+coordinates: [161.41,117.22] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -36.9124, -5.62686
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 34 times
+Requesting retina field at: 74.3125, 144.228
+Requesting retina field at: 74.3125, 144.228
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 23 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -36.9124, -5.62686
+fixated on saccade 57 after 1 steps
+Successfully fixated on saccade: 57
+*******************************
+*******************************
+Starting saccade: 58
+Requesting retina field at: 88.6181, 84.7293
+Field returned: 
+coordinates: [93.35,86.04] Learnt and used 9 times
+Retrieved input field for target 88.6181, 84.7293
+coordinates: [93.35,86.04] Learnt and used 9 times
+Starting saccade 58 from 13.9632, 2.3164
+Requesting retina field at: 88.5231, 83.7237
+Field returned: 
+coordinates: [84.41,81.48] Learnt and used 28 times
+Requesting linked motor field for field:
+coordinates: [84.41,81.48] Learnt and used 28 times
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 36 times
+Input field is linked to field 
+coordinates: [-29.38,9.54] Learnt and used 36 times
+following direct link
+Moving to an existing linked field at relative coordinates -29.38, 9.54
+Following a link with motor values -15.386, 11.6724
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 678 times
+Requesting retina field at: 157.043, 124.519
+Requesting retina field at: 157.043, 124.519
+Field returned: 
+coordinates: [156.28,125.11] Learnt and used 6 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -29.3138, 8.97663
+Field returned: 
+coordinates: [-29.38,9.54] Learnt and used 38 times
+Requesting retina field at: 88.6181, 84.7293
+Requesting retina field at: 88.6181, 84.7293
+Field returned: 
+coordinates: [93.35,86.04] Learnt and used 9 times
+Adding link based on relative movement -29.3138, 8.97663
+fixated on saccade 58 after 1 steps
+Successfully fixated on saccade: 58
+*******************************
+*******************************
+Starting saccade: 59
+Requesting retina field at: 179.138, 22.1182
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Retrieved input field for target 179.138, 22.1182
+coordinates: [174.91,25.82] Learnt and used -3 times
+Starting saccade 59 from -26.9988, -15.6701
+Requesting retina field at: 178.553, 21.5035
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -3 times
+Requesting linked motor field for field:
+coordinates: [174.91,25.82] Learnt and used -3 times
+Field returned: 
+coordinates: [0,26.76] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [0,26.76] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates 0, 26.76
+Following a link with motor values -26.9998, 10.8866
+Followed link but it didn't take me to the centre
+Requesting retina field at: 183.681, 122.126
+Field returned: 
+coordinates: [183.3,123.69] Learnt and used 11 times
+Requesting linked motor field for field:
+coordinates: [183.3,123.69] Learnt and used 11 times
+Field returned: 
+coordinates: [8.81,0] Learnt and used 64 times
+Input field is linked to field 
+coordinates: [8.81,0] Learnt and used 64 times
+following direct link
+Moving to an existing linked field at relative coordinates 8.81, 0
+Following a link with motor values -18.1898, 10.5441
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 679 times
+Requesting retina field at: 166.424, 122.985
+Requesting retina field at: 166.424, 122.985
+Field returned: 
+coordinates: [166.01,121.95] Learnt and used 18 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: 8.67572, 0.00715816
+Field returned: 
+coordinates: [8.81,0] Learnt and used 66 times
+Requesting retina field at: 183.681, 122.126
+Requesting retina field at: 183.681, 122.126
+Field returned: 
+coordinates: [183.3,123.69] Learnt and used 13 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 8.67572, 0.00715816
+Requesting motor field at: 8.67469, 26.2213
+Field returned: 
+coordinates: [8.26,25.45] Learnt and used -1 times
+Requesting retina field at: 179.138, 22.1182
+Requesting retina field at: 179.138, 22.1182
+Field returned: 
+coordinates: [174.91,25.82] Learnt and used -4 times
+Adding link based on relative movement 8.67469, 26.2213
+fixated on saccade 59 after 2 steps
+Successfully fixated on saccade: 59
+*******************************
+*******************************
+Starting saccade: 60
+Requesting retina field at: 85.8866, 38.9829
+Field returned: 
+coordinates: [84.8,44.8] Learnt and used 1 times
+Retrieved input field for target 85.8866, 38.9829
+coordinates: [84.8,44.8] Learnt and used 1 times
+Starting saccade 60 from 21.9964, -22.6132
+Made a random movement to -2.93788, -11.6662
+One of the targets was not visible to learn a link
+Requesting retina field at: 127.303, 31.3274
+Field returned: 
+coordinates: [132.17,34.37] Learnt and used 1 times
+Requesting linked motor field for field:
+coordinates: [132.17,34.37] Learnt and used 1 times
+Field returned: 
+coordinates: [-5.86,37] Learnt and used 0 times
+Input field is linked to field 
+coordinates: [-5.86,37] Learnt and used 0 times
+following direct link
+Moving to an existing linked field at relative coordinates -5.86, 37
+Go to field target is unreachable from here
+Following a link with motor values -8.85155, 25.7443
+Target unreachable from here
+Failed to fixate on saccade: 60
+*******************************
+*******************************
+Starting saccade: 60
+Requesting retina field at: 89.8539, 131.795
+Field returned: 
+coordinates: [86.12,131.7] Learnt and used 14 times
+Retrieved input field for target 89.8539, 131.795
+coordinates: [86.12,131.7] Learnt and used 14 times
+Starting saccade 60 from 13.8827, 12.2361
+Requesting retina field at: 89.0738, 130.931
+Field returned: 
+coordinates: [86.12,131.7] Learnt and used 14 times
+Requesting linked motor field for field:
+coordinates: [86.12,131.7] Learnt and used 14 times
+Field returned: 
+coordinates: [-28.44,-4.5] Learnt and used 33 times
+Input field is linked to field 
+coordinates: [-28.44,-4.5] Learnt and used 33 times
+following direct link
+Moving to an existing linked field at relative coordinates -28.44, -4.5
+Following a link with motor values -14.456, 7.59062
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 680 times
+Requesting retina field at: 154.479, 111.967
+Requesting retina field at: 154.479, 111.967
+Field returned: 
+coordinates: [155.63,111.44] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -28.1926, -4.28823
+Field returned: 
+coordinates: [-28.44,-4.5] Learnt and used 35 times
+Requesting retina field at: 89.8539, 131.795
+Requesting retina field at: 89.8539, 131.795
+Field returned: 
+coordinates: [86.12,131.7] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -28.1926, -4.28823
+fixated on saccade 60 after 1 steps
+Successfully fixated on saccade: 60
+*******************************
+*******************************
+Starting saccade: 61
+Requesting retina field at: 185.555, 29.382
+Field returned: 
+coordinates: [187.82,34.37] Learnt and used 2 times
+Retrieved input field for target 185.555, 29.382
+coordinates: [187.82,34.37] Learnt and used 2 times
+Starting saccade 61 from -29.9985, -22.5794
+Made a random movement to 6.99396, 12.454
+One of the targets was not visible to learn a link
+Requesting retina field at: 105.52, 131.764
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 6 times
+Requesting linked motor field for field:
+coordinates: [104.61,128.77] Learnt and used 6 times
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 6 times
+Input field is linked to field 
+coordinates: [-26.76,0] Learnt and used 6 times
+following direct link
+Moving to an existing linked field at relative coordinates -26.76, 0
+Following a link with motor values -19.761, 12.7714
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 681 times
+Requesting retina field at: 166.654, 133.011
+Requesting retina field at: 166.654, 133.011
+Field returned: 
+coordinates: [167.45,134.63] Learnt and used 16 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -26.6454, 0.00259552
+Field returned: 
+coordinates: [-26.76,0] Learnt and used 8 times
+Requesting retina field at: 105.52, 131.764
+Requesting retina field at: 105.52, 131.764
+Field returned: 
+coordinates: [104.61,128.77] Learnt and used 8 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -26.6454, 0.00259552
+Requesting motor field at: 10.3521, 35.3534
+Field returned: 
+coordinates: [10.88,33.5] Learnt and used -1 times
+Requesting retina field at: 185.555, 29.382
+Requesting retina field at: 185.555, 29.382
+Field returned: 
+coordinates: [187.82,34.37] Learnt and used 2 times
+Adding link based on relative movement 10.3521, 35.3534
+fixated on saccade 61 after 2 steps
+Successfully fixated on saccade: 61
+*******************************
+*******************************
+Starting saccade: 62
+Requesting retina field at: 121.277, 43.3267
+Field returned: 
+coordinates: [121.48,44.41] Learnt and used -2 times
+Retrieved input field for target 121.277, 43.3267
+coordinates: [121.48,44.41] Learnt and used -2 times
+Starting saccade 62 from 5.99941, -25.7702
+Made a random movement to 10.8426, -22.7441
+One of the targets was not visible to learn a link
+Made a random movement to 23.5902, -22.8556
+One of the targets was not visible to learn a link
+Made a random movement to 23.9332, -22.9396
+One of the targets was not visible to learn a link
+Made a random movement to 23.9909, -22.9768
+One of the targets was not visible to learn a link
+Made a random movement to 23.9982, -22.9894
+One of the targets was not visible to learn a link
+Made a random movement to -24.5665, -20.3099
+One of the targets was not visible to learn a link
+Made a random movement to -24.941, -20.1189
+One of the targets was not visible to learn a link
+Made a random movement to -24.9904, -20.0498
+One of the targets was not visible to learn a link
+Made a random movement to -24.9987, -20.0191
+One of the targets was not visible to learn a link
+Made a random movement to 8.97628, 0.35799
+One of the targets was not visible to learn a link
+Requesting retina field at: 100.566, 76.0716
+Field returned: 
+coordinates: [103.4,78.88] Learnt and used -1 times
+Requesting linked motor field for field:
+coordinates: [103.4,78.88] Learnt and used -1 times
+Field returned: 
+coordinates: [-48.64,35.34] Learnt and used -2 times
+Input field is linked to field 
+coordinates: [-48.64,35.34] Learnt and used -2 times
+following direct link
+Moving to an existing linked field at relative coordinates -48.64, 35.34
+Go to field target is unreachable from here
+Following a link with motor values -39.6438, 36.0713
+Target unreachable from here
+Failed to fixate on saccade: 62
+*******************************
+*******************************
+Starting saccade: 62
+Requesting retina field at: 60.5075, 25.0678
+Field returned: 
+coordinates: [59.23,19.23] Learnt and used 0 times
+Retrieved input field for target 60.5075, 25.0678
+coordinates: [59.23,19.23] Learnt and used 0 times
+Starting saccade 62 from 24.9948, -13.6602
+Requesting retina field at: 60.6902, 23.8047
+Field returned: 
+coordinates: [59.23,19.23] Learnt and used 0 times
+Requesting linked motor field for field:
+coordinates: [59.23,19.23] Learnt and used 0 times
+Field returned: 
+coordinates: [-41.85,21.32] Learnt and used 12 times
+Input field is linked to field 
+coordinates: [-41.85,21.32] Learnt and used 12 times
+following direct link
+Moving to an existing linked field at relative coordinates -41.85, 21.32
+Following a link with motor values -16.8509, 7.46225
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 682 times
+Requesting retina field at: 160.681, 106.209
+Requesting retina field at: 160.681, 106.209
+Field returned: 
+coordinates: [160,107.02] Learnt and used 0 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -41.8409, 20.8494
+Field returned: 
+coordinates: [-41.85,21.32] Learnt and used 14 times
+Requesting retina field at: 60.5075, 25.0678
+Requesting retina field at: 60.5075, 25.0678
+Field returned: 
+coordinates: [59.23,19.23] Learnt and used 2 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -41.8409, 20.8494
+fixated on saccade 62 after 1 steps
+Successfully fixated on saccade: 62
+*******************************
+*******************************
+Starting saccade: 63
+Requesting retina field at: 90.6885, 71.288
+Field returned: 
+coordinates: [95.47,73.11] Learnt and used 3 times
+Retrieved input field for target 90.6885, 71.288
+coordinates: [95.47,73.11] Learnt and used 3 times
+Starting saccade 63 from 12.9981, -0.895032
+Requesting retina field at: 90.522, 69.1515
+Field returned: 
+coordinates: [87.16,67.08] Learnt and used 13 times
+Requesting linked motor field for field:
+coordinates: [87.16,67.08] Learnt and used 13 times
+Field returned: 
+coordinates: [-33.5,10.88] Learnt and used 6 times
+Input field is linked to field 
+coordinates: [-33.5,10.88] Learnt and used 6 times
+following direct link
+Moving to an existing linked field at relative coordinates -33.5, 10.88
+Following a link with motor values -20.5003, 9.92028
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 683 times
+Requesting retina field at: 168.908, 118.792
+Requesting retina field at: 168.908, 118.792
+Field returned: 
+coordinates: [169.48,121.5] Learnt and used 11 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -33.487, 10.5805
+Field returned: 
+coordinates: [-33.5,10.88] Learnt and used 8 times
+Requesting retina field at: 90.6885, 71.288
+Requesting retina field at: 90.6885, 71.288
+Field returned: 
+coordinates: [95.47,73.11] Learnt and used 3 times
+Adding link based on relative movement -33.487, 10.5805
+fixated on saccade 63 after 1 steps
+Successfully fixated on saccade: 63
+*******************************
+*******************************
+Starting saccade: 64
+Requesting retina field at: 159.882, 121.462
+Field returned: 
+coordinates: [159.51,123.08] Learnt and used 7 times
+Retrieved input field for target 159.882, 121.462
+coordinates: [159.51,123.08] Learnt and used 7 times
+Starting saccade 64 from -16.0515, 10.7266
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 684 times
+Requesting retina field at: 159.882, 121.462
+Requesting retina field at: 159.882, 121.462
+Field returned: 
+coordinates: [159.51,123.08] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+fixated on saccade 64 after 0 steps
+Successfully fixated on saccade: 64
+*******************************
+*******************************
+Starting saccade: 65
+Requesting retina field at: 101.493, 33.8069
+Field returned: 
+coordinates: [100.76,38.46] Learnt and used 19 times
+Retrieved input field for target 101.493, 33.8069
+coordinates: [100.76,38.46] Learnt and used 19 times
+Starting saccade 65 from 13.9992, -26.7658
+Made a random movement to 6.00668, -0.897514
+One of the targets was not visible to learn a link
+Requesting retina field at: 107.296, 71.5897
+Field returned: 
+coordinates: [107.11,67.11] Learnt and used 2 times
+Requesting linked motor field for field:
+coordinates: [107.11,67.11] Learnt and used 2 times
+Field returned: 
+coordinates: [-33.21,33.21] Learnt and used -1 times
+Input field is linked to field 
+coordinates: [-33.21,33.21] Learnt and used -1 times
+following direct link
+Moving to an existing linked field at relative coordinates -33.21, 33.21
+Go to field target is unreachable from here
+Following a link with motor values -27.2091, 32.8656
+Target unreachable from here
+Failed to fixate on saccade: 65
+*******************************
+*******************************
+Starting saccade: 65
+Requesting retina field at: 74.3125, 144.228
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 24 times
+Retrieved input field for target 74.3125, 144.228
+coordinates: [74.37,147.82] Learnt and used 24 times
+Starting saccade 65 from 19.9526, 14.9986
+Requesting retina field at: 74.2932, 144.221
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 24 times
+Requesting linked motor field for field:
+coordinates: [74.37,147.82] Learnt and used 24 times
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 35 times
+Input field is linked to field 
+coordinates: [-37,-5.86] Learnt and used 35 times
+following direct link
+Moving to an existing linked field at relative coordinates -37, -5.86
+Following a link with motor values -17.0093, 9.13937
+Successfully followed link to centre
+Requesting motor field at: 0, 0
+Field returned: 
+coordinates: [1.22,0.62] Learnt and used 685 times
+Requesting retina field at: 160.513, 118.985
+Requesting retina field at: 160.513, 118.985
+Field returned: 
+coordinates: [161.41,117.22] Learnt and used 7 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement 0, 0
+Requesting motor field at: -36.9174, -5.62672
+Field returned: 
+coordinates: [-37,-5.86] Learnt and used 37 times
+Requesting retina field at: 74.3125, 144.228
+Requesting retina field at: 74.3125, 144.228
+Field returned: 
+coordinates: [74.37,147.82] Learnt and used 26 times
+strengthening existing link, rather than adding new link
+Adding link based on relative movement -36.9174, -5.62672
+fixated on saccade 65 after 1 steps
+Successfully fixated on saccade: 65
+*******************************

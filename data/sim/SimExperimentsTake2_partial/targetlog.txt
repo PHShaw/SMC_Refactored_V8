@@ -1,0 +1,706 @@
+Colour x y distFromCentre comment
+motion 248 151 93.3006
+motion 209 154 59.6406
+motion 155 155 35.3553
+motion 99 154 69.8355
+motion 50 154 115.135
+motion 41 154 123.762
+motion 93 128 67.4759
+- 0 0 No target of specified colour
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 118 117 42.107
+motion 122 117 38.1182
+motion 164 117 5 Central
+red 168 117 8.544 Central
+motion 209 117 49.0918
+red 226 117 66.0681
+motion 259 118 99.0202
+motion 288 117 128.035
+- 0 0 No target
+- 0 0 No target
+motion 291 142 132.834
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 232 142 75.2861
+motion 168 142 23.4094
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+red 147 142 25.5539
+motion 149 142 24.5967
+red 179 142 29.0689
+motion 139 142 30.4138
+motion 151 142 23.7697
+motion 145 142 26.6271
+motion 160 142 22
+motion 108 142 56.4624
+red 127 142 39.6611
+- 0 0 No target of specified colour
+red 222 127 62.3939
+red 218 127 58.4209
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+red 194 127 34.7131
+motion 181 127 22.1359
+motion 128 126 32.5576
+motion 86 125 74.1687
+motion 45 126 115.156
+motion 40 126 120.15
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 112 158 61.2209
+motion 208 156 60
+red 289 156 133.929
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 183 156 42.72
+red 76 154 90.6201
+motion 29 153 135.093
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 37 154 127.613
+motion 133 155 44.2041
+red 133 155 44.2041
+motion 237 157 85.4283
+red 263 157 109.444
+motion 291 156 135.857
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 231 156 79.6053
+red 147 155 37.3363
+red 147 155 37.3363
+red 143 141 27.0185
+red 154 114 8.48528 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+motion 161 113 7.07107 Central
+motion 154 113 9.21954 Central
+motion 150 113 12.2066 Central
+motion 150 113 12.2066 Central
+motion 150 113 12.2066 Central
+red 173 113 14.7648 Central
+motion 163 113 7.61577 Central
+motion 183 113 24.0416
+motion 161 113 7.07107 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 154 113 9.21954 Central
+red 53 113 107.229
+motion 28 113 132.185
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 198 26 101.39
+- 0 0 No target
+motion 244 155 91
+motion 185 155 43.0116
+motion 127 155 48.1041
+motion 72 154 94.3398
+motion 24 153 139.946
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 42 154 122.801
+motion 82 154 85.0882
+red 99 155 70.3278
+motion 133 155 44.2041
+red 158 155 35.0571
+motion 187 156 45
+motion 208 156 60
+- 0 0 No target of specified colour
+red 270 132 110.653
+motion 292 132 132.544
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 216 101 59.1354
+red 216 101 59.1354
+red 216 101 59.1354
+red 216 101 59.1354
+red 217 101 60.0833
+red 217 101 60.0833
+red 217 101 60.0833
+red 217 101 60.0833
+red 217 101 60.0833
+red 202 113 42.5793
+red 173 123 13.3417 Central
+red 175 123 15.2971 Central
+motion 177 123 17.2627
+motion 147 123 13.3417 Central
+motion 147 123 13.3417 Central
+motion 173 123 13.3417 Central
+red 204 123 44.1022
+red 171 123 11.4018 Central
+motion 165 123 5.83095 Central
+motion 159 123 3.16228 Central
+motion 171 123 11.4018 Central
+motion 151 124 9.84886 Central
+motion 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+red 173 123 13.3417 Central
+motion 121 123 39.1152
+motion 68 123 92.0489
+motion 22 123 138.033
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 179 212 93.9415
+- 0 0 No target
+motion 223 156 72.5603
+motion 98 155 71.1969
+motion 25 154 139.216
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 103 194 93.4077
+motion 221 194 95.901
+red 235 194 105.361
+motion 289 193 148.223
+- 0 0 No target
+- 0 0 No target
+motion 203 194 85.5862
+red 124 194 82.2922
+red 124 194 82.2922
+red 124 194 82.2922
+red 124 194 82.2922
+red 124 194 82.2922
+- 0 0 No target of specified colour
+red 172 177 58.2495
+red 172 177 58.2495
+red 172 177 58.2495
+red 172 177 58.2495
+motion 150 176 56.8859
+motion 154 176 56.3205
+red 197 178 68.7968
+motion 178 177 59.7746
+motion 166 177 57.3149
+motion 186 178 63.561
+red 182 178 62.0322
+motion 166 177 57.3149
+- 0 0 No target of specified colour
+motion 190 156 46.8615
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+red 179 156 40.7063
+- 0 0 No target of specified colour
+red 169 140 21.9317
+red 169 140 21.9317
+motion 87 139 75.4321
+motion 28 138 133.222
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 117 150 52.4309
+motion 95 152 72.45
+motion 63 153 102.46
+motion 31 153 133.154
+motion 27 153 137.033
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 46 104 115.117
+- 0 0 No target of specified colour
+red 166 133 14.3178 Central
+motion 190 134 33.1059
+motion 199 134 41.4367
+motion 190 133 32.6956
+- 0 0 No target of specified colour
+red 169 117 9.48683 Central
+red 233 117 73.0616
+motion 267 117 107.042
+motion 288 117 128.035
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 280 116 120.067
+motion 240 117 80.0562
+motion 199 116 39.2046
+motion 163 117 4.24264 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+red 160 117 3 Central
+motion 156 117 5 Central
+red 193 117 33.1361
+motion 193 116 33.2415
+motion 142 117 18.2483
+red 181 117 21.2132
+motion 162 117 3.60555 Central
+motion 168 117 8.544 Central
+motion 136 117 24.1868
+motion 191 117 31.1448
+motion 144 117 16.2788
+red 179 117 19.2354
+red 202 116 42.19
+motion 191 117 31.1448
+motion 156 117 5 Central
+motion 160 117 3 Central
+motion 164 117 5 Central
+motion 189 117 29.1548
+motion 141 117 19.2354
+- 0 0 No target of specified colour
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+red 153 121 7.07107 Central
+motion 101 121 59.0085
+motion 62 120 98
+motion 28 121 132.004
+motion 26 121 134.004
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 281 42 143.962
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+motion 221 128 61.5224
+motion 149 128 13.6015 Central
+motion 95 127 65.3758
+motion 45 126 115.156
+motion 19 126 141.128
+motion 32 126 128.141
+red 48 126 112.161
+red 48 126 112.161
+motion 91 127 69.3542
+red 139 127 22.1359
+red 139 127 22.1359
+motion 169 127 11.4018 Central
+motion 245 128 85.3756
+red 267 129 107.378
+motion 277 129 117.346
+motion 287 129 127.318
+- 0 0 No target of specified colour
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+red 165 194 74.1687
+motion 155 193 73.171
+motion 167 194 74.3303
+motion 161 193 73.0068
+motion 159 193 73.0068
+motion 169 194 74.5453
+red 195 195 82.7647
+red 173 194 75.1332
+motion 133 192 76.896
+motion 191 195 81.1542
+motion 126 192 79.6241
+motion 197 195 83.6301
+red 182 194 77.201
+red 135 192 76.2168
+motion 189 195 80.4114
+motion 178 194 76.1577
+red 143 192 73.9797
+motion 151 193 73.5527
+motion 166 123 6.7082 Central
+- 0 0 No target of specified colour
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+red 161 119 1.41421 Central
+motion 118 119 42.0119
+motion 30 119 130.004
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+- 0 0 No target
+**************END**************

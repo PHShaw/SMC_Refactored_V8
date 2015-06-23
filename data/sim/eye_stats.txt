@@ -1,0 +1,3 @@
+saccadeCounter stepCounter successfulDirectLink successfulNeighbourLink unsuccesfulDirectLinkCounter neighourCounter penultimateMoveWasLink linksLearnt linksUpdated possibleLinkstoLearn unlearntInputFields(612) unlearntOutputFields(580) rollingAverage NumLinks NumGoodLinks TimeStamp
+- - - - - - - - - - - - - - - 1433246400
+**************END**************

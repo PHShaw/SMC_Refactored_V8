@@ -33,6 +33,11 @@
   <to>/target/modules</to>
   <protocol>tcp</protocol>
 </connection>
+<connection>
+  <from>/BB/worldCmd</from>
+  <to>/icubSim/world</to>
+  <protocol>tcp</protocol>
+</connection>
 
 </application>
 

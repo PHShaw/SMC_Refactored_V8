@@ -1,0 +1,19 @@
+Requesting retina field at: 41, 154
+Field returned: 
+coordinates: [36.86,160] Unlearnt
+Requesting retina field at: 127, 142
+Field returned: 
+coordinates: [128.509,142.87] Unlearnt
+Requesting retina field at: 46, 104
+Field returned: 
+coordinates: [44.28,101.67] Unlearnt
+Requesting retina field at: 199, 134
+Field returned: 
+coordinates: [197.01,132.02] Unlearnt
+Requesting retina field at: 189, 117
+Field returned: 
+coordinates: [188.46,124.5] Unlearnt
+Requesting retina field at: 151, 193
+Field returned: 
+coordinates: [148.92,189.92] Unlearnt
+**************END**************

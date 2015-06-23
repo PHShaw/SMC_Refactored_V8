@@ -1,0 +1,26 @@
+Target: 41 154
+Eye input field: centre: [54.96,136.63] radius: 13.6 Learnt and used 1 times
+Eye output field: centre: [-41.59,-6.58] radius: 6.1 Learnt and used 1 times
+Target: 127 142
+Eye input field: centre: [117.8,141.5] radius: 7.8 Learnt and used 1 times
+Eye output field: centre: [-20.66,-3.27] radius: 4.3 Learnt and used 13 times
+Target: 147 155
+Target: 208 156
+Target: 217 101
+Target: 124 194
+Target: 166 177
+Target: 179 156
+Target: 46 104
+Eye input field: centre: [43.59,101.56] radius: 14.7 Learnt and used 2 times
+Eye output field: centre: [-41.59,6.58] radius: 6.1 Learnt and used 25 times
+Target: 199 134
+Eye input field: centre: [193.33,130.82] radius: 6.6 Learnt and used 0 times
+Eye output field: centre: [15.47,0] radius: 3.9 Learnt and used 0 times
+Target: 189 117
+Eye input field: centre: [187.32,120] radius: 5.8 Learnt and used 6 times
+Eye output field: centre: [8.81,0] radius: 3.3 Learnt and used 58 times
+Target: 287 129
+Target: 151 193
+Eye input field: centre: [149.79,184.41] radius: 9.6 Learnt and used 0 times
+Eye output field: centre: [0,-15.47] radius: 3.9 Learnt and used 15 times
+**************END**************

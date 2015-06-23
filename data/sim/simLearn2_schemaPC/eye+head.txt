@@ -1,0 +1,4 @@
+Required 12 saccades to reach eye threshold
+Eye saccade learning took 55 seconds
+Required 54 saccades to reach eye threshold
+Eye saccade learning took 311 seconds

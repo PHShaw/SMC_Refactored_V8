@@ -1,0 +1,70 @@
+<application>
+<name>Vision</name>
+<dependencies>
+      <port>/root</port>
+</dependencies> 
+   <module>
+      <name>yarpview</name>
+	  <parameters>--name /icub/view/right --x 650 --y 0 --w 640 --h 580 --synch</parameters>
+	  <tag>filterviewright</tag>
+	  <node>localhost</node>
+   </module>
+   <module>
+      <name>yarpview</name>
+	  <parameters>--name /icub/view/left --x 0 --y 0 --w 640 --h 580 --synch</parameters>
+	  <tag>filterviewleft</tag>
+	  <node>localhost</node>
+   </module>
+   <module>
+      <name>vision6</name>
+	  <parameters>--cam right</parameters>
+	  <tag>visionright</tag>
+	  <node>localhost</node>
+   </module>
+   <module>
+      <name>vision6</name>
+	  <parameters>--cam left</parameters>
+	  <tag>visionleft</tag>
+	  <node>localhost</node>
+   </module>
+
+
+
+
+<connection>
+  <to>/target/right/in</to>
+  <from>/icubSim/cam/right</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/target/right/out</from>
+  <to>/icub/view/right</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <to>/targetSim/right/read</to>
+  <from>/target/right/data</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <to>/target/left/in</to>
+  <from>/icubSim/cam/left</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <from>/target/left/out</from>
+  <to>/icub/view/left</to>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <to>/targetSim/left/read</to>
+  <from>/target/left/data</from>
+  <protocol>tcp</protocol>
+</connection>
+<connection>
+  <to>/target/parameter</to>
+  <from>/smc/vision/parameters/out</from>
+  <protocol>tcp</protocol>
+</connection>
+</application>
+
